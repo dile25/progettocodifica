@@ -30,38 +30,36 @@
                 <div class="site">
 
                     <!-- NAVIGAZIONE SUPERIORE FISSA -->
-                    <div class="top-navigation">
-                        <div class="nav-dropdown" id="navigation-fab">
-                            <button class="button-33">
-                                <span>&#9776; Vai ai testi e alle altre sezioni&#8230;</span>
-                            </button>
-                            <div class="navigation-dropdown">
-                                <div class="dropdown-section">
-                                    <h3>Informazioni generali</h3>
-                                    <a href="#document-info" class="section-link">Informazioni sulla codifica</a><br/>
-                                    <a href="#people-section" class="section-link">Persone menzionate</a><br/>
-                                    <a href="#places-section" class="section-link">Luoghi menzionati</a><br/>
-                                    <a href="#glossary-section" class="section-link">Glossario</a>
-                                </div>
-                                <div class="dropdown-section">
-                                    <h3>Testi codificati</h3>
-                                    <xsl:for-each select="/tei:teiCorpus/tei:TEI">
-                                        <a href="#{@xml:id}" class="section-link" data-glossary-id="{@xml:id}_gloss">
-                                            <span class="section-title">
-                                                <xsl:value-of select="tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title[1]"/>
-                                            </span>
-                                        </a><br/>
-                                    </xsl:for-each>
-                                </div>
-                                <div class="dropdown-section">
-                                    <h3>Link utili</h3>
-                                    <a href="https://tei-c.org/guidelines/" class="external-link" target="_blank">TEI Guidelines</a><br/>
-                                    <a href="https://creativecommons.org/licenses/by-nc/4.0/" class="external-link" target="_blank">Licenza CC BY-NC 4.0</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
+                    <nav class="navbar">
+    <div class="nav-container">
+        <a href="#rassegna_corpus" class="nav-logo">La Rassegna Settimanale</a>
+        <ul class="nav-menu">
+            <li class="nav-item dropdown">
+                <a href="#" class="dropdown-toggle">Articoli e Leggi ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#TEI_scuole_femminili">I locali delle scuole normali femminili (Vol. 3)</a></li>
+                    <li><a href="#TEI_Rassegna106">La legge sull'istruzione pubblica (Vol. 5)</a></li>
+                    <li><a href="#TEI_LavoroMentale">Il lavoro mentale nelle scuole (Vol. 8)</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" class="dropdown-toggle">Recensioni Bibliografiche ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#TEI_CarloAlfieri">Carlo Alfieri — Chi ha tempo non aspetti tempo (Vol. 3)</a></li>
+                    <li><a href="#TEI_VirtuEducatrice">Domenico Caprile — Virtù Educatrice (Vol. 5)</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" class="dropdown-toggle">Notizie e Cronaca ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#TEI_NotizieVol3">Notizie Fascicolo 69 (Vol. 3)</a></li>
+                    <li><a href="#TEI_NotizieVol5">Notizie Fascicolo 106 (Vol. 5)</a></li>
+                    <li><a href="#TEI_NotizieVol8">Notizie Fascicolo 188 (Vol. 8)</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</nav>
                     <!-- SEZIONE INFORMAZIONI GENERALI -->
                     <section id="info-section" class="general-info visible-section">
                         <div class="main-logo-container">
