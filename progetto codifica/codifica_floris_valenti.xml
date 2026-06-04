@@ -809,134 +809,141 @@
                 <change when="2026-02" who="#FlorisValenti">Prima codifica del testo.</change>
             </revisionDesc>
         </teiHeader>
+
 <facsimile>
 <surface xml:id="locali_scuole_normali_femminili_Pag313">
+
 <graphic url='images/Volume_3_Fascicolo_69_I_locali_delle_scuole_normali_femminili_Pag_313.jpeg' width='568.4px' height='834.4px' />
-<zone ulx="19" uly="8" lrx="60" lry="22" xml:id="scuole_femminili313_NumeroPagina" corresp="#Cod_scuole_femminili313_NumeroPagina"/>
-<zone ulx="290" uly="8" lrx="530" lry="22" xml:id="scuole_femminili313_NumeroVolumeFascicolo" corresp="#Cod_scuole_femminili313_NumeroVolumeFascicolo"/>
-<zone ulx="19" uly="46" lrx="530" lry="70" xml:id="scuole_femminili313_intestazione" corresp="#Cod_scuole_femminili313_Titolo"/>
-<!--titolo prima pagina-->
-<zone ulx="123" uly="82" lrx="426" lry="93" xml:id="scuole_femminili313_titolo" corresp="#Cod_scuole_femminili313_Titolo" />
-   <!--righe dell'articolo prima pagina-->
-<zone ulx="31" uly="112" lrx="518" lry="124" xml:id="scuole_femminili313_riga1" corresp="#Cod_scuole_femminili313_riga1"/>
-<zone ulx="18" uly="149" lrx="271" lry="160" xml:id="scuole_femminili313_riga2" corresp="#Cod_scuole_femminili313_riga2"/>
-<zone ulx="31" uly="163" lrx="271" lry="174" xml:id="scuole_femminili313_riga3" corresp="#Cod_scuole_femminili313_riga3"/>
-<zone ulx="19" uly="176" lrx="271" lry="185" xml:id="scuole_femminili313_riga4" corresp="#Cod_scuole_femminili313_riga4"/>
-<zone ulx="20" uly="187" lrx="271" lry="198" xml:id="scuole_femminili313_riga5" corresp="#Cod_scuole_femminili313_riga5"/>
-<zone ulx="19" uly="200" lrx="271" lry="207" xml:id="scuole_femminili313_riga6" corresp="#Cod_scuole_femminili313_riga6"/>
-<zone ulx="17" uly="210" lrx="268" lry="218" xml:id="scuole_femminili313_riga7" corresp="#Cod_scuole_femminili313_riga7"/>
-<zone ulx="18" uly="221" lrx="268" lry="228" xml:id="scuole_femminili313_riga8" corresp="#Cod_scuole_femminili313_riga8"/>
-<zone ulx="20" uly="230" lrx="269" lry="242" xml:id="scuole_femminili313_riga9" corresp="#Cod_scuole_femminili313_riga9"/>
-<zone ulx="19" uly="242" lrx="271" lry="247" xml:id="scuole_femminili313_riga10" corresp="#Cod_scuole_femminili313_riga10"/>
-<zone ulx="20" uly="252" lrx="267" lry="260" xml:id="scuole_femminili313_riga11" corresp="#Cod_scuole_femminili313_riga11"/>
-<zone ulx="16" uly="264" lrx="271" lry="273" xml:id="scuole_femminili313_riga12" corresp="#Cod_scuole_femminili313_riga12"/>
-<zone ulx="17" uly="275" lrx="269" lry="283" xml:id="scuole_femminili313_riga13" corresp="#Cod_scuole_femminili313_riga13"/>
-<zone ulx="20" uly="287" lrx="268" lry="293" xml:id="scuole_femminili313_riga14" corresp="#Cod_scuole_femminili313_riga14"/>
-<zone ulx="20" uly="297" lrx="208" lry="305" xml:id="scuole_femminili313_riga15" corresp="#Cod_scuole_femminili313_riga15"/>
-<zone ulx="31" uly="306" lrx="273" lry="313" xml:id="scuole_femminili313_riga16" corresp="#Cod_scuole_femminili313_riga16"/>
-<zone ulx="19" uly="322" lrx="270" lry="328" xml:id="scuole_femminili313_riga17" corresp="#Cod_scuole_femminili313_riga17"/>
-<zone ulx="20" uly="332" lrx="270" lry="340" xml:id="scuole_femminili313_riga18" corresp="#Cod_scuole_femminili313_riga18"/>
-<zone ulx="19" uly="344" lrx="271" lry="349" xml:id="scuole_femminili313_riga19" corresp="#Cod_scuole_femminili313_riga19"/>
-<zone ulx="21" uly="353" lrx="272" lry="362" xml:id="scuole_femminili313_riga20" corresp="#Cod_scuole_femminili313_riga20"/>
-<zone ulx="21" uly="365" lrx="267" lry="372" xml:id="scuole_femminili313_riga21" corresp="#Cod_scuole_femminili313_riga21"/>
-<zone ulx="21" uly="374" lrx="271" lry="383" xml:id="scuole_femminili313_riga22" corresp="#Cod_scuole_femminili313_riga22"/>
-<zone ulx="15" uly="385" lrx="264" lry="394" xml:id="scuole_femminili313_riga23" corresp="#Cod_scuole_femminili313_riga23"/>
-<zone ulx="16" uly="395" lrx="270" lry="402" xml:id="scuole_femminili313_riga24" corresp="#Cod_scuole_femminili313_riga24"/>
-<zone ulx="18" uly="407" lrx="269" lry="413" xml:id="scuole_femminili313_riga25" corresp="#Cod_scuole_femminili313_riga25"/>
-<zone ulx="15" uly="416" lrx="269" lry="426" xml:id="scuole_femminili313_riga26" corresp="#Cod_scuole_femminili313_riga26"/>
-<zone ulx="18" uly="430" lrx="270" lry="437" xml:id="scuole_femminili313_riga27" corresp="#Cod_scuole_femminili313_riga27"/>
-<zone ulx="21" uly="440" lrx="269" lry="447" xml:id="scuole_femminili313_riga28" corresp="#Cod_scuole_femminili313_riga28"/>
-<zone ulx="19" uly="451" lrx="270" lry="456" xml:id="scuole_femminili313_riga29" corresp="#Cod_scuole_femminili313_riga29"/>
-<zone ulx="22" uly="460" lrx="268" lry="469" xml:id="scuole_femminili313_riga30" corresp="#Cod_scuole_femminili313_riga30"/>
-<zone ulx="23" uly="473" lrx="269" lry="478" xml:id="scuole_femminili313_riga31" corresp="#Cod_scuole_femminili313_riga31"/>
-<zone ulx="19" uly="484" lrx="271" lry="490" xml:id="scuole_femminili313_riga32" corresp="#Cod_scuole_femminili313_riga32"/>
-<zone ulx="18" uly="492" lrx="269" lry="499" xml:id="scuole_femminili313_riga33" corresp="#Cod_scuole_femminili313_riga33"/>
-<zone ulx="23" uly="503" lrx="270" lry="510" xml:id="scuole_femminili313_riga34" corresp="#Cod_scuole_femminili313_riga34"/>
-<zone ulx="20" uly="514" lrx="275" lry="521" xml:id="scuole_femminili313_riga35" corresp="#Cod_scuole_femminili313_riga35"/>
-<zone ulx="23" uly="526" lrx="273" lry="534" xml:id="scuole_femminili313_riga36" corresp="#Cod_scuole_femminili313_riga36"/>
-<zone ulx="27" uly="534" lrx="265" lry="546" xml:id="scuole_femminili313_riga37" corresp="#Cod_scuole_femminili313_riga37"/>
-<zone ulx="18" uly="548" lrx="268" lry="556" xml:id="scuole_femminili313_riga38" corresp="#Cod_scuole_femminili313_riga38"/>
-<zone ulx="21" uly="558" lrx="273" lry="566" xml:id="scuole_femminili313_riga39" corresp="#Cod_scuole_femminili313_riga39"/>
-<zone ulx="20" uly="567" lrx="270" lry="577" xml:id="scuole_femminili313_riga40" corresp="#Cod_scuole_femminili313_riga40"/>
-<zone ulx="18" uly="580" lrx="267" lry="586" xml:id="scuole_femminili313_riga41" corresp="#Cod_scuole_femminili313_riga41"/>
-<zone ulx="19" uly="592" lrx="272" lry="597" xml:id="scuole_femminili313_riga42" corresp="#Cod_scuole_femminili313_riga42"/>
-<zone ulx="17" uly="600" lrx="270" lry="611" xml:id="scuole_femminili313_riga43" corresp="#Cod_scuole_femminili313_riga43"/>
-<zone ulx="14" uly="613" lrx="273" lry="621" xml:id="scuole_femminili313_riga44" corresp="#Cod_scuole_femminili313_riga44"/>
-<zone ulx="19" uly="623" lrx="271" lry="632" xml:id="scuole_femminili313_riga45" corresp="#Cod_scuole_femminili313_riga45"/>
-<zone ulx="18" uly="632" lrx="272" lry="642" xml:id="scuole_femminili313_riga46" corresp="#Cod_scuole_femminili313_riga46"/>
-<zone ulx="19" uly="643" lrx="151" lry="652" xml:id="scuole_femminili313_riga47" corresp="#Cod_scuole_femminili313_riga47"/>
-<zone ulx="31" uly="654" lrx="273" lry="664" xml:id="scuole_femminili313_riga48" corresp="#Cod_scuole_femminili313_riga48"/>
-<zone ulx="19" uly="667" lrx="272" lry="675" xml:id="scuole_femminili313_riga49" corresp="#Cod_scuole_femminili313_riga49"/>
-<zone ulx="21" uly="678" lrx="271" lry="685" xml:id="scuole_femminili313_riga50" corresp="#Cod_scuole_femminili313_riga50"/>
-<zone ulx="15" uly="690" lrx="267" lry="695" xml:id="scuole_femminili313_riga51" corresp="#Cod_scuole_femminili313_riga51"/>
-<zone ulx="19" uly="699" lrx="272" lry="705" xml:id="scuole_femminili313_riga52" corresp="#Cod_scuole_femminili313_riga52"/>
-<zone ulx="16" uly="708" lrx="274" lry="716" xml:id="scuole_femminili313_riga53" corresp="#Cod_scuole_femminili313_riga53"/>
-<zone ulx="16" uly="719" lrx="272" lry="728" xml:id="scuole_femminili313_riga54" corresp="#Cod_scuole_femminili313_riga54"/>
-<zone ulx="15" uly="730" lrx="270" lry="738" xml:id="scuole_femminili313_riga55" corresp="#Cod_scuole_femminili313_riga55"/>
-<zone ulx="14" uly="742" lrx="271" lry="750" xml:id="scuole_femminili313_riga56" corresp="#Cod_scuole_femminili313_riga56"/>
-<zone ulx="17" uly="751" lrx="271" lry="762" xml:id="scuole_femminili313_riga57" corresp="#Cod_scuole_femminili313_riga57"/>
-<zone ulx="17" uly="766" lrx="269" lry="771" xml:id="scuole_femminili313_riga58" corresp="#Cod_scuole_femminili313_riga58"/>
-<zone ulx="13" uly="775" lrx="271" lry="782" xml:id="scuole_femminili313_riga59" corresp="#Cod_scuole_femminili313_riga59"/>
-<zone ulx="21" uly="786" lrx="266" lry="796" xml:id="scuole_femminili313_riga60" corresp="#Cod_scuole_femminili313_riga60"/>
-<zone ulx="281" uly="148" lrx="531" lry="155" xml:id="scuole_femminili313_riga61" corresp="#Cod_scuole_femminili313_riga61"/>
-<zone ulx="281" uly="158" lrx="531" lry="163" xml:id="scuole_femminili313_riga62" corresp="#Cod_scuole_femminili313_riga62"/>
-<zone ulx="279" uly="170" lrx="386" lry="178" xml:id="scuole_femminili313_riga63" corresp="#Cod_scuole_femminili313_riga63"/>
-<zone ulx="288" uly="178" lrx="531" lry="189" xml:id="scuole_femminili313_riga64" corresp="#Cod_scuole_femminili313_riga64"/>
-<zone ulx="278" uly="191" lrx="527" lry="199" xml:id="scuole_femminili313_riga65" corresp="#Cod_scuole_femminili313_riga65"/>
-<zone ulx="279" uly="202" lrx="530" lry="210" xml:id="scuole_femminili313_riga66" corresp="#Cod_scuole_femminili313_riga66"/>
-<zone ulx="279" uly="214" lrx="528" lry="219" xml:id="scuole_femminili313_riga67" corresp="#Cod_scuole_femminili313_riga67"/>
-<zone ulx="281" uly="224" lrx="529" lry="230" xml:id="scuole_femminili313_riga68" corresp="#Cod_scuole_femminili313_riga68"/>
-<zone ulx="279" uly="233" lrx="528" lry="244" xml:id="scuole_femminili313_riga69" corresp="#Cod_scuole_femminili313_riga69"/>
-<zone ulx="276" uly="246" lrx="527" lry="254" xml:id="scuole_femminili313_riga70" corresp="#Cod_scuole_femminili313_riga70"/>
-<zone ulx="279" uly="258" lrx="531" lry="265" xml:id="scuole_femminili313_riga71" corresp="#Cod_scuole_femminili313_riga71"/>
-<zone ulx="277" uly="269" lrx="531" lry="278" xml:id="scuole_femminili313_riga72" corresp="#Cod_scuole_femminili313_riga72"/>
-<zone ulx="276" uly="280" lrx="531" lry="289" xml:id="scuole_femminili313_riga73" corresp="#Cod_scuole_femminili313_riga73"/>
-<zone ulx="279" uly="290" lrx="530" lry="300" xml:id="scuole_femminili313_riga74" corresp="#Cod_scuole_femminili313_riga74"/>
-<zone ulx="279" uly="299" lrx="531" lry="309" xml:id="scuole_femminili313_riga75" corresp="#Cod_scuole_femminili313_riga75"/>
-<zone ulx="278" uly="311" lrx="531" lry="319" xml:id="scuole_femminili313_riga76" corresp="#Cod_scuole_femminili313_riga76"/>
-<zone ulx="278" uly="321" lrx="532" lry="330" xml:id="scuole_femminili313_riga77" corresp="#Cod_scuole_femminili313_riga77"/>
-<zone ulx="277" uly="330" lrx="533" lry="343" xml:id="scuole_femminili313_riga78" corresp="#Cod_scuole_femminili313_riga78"/>
-<zone ulx="277" uly="343" lrx="531" lry="354" xml:id="scuole_femminili313_riga79" corresp="#Cod_scuole_femminili313_riga79"/>
-<zone ulx="275" uly="353" lrx="532" lry="363" xml:id="scuole_femminili313_riga80" corresp="#Cod_scuole_femminili313_riga80"/>
-<zone ulx="277" uly="365" lrx="535" lry="374" xml:id="scuole_femminili313_riga81" corresp="#Cod_scuole_femminili313_riga81"/>
-<zone ulx="278" uly="373" lrx="535" lry="385" xml:id="scuole_femminili313_riga82" corresp="#Cod_scuole_femminili313_riga82"/>
-<zone ulx="275" uly="382" lrx="533" lry="395" xml:id="scuole_femminili313_riga83" corresp="#Cod_scuole_femminili313_riga83"/>
-<zone ulx="274" uly="394" lrx="535" lry="407" xml:id="scuole_femminili313_riga84" corresp="#Cod_scuole_femminili313_riga84"/>
-<zone ulx="275" uly="407" lrx="534" lry="416" xml:id="scuole_femminili313_riga85" corresp="#Cod_scuole_femminili313_riga85"/>
-<zone ulx="276" uly="416" lrx="534" lry="426" xml:id="scuole_femminili313_riga86" corresp="#Cod_scuole_femminili313_riga86"/>
-<zone ulx="279" uly="429" lrx="533" lry="439" xml:id="scuole_femminili313_riga87" corresp="#Cod_scuole_femminili313_riga87"/>
-<zone ulx="278" uly="440" lrx="367" lry="449" xml:id="scuole_femminili313_riga88" corresp="#Cod_scuole_femminili313_riga88"/>
-<zone ulx="293" uly="448" lrx="531" lry="461" xml:id="scuole_femminili313_riga89" corresp="#Cod_scuole_femminili313_riga89"/>
-<zone ulx="279" uly="463" lrx="532" lry="470" xml:id="scuole_femminili313_riga90" corresp="#Cod_scuole_femminili313_riga90"/>
-<zone ulx="279" uly="473" lrx="533" lry="481" xml:id="scuole_femminili313_riga91" corresp="#Cod_scuole_femminili313_riga91"/>
-<zone ulx="279" uly="484" lrx="532" lry="493" xml:id="scuole_femminili313_riga92" corresp="#Cod_scuole_femminili313_riga92"/>
-<zone ulx="279" uly="494" lrx="534" lry="502" xml:id="scuole_femminili313_riga93" corresp="#Cod_scuole_femminili313_riga93"/>
-<zone ulx="279" uly="507" lrx="531" lry="515" xml:id="scuole_femminili313_riga94" corresp="#Cod_scuole_femminili313_riga94"/>
-<zone ulx="276" uly="517" lrx="531" lry="525" xml:id="scuole_femminili313_riga95" corresp="#Cod_scuole_femminili313_riga95"/>
-<zone ulx="279" uly="527" lrx="531" lry="536" xml:id="scuole_femminili313_riga96" corresp="#Cod_scuole_femminili313_riga96"/>
-<zone ulx="277" uly="538" lrx="529" lry="547" xml:id="scuole_femminili313_riga97" corresp="#Cod_scuole_femminili313_riga97"/>
-<zone ulx="276" uly="547" lrx="531" lry="559" xml:id="scuole_femminili313_riga98" corresp="#Cod_scuole_femminili313_riga98"/>
-<zone ulx="278" uly="560" lrx="530" lry="570" xml:id="scuole_femminili313_riga99" corresp="#Cod_scuole_femminili313_riga99"/>
-<zone ulx="277" uly="570" lrx="468" lry="581" xml:id="scuole_femminili313_riga100" corresp="#Cod_scuole_femminili313_riga100"/>
+
+<!--header prima pagina-->
+<zone ulx="16" uly="42" lrx="533" lry="74" xml:id="scuole_femminili313_titolorassegna" corresp="#Cod_scuole_femminili313_titolorassegna" />
+<zone ulx="119" uly="80" lrx="431" lry="95" xml:id="scuole_femminili313_sottotitolorassegna" corresp="#Cod_scuole_femminili313_sottotitolorassegna" />
+<zone ulx="26" uly="109" lrx="76" lry="125" xml:id="scuole_femminili313_numerovolume" corresp="#Cod_scuole_femminili313_numerovolume" />
+<zone ulx="212" uly="109" lrx="335" lry="127" xml:id="scuole_femminili313_data" corresp="#Cod_scuole_femminili313_data" />
+<zone ulx="481" uly="109" lrx="525" lry="129" xml:id="scuole_femminili313_numerofascicolo" corresp="#Cod_scuole_femminili313_numerofascicolo" />
+<!--titolo primo articolo-->
+<zone ulx="12" uly="146" lrx="272" lry="163" xml:id="scuole_femminili313_titoloarticolo" corresp="#Cod_scuole_femminili313_titoloarticolo" />
+<!--righe colonna sx-->
+<zone ulx="31" uly="165" lrx="270" lry="177" xml:id="scuole_femminili313_riga1" corresp="#Cod_scuole_femminili313_riga1" />
+<zone ulx="19" uly="176" lrx="271" lry="185" xml:id="scuole_femminili313_riga2" corresp="#Cod_scuole_femminili313_riga2"/>
+<zone ulx="20" uly="187" lrx="271" lry="198" xml:id="scuole_femminili313_riga3" corresp="#Cod_scuole_femminili313_riga3"/>
+<zone ulx="19" uly="200" lrx="271" lry="207" xml:id="scuole_femminili313_riga4" corresp="#Cod_scuole_femminili313_riga4"/>
+<zone ulx="17" uly="210" lrx="268" lry="218" xml:id="scuole_femminili313_riga5" corresp="#Cod_scuole_femminili313_riga5"/>
+<zone ulx="18" uly="221" lrx="268" lry="228" xml:id="scuole_femminili313_riga6" corresp="#Cod_scuole_femminili313_riga6"/>
+<zone ulx="20" uly="230" lrx="269" lry="242" xml:id="scuole_femminili313_riga7" corresp="#Cod_scuole_femminili313_riga7"/>
+<zone ulx="19" uly="242" lrx="271" lry="247" xml:id="scuole_femminili313_riga8" corresp="#Cod_scuole_femminili313_riga8"/>
+<zone ulx="20" uly="252" lrx="267" lry="260" xml:id="scuole_femminili313_riga9" corresp="#Cod_scuole_femminili313_riga9"/>
+<zone ulx="16" uly="264" lrx="271" lry="273" xml:id="scuole_femminili313_riga10" corresp="#Cod_scuole_femminili313_riga10"/>
+<zone ulx="17" uly="275" lrx="269" lry="283" xml:id="scuole_femminili313_riga11" corresp="#Cod_scuole_femminili313_riga11"/>
+<zone ulx="20" uly="287" lrx="268" lry="293" xml:id="scuole_femminili313_riga12" corresp="#Cod_scuole_femminili313_riga12"/>
+<zone ulx="20" uly="297" lrx="208" lry="305" xml:id="scuole_femminili313_riga13" corresp="#Cod_scuole_femminili313_riga13"/>
+<zone ulx="31" uly="306" lrx="273" lry="313" xml:id="scuole_femminili313_riga14" corresp="#Cod_scuole_femminili313_riga14"/>
+<zone ulx="19" uly="322" lrx="270" lry="328" xml:id="scuole_femminili313_riga15" corresp="#Cod_scuole_femminili313_riga15"/>
+<zone ulx="20" uly="332" lrx="270" lry="340" xml:id="scuole_femminili313_riga16" corresp="#Cod_scuole_femminili313_riga16"/>
+<zone ulx="19" uly="344" lrx="271" lry="349" xml:id="scuole_femminili313_riga17" corresp="#Cod_scuole_femminili313_riga17"/>
+<zone ulx="21" uly="353" lrx="272" lry="362" xml:id="scuole_femminili313_riga18" corresp="#Cod_scuole_femminili313_riga18"/>
+<zone ulx="21" uly="365" lrx="267" lry="372" xml:id="scuole_femminili313_riga19" corresp="#Cod_scuole_femminili313_riga19"/>
+<zone ulx="21" uly="374" lrx="271" lry="383" xml:id="scuole_femminili313_riga20" corresp="#Cod_scuole_femminili313_riga20"/>
+<zone ulx="15" uly="385" lrx="264" lry="394" xml:id="scuole_femminili313_riga21" corresp="#Cod_scuole_femminili313_riga21"/>
+<zone ulx="16" uly="395" lrx="270" lry="402" xml:id="scuole_femminili313_riga22" corresp="#Cod_scuole_femminili313_riga22"/>
+<zone ulx="18" uly="407" lrx="269" lry="413" xml:id="scuole_femminili313_riga23" corresp="#Cod_scuole_femminili313_riga23"/>
+<zone ulx="15" uly="416" lrx="269" lry="426" xml:id="scuole_femminili313_riga24" corresp="#Cod_scuole_femminili313_riga24"/>
+<zone ulx="18" uly="430" lrx="270" lry="437" xml:id="scuole_femminili313_riga25" corresp="#Cod_scuole_femminili313_riga25"/>
+<zone ulx="21" uly="440" lrx="269" lry="447" xml:id="scuole_femminili313_riga26" corresp="#Cod_scuole_femminili313_riga26"/>
+<zone ulx="19" uly="451" lrx="270" lry="456" xml:id="scuole_femminili313_riga27" corresp="#Cod_scuole_femminili313_riga27"/>
+<zone ulx="22" uly="460" lrx="268" lry="469" xml:id="scuole_femminili313_riga28" corresp="#Cod_scuole_femminili313_riga28"/>
+<zone ulx="23" uly="473" lrx="269" lry="478" xml:id="scuole_femminili313_riga29" corresp="#Cod_scuole_femminili313_riga29"/>
+<zone ulx="19" uly="484" lrx="271" lry="490" xml:id="scuole_femminili313_riga30" corresp="#Cod_scuole_femminili313_riga30"/>
+<zone ulx="18" uly="492" lrx="269" lry="499" xml:id="scuole_femminili313_riga31" corresp="#Cod_scuole_femminili313_riga31"/>
+<zone ulx="23" uly="503" lrx="270" lry="510" xml:id="scuole_femminili313_riga32" corresp="#Cod_scuole_femminili313_riga32"/>
+<zone ulx="20" uly="514" lrx="275" lry="521" xml:id="scuole_femminili313_riga33" corresp="#Cod_scuole_femminili313_riga33"/>
+<zone ulx="23" uly="526" lrx="273" lry="534" xml:id="scuole_femminili313_riga34" corresp="#Cod_scuole_femminili313_riga34"/>
+<zone ulx="27" uly="534" lrx="265" lry="546" xml:id="scuole_femminili313_riga35" corresp="#Cod_scuole_femminili313_riga35"/>
+<zone ulx="18" uly="548" lrx="268" lry="556" xml:id="scuole_femminili313_riga36" corresp="#Cod_scuole_femminili313_riga36"/>
+<zone ulx="21" uly="558" lrx="273" lry="566" xml:id="scuole_femminili313_riga37" corresp="#Cod_scuole_femminili313_riga37"/>
+<zone ulx="20" uly="567" lrx="270" lry="577" xml:id="scuole_femminili313_riga38" corresp="#Cod_scuole_femminili313_riga38"/>
+<zone ulx="18" uly="580" lrx="267" lry="586" xml:id="scuole_femminili313_riga39" corresp="#Cod_scuole_femminili313_riga39"/>
+<zone ulx="19" uly="592" lrx="272" lry="597" xml:id="scuole_femminili313_riga40" corresp="#Cod_scuole_femminili313_riga40"/>
+<zone ulx="17" uly="600" lrx="270" lry="611" xml:id="scuole_femminili313_riga41" corresp="#Cod_scuole_femminili313_riga41"/>
+<zone ulx="14" uly="613" lrx="273" lry="621" xml:id="scuole_femminili313_riga42" corresp="#Cod_scuole_femminili313_riga42"/>
+<zone ulx="19" uly="623" lrx="271" lry="632" xml:id="scuole_femminili313_riga43" corresp="#Cod_scuole_femminili313_riga43"/>
+<zone ulx="18" uly="632" lrx="272" lry="642" xml:id="scuole_femminili313_riga44" corresp="#Cod_scuole_femminili313_riga44"/>
+<zone ulx="19" uly="643" lrx="151" lry="652" xml:id="scuole_femminili313_riga45" corresp="#Cod_scuole_femminili313_riga45"/>
+<zone ulx="31" uly="654" lrx="273" lry="664" xml:id="scuole_femminili313_riga46" corresp="#Cod_scuole_femminili313_riga46"/>
+<zone ulx="19" uly="667" lrx="272" lry="675" xml:id="scuole_femminili313_riga47" corresp="#Cod_scuole_femminili313_riga47"/>
+<zone ulx="21" uly="678" lrx="271" lry="685" xml:id="scuole_femminili313_riga48" corresp="#Cod_scuole_femminili313_riga48"/>
+<zone ulx="15" uly="690" lrx="267" lry="695" xml:id="scuole_femminili313_riga49" corresp="#Cod_scuole_femminili313_riga49"/>
+<zone ulx="19" uly="699" lrx="272" lry="705" xml:id="scuole_femminili313_riga50" corresp="#Cod_scuole_femminili313_riga50"/>
+<zone ulx="16" uly="708" lrx="274" lry="716" xml:id="scuole_femminili313_riga51" corresp="#Cod_scuole_femminili313_riga51"/>
+<zone ulx="16" uly="719" lrx="272" lry="728" xml:id="scuole_femminili313_riga52" corresp="#Cod_scuole_femminili313_riga52"/>
+<zone ulx="15" uly="730" lrx="270" lry="738" xml:id="scuole_femminili313_riga53" corresp="#Cod_scuole_femminili313_riga53"/>
+<zone ulx="14" uly="742" lrx="271" lry="750" xml:id="scuole_femminili313_riga54" corresp="#Cod_scuole_femminili313_riga54"/>
+<zone ulx="17" uly="751" lrx="271" lry="762" xml:id="scuole_femminili313_riga55" corresp="#Cod_scuole_femminili313_riga55"/>
+<zone ulx="17" uly="766" lrx="269" lry="771" xml:id="scuole_femminili313_riga56" corresp="#Cod_scuole_femminili313_riga56"/>
+<zone ulx="13" uly="775" lrx="271" lry="782" xml:id="scuole_femminili313_riga57" corresp="#Cod_scuole_femminili313_riga57"/>
+<zone ulx="21" uly="786" lrx="266" lry="796" xml:id="scuole_femminili313_riga58" corresp="#Cod_scuole_femminili313_riga58"/>
+<zone ulx="281" uly="148" lrx="531" lry="155" xml:id="scuole_femminili313_riga59" corresp="#Cod_scuole_femminili313_riga59"/>
+<zone ulx="281" uly="158" lrx="531" lry="163" xml:id="scuole_femminili313_riga60" corresp="#Cod_scuole_femminili313_riga60"/>
+<zone ulx="279" uly="170" lrx="386" lry="178" xml:id="scuole_femminili313_riga61" corresp="#Cod_scuole_femminili313_riga61"/>
+<zone ulx="288" uly="178" lrx="531" lry="189" xml:id="scuole_femminili313_riga62" corresp="#Cod_scuole_femminili313_riga62"/>
+<zone ulx="278" uly="191" lrx="527" lry="199" xml:id="scuole_femminili313_riga63" corresp="#Cod_scuole_femminili313_riga63"/>
+<zone ulx="279" uly="202" lrx="530" lry="210" xml:id="scuole_femminili313_riga64" corresp="#Cod_scuole_femminili313_riga64"/>
+<zone ulx="279" uly="214" lrx="528" lry="219" xml:id="scuole_femminili313_riga65" corresp="#Cod_scuole_femminili313_riga65"/>
+<zone ulx="281" uly="224" lrx="529" lry="230" xml:id="scuole_femminili313_riga66" corresp="#Cod_scuole_femminili313_riga66"/>
+<zone ulx="279" uly="233" lrx="528" lry="244" xml:id="scuole_femminili313_riga67" corresp="#Cod_scuole_femminili313_riga67"/>
+<zone ulx="276" uly="246" lrx="527" lry="254" xml:id="scuole_femminili313_riga68" corresp="#Cod_scuole_femminili313_riga68"/>
+<zone ulx="279" uly="258" lrx="531" lry="265" xml:id="scuole_femminili313_riga69" corresp="#Cod_scuole_femminili313_riga69"/>
+<zone ulx="277" uly="269" lrx="531" lry="278" xml:id="scuole_femminili313_riga70" corresp="#Cod_scuole_femminili313_riga70"/>
+<zone ulx="276" uly="280" lrx="531" lry="289" xml:id="scuole_femminili313_riga71" corresp="#Cod_scuole_femminili313_riga71"/>
+<zone ulx="279" uly="290" lrx="530" lry="300" xml:id="scuole_femminili313_riga72" corresp="#Cod_scuole_femminili313_riga72"/>
+<zone ulx="279" uly="299" lrx="531" lry="309" xml:id="scuole_femminili313_riga73" corresp="#Cod_scuole_femminili313_riga73"/>
+<zone ulx="278" uly="311" lrx="531" lry="319" xml:id="scuole_femminili313_riga74" corresp="#Cod_scuole_femminili313_riga74"/>
+<zone ulx="278" uly="321" lrx="532" lry="330" xml:id="scuole_femminili313_riga75" corresp="#Cod_scuole_femminili313_riga75"/>
+<zone ulx="277" uly="330" lrx="533" lry="343" xml:id="scuole_femminili313_riga76" corresp="#Cod_scuole_femminili313_riga76"/>
+<zone ulx="277" uly="343" lrx="531" lry="354" xml:id="scuole_femminili313_riga77" corresp="#Cod_scuole_femminili313_riga77"/>
+<zone ulx="275" uly="353" lrx="532" lry="363" xml:id="scuole_femminili313_riga78" corresp="#Cod_scuole_femminili313_riga78"/>
+<zone ulx="277" uly="365" lrx="535" lry="374" xml:id="scuole_femminili313_riga79" corresp="#Cod_scuole_femminili313_riga79"/>
+<zone ulx="278" uly="373" lrx="535" lry="385" xml:id="scuole_femminili313_riga80" corresp="#Cod_scuole_femminili313_riga80"/>
+<zone ulx="275" uly="382" lrx="533" lry="395" xml:id="scuole_femminili313_riga81" corresp="#Cod_scuole_femminili313_riga81"/>
+<zone ulx="274" uly="394" lrx="535" lry="407" xml:id="scuole_femminili313_riga82" corresp="#Cod_scuole_femminili313_riga82"/>
+<zone ulx="275" uly="407" lrx="534" lry="416" xml:id="scuole_femminili313_riga83" corresp="#Cod_scuole_femminili313_riga83"/>
+<zone ulx="276" uly="416" lrx="534" lry="426" xml:id="scuole_femminili313_riga84" corresp="#Cod_scuole_femminili313_riga84"/>
+<zone ulx="279" uly="429" lrx="533" lry="439" xml:id="scuole_femminili313_riga85" corresp="#Cod_scuole_femminili313_riga85"/>
+<zone ulx="278" uly="440" lrx="367" lry="449" xml:id="scuole_femminili313_riga86" corresp="#Cod_scuole_femminili313_riga86"/>
+<zone ulx="293" uly="448" lrx="531" lry="461" xml:id="scuole_femminili313_riga87" corresp="#Cod_scuole_femminili313_riga87"/>
+<zone ulx="279" uly="463" lrx="532" lry="470" xml:id="scuole_femminili313_riga88" corresp="#Cod_scuole_femminili313_riga88"/>
+<zone ulx="279" uly="473" lrx="533" lry="481" xml:id="scuole_femminili313_riga89" corresp="#Cod_scuole_femminili313_riga89"/>
+<zone ulx="279" uly="484" lrx="532" lry="493" xml:id="scuole_femminili313_riga90" corresp="#Cod_scuole_femminili313_riga90"/>
+<zone ulx="279" uly="494" lrx="534" lry="502" xml:id="scuole_femminili313_riga91" corresp="#Cod_scuole_femminili313_riga91"/>
+<zone ulx="279" uly="507" lrx="531" lry="515" xml:id="scuole_femminili313_riga92" corresp="#Cod_scuole_femminili313_riga92"/>
+<zone ulx="276" uly="517" lrx="531" lry="525" xml:id="scuole_femminili313_riga93" corresp="#Cod_scuole_femminili313_riga93"/>
+<zone ulx="279" uly="527" lrx="531" lry="536" xml:id="scuole_femminili313_riga94" corresp="#Cod_scuole_femminili313_riga94"/>
+<zone ulx="277" uly="538" lrx="529" lry="547" xml:id="scuole_femminili313_riga95" corresp="#Cod_scuole_femminili313_riga95"/>
+<zone ulx="276" uly="547" lrx="531" lry="559" xml:id="scuole_femminili313_riga96" corresp="#Cod_scuole_femminili313_riga96"/>
+<zone ulx="278" uly="560" lrx="530" lry="570" xml:id="scuole_femminili313_riga97" corresp="#Cod_scuole_femminili313_riga97"/>
+<zone ulx="277" uly="570" lrx="468" lry="581" xml:id="scuole_femminili313_riga198" corresp="#Cod_scuole_femminili313_riga98"/>
 </surface>
 </facsimile>
+
+<!--Testo articolo-->
 <text xml:id="Scuole_Normali_text" subtype="essay">
     <body>
         <div type="article">
         <pb n="313" facs="#locali_scuole_normali_femminili_Pag313"/>
+
         
-        <fw type="pageNum" place="left" xml:id="Cod_scuole_femminili313_NumeroPagina" facs="#scuole_femminili313_NumeroPagina">313</fw>
-        <fw type="title" place="center" xml:id="Cod_scuole_femminili313_Intestazione" facs="#scuole_femminili313_intestazione">LA RASSEGNA SETTIMANALE</fw>
-        <fw type="issue" place="right" xml:id="Cod_scuole_femminili313_NumeroVolumeFascicolo" facs="#scuole_femminili313_NumeroVolumeFascicolo">
-            Vol. 3°. <placeName ref="#RM">ROMA</placeName>, <date when="1879-04-27">27 Aprile 1879</date>. N° 69.
+        <fw type="title" place="center" xml:id="Cod_scuole_femminili313_titolorassegna" facs="#scuole_femminili313_titolorassegna">LA RASSEGNA SETTIMANALE</fw>
+        <fw type="title" place="center" xml:id="Cod_scuole_femminili313_sottotitolorassegna" facs="#scuole_femminili313_titolorassegna">DI POLITICA, SCIENZE, LETTERE ED ARTI.</fw>
+        
+        <fw type="pageNum" place="left" xml:id="Cod_scuole_femminili313_numerovolume" facs="#scuole_femminili313_numerovolume">Vol. 3°.</fw>
+        <fw type="title" place="center" xml:id="Cod_scuole_femminili313_data" facs="#scuole_femminili313_data">Roma, 27 Aprile 1879.</fw>
+        <fw type="issue" place="right" xml:id="Cod_scuole_femminili313_numerofascicolo" facs="#scuole_femminili313_numerofascicolo">N° 69.
             <milestone unit="headerBreak"/>
         </fw>
 
-        <head rend="align(center) case(allcaps)" xml:id="Cod_scuole_femminili313_Titolo" n="1" facs="#scuole_femminili313_titolo">
-            <title type="main" rend="bold">I LOCALI DELLE SCUOLE NORMALI FEMMINILI.</title>
-        </head>
-
         <p xml:id="Scuole_Normali313_paragrafo1" n="1">
+            <lb xml:id="Cod_scuole_femminili313_titoloarticolo" n="1" facs="#scuole_femminili313_titoloarticolo"/>
+            I LOCALI DELLE SCUOLE NORMALI FEMMINILI.
             <lb xml:id="Cod_scuole_femminili313_riga1" n="1" facs="#scuole_femminili313_riga1"/>
             Nella <orgName ref="#Rassegna">Rassegna</orgName> del <date when="1879-04-13">13 aprile</date> pubblicammo una lettera,
             <lb xml:id="Cod_scuole_femminili313_riga2" n="2" facs="#scuole_femminili313_riga2"/>
@@ -1055,13 +1062,13 @@
             delle alunne da ammettersi, rispondono spesso: la legge tace,
             <lb xml:id="Cod_scuole_femminili313_riga58" n="58" facs="#scuole_femminili313_riga58"/>
             — come tace di fatti. E allora le mura delle sale diventano
+           
+            <cb n="2"/>
+
             <lb xml:id="Cod_scuole_femminili313_riga59" n="59" facs="#scuole_femminili313_riga59"/>
             i confini naturali e materiali al numero delle alunne. Se ne
             <lb xml:id="Cod_scuole_femminili313_riga60" n="60" facs="#scuole_femminili313_riga60"/>
             ammettono finche ce n'entrano, qualche volta fino ad <measure quantity="80">ottanta</measure> 
-
-            <cb n="2"/>
-
             <lb xml:id="Cod_scuole_femminili313_riga61" n="61" facs="#scuole_femminili313_riga61"/>
             o <measure quantity="90">novanta</measure> in una classe.
             <lb xml:id="Cod_scuole_femminili313_riga62" n="62" facs="#scuole_femminili313_riga62"/>
@@ -1227,97 +1234,97 @@
 <!--Teizone  -->
 <facsimile>
 <surface xml:id="la_legge_sull_istruzione_pubblica_pag_21">
-<!--volume 5 fascicolo 106 pagina 21-->
+
+    <!--volume 5 fascicolo 106 pagina 21-->
 <graphic url="images/Volume_5_Fascicolo_106_La_legge_sullistruzione_pubblica_Pag_21.png" width="559.4px" height="833.4px" />
-<zone ulx="25" uly="37" lrx="532" lry="58"  xml:id="IstruzionePubblica21_Header" corresp="#IstruzionePubblica21_Header"/>
 
-<zone ulx="32" uly="72" lrx="279" lry="83" xml:id="IstruzionePubblica21_NumeroPagina" corresp="#Cod_IstruzionePubblica21_NumeroPagina"/> 
-<zone ulx="36" uly="140" lrx="259" lry="146" xml:id="IstruzionePubblica21_Intestazione" corresp="#Cod_IstruzionePubblica21_Intestazione"/>
-<zone ulx="40" uly="154" lrx="270" lry="162" xml:id="IstruzionePubblica21_NumeroVolumeFascicolo" corresp="#Cod_IstruzionePubblica21_NumeroVolumeFascicolo" />
-<!-- intestazione interna -->
-<zone ulx="25" uly="167" lrx="272" lry="173" xml:id="IstruzionePubblica21_HeaderInterno" corresp="#IstruzionePubblica21_Header"/>
-
-<!-- titolo articolo -->
-<zone ulx="23" uly="180" lrx="273" lry="184" xml:id="IstruzionePubblica21_Titolo" corresp="#Cod_IstruzionePubblica21_Titolo"/>
-
-<!--    testo    -->
-<zone ulx="25" uly="190" lrx="273" lry="193" xml:id="IstruzionePubblica21_riga1" corresp="#Cod_IstruzionePubblica21_riga1" />
-<zone ulx="28" uly="202" lrx="274" lry="205" xml:id="IstruzionePubblica21_riga2" corresp="#Cod_IstruzionePubblica21_riga2"/>
-<zone ulx="26" uly="213" lrx="274" lry="216" xml:id="IstruzionePubblica21_riga3" corresp="#Cod_IstruzionePubblica21_riga3"/>
-<zone ulx="31" uly="224" lrx="273" lry="227" xml:id="IstruzionePubblica21_riga4" corresp="#Cod_IstruzionePubblica21_riga4"/>
-<zone ulx="27" uly="233" lrx="275" lry="238" xml:id="IstruzionePubblica21_riga5" corresp="#Cod_IstruzionePubblica21_riga5"/>
-<zone ulx="30" uly="245" lrx="272" lry="248" xml:id="IstruzionePubblica21_riga6" corresp="#Cod_IstruzionePubblica21_riga6"/>
-<zone ulx="29" uly="254" lrx="275" lry="261" xml:id="IstruzionePubblica21_riga7" corresp="#Cod_IstruzionePubblica21_riga7"/>
-<zone ulx="27" uly="266" lrx="272" lry="270" xml:id="IstruzionePubblica21_riga8" corresp="#Cod_IstruzionePubblica21_riga8"/>
-<zone ulx="27" uly="275" lrx="274" lry="279" xml:id="IstruzionePubblica21_riga9" corresp="#Cod_IstruzionePubblica21_riga9"/>
-<zone ulx="28" uly="288" lrx="270" lry="290" xml:id="IstruzionePubblica21_riga10" corresp="#Cod_IstruzionePubblica21_riga10"/>
-<zone ulx="26" uly="295" lrx="274" lry="302" xml:id="IstruzionePubblica21_riga11" corresp="#Cod_IstruzionePubblica21_riga11"/>
-<zone ulx="27" uly="306" lrx="271" lry="312" xml:id="IstruzionePubblica21_riga12" corresp="#Cod_IstruzionePubblica21_riga12"/>
-<zone ulx="27" uly="319" lrx="273" lry="324" xml:id="IstruzionePubblica21_riga13" corresp="#Cod_IstruzionePubblica21_riga13"/>
-<zone ulx="27" uly="327" lrx="274" lry="333" xml:id="IstruzionePubblica21_riga14" corresp="#Cod_IstruzionePubblica21_riga14"/>
-<zone ulx="25" uly="340" lrx="278" lry="346" xml:id="IstruzionePubblica21_riga15" corresp="#Cod_IstruzionePubblica21_riga15"/>
-<zone ulx="27" uly="351" lrx="179" lry="354" xml:id="IstruzionePubblica21_riga16" corresp="#Cod_IstruzionePubblica21_riga16"/>
-<zone ulx="40" uly="361" lrx="275" lry="366" xml:id="IstruzionePubblica21_riga17" corresp="#Cod_IstruzionePubblica21_riga17"/>
-<zone ulx="25" uly="370" lrx="271" lry="378" xml:id="IstruzionePubblica21_riga18" corresp="#Cod_IstruzionePubblica21_riga18"/>
-<zone ulx="27" uly="379" lrx="274" lry="390" xml:id="IstruzionePubblica21_riga19" corresp="#Cod_IstruzionePubblica21_riga19"/>
-<zone ulx="28" uly="391" lrx="271" lry="400" xml:id="IstruzionePubblica21_riga20" corresp="#Cod_IstruzionePubblica21_riga20" />
-<zone ulx="30" uly="399" lrx="276" lry="407" xml:id="IstruzionePubblica21_riga21" corresp="#Cod_IstruzionePubblica21_riga21"/>
-<zone ulx="27" uly="413" lrx="275" lry="420" xml:id="IstruzionePubblica21_riga22" corresp="#Cod_IstruzionePubblica21_riga22"/>
-<zone ulx="24" uly="425" lrx="273" lry="429" xml:id="IstruzionePubblica21_riga23" corresp="#Cod_IstruzionePubblica21_riga23"/>
-<zone ulx="25" uly="436" lrx="276" lry="441" xml:id="IstruzionePubblica21_riga24" corresp="#Cod_IstruzionePubblica21_riga24"/>
-<zone ulx="29" uly="444" lrx="275" lry="453" xml:id="IstruzionePubblica21_riga25" corresp="#Cod_IstruzionePubblica21_riga25"/>
-<zone ulx="31" uly="455" lrx="271" lry="463" xml:id="IstruzionePubblica21_riga26" corresp="#Cod_IstruzionePubblica21_riga26"/>
-<zone ulx="27" uly="467" lrx="271" lry="473" xml:id="IstruzionePubblica21_riga27" corresp="#Cod_IstruzionePubblica21_riga27"/>
-<zone ulx="31" uly="478" lrx="272" lry="486" xml:id="IstruzionePubblica21_riga28" corresp="#Cod_IstruzionePubblica21_riga28"/>
-<zone ulx="29" uly="488" lrx="272" lry="497" xml:id="IstruzionePubblica21_riga29" corresp="#Cod_IstruzionePubblica21_riga29"/>
-<zone ulx="30" uly="500" lrx="273" lry="506" xml:id="IstruzionePubblica21_riga30" corresp="#Cod_IstruzionePubblica21_riga30"/> 
-<zone ulx="30" uly="512" lrx="271" lry="519" xml:id="IstruzionePubblica21_riga31" corresp="#Cod_IstruzionePubblica21_riga31"/>
-<zone ulx="31" uly="522" lrx="275" lry="527" xml:id="IstruzionePubblica21_riga32" corresp="#Cod_IstruzionePubblica21_riga32"/>
-<zone ulx="26" uly="533" lrx="272" lry="540" xml:id="IstruzionePubblica21_riga33" corresp="#Cod_IstruzionePubblica21_riga33"/>
-<zone ulx="30" uly="543" lrx="273" lry="549" xml:id="IstruzionePubblica21_riga34" corresp="#Cod_IstruzionePubblica21_riga34"/>
-<zone ulx="31" uly="555" lrx="276" lry="561" xml:id="IstruzionePubblica21_riga35" corresp="#Cod_IstruzionePubblica21_riga35"/>
-<zone ulx="25" uly="566" lrx="276" lry="570" xml:id="IstruzionePubblica21_riga36" corresp="#Cod_IstruzionePubblica21_riga36"/>
-<zone ulx="31" uly="572" lrx="269" lry="586" xml:id="IstruzionePubblica21_riga37" corresp="#Cod_IstruzionePubblica21_riga37"/>
-<zone ulx="28" uly="585" lrx="269" lry="595" xml:id="IstruzionePubblica21_riga38" corresp="#Cod_IstruzionePubblica21_riga38"/>
-<zone ulx="28" uly="596" lrx="272" lry="602" xml:id="IstruzionePubblica21_riga39" corresp="#Cod_IstruzionePubblica21_riga39"/>
-<zone ulx="30" uly="606" lrx="268" lry="615" xml:id="IstruzionePubblica21_riga40" corresp="#Cod_IstruzionePubblica21_riga40"/>
-<zone ulx="27" uly="620" lrx="271" lry="623" xml:id="IstruzionePubblica21_riga41" corresp="#Cod_IstruzionePubblica21_riga41"/>
-<zone ulx="34" uly="627" lrx="272" lry="634" xml:id="IstruzionePubblica21_riga42" corresp="#Cod_IstruzionePubblica21_riga42"/>
-<zone ulx="32" uly="637" lrx="272" lry="645" xml:id="IstruzionePubblica21_riga43" corresp="#Cod_IstruzionePubblica21_riga43"/>
-<zone ulx="28" uly="646" lrx="273" lry="657" xml:id="IstruzionePubblica21_riga44" corresp="#Cod_IstruzionePubblica21_riga44"/>
-<zone ulx="29" uly="658" lrx="271" lry="669" xml:id="IstruzionePubblica21_riga45" corresp="#Cod_IstruzionePubblica21_riga45"/>
-<zone ulx="31" uly="671" lrx="275" lry="678" xml:id="IstruzionePubblica21_riga46" corresp="#Cod_IstruzionePubblica21_riga46"/>
-<zone ulx="24" uly="679" lrx="276" lry="690" xml:id="IstruzionePubblica21_riga47" corresp="#Cod_IstruzionePubblica21_riga47"/>
-<zone ulx="28" uly="690" lrx="275" lry="700" xml:id="IstruzionePubblica21_riga48" corresp="#Cod_IstruzionePubblica21_riga48"/>
-<zone ulx="29" uly="699" lrx="275" lry="710" xml:id="IstruzionePubblica21_riga49" corresp="#Cod_IstruzionePubblica21_riga49"/>
-<zone ulx="26" uly="711" lrx="275" lry="721" xml:id="IstruzionePubblica21_riga50" corresp="#Cod_IstruzionePubblica21_riga50"/>
-<zone ulx="27" uly="726" lrx="275" lry="731" xml:id="IstruzionePubblica21_riga51" corresp="#Cod_IstruzionePubblica21_riga51"/>
-<zone ulx="25" uly="734" lrx="274" lry="741" xml:id="IstruzionePubblica21_riga52" corresp="#Cod_IstruzionePubblica21_riga52"/>
-<zone ulx="27" uly="746" lrx="273" lry="750" xml:id="IstruzionePubblica21_riga53" corresp="#Cod_IstruzionePubblica21_riga53"/>
-<zone ulx="26" uly="754" lrx="273" lry="762" xml:id="IstruzionePubblica21_riga54" corresp="#Cod_IstruzionePubblica21_riga54"/>
-<zone ulx="27" uly="766" lrx="275" lry="774" xml:id="IstruzionePubblica21_riga55" corresp="#Cod_IstruzionePubblica21_riga55"/>
-<zone ulx="282" uly="134" lrx="536" lry="143" xml:id="IstruzionePubblica21_riga56" corresp="#Cod_IstruzionePubblica21_riga56"/>
-<zone ulx="282" uly="146" lrx="515" lry="153" xml:id="IstruzionePubblica21_riga57" corresp="#Cod_IstruzionePubblica21_riga57"/>
-<zone ulx="296" uly="157" lrx="534" lry="166" xml:id="IstruzionePubblica21_riga58" corresp="#Cod_IstruzionePubblica21_riga58"/>
-<zone ulx="286" uly="169" lrx="538" lry="177" xml:id="IstruzionePubblica21_riga59" corresp="#Cod_IstruzionePubblica21_riga59"/>
-<zone ulx="283" uly="180" lrx="536" lry="188" xml:id="IstruzionePubblica21_riga60" corresp="#Cod_IstruzionePubblica21_riga60"/>
-<zone ulx="285" uly="190" lrx="531" lry="198" xml:id="IstruzionePubblica21_riga61" corresp="#Cod_IstruzionePubblica21_riga61"/>
-<zone ulx="281" uly="200" lrx="536" lry="208" xml:id="IstruzionePubblica21_riga62" corresp="#Cod_IstruzionePubblica21_riga62"/>
-<zone ulx="283" uly="211" lrx="535" lry="219" xml:id="IstruzionePubblica21_riga63" corresp="#Cod_IstruzionePubblica21_riga63"/>
-<zone ulx="285" uly="220" lrx="534" lry="230" xml:id="IstruzionePubblica21_riga64" corresp="#Cod_IstruzionePubblica21_riga64"/>
-<zone ulx="283" uly="231" lrx="533" lry="240" xml:id="IstruzionePubblica21_riga65" corresp="#Cod_IstruzionePubblica21_riga65"/>
-<zone ulx="285" uly="240" lrx="325" lry="251" xml:id="IstruzionePubblica21_riga66" corresp="#Cod_IstruzionePubblica21_riga66"/>
-<zone ulx="298" uly="251" lrx="536" lry="262" xml:id="IstruzionePubblica21_riga67" corresp="#Cod_IstruzionePubblica21_riga67"/>
-<zone ulx="284" uly="264" lrx="535" lry="271" xml:id="IstruzionePubblica21_riga68" corresp="#Cod_IstruzionePubblica21_riga68"/>
-<zone ulx="282" uly="274" lrx="535" lry="284" xml:id="IstruzionePubblica21_riga69" corresp="#Cod_IstruzionePubblica21_riga69"/>
-<zone ulx="283" uly="285" lrx="536" lry="294" xml:id="IstruzionePubblica21_riga70" corresp="#Cod_IstruzionePubblica21_riga70"/>
-<zone ulx="26" uly="282" lrx="273" lry="287" xml:id="IstruzionePubblica21_riga71" corresp="#Cod_IstruzionePubblica21_riga71"/>
-<zone ulx="286" uly="294" lrx="535" lry="305" xml:id="IstruzionePubblica21_riga72" corresp="#Cod_IstruzionePubblica21_riga72"/>
-<zone ulx="283" uly="309" lrx="535" lry="314" xml:id="IstruzionePubblica21_riga73" corresp="#Cod_IstruzionePubblica21_riga73"/>
-<zone ulx="284" uly="318" lrx="536" lry="327" xml:id="IstruzionePubblica21_riga74" corresp="#Cod_IstruzionePubblica21_riga74"/>
-<zone ulx="284" uly="318" lrx="536" lry="327" xml:id="IstruzionePubblica21_riga75" corresp="#Cod_IstruzionePubblica21_riga75"/>
-<zone ulx="284" uly="318" lrx="536" lry="327" xml:id="IstruzionePubblica21_riga76" corresp="#Cod_IstruzionePubblica21_riga76"/>
-<zone ulx="280" uly="328" lrx="331" lry="337" xml:id="IstruzionePubblica21_riga77" corresp="#Cod_IstruzionePubblica21_riga77"/>
+<!--header prima pagina-->
+<zone ulx="20" uly="30" lrx="538" lry="60" xml:id="la_legge_sull_istruzione_pubblica_pag_21_titolorassegna" corresp="#Cod_la_legge_sull_istruzione_pubblica_pag_21_titolorassegna" />
+<zone ulx="122" uly="68" lrx="440" lry="82" xml:id="la_legge_sull_istruzione_pubblica_pag_21_sottotitolorassegna" corresp="#Cod_sla_legge_sull_istruzione_pubblica_pag_21_sottotitolorassegna" />
+<zone ulx="26" uly="98" lrx="72" lry="115" xml:id="la_legge_sull_istruzione_pubblica_pag_21_numerovolume" corresp="#Cod_la_legge_sull_istruzione_pubblica_pag_21_numerovolume" />
+<zone ulx="207" uly="98" lrx="333" lry="114" xml:id="la_legge_sull_istruzione_pubblica_pag_21_data" corresp="#Cod_la_legge_sull_istruzione_pubblica_pag_21_data" />
+<zone ulx="487" uly="96" lrx="535" lry="116" xml:id="la_legge_sull_istruzione_pubblica_pag_21_numerofascicolo" corresp="#Cod_la_legge_sull_istruzione_pubblica_pag_21_numerofascicolo" />
+<!--titolo prima pagina-->
+<zone ulx="32" uly="134" lrx="267" lry="151" xml:id="la_legge_sull_istruzione_pubblica_pag_21_titoloarticolo" corresp="#Cod_la_legge_sull_istruzione_pubblica_pag_21_titoloarticolo"/>
+<!--righe colonna sx prima pagina-->
+<zone ulx="17" uly="154" lrx="275" lry="165" xml:id="IstruzionePubblica21_riga1" corresp="#Cod_IstruzionePubblica21_riga1"/>
+<zone ulx="23" uly="166" lrx="277" lry="175" xml:id="IstruzionePubblica21_riga2" corresp="#Cod_IstruzionePubblica21_riga2"/>
+<zone ulx="23" uly="177" lrx="278" lry="186" xml:id="IstruzionePubblica21_riga3" corresp="#Cod_IstruzionePubblica21_riga3"/>
+<zone ulx="25" uly="190" lrx="273" lry="193" xml:id="IstruzionePubblica21_riga4" corresp="#Cod_IstruzionePubblica21_riga4" />
+<zone ulx="28" uly="202" lrx="274" lry="205" xml:id="IstruzionePubblica21_riga5" corresp="#Cod_IstruzionePubblica21_riga5"/>
+<zone ulx="26" uly="213" lrx="274" lry="216" xml:id="IstruzionePubblica21_riga6" corresp="#Cod_IstruzionePubblica21_riga6"/>
+<zone ulx="31" uly="224" lrx="273" lry="227" xml:id="IstruzionePubblica21_riga7" corresp="#Cod_IstruzionePubblica21_riga7"/>
+<zone ulx="27" uly="233" lrx="275" lry="238" xml:id="IstruzionePubblica21_riga8" corresp="#Cod_IstruzionePubblica21_riga8"/>
+<zone ulx="30" uly="245" lrx="272" lry="248" xml:id="IstruzionePubblica21_riga9" corresp="#Cod_IstruzionePubblica21_riga9"/>
+<zone ulx="29" uly="254" lrx="275" lry="261" xml:id="IstruzionePubblica21_riga10" corresp="#Cod_IstruzionePubblica21_riga10"/>
+<zone ulx="27" uly="266" lrx="272" lry="270" xml:id="IstruzionePubblica21_riga11" corresp="#Cod_IstruzionePubblica21_riga11"/>
+<zone ulx="27" uly="275" lrx="274" lry="279" xml:id="IstruzionePubblica21_riga12" corresp="#Cod_IstruzionePubblica21_riga12"/>
+<zone ulx="28" uly="288" lrx="270" lry="290" xml:id="IstruzionePubblica21_riga13" corresp="#Cod_IstruzionePubblica21_riga13"/>
+<zone ulx="26" uly="295" lrx="274" lry="302" xml:id="IstruzionePubblica21_riga14" corresp="#Cod_IstruzionePubblica21_riga14"/>
+<zone ulx="27" uly="306" lrx="271" lry="312" xml:id="IstruzionePubblica21_riga15" corresp="#Cod_IstruzionePubblica21_riga15"/>
+<zone ulx="27" uly="319" lrx="273" lry="324" xml:id="IstruzionePubblica21_riga16" corresp="#Cod_IstruzionePubblica21_riga16"/>
+<zone ulx="27" uly="327" lrx="274" lry="333" xml:id="IstruzionePubblica21_riga17" corresp="#Cod_IstruzionePubblica21_riga17"/>
+<zone ulx="25" uly="340" lrx="278" lry="346" xml:id="IstruzionePubblica21_riga18" corresp="#Cod_IstruzionePubblica21_riga18"/>
+<zone ulx="27" uly="351" lrx="179" lry="354" xml:id="IstruzionePubblica21_riga19" corresp="#Cod_IstruzionePubblica21_riga19"/>
+<zone ulx="40" uly="361" lrx="275" lry="366" xml:id="IstruzionePubblica21_riga20" corresp="#Cod_IstruzionePubblica21_riga20"/>
+<zone ulx="25" uly="370" lrx="271" lry="378" xml:id="IstruzionePubblica21_riga21" corresp="#Cod_IstruzionePubblica21_riga21"/>
+<zone ulx="27" uly="379" lrx="274" lry="390" xml:id="IstruzionePubblica21_riga22" corresp="#Cod_IstruzionePubblica21_riga22"/>
+<zone ulx="28" uly="391" lrx="271" lry="400" xml:id="IstruzionePubblica21_riga23" corresp="#Cod_IstruzionePubblica21_riga23" />
+<zone ulx="30" uly="399" lrx="276" lry="407" xml:id="IstruzionePubblica21_riga24" corresp="#Cod_IstruzionePubblica21_riga24"/>
+<zone ulx="27" uly="413" lrx="275" lry="420" xml:id="IstruzionePubblica21_riga25" corresp="#Cod_IstruzionePubblica21_riga25"/>
+<zone ulx="24" uly="425" lrx="273" lry="429" xml:id="IstruzionePubblica21_riga26" corresp="#Cod_IstruzionePubblica21_riga26"/>
+<zone ulx="25" uly="436" lrx="276" lry="441" xml:id="IstruzionePubblica21_riga27" corresp="#Cod_IstruzionePubblica21_riga27"/>
+<zone ulx="29" uly="444" lrx="275" lry="453" xml:id="IstruzionePubblica21_riga28" corresp="#Cod_IstruzionePubblica21_riga28"/>
+<zone ulx="31" uly="455" lrx="271" lry="463" xml:id="IstruzionePubblica21_riga29" corresp="#Cod_IstruzionePubblica21_riga29"/>
+<zone ulx="27" uly="467" lrx="271" lry="473" xml:id="IstruzionePubblica21_riga30" corresp="#Cod_IstruzionePubblica21_riga30"/>
+<zone ulx="31" uly="478" lrx="272" lry="486" xml:id="IstruzionePubblica21_riga31" corresp="#Cod_IstruzionePubblica21_riga31"/>
+<zone ulx="29" uly="488" lrx="272" lry="497" xml:id="IstruzionePubblica21_riga32" corresp="#Cod_IstruzionePubblica21_riga32"/>
+<zone ulx="30" uly="500" lrx="273" lry="506" xml:id="IstruzionePubblica21_riga33" corresp="#Cod_IstruzionePubblica21_riga33"/> 
+<zone ulx="30" uly="512" lrx="271" lry="519" xml:id="IstruzionePubblica21_riga34" corresp="#Cod_IstruzionePubblica21_riga34"/>
+<zone ulx="31" uly="522" lrx="275" lry="527" xml:id="IstruzionePubblica21_riga35" corresp="#Cod_IstruzionePubblica21_riga35"/>
+<zone ulx="26" uly="533" lrx="272" lry="540" xml:id="IstruzionePubblica21_riga36" corresp="#Cod_IstruzionePubblica21_riga36"/>
+<zone ulx="30" uly="543" lrx="273" lry="549" xml:id="IstruzionePubblica21_riga37" corresp="#Cod_IstruzionePubblica21_riga37"/>
+<zone ulx="31" uly="555" lrx="276" lry="561" xml:id="IstruzionePubblica21_riga38" corresp="#Cod_IstruzionePubblica21_riga38"/>
+<zone ulx="25" uly="566" lrx="276" lry="570" xml:id="IstruzionePubblica21_riga39" corresp="#Cod_IstruzionePubblica21_riga39"/>
+<zone ulx="31" uly="572" lrx="269" lry="586" xml:id="IstruzionePubblica21_riga40" corresp="#Cod_IstruzionePubblica21_riga40"/>
+<zone ulx="28" uly="585" lrx="269" lry="595" xml:id="IstruzionePubblica21_riga41" corresp="#Cod_IstruzionePubblica21_riga41"/>
+<zone ulx="28" uly="596" lrx="272" lry="602" xml:id="IstruzionePubblica21_riga42" corresp="#Cod_IstruzionePubblica21_riga42"/>
+<zone ulx="30" uly="606" lrx="268" lry="615" xml:id="IstruzionePubblica21_riga43" corresp="#Cod_IstruzionePubblica21_riga43"/>
+<zone ulx="27" uly="620" lrx="271" lry="623" xml:id="IstruzionePubblica21_riga44" corresp="#Cod_IstruzionePubblica21_riga44"/>
+<zone ulx="34" uly="627" lrx="272" lry="634" xml:id="IstruzionePubblica21_riga45" corresp="#Cod_IstruzionePubblica21_riga45"/>
+<zone ulx="32" uly="637" lrx="272" lry="645" xml:id="IstruzionePubblica21_riga46" corresp="#Cod_IstruzionePubblica21_riga46"/>
+<zone ulx="28" uly="646" lrx="273" lry="657" xml:id="IstruzionePubblica21_riga47" corresp="#Cod_IstruzionePubblica21_riga47"/>
+<zone ulx="29" uly="658" lrx="271" lry="669" xml:id="IstruzionePubblica21_riga48" corresp="#Cod_IstruzionePubblica21_riga48"/>
+<zone ulx="31" uly="671" lrx="275" lry="678" xml:id="IstruzionePubblica21_riga49" corresp="#Cod_IstruzionePubblica21_riga49"/>
+<zone ulx="24" uly="679" lrx="276" lry="690" xml:id="IstruzionePubblica21_riga50" corresp="#Cod_IstruzionePubblica21_riga50"/>
+<zone ulx="28" uly="690" lrx="275" lry="700" xml:id="IstruzionePubblica21_riga51" corresp="#Cod_IstruzionePubblica21_riga51"/>
+<zone ulx="29" uly="699" lrx="275" lry="710" xml:id="IstruzionePubblica21_riga52" corresp="#Cod_IstruzionePubblica21_riga52"/>
+<zone ulx="26" uly="711" lrx="275" lry="721" xml:id="IstruzionePubblica21_riga53" corresp="#Cod_IstruzionePubblica21_riga53"/>
+<zone ulx="27" uly="726" lrx="275" lry="731" xml:id="IstruzionePubblica21_riga54" corresp="#Cod_IstruzionePubblica21_riga54"/>
+<zone ulx="25" uly="734" lrx="274" lry="741" xml:id="IstruzionePubblica21_riga55" corresp="#Cod_IstruzionePubblica21_riga55"/>
+<zone ulx="27" uly="746" lrx="273" lry="750" xml:id="IstruzionePubblica21_riga56" corresp="#Cod_IstruzionePubblica21_riga56"/>
+<zone ulx="26" uly="754" lrx="273" lry="762" xml:id="IstruzionePubblica21_riga57" corresp="#Cod_IstruzionePubblica21_riga57"/>
+<zone ulx="27" uly="766" lrx="275" lry="774" xml:id="IstruzionePubblica21_riga58" corresp="#Cod_IstruzionePubblica21_riga58"/>
+<!--righe colonna dx prima pagina-->
+<zone ulx="282" uly="134" lrx="536" lry="143" xml:id="IstruzionePubblica21_riga59" corresp="#Cod_IstruzionePubblica21_riga59"/>
+<zone ulx="282" uly="146" lrx="515" lry="153" xml:id="IstruzionePubblica21_riga60" corresp="#Cod_IstruzionePubblica21_riga60"/>
+<zone ulx="296" uly="157" lrx="534" lry="166" xml:id="IstruzionePubblica21_riga61" corresp="#Cod_IstruzionePubblica21_riga61"/>
+<zone ulx="286" uly="169" lrx="538" lry="177" xml:id="IstruzionePubblica21_riga62" corresp="#Cod_IstruzionePubblica21_riga62"/>
+<zone ulx="283" uly="180" lrx="536" lry="188" xml:id="IstruzionePubblica21_riga63" corresp="#Cod_IstruzionePubblica21_riga63"/>
+<zone ulx="285" uly="190" lrx="531" lry="198" xml:id="IstruzionePubblica21_riga64" corresp="#Cod_IstruzionePubblica21_riga64"/>
+<zone ulx="281" uly="200" lrx="536" lry="208" xml:id="IstruzionePubblica21_riga65" corresp="#Cod_IstruzionePubblica21_riga65"/>
+<zone ulx="283" uly="211" lrx="535" lry="219" xml:id="IstruzionePubblica21_riga66" corresp="#Cod_IstruzionePubblica21_riga66"/>
+<zone ulx="285" uly="220" lrx="534" lry="230" xml:id="IstruzionePubblica21_riga67" corresp="#Cod_IstruzionePubblica21_riga67"/>
+<zone ulx="283" uly="231" lrx="533" lry="240" xml:id="IstruzionePubblica21_riga68" corresp="#Cod_IstruzionePubblica21_riga68"/>
+<zone ulx="285" uly="240" lrx="325" lry="251" xml:id="IstruzionePubblica21_riga69" corresp="#Cod_IstruzionePubblica21_riga69"/>
+<zone ulx="298" uly="251" lrx="536" lry="262" xml:id="IstruzionePubblica21_riga70" corresp="#Cod_IstruzionePubblica21_riga70"/>
+<zone ulx="284" uly="264" lrx="535" lry="271" xml:id="IstruzionePubblica21_riga71" corresp="#Cod_IstruzionePubblica21_riga71"/>
+<zone ulx="282" uly="274" lrx="535" lry="284" xml:id="IstruzionePubblica21_riga72" corresp="#Cod_IstruzionePubblica21_riga72"/>
+<zone ulx="283" uly="285" lrx="536" lry="294" xml:id="IstruzionePubblica21_riga73" corresp="#Cod_IstruzionePubblica21_riga73"/>
+<zone ulx="282" uly="296" lrx="535" lry="304" xml:id="IstruzionePubblica21_riga74" corresp="#Cod_IstruzionePubblica21_riga74"/>
+<zone ulx="281" uly="307" lrx="537" lry="315" xml:id="IstruzionePubblica21_riga75" corresp="#Cod_IstruzionePubblica21_riga75"/>
+<zone ulx="282" uly="317" lrx="536" lry="326" xml:id="IstruzionePubblica21_riga76" corresp="#Cod_IstruzionePubblica21_riga76"/>
+<zone ulx="281" uly="329" lrx="335" lry="336" xml:id="IstruzionePubblica21_riga77" corresp="#Cod_IstruzionePubblica21_riga77"/>
 <zone ulx="290" uly="339" lrx="532" lry="348" xml:id="IstruzionePubblica21_riga78" corresp="#Cod_IstruzionePubblica21_riga78"/>
 <zone ulx="280" uly="349" lrx="535" lry="356" xml:id="IstruzionePubblica21_riga79" corresp="#Cod_IstruzionePubblica21_riga79"/>
 <zone ulx="283" uly="359" lrx="536" lry="365" xml:id="IstruzionePubblica21_riga80" corresp="#Cod_IstruzionePubblica21_riga80"/>
@@ -1361,20 +1368,22 @@
 <zone ulx="282" uly="766" lrx="537" lry="774" xml:id="IstruzionePubblica21_riga118" corresp="#Cod_IstruzionePubblica21_riga118"/>
 </surface>
 
-<surface xml:id="la_legge_sull_istruzione_pubblica_pag22">
-<graphic url="images/Volume_5_Fascicolo_106_La_legge_sullistruzione_pubblica_Pag_22.png" width="597px" height="830px"/>
-<!--Volume 5 Fascicolo 106 pagina 22-->
-<!--    intestazione    -->
-
-<zone ulx="32" uly="72" lrx="279" lry="83" xml:id="IstruzionePubblica22_riga1" corresp="#Cod_IstruzionePubblica22_riga1"/>
-<zone ulx="31" uly="84" lrx="280" lry="91" xml:id="IstruzionePubblica22_riga2" corresp="#Cod_IstruzionePubblica22_riga2"/>
-<zone ulx="31" uly="96" lrx="279" lry="102" xml:id="IstruzionePubblica22_riga3" corresp="#Cod_IstruzionePubblica22_riga3"/>
-<zone ulx="34" uly="106" lrx="281" lry="118" xml:id="IstruzionePubblica22_riga4" corresp="#Cod_IstruzionePubblica22_riga4"/>
-<zone ulx="33" uly="119" lrx="278" lry="125" xml:id="IstruzionePubblica22_riga5" corresp="#Cod_IstruzionePubblica22_riga5"/>
-<zone ulx="30" uly="125" lrx="280" lry="136" xml:id="IstruzionePubblica22_riga6" corresp="#Cod_IstruzionePubblica22_riga6"/>
-<zone ulx="31" uly="141" lrx="280" lry="146" xml:id="IstruzionePubblica22_riga7" corresp="#Cod_IstruzionePubblica22_riga7" />
-<zone ulx="31" uly="150" lrx="282" lry="156" xml:id="IstruzionePubblica22_riga8" corresp="#Cod_IstruzionePubblica22_riga8"/>
-<zone ulx="33" uly="159" lrx="97" lry="167" xml:id="IstruzionePubblica22_riga9" corresp="#Cod_IstruzionePubblica22_riga9"/>
+<surface>
+<graphic url="images/Volume_5_Fascicolo_106_La_legge_sullistruzione_pubblica_Pag_22.png" width='557.4px' height='828.4px' />
+<!--header seconda pagina-->
+<zone ulx="32" uly="45" lrx="46" lry="54" xml:id="la_legge_sull_istruzione_pubblica_pag_22_numeropagina" corresp="#Cod_la_legge_sull_istruzione_pubblica_pag_22_numeropagina"/>
+<zone ulx="202" uly="47" lrx="370" lry="54" xml:id="la_legge_sull_istruzione_pubblica_pag_22_titolorassegna" corresp="#Cod_la_legge_sull_istruzione_pubblica_pag_22_titolorassegna"/>
+<zone ulx="458" uly="44" lrx="541" lry="53" xml:id="la_legge_sull_istruzione_pubblica_pag_22_volumefascicolo" corresp="#Cod_la_legge_sull_istruzione_pubblica_pag_22_volumefascic"/>
+<!--righe colonna sx seconda pagina-->
+<zone ulx="30" uly="75" lrx="279" lry="82" xml:id="IstruzionePubblica22_riga1" corresp="#Cod_IstruzionePubblica22_riga1"/>
+<zone ulx="28" uly="83" lrx="282" lry="91" xml:id="IstruzionePubblica22_riga2" corresp="#Cod_IstruzionePubblica22_riga2"/>
+<zone ulx="29" uly="93" lrx="283" lry="100" xml:id="IstruzionePubblica22_riga3" corresp="#Cod_IstruzionePubblica22_riga3"/>
+<zone ulx="30" uly="105" lrx="281" lry="111" xml:id="IstruzionePubblica22_riga4" corresp="#Cod_IstruzionePubblica22_riga4"/>
+<zone ulx="30" uly="115" lrx="282" lry="124" xml:id="IstruzionePubblica22_riga5" corresp="#Cod_IstruzionePubblica22_riga5"/>
+<zone ulx="28" uly="125" lrx="281" lry="133" xml:id="IstruzionePubblica22_riga6" corresp="#Cod_IstruzionePubblica22_riga6"/>
+<zone ulx="29" uly="136" lrx="282" lry="144" xml:id="IstruzionePubblica22_riga7" corresp="#Cod_IstruzionePubblica22_riga7"/>
+<zone ulx="30" uly="148" lrx="282" lry="156" xml:id="IstruzionePubblica22_riga8" corresp="#Cod_IstruzionePubblica22_riga8"/>
+<zone ulx="28" uly="157" lrx="95" lry="167" xml:id="IstruzionePubblica22_riga9" corresp="#Cod_IstruzionePubblica22_riga9"/>
 </surface>
 </facsimile>
 
@@ -1382,21 +1391,22 @@
     <body>
         <div type="article">
         <pb n="21" facs="#la_legge_sull_istruzione_pubblica_pag_21"/>
-        
-        <fw type="pageNum" place="left" xml:id="Cod_IstruzionePubblica21_NumeroPagina" facs="#IstruzionePubblica21_NumeroPagina">21</fw>
-        <fw type="title" place="center" xml:id="Cod_IstruzionePubblica21_Intestazione" facs="#IstruzionePubblica21_Intestazione">LA RASSEGNA SETTIMANALE</fw>
-        <fw type="issue" place="right" xml:id="Cod_IstruzionePubblica21_NumeroVolumeFascicolo" facs="#IstruzionePubblica21_NumeroVolumeFascicolo">
-            Vol. 5°, N° 106
-            <milestone unit="headerBreak"/>
-        </fw> 
 
-        <head rend="align(center) case(allcaps)" xml:id="Cod_IstruzionePubblica21_Titolo" n="1" facs="#IstruzionePubblica21_Titolo">
-            <lb xml:id="Cod_IstrPub21_lb1" n="2" facs="#IstruzionePubblica21_Header"/>DI <term type="tema">POLITICA</term>, <term type="tema">SCIENZE</term> <term type="tema">LETTERE</term>
-            <lb xml:id="Cod_IstrPub21_lb2" n="3" facs="#IstruzionePubblica21_Header"/>Vol. 5°. <placeName ref="#RM">ROMA</placeName>, <date when="1880-01-11">11 Gennaio 1880</date>. N° 106.
-            <lb xml:id="Cod_IstrPub21_lb3" n="4" facs="#IstruzionePubblica21_Titolo"/><title rend="bold">LA LEGGE SULL'ISTRUZIONE PUBBLICA</title>
-        </head>
+        
+        <fw type="title" place="center" xml:id="Cod_la_legge_sull_istruzione_pubblica_pag_21_titolorassegna" facs="#sla_legge_sull_istruzione_pubblica_pag_21_titolorassegna">LA RASSEGNA SETTIMANALE</fw>
+        <fw type="title" place="center" xml:id="la_legge_sull_istruzione_pubblica_pag_21_sottotitolorassegna" facs="#la_legge_sull_istruzione_pubblica_pag_21_titolorassegna">DI POLITICA, SCIENZE, LETTERE ED ARTI.</fw>
+        
+        <fw type="pageNum" place="left" xml:id="Cod_la_legge_sull_istruzione_pubblica_pag_21_numerovolume" facs="#la_legge_sull_istruzione_pubblica_pag_21_numerovolume">Vol. 5°.</fw>
+        <fw type="title" place="center" xml:id="Cod_la_legge_sull_istruzione_pubblica_pag_21_data" facs="#sla_legge_sull_istruzione_pubblica_pag_21_data">Roma, 11 Gennaio 1880.</fw>
+        <fw type="issue" place="right" xml:id="Cod_la_legge_sull_istruzione_pubblica_pag_21_numerofascicolo" facs="#la_legge_sull_istruzione_pubblica_pag_21_numerofascicolo">N° 106.
+            <milestone unit="headerBreak"/>
+        </fw>
+
 
         <p xml:id="IstruzionePubblica21_paragrafo1" n="1">
+            <lb xml:id="Cod_la_legge_sull_istruzione_pubblica_pag_21_titoloarticolo" n="1" facs="#la_legge_sull_istruzione_pubblica_pag_21_titoloarticolo"/>
+            LA LEGGE SULL'ISTRUZIONE PUBBLICA.
+
             <lb xml:id="Cod_IstruzionePubblica21_riga1" n="1" facs="#IstruzionePubblica21_riga1"/>
             È appena passato qualche mese, che tutto il <term type="collettivo">corpo in
             <lb xml:id="Cod_IstruzionePubblica21_riga2" n="2" facs="#IstruzionePubblica21_riga2" break="no"/>
@@ -1509,15 +1519,15 @@
             sappia il perchè? O piuttosto è un perchè che non si osa confes
             <lb xml:id="Cod_IstruzionePubblica21_riga55" n="55" facs="#IstruzionePubblica21_riga55" break="no"/>
             sare, cioè il solo desiderio di essere indulgenti verso i molti 
-            
-            <cb n="2"/>
-
             <lb xml:id="Cod_IstruzionePubblica21_riga56" n="56" facs="#IstruzionePubblica21_riga56"/>
             che studiano poco e gridano assai, e verso coloro che fanno 
             <lb xml:id="Cod_IstruzionePubblica21_riga57" n="57" facs="#IstruzionePubblica21_riga57"/>
             la <term type="economico">speculazione</term> d’ <orgName type="scuola_privata">istituti privati</orgName> a buon prezzo. I <term type="normativa">regola
             <lb xml:id="Cod_IstruzionePubblica21_riga58" n="58" facs="#IstruzionePubblica21_riga58" break="no"/>
             menti universitari</term> furono tante volte mutati, e sono così
+
+            <cb n="2"/>
+
             <lb xml:id="Cod_IstruzionePubblica21_riga59" n="59" facs="#IstruzionePubblica21_riga59"/>
             intricati, che ogni <orgName type="università">università</orgName> li interpreta a suo modo, e si  
             <lb xml:id="Cod_IstruzionePubblica21_riga60" n="60" facs="#IstruzionePubblica21_riga60"/>
@@ -1553,7 +1563,9 @@
             <lb xml:id="Cod_IstruzionePubblica21_riga72" n="72" facs="#IstruzionePubblica21_riga72"/>
             <term type="titolo">diploma</term>, di presentarsi agli <term type="didattica">esami di licenza liceale</term>. Se ciò
             <lb xml:id="Cod_IstruzionePubblica21_riga73" n="73" facs="#IstruzionePubblica21_riga73"/>
-            fosse eseguito, la più parte dei <orgName type="seminario">seminari</orgName> dovrebbero chiu            <lb xml:id="Cod_IstruzionePubblica21_riga74" n="74" facs="#IstruzionePubblica21_riga74" break="no"/>
+            fosse eseguito, la più parte dei <orgName type="seminario">seminari</orgName> dovrebbero chiu            
+          
+            <lb xml:id="Cod_IstruzionePubblica21_riga74" n="74" facs="#IstruzionePubblica21_riga74" break="no"/>
             dersi o restringersi ai <term type="didattica">corsi teologici</term>. Invece fioriscono, 
             <lb xml:id="Cod_IstruzionePubblica21_riga75" n="75" facs="#IstruzionePubblica21_riga75"/>
             si moltiplicano, fanno concorrenza al <orgName type="governo">governo</orgName>, che accoglie 
@@ -3501,21 +3513,21 @@
 
                 <div type="colophon">
                     <p>
-                        <lb xml:id="Cod_Notizie5_riga22" n="22" facs="#Notizie5_NomiDirettori"/>
+                        <lb xml:id="Cod_Notizie5_NomiDirettori" n="22" facs="#Notizie5_NomiDirettori"/>
                         <persName ref="#L_Franchetti">LEOPOLDO FRANCHETTI</persName> |
-                        <lb xml:id="Cod_Notizie5_riga23" n="23" facs="#Notizie5_NomiDirettori"/>
+                        <lb xml:id="Cod_Notizie5_NomiDirettori" n="23" facs="#Notizie5_NomiDirettori"/>
                         <persName ref="#S_Sonnino">SIDNEY SONNINO</persName>
-                        <lb xml:id="Cod_Notizie5_riga24" n="24" facs="#Notizie5_RuoloDirettori"/>
-                        } Direttori Proprietari.
+                        <lb xml:id="Cod_Notizie5_RuoloDirettori" n="24" facs="#Notizie5_RuoloDirettori"/>
+                         Direttori Proprietari.
                     </p>
                     <p>
-                        <lb xml:id="Cod_Notizie5_riga25" n="25" facs="#Notizie5_NomeResponsabile"/>
+                        <lb xml:id="Cod_Notizie5_NomeResponsabile" n="25" facs="#Notizie5_NomeResponsabile"/>
                         <persName ref="#P_Pampaloni">PIETRO PAMPALONI</persName>,
-                        <lb xml:id="Cod_Notizie5_riga26" n="26" facs="#Notizie5_RuoloResponsabile"/>
+                        <lb xml:id="Cod_Notizie5_RuoloResponsabile" n="26" facs="#Notizie5_RuoloResponsabile"/>
                         Gerente Responsabile.
                     </p>
                     <p>
-                        <lb xml:id="Cod_Notizie5_riga27" n="27" facs="#Notizie5_LuogoDataTipografia"/>
+                        <lb xml:id="Cod_Notizie5_LuogoDataTipografia" n="27" facs="#Notizie5_LuogoDataTipografia"/>
                         <placeName ref="#RM">ROMA</placeName>, <date when="1880">1880</date>. — <orgName ref="#Tip_Barbera">Tipografia BARBÈRA</orgName>.
                     </p>
                 </div>
@@ -3597,8 +3609,8 @@
                 <zone ulx="292" uly="696" lrx="548" lry="706" xml:id="Notizie8_riga5" corresp="#Cod_Notizie8_riga5"/>
                 <zone ulx="291" uly="706" lrx="548" lry="715" xml:id="Notizie8_riga6" corresp="#Cod_Notizie8_riga6"/>
                 <zone ulx="292" uly="715" lrx="517" lry="728" xml:id="Notizie8_riga7" corresp="#Cod_Notizie8_riga7"/>
-                <zone ulx="299" uly="729" lrx="394" lry="741" xml:id="Notizie8_NomeDirettori" corresp="#Notizie8_NomeDirettori"/>
-                <zone ulx="396" uly="728" lrx="478" lry="741" xml:id="Notizie8_RuoloDirettori" corresp="#Notizie8_RuoloDirettori"/>
+                <zone ulx="299" uly="729" lrx="394" lry="741" xml:id="Notizie8_NomeDirettore" corresp="#Notizie8_NomeDirettore"/>
+                <zone ulx="396" uly="728" lrx="478" lry="741" xml:id="Notizie8_RuoloDirettore" corresp="#Notizie8_RuoloDirettore"/>
                 <zone ulx="324" uly="743" lrx="403" lry="755" xml:id="Notizie8_NomeResponsabile" corresp="#Notizie8_NomeResponsabile"/>
                 <zone ulx="404" uly="741" lrx="478" lry="759" xml:id="Notizie8_RuoloResponsabile" corresp="#Notizie8_RuoloResponsabile"/>
             </surface>
@@ -3638,15 +3650,15 @@
 
                 <div type="colophon">
                     <p>
-                        <lb xml:id="Cod_Notizie8_riga23" n="23" facs="#Notizie8_NomeDirettori"/>
+                        <lb xml:id="Cod_Notizie8_NomeDirettore" n="23" facs="#Notizie8_NomeDirettore"/>
                         <persName ref="#S_Sonnino">SIDNEY SONNINO</persName>
-                        <lb xml:id="Cod_Notizie8_riga24" n="24" facs="#Notizie8_RuoloDirettori"/>
-                        } Direttore Proprietario.
+                        <lb xml:id="Cod_Notizie8_RuoloDirettore" n="24" facs="#Notizie8_RuoloDirettore"/>
+                        Direttore Proprietario.
                     </p>
                     <p>
-                        <lb xml:id="Cod_Notizie8_riga25" n="25" facs="#Notizie8_NomeResponsabile"/>
+                        <lb xml:id="Cod_Notizie8_NomeResponsabile" n="25" facs="#Notizie8_NomeResponsabile"/>
                         <persName ref="#P_Pampaloni">PIETRO PAMPALONI</persName>,
-                        <lb xml:id="Cod_Notizie8_riga26" n="26" facs="#Notizie8_RuoloResponsabile"/>
+                        <lb xml:id="Cod_Notizie8_RuoloResponsabile" n="26" facs="#Notizie8_RuoloResponsabile"/>
                         Gerente Responsabile.
                     </p>
                 </div>
