@@ -744,10 +744,8 @@
 
     <!-- ============================================================
          TEI 1 — I locali delle Scuole Normali Femminili
-                  + Notizie Vol. 3
-                  (contenuto da validare_completo, invariato)
          ============================================================ -->
-    <TEI xml:id="TEI_ScuoleNormali">
+    <TEI xml:id="TEI_scuolenormali">
         <teiHeader>
             <fileDesc>
                 <titleStmt>
@@ -1161,269 +1159,11 @@
     </body>
 </text>
     </TEI>
-    <TEI xml:id="TEI_Rassegna69">
-        <teiHeader>
-        <fileDesc>
-            <titleStmt>
-                <title>Bibliografia: Carlo Alfieri, Chi ha tempo non aspetti tempo. Pareri d'un Senatore. - Roma Tip. del Senato, 1879 (da La Rassegna Settimanale, Volume 3, Fascicolo 69, del 27 Aprile 1879)</title>
-                <respStmt xml:id="FlorisValenti_T2"><resp>Codifica TEI-XML</resp><persName>Rebecca Floris</persName><persName>Diletta Valenti</persName></respStmt>
-            </titleStmt>
-            <publicationStmt>
-                <publisher>Università di Pisa - Informatica Umanistica</publisher>
-                <date when="2025">2025</date>
-                <availability status="free"><p>Accesso aperto per fini accademici.</p></availability>
-            </publicationStmt>
-            <sourceDesc>
-                <biblStruct xml:id="Rassegna_69">
-                    <monogr>
-                        <title level="j">La Rassegna Settimanale di politica, scienze, lettere ed arti</title>
-                        <imprint>
-                            <publisher>Tipografia Barbèra</publisher>
-                            <pubPlace>Roma</pubPlace>
-                            <date when="1879-04-27">27 Aprile 1879</date>
-                            <biblScope unit="issue">69</biblScope>
-                        </imprint>
-                    </monogr>
-                </biblStruct>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <projectDesc>
-                <p>Codifica realizzata nell'ambito del corso di Informatica Umanistica,
-                   Università di Pisa, a.a. 2025–2026. Cfr. il <ref target="#rassegna_corpus">teiHeader del corpus</ref>
-                   per la descrizione completa del progetto.</p>
-            </projectDesc>
-            <projectDesc>
-                <p>Testo codificato nell'ambito del corpus digitale de «La Rassegna Settimanale»
-                   (Università di Pisa, Informatica Umanistica, a.a. 2025–2026).
-                   Si vedano le linee guida nel <gi>teiHeader</gi> del <gi>teiCorpus</gi>.</p>
-            </projectDesc>
-            <editorialDecl>
-                <normalization><p>Abbreviazioni sciolte con choice/abbr/expan.</p></normalization>
-                <hyphenation eol="all"><p>Sillabazioni di fine riga codificate con lb @break="no".</p></hyphenation>
-            </editorialDecl>
-        </encodingDesc>
-        <profileDesc>
-            <langUsage>
-                <language ident="it">Italiano ottocentesco (prosa saggistica, 1879).</language>
-            </langUsage>
-            <textClass>
-                <keywords>
-                    <term>istruzione pubblica</term>
-                    <term>politica scolastica</term>
-                    <term>Destra storica</term>
-                    <term>laicismo e cattolicesimo</term>
-                </keywords>
-            </textClass>
-        </profileDesc>
-        <revisionDesc>
-            <change when="2026-05" who="#FlorisValenti">Revisione finale; aggiunta encodingDesc, profileDesc; collegato @ref per Montalembert.</change>
-            <change when="2026-03" who="#FlorisValenti">Prima codifica del testo.</change>
-        </revisionDesc>
-    </teiHeader>
- <!-- Teizone  -->
-<facsimile> 
-  <surface xml:id="Full_Alfieri">
-    <graphic url='images/Bibliografia-_Volume_3,_Fascicolo_69,_C._Alfieri_Chi_ha_tempo_non_aspetti_tempo_Pag._330.png' width='566.4px' height='833.4px' />
 
-    <!-- Header / Intestazione pagina -->
-    <zone ulx="46" uly="35" lrx="66" lry="43" xml:id="Alfieri_header" corresp="#Cod_Alfieri_header"/>
-
-    <!-- Titolo pagina -->
-    <zone ulx="217" uly="33" lrx="378" lry="42" xml:id="Alfieri_titolo" corresp="#Cod_Alfieri_titolo" />
-
-    <!-- Righe del corpo -->
-    <zone ulx="477" uly="35" lrx="551" lry="44" xml:id="Alfieri_riga1" corresp="#Cod_ALfieri_riga1"/>
-    <zone ulx="131" uly="62" lrx="211" lry="70" xml:id="Alfieri_riga2" corresp="#Cod_ALfieri_riga2"/>
-    <zone ulx="152" uly="74" lrx="190" lry="82" xml:id="Alfieri_riga3" corresp="#Cod_ALfieri_riga3"/>
-    <zone ulx="46" uly="83" lrx="296" lry="93" xml:id="Alfieri_riga4" corresp="#Cod_ALfieri_riga4"/>
-    <zone ulx="60" uly="94" lrx="232" lry="104" xml:id="Alfieri_riga5" corresp="#Cod_ALfieri_riga5"/>
-    <zone ulx="60" uly="111" lrx="296" lry="121" xml:id="Alfieri_riga6" corresp="#Cod_ALfieri_riga6"/>
-    <zone ulx="48" uly="123" lrx="297" lry="130" xml:id="Alfieri_riga7" corresp="#Cod_ALfieri_riga7"/>
-    <zone ulx="45" uly="132" lrx="298" lry="140" xml:id="Alfieri_riga8" corresp="#Cod_ALfieri_riga8"/>
-    <zone ulx="47" uly="144" lrx="295" lry="151" xml:id="Alfieri_riga9" corresp="#Cod_ALfieri_riga9"/>
-    <zone ulx="48" uly="153" lrx="296" lry="163" xml:id="Alfieri_riga10" corresp="#Cod_ALfieri_riga10"/>
-    <zone ulx="46" uly="165" lrx="296" lry="174" xml:id="Alfieri_riga11" corresp="#Cod_ALfieri_riga11"/>
-    <zone ulx="44" uly="176" lrx="296" lry="183" xml:id="Alfieri_riga12" corresp="#Cod_ALfieri_riga12"/>
-    <zone ulx="46" uly="187" lrx="108" lry="195" xml:id="Alfieri_riga13" corresp="#Cod_ALfieri_riga13"/>
-    <zone ulx="59" uly="196" lrx="298" lry="206" xml:id="Alfieri_riga14" corresp="#Cod_ALfieri_riga14"/>
-    <zone ulx="47" uly="208" lrx="297" lry="216" xml:id="Alfieri_riga15" corresp="#Cod_ALfieri_riga15"/>
-    <zone ulx="46" uly="220" lrx="296" lry="227" xml:id="Alfieri_riga16" corresp="#Cod_ALfieri_riga16"/>
-    <zone ulx="47" uly="231" lrx="295" lry="236" xml:id="Alfieri_riga17" corresp="#Cod_ALfieri_riga17"/>
-    <zone ulx="47" uly="241" lrx="296" lry="247" xml:id="Alfieri_riga18" corresp="#Cod_ALfieri_riga18"/>
-    <zone ulx="46" uly="250" lrx="295" lry="258" xml:id="Alfieri_riga19" corresp="#Cod_ALfieri_riga19"/>
-    <zone ulx="46" uly="262" lrx="296" lry="270" xml:id="Alfieri_riga20" corresp="#Cod_ALfieri_riga20"/>
-    <zone ulx="46" uly="272" lrx="297" lry="282" xml:id="Alfieri_riga21" corresp="#Cod_ALfieri_riga21"/>
-    <zone ulx="44" uly="284" lrx="297" lry="290" xml:id="Alfieri_riga22" corresp="#Cod_ALfieri_riga22"/>
-    <zone ulx="46" uly="294" lrx="296" lry="303" xml:id="Alfieri_riga23" corresp="#Cod_ALfieri_riga23"/>
-    <zone ulx="45" uly="306" lrx="299" lry="312" xml:id="Alfieri_riga24" corresp="#Cod_ALfieri_riga24"/>
-    <zone ulx="45" uly="316" lrx="296" lry="323" xml:id="Alfieri_riga25" corresp="#Cod_ALfieri_riga25"/>
-    <zone ulx="47" uly="327" lrx="298" lry="335" xml:id="Alfieri_riga26" corresp="#Cod_ALfieri_riga26"/>
-    <zone ulx="44" uly="338" lrx="295" lry="345" xml:id="Alfieri_riga27" corresp="#Cod_ALfieri_riga27"/>
-    <zone ulx="43" uly="350" lrx="296" lry="357" xml:id="Alfieri_riga28" corresp="#Cod_ALfieri_riga28"/>
-    <zone ulx="46" uly="359" lrx="296" lry="367" xml:id="Alfieri_riga29" corresp="#Cod_ALfieri_riga29"/>
-    <zone ulx="43" uly="370" lrx="298" lry="378" xml:id="Alfieri_riga30" corresp="#Cod_ALfieri_riga30"/>
-    <zone ulx="43" uly="380" lrx="296" lry="389" xml:id="Alfieri_riga31" corresp="#Cod_ALfieri_riga31"/>
-    <zone ulx="46" uly="392" lrx="298" lry="399" xml:id="Alfieri_riga32" corresp="#Cod_ALfieri_riga32"/>
-    <zone ulx="46" uly="404" lrx="295" lry="411" xml:id="Alfieri_riga33" corresp="#Cod_ALfieri_riga33"/>
-    <zone ulx="47" uly="415" lrx="295" lry="422" xml:id="Alfieri_riga34" corresp="#Cod_ALfieri_riga34"/>
-    <zone ulx="47" uly="426" lrx="295" lry="431" xml:id="Alfieri_riga35" corresp="#Cod_ALfieri_riga35"/>
-    <zone ulx="45" uly="433" lrx="298" lry="441" xml:id="Alfieri_riga36" corresp="#Cod_ALfieri_riga36"/>
-    <zone ulx="47" uly="445" lrx="298" lry="452" xml:id="Alfieri_riga37" corresp="#Cod_ALfieri_riga37"/>
-    <zone ulx="46" uly="454" lrx="298" lry="466" xml:id="Alfieri_riga38" corresp="#Cod_ALfieri_riga38"/>
-    <zone ulx="47" uly="468" lrx="298" lry="474" xml:id="Alfieri_riga39" corresp="#Cod_ALfieri_riga39"/>
-    <zone ulx="46" uly="478" lrx="294" lry="486" xml:id="Alfieri_riga40" corresp="#Cod_ALfieri_riga40"/>
-    <zone ulx="44" uly="486" lrx="295" lry="496" xml:id="Alfieri_riga41" corresp="#Cod_ALfieri_riga41"/>
-    <zone ulx="47" uly="498" lrx="295" lry="506" xml:id="Alfieri_riga42" corresp="#Cod_ALfieri_riga42"/>
-    <zone ulx="45" uly="506" lrx="296" lry="514" xml:id="Alfieri_riga43" corresp="#Cod_ALfieri_riga43"/>
-    <zone ulx="44" uly="518" lrx="295" lry="529" xml:id="Alfieri_riga44" corresp="#Cod_ALfieri_riga44"/>
-    <zone ulx="45" uly="531" lrx="295" lry="538" xml:id="Alfieri_riga45" corresp="#Cod_ALfieri_riga45"/>
-    <zone ulx="46" uly="540" lrx="296" lry="548" xml:id="Alfieri_riga46" corresp="#Cod_ALfieri_riga46"/>
-    <zone ulx="47" uly="550" lrx="296" lry="561" xml:id="Alfieri_riga47" corresp="#Cod_ALfieri_riga47"/>
-    <zone ulx="46" uly="562" lrx="295" lry="571" xml:id="Alfieri_riga48" corresp="#Cod_ALfieri_riga48"/>
-    <zone ulx="44" uly="575" lrx="295" lry="582" xml:id="Alfieri_riga49" corresp="#Cod_ALfieri_riga49"/>
-    <zone ulx="44" uly="586" lrx="296" lry="592" xml:id="Alfieri_riga50" corresp="#Cod_ALfieri_riga50"/>
-    <zone ulx="47" uly="594" lrx="297" lry="604" xml:id="Alfieri_riga51" corresp="#Cod_ALfieri_riga51"/>
-    <zone ulx="44" uly="606" lrx="299" lry="614" xml:id="Alfieri_riga52" corresp="#Cod_ALfieri_riga52"/>
-    <zone ulx="45" uly="617" lrx="298" lry="626" xml:id="Alfieri_riga53" corresp="#Cod_ALfieri_riga53"/>
-    <zone ulx="44" uly="628" lrx="227" lry="636" xml:id="Alfieri_riga54" corresp="#Cod_ALfieri_riga54"/>
-  </surface>
-</facsimile>
-<!--Testo articolo-->
-<text xml:id="Alfieri_text" subtype="bibliography">
-    <body>
-        <div type="article">
-        <pb n="330" facs="#Full_Alfieri"/>
-        
-        <fw type="pageNum" place="left" xml:id="Cod_Alfieri_header" facs="#Alfieri_header">330</fw>
-        <fw type="title" place="center" xml:id="Cod_Alfieri_titolo" facs="#Alfieri_titolo">LA RASSEGNA SETTIMANALE</fw>
-        <fw type="issue" place="right" xml:id="Cod_ALfieri_riga1" facs="#Alfieri_riga1">
-            [Vol. 3°, N° 69]
-            <milestone unit="headerBreak"/>
-        </fw>
-
-        <head rend="align(center) case(allcaps)" xml:id="Cod_ALfieri_riga2" n="1" facs="#Alfieri_riga2">
-            <term type="tema">BIBLIOGRAFIA</term>.
-        </head>
-        <head rend="align(center) case(allcaps)" xml:id="Cod_ALfieri_riga3" n="2" facs="#Alfieri_riga3">
-            <term type="tema">POLITICA</term>.
-        </head>
-
-        <p xml:id="Alfieri_citazione_bibl" n="1">
-            <lb xml:id="Cod_ALfieri_riga4" n="4" facs="#Alfieri_riga4"/>
-            <persName ref="#C_Alfieri">CARLO ALFIERI</persName>. <title level="m" rend="italic">Chi ha tempo non aspetti tempo. Pareri d’un 
-            <lb xml:id="Cod_ALfieri_riga5" n="5" facs="#Alfieri_riga5"/>
-            Senatore</title>. — <placeName ref="#RM">Roma</placeName> <orgName ref="#Tip_Senato">Tip. del Senato</orgName>, <date when="1879">1879</date>.
-        </p>
-
-        <p xml:id="Alfieri_paragrafo1" n="2">
-            <lb xml:id="Cod_ALfieri_riga6" n="6" facs="#Alfieri_riga6"/>
-            Da alcuni anni <choice><abbr>l’on.</abbr><expan>l’onorevole</expan></choice> <persName ref="#C_Alfieri">Alfieri</persName> suole, di quando in quando, 
-            <lb xml:id="Cod_ALfieri_riga7" n="7" facs="#Alfieri_riga7"/>
-            dire al pubblico le ragioni, che lo fanno essere malcontento
-            <lb xml:id="Cod_ALfieri_riga8" n="8" facs="#Alfieri_riga8"/>
-            delle nostre condizioni politiche. Fedele a questa sua buona
-            <lb xml:id="Cod_ALfieri_riga9" n="9" facs="#Alfieri_riga9"/>
-            abitudine egli ripubblica ora alcune lettere già apparse nella
-            <lb xml:id="Cod_ALfieri_riga10" n="10" facs="#Alfieri_riga10"/>
-            <title level="j" rend="italic">Gazzetta Piemontese</title>, precedute da un proemio, e chiuse con
-            <lb xml:id="Cod_ALfieri_riga11" n="11" facs="#Alfieri_riga11"/>
-            due altre lettere al <roleName>prof.</roleName> <persName ref="#P_Sbarbaro">Sbarbaro</persName> intorno al <term type="corrente">partito con-
-            <lb xml:id="Cod_ALfieri_riga12" n="12" facs="#Alfieri_riga12" break="no"/>
-            servatore</term>, ed alla trasformazione della <orgName ref="#DestraS">Destra</orgName> nella <term type="corrente">demo-
-            <lb xml:id="Cod_ALfieri_riga13" n="13" facs="#Alfieri_riga13" break="no"/>
-            crazia liberale</term>.
-        </p>
-
-        <p xml:id="Alfieri_paragrafo2" n="3">
-            <lb xml:id="Cod_ALfieri_riga14" n="14" facs="#Alfieri_riga14"/>
-            <choice><abbr>L’on.</abbr><expan>L’onorevole</expan></choice> <roleName>Senatore</roleName> rammenta com’egli avesse ben augurato
-            <lb xml:id="Cod_ALfieri_riga15" n="15" facs="#Alfieri_riga15"/>
-            della <orgName ref="#Sinistra">Sinistra</orgName>, quando questa, per salire al potere, si fece
-            <lb xml:id="Cod_ALfieri_riga16" n="16" facs="#Alfieri_riga16"/>
-            a difendere la causa dei capitali e dell’<term type="tema">industria privata</term> 
-            <lb xml:id="Cod_ALfieri_riga17" n="17" facs="#Alfieri_riga17"/>
-            applicata alla costruzione ed all’esercizio delle nostre fer-
-            <lb xml:id="Cod_ALfieri_riga18" n="18" facs="#Alfieri_riga18" break="no"/>
-            rovie. Quella causa sembra <choice><abbr>all’A.</abbr><expan>all'Autore</expan></choice> essere stata poscia abban-
-            <lb xml:id="Cod_ALfieri_riga19" n="19" facs="#Alfieri_riga19" break="no"/>
-            donata dalla <orgName ref="#Sinistra">Sinistra</orgName>, la quale ha così perduto le sue sim-
-            <lb xml:id="Cod_ALfieri_riga20" n="20" facs="#Alfieri_riga20" break="no"/>
-            patie. La <orgName ref="#DestraS">Destra</orgName> poi nel frattempo ha proclamato a suo
-            <lb xml:id="Cod_ALfieri_riga21" n="21" facs="#Alfieri_riga21"/>
-            <lb xml:id="Cod_ALfieri_riga22" n="22" facs="#Alfieri_riga22"/>
-            capo <persName ref="#Q_Sella">Sella</persName>, il più autorevole rappresentante dell’<term type="corrente">autoritarismo democra-
-            <lb xml:id="Cod_ALfieri_riga23" n="23" facs="#Alfieri_riga23" break="no"/>
-            tico</term> nello stato nostro.
-            <lb xml:id="Cod_ALfieri_riga24" n="24" facs="#Alfieri_riga24"/>
-            Il <term type="corrente">partito conservatore</term> doveva necessariamente essere inclinato
-            <lb xml:id="Cod_ALfieri_riga25" n="25" facs="#Alfieri_riga25"/>
-            a favorire l’influenza delle autorità ecclesiastiche nella no-
-            <lb xml:id="Cod_ALfieri_riga26" n="26" facs="#Alfieri_riga26" break="no"/>
-            stra politica. Questa dichiarazione, che a noi pare conforme
-            <lb xml:id="Cod_ALfieri_riga27" n="27" facs="#Alfieri_riga27"/>
-            alla verità, dispiacque molto <choice><abbr>all’on.</abbr><expan>all’onorevole</expan></choice> <persName ref="#C_Alfieri">Alfieri</persName>, il quale, nel rim-
-            <lb xml:id="Cod_ALfieri_riga28" n="28" facs="#Alfieri_riga28"/>
-            proverarla ingiustamente al <persName ref="#Q_Sella">Sella</persName>, non riesce a contenere
-            <lb xml:id="Cod_ALfieri_riga29" n="29" facs="#Alfieri_riga29"/>
-            in giusta misura l’espressione del suo malcontento. Eppure
-            <lb xml:id="Cod_ALfieri_riga30" n="30" facs="#Alfieri_riga30"/>
-            se ci fosse modo di trasformare, come vorrebbe l’<persName ref="#C_Alfieri">Alfieri</persName>,
-            <lb xml:id="Cod_ALfieri_riga31" n="31" facs="#Alfieri_riga31"/>
-            la <orgName ref="#DestraS">Destra</orgName> in un partito di liberisti cattolici della scuola
-            <lb xml:id="Cod_ALfieri_riga32" n="32" facs="#Alfieri_riga32"/>
-            del <persName ref="#Montalembert">Montalembert</persName>, questo appunto sarebbe che il <persName ref="#Q_Sella">Sella</persName>
-            <lb xml:id="Cod_ALfieri_riga33" n="33" facs="#Alfieri_riga33"/>
-            e lo <persName ref="#B_Spaventa">Spaventa</persName> con altri autoritari democratici passassero
-            <lb xml:id="Cod_ALfieri_riga34" n="34" facs="#Alfieri_riga34"/>
-            a <orgName ref="#Sinistra">Sinistra</orgName>. Le intenzioni <choice><abbr>dell’on.</abbr><expan>dell’onorevole</expan></choice> <roleName>Senatore</roleName> sono eccel-
-            <lb xml:id="Cod_ALfieri_riga35" n="35" facs="#Alfieri_riga35" break="no"/>
-            lenti: i suoi ideali politici degni di rispetto, molte delle sue
-            <lb xml:id="Cod_ALfieri_riga36" n="36" facs="#Alfieri_riga36"/>
-            considerazioni giuste, l’operosità sua <choice><sic>patriotticaè</sic><corr>patriottica è</corr></choice> lode-
-            <lb xml:id="Cod_ALfieri_riga37" n="37" facs="#Alfieri_riga37" break="no"/>
-            vole; ma bisogna anche aggiungere che in tutto ciò ch’egli
-            <lb xml:id="Cod_ALfieri_riga38" n="38" facs="#Alfieri_riga38"/>
-            pubblica o fa, si cerca invano qualche precisione di concetti,
-            <lb xml:id="Cod_ALfieri_riga39" n="39" facs="#Alfieri_riga39"/>
-            qualche chiarezza di fini. Com’è vago il suo cattolicismo, così
-            <lb xml:id="Cod_ALfieri_riga40" n="40" facs="#Alfieri_riga40"/>
-            è indeterminato il <term type="corrente">liberalismo democratico</term> ch’egli invoca.
-            <lb xml:id="Cod_ALfieri_riga41" n="41" facs="#Alfieri_riga41"/>
-            Egli non istudia la realtà politica in sè stessa; la <orgName ref="#Chiesa">Chiesa</orgName>,
-            <lb xml:id="Cod_ALfieri_riga42" n="42" facs="#Alfieri_riga42"/>
-            lo <orgName ref="#Stato">Stato</orgName>, la <term type="tema">democrazia</term>, e il <term type="corrente">liberalismo</term> in <placeName ref="#ITA">Italia</placeName> così come 
-            <lb xml:id="Cod_ALfieri_riga43" n="43" facs="#Alfieri_riga43"/>
-            sono, come li ha fatti la storia, e come uscirono dagli av-
-            <lb xml:id="Cod_ALfieri_riga44" n="44" facs="#Alfieri_riga44" break="no"/>
-            venimenti e dal moto degli interessi e dei pensieri contempo-
-            <lb xml:id="Cod_ALfieri_riga45" n="45" facs="#Alfieri_riga45" break="no"/>
-            ranei. Gli sfugge pertanto il concetto dei limiti entro i quali
-            <lb xml:id="Cod_ALfieri_riga46" n="46" facs="#Alfieri_riga46"/>
-            una loro modificazione è possibile. Egli si è formato, sulle
-            <lb xml:id="Cod_ALfieri_riga47" n="47" facs="#Alfieri_riga47"/>
-            tracce di alcuni maestri, un ideale politico, una dottrina
-            <lb xml:id="Cod_ALfieri_riga48" n="48" facs="#Alfieri_riga48"/>
-            molto più astratta ch’egli non creda, e vorrebbe che tutti
-            <lb xml:id="Cod_ALfieri_riga49" n="49" facs="#Alfieri_riga49"/>
-            s’inchinassero a quei suoi <choice><sic>fantasimi;s’illude</sic><corr>fantasimi; s’illude</corr></choice> quando gli pare 
-            <lb xml:id="Cod_ALfieri_riga50" n="50" facs="#Alfieri_riga50"/>
-            di aver trovati compagni nel suo culto, si sdegna quando
-            <lb xml:id="Cod_ALfieri_riga51" n="51" facs="#Alfieri_riga51"/>
-            s’avvede d’aver troppo sperato. In questo opuscolo egli si
-            <lb xml:id="Cod_ALfieri_riga52" n="52" facs="#Alfieri_riga52"/>
-            mostra molto fiducioso nei nuovi <term type="corrente">conservatori</term>, i quali, o non 
-            <lb xml:id="Cod_ALfieri_riga53" n="53" facs="#Alfieri_riga53"/>
-            si faranno vivi, o si mostreranno assai diversi da quelli, che
-            <lb xml:id="Cod_ALfieri_riga54" n="54" facs="#Alfieri_riga54"/>
-            <choice><abbr>l’on.</abbr><expan>l’onorevole</expan></choice> <roleName>Senatore</roleName> vagheggia a lui somiglianti.
-        </p>
-        </div>
-    </body>
-</text>
-    </TEI>
-    <TEI xml:id="TEI_Rassegna106">
-        <!-- istruzione pubblica-->
+        <!-- ============================================================
+         TEI 2- La legge sull'istruzione pubblica
+         ============================================================ -->
+<TEI xml:id="TEI_istruzionepubblica">
         <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -1936,292 +1676,9 @@
     </body>
 </text>
     </TEI>
-    <TEI xml:id="TEI_NotizieVol3">
-        <!--Notizie-->
-        <teiHeader>
-        <fileDesc>
-            <titleStmt>
-                <title>Sezione Notizie (da La Rassegna Settimanale, Volume 3, Fascicolo 69, del 27 Aprile 1879)</title>
-                <respStmt xml:id="FlorisValenti_T4"><resp>Codifica TEI-XML</resp><persName>Rebecca Floris</persName><persName>Diletta Valenti</persName></respStmt>
-            </titleStmt>  
-            <publicationStmt>
-                <publisher>Università di Pisa — Corso di Informatica Umanistica</publisher>
-                <pubPlace>Pisa</pubPlace>
-                <date when="2026">2026</date>
-                <availability status="free">
-                    <licence target="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</licence>
-                </availability>
-            </publicationStmt>
-            <sourceDesc>
-                <bibl>
-                    <title level="j">La Rassegna Settimanale</title>
-                    <date when="1879-04-27">27 Aprile 1879</date>
-                    <pubPlace ref="#RM">Roma</pubPlace>
-                </bibl>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <projectDesc>
-                <p>Codifica realizzata nell'ambito del corso di Informatica Umanistica,
-                   Università di Pisa, a.a. 2025–2026. Cfr. il <ref target="#rassegna_corpus">teiHeader del corpus</ref>
-                   per la descrizione completa del progetto.</p>
-            </projectDesc>
-            <projectDesc>
-                <p>Testo codificato nell'ambito del corpus digitale de «La Rassegna Settimanale»
-                   (Università di Pisa, Informatica Umanistica, a.a. 2025–2026).
-                   Si vedano le linee guida nel <gi>teiHeader</gi> del <gi>teiCorpus</gi>.</p>
-            </projectDesc>
-            <editorialDecl>
-                <normalization><p>Abbreviazioni sciolte con choice/abbr/expan.</p></normalization>
-                <hyphenation eol="all"><p>Sillabazioni di fine riga codificate con lb @break="no".</p></hyphenation>
-            </editorialDecl>
-        </encodingDesc>
-        <profileDesc>
-            <langUsage>
-                <language ident="it">Italiano ottocentesco (prosa giornalistica breve, 1879).</language>
-            </langUsage>
-            <textClass>
-                <keywords>
-                    <term>notizie culturali</term>
-                    <term>archeologia</term>
-                    <term>biblioteche</term>
-                    <term>scienze</term>
-                </keywords>
-            </textClass>
-        </profileDesc>
-        <revisionDesc>
-            <change when="2026-05" who="#FlorisValenti">Revisione finale; aggiunta encodingDesc, profileDesc.</change>
-            <change when="2026-02" who="#FlorisValenti">Prima codifica del testo.</change>
-        </revisionDesc>
-    </teiHeader> 
-   <!--Teizone - Notizia Academy--> 
-<facsimile>
-<surface xml:id="NotizieVol3_Pag332">
-<graphic url="images/Notizie_Volume_3_Fascicolo_69_Pag._332.png" width="562.4px" height="831.4px"/>
-<zone ulx="42" uly="31" lrx="549" lry="51" xml:id="NotizieVol3_header" corresp="Cod_NotizieVol3_header"/>
-<zone ulx="403" uly="128" lrx="454" lry="138" xml:id="NotizieVol3_labelDx" corresp="Cod_NotizieVol3_labelDx"/>
-<zone ulx="327" uly="141" lrx="553" lry="150" xml:id="NotizieVol3_riga1" corresp="#Cod_NotizieVol3_riga1"/>
-<zone ulx="302" uly="153" lrx="553" lry="158" xml:id="NotizieVol3_riga2" corresp="#Cod_NotizieVol3_riga2"/>
-<zone ulx="303" uly="161" lrx="551" lry="167" xml:id="NotizieVol3_riga3" corresp="#Cod_NotizieVol3_riga3"/>
-<zone ulx="301" uly="170" lrx="554" lry="178" xml:id="NotizieVol3_riga4" corresp="#Cod_NotizieVol3_riga4"/>
-<zone ulx="301" uly="180" lrx="551" lry="188" xml:id="NotizieVol3_riga5" corresp="#Cod_NotizieVol3_riga5"/>
-<zone ulx="300" uly="190" lrx="552" lry="197" xml:id="NotizieVol3_riga6" corresp="#Cod_NotizieVol3_riga6"/>
-<zone ulx="299" uly="198" lrx="551" lry="207" xml:id="NotizieVol3_riga7" corresp="#Cod_NotizieVol3_riga7"/>
-<zone ulx="301" uly="211" lrx="555" lry="218" xml:id="NotizieVol3_riga8" corresp="#Cod_NotizieVol3_riga8"/>
-<zone ulx="298" uly="220" lrx="535" lry="226" xml:id="NotizieVol3_riga9" corresp="#Cod_NotizieVol3_riga9"/>
-<zone ulx="327" uly="231" lrx="555" lry="240" xml:id="NotizieVol3_riga10" corresp="#Cod_NotizieVol3_riga10"/>
-<zone ulx="302" uly="242" lrx="555" lry="249" xml:id="NotizieVol3_riga11" corresp="#Cod_NotizieVol3_riga11"/>
-<zone ulx="301" uly="252" lrx="554" lry="259" xml:id="NotizieVol3_riga12" corresp="#Cod_NotizieVol3_riga12"/>
-<zone ulx="303" uly="259" lrx="554" lry="270" xml:id="NotizieVol3_riga13" corresp="#Cod_NotizieVol3_riga13"/>
-<zone ulx="302" uly="270" lrx="552" lry="281" xml:id="NotizieVol3_riga14" corresp="#Cod_NotizieVol3_riga14"/>
-<zone ulx="299" uly="282" lrx="555" lry="288" xml:id="NotizieVol3_riga15" corresp="#Cod_NotizieVol3_riga15"/>
-<zone ulx="300" uly="290" lrx="555" lry="299" xml:id="NotizieVol3_riga16" corresp="#Cod_NotizieVol3_riga16"/>
-<zone ulx="299" uly="298" lrx="422" lry="307" xml:id="NotizieVol3_riga17" corresp="#Cod_NotizieVol3_riga17"/>
-<zone ulx="315" uly="315" lrx="555" lry="321" xml:id="NotizieVol3_riga18" corresp="#Cod_NotizieVol3_riga18"/>
-<zone ulx="300" uly="324" lrx="553" lry="330" xml:id="NotizieVol3_riga19" corresp="#Cod_NotizieVol3_riga19"/>
-<zone ulx="303" uly="334" lrx="558" lry="342" xml:id="NotizieVol3_riga20" corresp="#Cod_NotizieVol3_riga20"/>
-<zone ulx="303" uly="343" lrx="555" lry="351" xml:id="NotizieVol3_riga21" corresp="#Cod_NotizieVol3_riga21"/>
-<zone ulx="302" uly="352" lrx="555" lry="363" xml:id="NotizieVol3_riga22" corresp="#Cod_NotizieVol3_riga22"/>
-<zone ulx="299" uly="363" lrx="549" lry="372" xml:id="NotizieVol3_riga23" corresp="#Cod_NotizieVol3_riga23"/>
-<zone ulx="302" uly="373" lrx="554" lry="379" xml:id="NotizieVol3_riga24" corresp="#Cod_NotizieVol3_riga24"/>
-<zone ulx="313" uly="383" lrx="555" lry="394" xml:id="NotizieVol3_riga25" corresp="#Cod_NotizieVol3_riga25"/>
-<zone ulx="301" uly="396" lrx="549" lry="403" xml:id="NotizieVol3_riga26" corresp="#Cod_NotizieVol3_riga26"/>
-<zone ulx="302" uly="406" lrx="557" lry="415" xml:id="NotizieVol3_riga27" corresp="#Cod_NotizieVol3_riga27"/>
-<zone ulx="299" uly="417" lrx="551" lry="421" xml:id="NotizieVol3_riga28" corresp="#Cod_NotizieVol3_riga28"/>
-<zone ulx="299" uly="422" lrx="551" lry="430" xml:id="NotizieVol3_riga29" corresp="#Cod_NotizieVol3_riga29"/>
-<zone ulx="298" uly="435" lrx="553" lry="443" xml:id="NotizieVol3_riga30" corresp="#Cod_NotizieVol3_riga30"/>
-<zone ulx="300" uly="445" lrx="555" lry="452" xml:id="NotizieVol3_riga31" corresp="#Cod_NotizieVol3_riga31"/>
-<zone ulx="299" uly="454" lrx="548" lry="462" xml:id="NotizieVol3_riga32" corresp="#Cod_NotizieVol3_riga32"/>
-<zone ulx="302" uly="467" lrx="556" lry="469" xml:id="NotizieVol3_riga33" corresp="#Cod_NotizieVol3_riga33"/>
-<zone ulx="302" uly="473" lrx="548" lry="483" xml:id="NotizieVol3_riga34" corresp="#Cod_NotizieVol3_riga34"/>
-<zone ulx="299" uly="486" lrx="554" lry="491" xml:id="NotizieVol3_riga35" corresp="#Cod_NotizieVol3_riga35"/>
-<zone ulx="303" uly="493" lrx="551" lry="499" xml:id="NotizieVol3_riga36" corresp="#Cod_NotizieVol3_riga36"/>
-<zone ulx="294" uly="503" lrx="555" lry="510" xml:id="NotizieVol3_riga37" corresp="#Cod_NotizieVol3_riga37"/>
-<zone ulx="295" uly="513" lrx="558" lry="520" xml:id="NotizieVol3_riga38" corresp="#Cod_NotizieVol3_riga38"/>
-<zone ulx="304" uly="522" lrx="559" lry="531" xml:id="NotizieVol3_riga39" corresp="#Cod_NotizieVol3_riga39"/>
-<zone ulx="297" uly="533" lrx="552" lry="541" xml:id="NotizieVol3_riga40" corresp="#Cod_NotizieVol3_riga40"/>
-<zone ulx="295" uly="546" lrx="553" lry="549" xml:id="NotizieVol3_riga41" corresp="#Cod_NotizieVol3_riga41"/>
-<zone ulx="299" uly="551" lrx="551" lry="559" xml:id="NotizieVol3_riga42" corresp="#Cod_NotizieVol3_riga42"/>
-<zone ulx="295" uly="561" lrx="555" lry="567" xml:id="NotizieVol3_riga43" corresp="#Cod_NotizieVol3_riga43"/>
-<zone ulx="304" uly="569" lrx="544" lry="579" xml:id="NotizieVol3_riga44" corresp="#Cod_NotizieVol3_riga44"/>
-<zone ulx="297" uly="583" lrx="546" lry="589" xml:id="NotizieVol3_riga45" corresp="#Cod_NotizieVol3_riga45"/>
-<zone ulx="294" uly="591" lrx="547" lry="598" xml:id="NotizieVol3_riga46" corresp="#Cod_NotizieVol3_riga46"/>
-<zone ulx="296" uly="598" lrx="550" lry="607" xml:id="NotizieVol3_riga47" corresp="#Cod_NotizieVol3_riga47"/>
-<zone ulx="299" uly="609" lrx="547" lry="617" xml:id="NotizieVol3_riga48" corresp="#Cod_NotizieVol3_riga48"/>
-<zone ulx="507" uly="619" lrx="537" lry="627" xml:id="NotizieVol3_riga49" corresp="#Cod_NotizieVol3_riga49"/>
-<zone ulx="313" uly="631" lrx="554" lry="639" xml:id="NotizieVol3_riga50" corresp="#Cod_NotizieVol3_riga50"/>
-<zone ulx="298" uly="640" lrx="545" lry="648" xml:id="NotizieVol3_riga51" corresp="#Cod_NotizieVol3_riga51"/>
-<zone ulx="304" uly="648" lrx="547" lry="659" xml:id="NotizieVol3_riga52" corresp="#Cod_NotizieVol3_riga52"/>
-<zone ulx="303" uly="661" lrx="388" lry="669" xml:id="NotizieVol3_riga53" corresp="#Cod_NotizieVol3_riga53"/>
-<zone ulx="496" uly="659" lrx="544" lry="667" xml:id="NotizieVol3_riga54" corresp="#Cod_NotizieVol3_riga54"/>
-<zone ulx="317" uly="670" lrx="548" lry="678" xml:id="NotizieVol3_riga55" corresp="#Cod_NotizieVol3_riga55"/>
-<zone ulx="306" uly="683" lrx="547" lry="693" xml:id="NotizieVol3_riga56" corresp="#Cod_NotizieVol3_riga56"/>
-<zone ulx="301" uly="691" lrx="327" lry="700" xml:id="NotizieVol3_riga57" corresp="#Cod_NotizieVol3_riga57"/>
-<zone ulx="391" uly="706" lrx="457" lry="711" xml:id="NotizieVol3_riga58" corresp="#Cod_NotizieVol3_riga58"/>
-<zone ulx="314" uly="718" lrx="553" lry="724" xml:id="NotizieVol3_riga59" corresp="#Cod_NotizieVol3_riga59"/>
-<zone ulx="299" uly="728" lrx="337" lry="735" xml:id="NotizieVol3_riga60" corresp="#Cod_NotizieVol3_riga60"/>
-<zone ulx="332" uly="739" lrx="419" lry="748" xml:id="NotizieVol3_riga61" corresp="#Cod_NotizieVol3_riga61"/>
-<zone ulx="324" uly="750" lrx="393" lry="758" xml:id="NotizieVol3_riga62" corresp="#Cod_NotizieVol3_riga62"/>
-<zone ulx="426" uly="743" lrx="514" lry="755" xml:id="NotizieVol3_riga63" corresp="#Cod_NotizieVol3_riga63"/>
-<zone ulx="322" uly="762" lrx="493" lry="774" xml:id="NotizieVol3_riga64" corresp="#Cod_NotizieVol3_riga64"/>
-<zone ulx="387" uly="775" lrx="531" lry="785" xml:id="NotizieVol3_riga65" corresp="#Cod_NotizieVol3_riga65"/>
-</surface>
-</facsimile>
-<text xml:id="NotizieVol3_text" subtype="news">
-    <body>
-        <pb n="332" facs="#NotizieVol3_header"/>
-        <fw type="header" xml:id="Cod_NotizieVol3_header" facs="#NotizieVol3_header">
-            332 LA RASSEGNA SETTIMANALE Vol. 3°, N° 69
-        </fw>
-        <div type="article" xml:id="NotizieVol3_article">
-        <head rend="align(center) case(allcaps)" xml:id="Cod_NotizieVol3_labelDx" facs="#NotizieVol3_labelDx">
-            NOTIZIE.
-        </head>
-
-        <p xml:id="Notizie_P1" n="1">
-            <lb xml:id="Cod_NotizieVol3_riga1" n="1" facs="#NotizieVol3_riga1"/>
-            — La festa per il 50° anniversario della fondazione dell'<orgName ref="#Inst_Archeo_Ger">Istituto ar<lb xml:id="Cod_NotizieVol3_riga2" n="2" facs="#NotizieVol3_riga2" break="no"/>cheologico germanico</orgName> fu celebrata con grande solennità il 21 di aprile. 
-            <lb xml:id="Cod_NotizieVol3_riga3" n="3" facs="#NotizieVol3_riga3"/>
-            Furono editi vari libri in tale solenne circostanza, tra i quali è im<lb xml:id="Cod_NotizieVol3_riga4" n="4" facs="#NotizieVol3_riga4" break="no"/>portante il libro del <persName ref="#GB_DeRossi">commendatore de Rossi</persName>, intitolato: <title level="m">Storia gene<lb xml:id="Cod_NotizieVol3_riga5" n="5" facs="#NotizieVol3_riga5" break="no"/>rale delle misure e piante di Roma dalle sue origini a tutto il secolo XV.</title> 
-            <lb xml:id="Cod_NotizieVol3_riga6" n="6" facs="#NotizieVol3_riga6"/>
-            Questo libro trova il suo compimento nella pubblicazione che il <orgName ref="#Min_Istruzione">Mini<lb xml:id="Cod_NotizieVol3_riga7" n="7" facs="#NotizieVol3_riga7" break="no"/>stero dell'Istruzione</orgName> fece per la medesima circostanza, dando alla luce 
-            <lb xml:id="Cod_NotizieVol3_riga8" n="8" facs="#NotizieVol3_riga8"/>
-            una riproduzione della grande pianta di <placeName ref="#RM">Roma</placeName> di <persName ref="#L_Bufalini">L. Bufalini</persName>, tratta da 
-            <lb xml:id="Cod_NotizieVol3_riga9" n="9" facs="#NotizieVol3_riga9"/>
-            una copia rinvenuta a <placeName ref="#CN">Cuneo</placeName> nel convento di <placeName>S. M. degli Angeli</placeName>.
-        </p>
-
-        <p xml:id="Notizie_P2" n="2">
-            <lb xml:id="Cod_NotizieVol3_riga10" n="10" facs="#NotizieVol3_riga10"/>
-            — Nell’adunanza del <date when="1879-02-23">23 febbraio 1879</date>, della <orgName ref="#Deputazione_BO">R. Deputazione di 
-            <lb xml:id="Cod_NotizieVol3_riga11" n="11" facs="#NotizieVol3_riga11"/>
-            Storia patria di Bologna</orgName>, il <persName ref="#L_Manzoni">conte Luigi Manzoni</persName> ha letto la prima
-            <lb xml:id="Cod_NotizieVol3_riga12" n="12" facs="#NotizieVol3_riga12"/>
-            parte di un suo lavoro sulla storia e letteratura della leggenda di 
-            <lb xml:id="Cod_NotizieVol3_riga13" n="13" facs="#NotizieVol3_riga13"/>
-            <persName ref="#P_Gianni">Prete Gianni</persName>, menzionato nel <title level="m">Novellino</title> e famoso nelle cronache caval<lb xml:id="Cod_NotizieVol3_riga14" n="14" facs="#NotizieVol3_riga14" break="no"/>leresche del medio evo. In questa prima parte il <choice><abbr>signor</abbr><expan>signore</expan></choice> <persName ref="#L_Manzoni">Manzoni</persName> di<lb xml:id="Cod_NotizieVol3_riga15" n="15" facs="#NotizieVol3_riga15" break="no"/>scorre del poema in ottava rima sopra tale argomento, composto da 
-            <lb xml:id="Cod_NotizieVol3_riga16" n="16" facs="#NotizieVol3_riga16"/>
-            <persName ref="#G_Dati">Giuliano Dati</persName> sulla fine del <date>secolo XV</date>, più volte edita; ne chiarisce 
-            <lb xml:id="Cod_NotizieVol3_riga17" n="17" facs="#NotizieVol3_riga17"/>
-            le fonti, e n'espone il contenuto.
-            <note type="storica" resp="#FlorisValenti">La leggenda del <persName ref="#P_Gianni">Prete Gianni</persName>
-                — sovrano cristiano d'Oriente di cui narra già Marco Polo — ebbe larga fortuna
-                nel Medioevo come simbolo di un regno cristiano utopico oltre i confini del mondo
-                noto. Il lavoro del conte <persName ref="#L_Manzoni">Luigi Manzoni</persName>
-                si colloca nel filone positivistico della storia delle tradizioni medievali,
-                molto praticato nelle accademie italiane del secondo Ottocento.
-                <persName ref="#G_Dati">Giuliano Dati</persName> (1445–1524), il prelato poeta
-                che aveva già tradotto in ottava rima la lettera di Colombo, compose il suo
-                poema sul Prete Gianni attingendo a fonti portoghesi e latine.</note>
-        </p>
-
-        <p xml:id="Notizie_P3" n="3">
-            <lb xml:id="Cod_NotizieVol3_riga18" n="18" facs="#NotizieVol3_riga18"/>
-            — La <orgName ref="#Marciana">Biblioteca Marciana</orgName> ha acquistato recentemente un <term>Antifo<lb xml:id="Cod_NotizieVol3_riga19" n="19" facs="#NotizieVol3_riga19" break="no"/>nario</term> in pergamena, del <date>secolo XIV</date> (già appartenuto alla <orgName ref="#Conf_Carita">Confrater<lb xml:id="Cod_NotizieVol3_riga20" n="20" facs="#NotizieVol3_riga20" break="no"/>nita della Carità</orgName> di <placeName ref="#VE">Venezia</placeName>, e fatto a spese di questa), ornato di 
-            <lb xml:id="Cod_NotizieVol3_riga21" n="21" facs="#NotizieVol3_riga21"/>
-            venticinque miniature di rappresentazioni sacre. Nella seconda di dette 
-            <lb xml:id="Cod_NotizieVol3_riga22" n="22" facs="#NotizieVol3_riga22"/>
-            tavole miniate è scritto il nome dell’autore, che è <persName ref="#G_Gherardino">Giustino di maestro 
-            <lb xml:id="Cod_NotizieVol3_riga23" n="23" facs="#NotizieVol3_riga23"/>
-            Gherardino da Forlì</persName>. Il <term>cod.</term> è interessantissimo per la storia dell’arte, 
-            <lb xml:id="Cod_NotizieVol3_riga24" n="24" facs="#NotizieVol3_riga24"/>
-            e ci rivela il nome di un artista miniatore finora ignoto agli eruditi.
-        </p>
-
-        <p xml:id="Notizie_P4" n="4">
-            <lb xml:id="Cod_NotizieVol3_riga25" n="25" facs="#NotizieVol3_riga25"/>
-            Secondo il <title level="j">Globe</title> il programma ufficiale stabilito per la « Spedi<lb xml:id="Cod_NotizieVol3_riga26" n="26" facs="#NotizieVol3_riga26" break="no"/>zione Imperiale » nell’<placeName ref="#Asia_C">Asia centrale</placeName>, comandata dal <persName ref="#N_Costantinovich">Gran Duca Niccolò 
-            <lb xml:id="Cod_NotizieVol3_riga27" n="27" facs="#NotizieVol3_riga27"/>
-            Costantinovich</persName>, sarebbe il seguente: Lo Stato maggiore della spedi<lb xml:id="Cod_NotizieVol3_riga28" n="28" facs="#NotizieVol3_riga28" break="no"/>zione si comporrà di un <roleName>ingegnere</roleName>, di un <roleName>ufficiale</roleName> della flotta del Bal<lb xml:id="Cod_NotizieVol3_riga29" n="29" facs="#NotizieVol3_riga29" break="no"/>tico, di un <roleName>ispettore</roleName>, un <roleName>naturalista</roleName>, un <roleName>archeologo</roleName>, un <roleName>geologo</roleName>, un 
-            <lb xml:id="Cod_NotizieVol3_riga30" n="30" facs="#NotizieVol3_riga30"/>
-            <roleName>pittore</roleName>, un <roleName>topografo</roleName> ed un <roleName>corrispondente</roleName>. Scopo della spedizione è di 
-            <lb xml:id="Cod_NotizieVol3_riga31" n="31" facs="#NotizieVol3_riga31"/>
-            scegliere la strada che dovrà percorrere la <term>ferrovia dell’Asia centrale</term>, 
-            <lb xml:id="Cod_NotizieVol3_riga32" n="32" facs="#NotizieVol3_riga32"/>
-            esaminare la navigabilità dell’<placeName ref="#Oxus">Oxus</placeName> e decidere se è possibile di farlo 
-            <lb xml:id="Cod_NotizieVol3_riga33" n="33" facs="#NotizieVol3_riga33"/>
-            sboccare nel <placeName ref="#Caspio">Caspio</placeName>. La spedizione andrà dall’<placeName ref="#Ural">Ural</placeName> a <placeName ref="#Karasugai">Karasugai</placeName>, sul 
-            <lb xml:id="Cod_NotizieVol3_riga34" n="34" facs="#NotizieVol3_riga34"/>
-            <placeName ref="#Syr_Daria">Syr Daria</placeName>, poi per la via di <placeName ref="#Tashkend">Tashkend</placeName> e <placeName ref="#Samarcanda">Samarcanda</placeName> all’<placeName ref="#Oxus">Oxus</placeName> a <placeName ref="#Kunduz">Kunduz</placeName> 
-            <lb xml:id="Cod_NotizieVol3_riga35" n="35" facs="#NotizieVol3_riga35"/>
-            (<placeName ref="#Afghanistan">Afghanistan</placeName>); quindi lungo il fiume a <placeName ref="#Khiva">Khiva</placeName> e traverso il <placeName ref="#Kara_Kum">Kara Kum</placeName> 
-            <lb xml:id="Cod_NotizieVol3_riga36" n="36" facs="#NotizieVol3_riga36"/>
-            a <placeName ref="#Krasnovodsk">Krasnovodsk</placeName>. Lo scopo della spedizione sarà: 1. Raccogliere infor<lb xml:id="Cod_NotizieVol3_riga37" n="37" facs="#NotizieVol3_riga37" break="no"/>mazioni rispetto alla spesa per la <term>linea ferrata</term>, la possibilità di avere 
-            <lb xml:id="Cod_NotizieVol3_riga38" n="38" facs="#NotizieVol3_riga38"/>
-            il materiale da costruzione, sapere se il <term>combustibile</term> esiste lungo la 
-            <lb xml:id="Cod_NotizieVol3_riga39" n="39" facs="#NotizieVol3_riga39"/>
-            via o anche la quantità di lavoro che si può ottenere; 2. Studiare la 
-            <lb xml:id="Cod_NotizieVol3_riga40" n="40" facs="#NotizieVol3_riga40"/>
-            velocità dell’<placeName ref="#Oxus">Oxus</placeName>, l’altezza delle sue sponde, sapere quanta è la po<lb xml:id="Cod_NotizieVol3_riga41" n="41" facs="#NotizieVol3_riga41" break="no"/>polazione delle città e stabilimenti più vicini, e conoscere il commer<lb xml:id="Cod_NotizieVol3_riga42" n="42" facs="#NotizieVol3_riga42" break="no"/>cio che si fa sul fiume; 3. Esaminare le oasi di <placeName ref="#Khiva">Khiva</placeName>, le acque di 
-            <lb xml:id="Cod_NotizieVol3_riga43" n="43" facs="#NotizieVol3_riga43"/>
-            <placeName ref="#Sari_Kamish">Sari Kamish</placeName> e l’antico letto dell’<placeName ref="#Oxus">Oxus</placeName>, conosciuto comunemente col 
-            <lb xml:id="Cod_NotizieVol3_riga44" n="44" facs="#NotizieVol3_riga44"/>
-            nome di <placeName ref="#Uzboi">Uzboi</placeName>; 4. Fare delle osservazioni astronomiche lungo la strada, 
-            <lb xml:id="Cod_NotizieVol3_riga45" n="45" facs="#NotizieVol3_riga45"/>
-            tracciare dei piani militari, far disegni del paese, raccogliere oggetti 
-            <lb xml:id="Cod_NotizieVol3_riga46" n="46" facs="#NotizieVol3_riga46"/>
-            mineralogici, geologici, archeologici, di qualche importanza, e tenere 
-            <lb xml:id="Cod_NotizieVol3_riga47" n="47" facs="#NotizieVol3_riga47"/>
-            un diario. È anche possibile tuttavia, che nel caso di certi imbrogli 
-            <lb xml:id="Cod_NotizieVol3_riga48" n="48" facs="#NotizieVol3_riga48"/>
-            orientali, la spedizione geografica possa divenire militare contro <placeName ref="#Merv">Merv</placeName>. 
-            <lb xml:id="Cod_NotizieVol3_riga49" n="49" facs="#NotizieVol3_riga49"/>
-            (<title level="j">Nature</title>)
-        </p>
-
-        <p xml:id="Notizie_P5" n="5">
-            <lb xml:id="Cod_NotizieVol3_riga50" n="50" facs="#NotizieVol3_riga50"/>
-            — Il <persName ref="#Rocher">signor Rocher</persName>, di <placeName ref="#TLS">Tolosa</placeName>, ha chiamato <term>Amianthine</term> un nuovo 
-            <lb xml:id="Cod_NotizieVol3_riga51" n="51" facs="#NotizieVol3_riga51"/>
-            combustibile da lui inventato, del quale si parla molto in <placeName ref="#America">America</placeName>.
-            <lb xml:id="Cod_NotizieVol3_riga52" n="52" facs="#NotizieVol3_riga52"/>
-            È un composto di <term>amianto</term> ridotto in polvere finissima, <term>carbone di le<lb xml:id="Cod_NotizieVol3_riga53" n="53" facs="#NotizieVol3_riga53" break="no"/>gna</term> e <term>nitrato di piombo</term>. 
-            <lb xml:id="Cod_NotizieVol3_riga54" n="54" facs="#NotizieVol3_riga54"/>
-            (<title level="j">Athenæum</title>)
-        </p>
-
-        <p xml:id="Notizie_P6" n="6">
-            <lb xml:id="Cod_NotizieVol3_riga55" n="55" facs="#NotizieVol3_riga55"/>
-            — Il <date when="1879-04-06">6 aprile</date> morì a <placeName ref="#BL">Berlino</placeName> nell’età di 76 anni il celebre 
-            <lb xml:id="Cod_NotizieVol3_riga56" n="56" facs="#NotizieVol3_riga56"/>
-            fisico <persName ref="#HW_Dove">prof. Dove</persName>, che a giusto titolo si può chiamare il padre della meteo<lb xml:id="Cod_NotizieVol3_riga57" n="57" facs="#NotizieVol3_riga57" break="no"/>rologia.
-        </p>
-
-        </div><!-- /div article -->
-        <div type="errata">
-            <head rend="align(center)" xml:id="Cod_NotizieVol3_riga58" facs="#NotizieVol3_riga58">ERRATA-CORRIGE</head>
-            <p>
-                <lb xml:id="Cod_NotizieVol3_riga59" n="59" facs="#NotizieVol3_riga59"/>
-                Nel numero 68, pag. 309, col. 1ª, linea 22, invece di: <choice><sic>Cirici</sic><corr>Cinci</corr></choice>, leggasi: 
-                <lb xml:id="Cod_NotizieVol3_riga60" n="60" facs="#NotizieVol3_riga60"/>
-                <mentioned>Cinci</mentioned>.
-            </p>
-        </div>
-
-        <div type="colophon">
-            <p>
-                <lb xml:id="Cod_NotizieVol3_riga61" n="61" facs="#NotizieVol3_riga61"/>
-                <persName ref="#L_Franchetti">LEOPOLDO FRANCHETTI</persName> | 
-                <lb xml:id="Cod_NotizieVol3_riga62" n="62" facs="#NotizieVol3_riga62"/>
-                <persName ref="#S_Sonnino">SIDNEY SONNINO</persName> 
-                <lb xml:id="Cod_NotizieVol3_riga63" n="63" facs="#NotizieVol3_riga63"/>
-                } Proprietari Direttori.
-            </p>
-            <p>
-                <lb xml:id="Cod_NotizieVol3_riga64" n="64" facs="#NotizieVol3_riga64"/>
-                <persName ref="#P_Pampaloni">PIETRO PAMPALONI</persName>, Gerente Responsabile. 
-                <lb xml:id="Cod_NotizieVol3_riga65" n="65" facs="#NotizieVol3_riga65"/>
-                <placeName ref="#RM">ROMA</placeName>, <date when="1879">1879</date>. — <orgName ref="#Tip_Barbera">Tipografia BARBÈRA</orgName>.
-            </p>
-        </div>
-    </body>
-</text>
-    </TEI>
 
     <!-- ============================================================
-         TEI 2 — Il lavoro mentale nelle scuole
-                  Vol. 8, Fasc. 188, pp. 92-94 — 7 agosto 1881
-                  Firma: G. S.
+         TEI 3 — Il lavoro mentale nelle scuole
          ============================================================ -->
     <TEI xml:id="TEI_LavoroMentale">
         <teiHeader>
@@ -2996,339 +2453,275 @@
         </text>
     </TEI>
 
+
     <!-- ============================================================
-         TEI 3 — Notizie Vol. 5, Fasc. 106, p. 40
+         TEI 4 — Chi ha tempo non aspetti tempo
          ============================================================ -->
-    <TEI xml:id="TEI_NotizieVol5">
+    <TEI xml:id="TEI_BibliografiaAlfieri">
         <teiHeader>
-            <fileDesc>
-                <titleStmt><title level="a">Sezione Notizie (da La Rassegna Settimanale, Volume 5, Fascicolo 106, dell'11 Gennaio 1880)</title><respStmt xml:id="FlorisValenti_T6"><resp>Codifica TEI-XML</resp><persName>Rebecca Floris</persName><persName>Diletta Valenti</persName></respStmt></titleStmt>
-                <publicationStmt>
-                    <publisher>Università di Pisa — Corso di Informatica Umanistica</publisher>
-                    <pubPlace>Pisa</pubPlace>
-                    <date when="2026">2026</date>
-                    <availability status="free">
-                        <licence target="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</licence>
-                    </availability>
-                </publicationStmt>
-                <sourceDesc>
-                    <biblStruct>
-                        <monogr>
-                            <title level="j">La Rassegna Settimanale</title>
-                            <imprint>
-                                <publisher ref="#L_Franchetti">Franchetti</publisher>
-                                <publisher ref="#S_Sonnino">Sonnino</publisher>
-                                <pubPlace ref="#RM">Roma</pubPlace>
-                                <date when="1880">1880</date>
-                                <biblScope unit="volume">5</biblScope>
-                                <biblScope unit="issue">106</biblScope>
-                                <biblScope unit="page">40</biblScope>
-                            </imprint>
-                        </monogr>
-                    </biblStruct>
-                </sourceDesc>
-            </fileDesc>
-            <encodingDesc>
-                <projectDesc>
-                    <p>Codifica realizzata nell'ambito del corso di Informatica Umanistica,
-                       Università di Pisa, a.a. 2025–2026. Cfr. il <ref target="#rassegna_corpus">teiHeader del corpus</ref>
-                       per la descrizione completa del progetto.</p>
-                </projectDesc>
-                <projectDesc>
-                    <p>Testo codificato nell'ambito del corpus digitale de «La Rassegna Settimanale»
-                       (Università di Pisa, Informatica Umanistica, a.a. 2025–2026).
-                       Si vedano le linee guida nel <gi>teiHeader</gi> del <gi>teiCorpus</gi>.</p>
-                </projectDesc>
-                <editorialDecl>
-                    <normalization><p>Grafia originale conservata; abbreviazioni sciolte ove presenti.</p></normalization>
-                    <hyphenation eol="all"><p>Sillabazioni di fine riga codificate con lb @break="no".</p></hyphenation>
-                </editorialDecl>
-            </encodingDesc>
-            <profileDesc>
-                <langUsage>
-                    <language ident="it">Italiano ottocentesco (prosa giornalistica breve, 1880).</language>
-                </langUsage>
-                <textClass>
-                    <keywords>
-                        <term>notizie culturali</term>
-                        <term>letteratura</term>
-                        <term>inventori</term>
-                        <term>Russia</term>
-                    </keywords>
-                </textClass>
-            </profileDesc>
-            <revisionDesc>
-                <change when="2026-05" who="#FlorisValenti">Revisione finale; aggiunta encodingDesc, profileDesc.</change>
-                <change when="2026-04" who="#FlorisValenti">Prima codifica del testo.</change>
-            </revisionDesc>
-        </teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Bibliografia: Carlo Alfieri, Chi ha tempo non aspetti tempo. Pareri d'un Senatore. - Roma Tip. del Senato, 1879 (da La Rassegna Settimanale, Volume 3, Fascicolo 69, del 27 Aprile 1879)</title>
+                <respStmt xml:id="FlorisValenti_T2"><resp>Codifica TEI-XML</resp><persName>Rebecca Floris</persName><persName>Diletta Valenti</persName></respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Università di Pisa - Informatica Umanistica</publisher>
+                <date when="2025">2025</date>
+                <availability status="free"><p>Accesso aperto per fini accademici.</p></availability>
+            </publicationStmt>
+            <sourceDesc>
+                <biblStruct xml:id="Rassegna_69">
+                    <monogr>
+                        <title level="j">La Rassegna Settimanale di politica, scienze, lettere ed arti</title>
+                        <imprint>
+                            <publisher>Tipografia Barbèra</publisher>
+                            <pubPlace>Roma</pubPlace>
+                            <date when="1879-04-27">27 Aprile 1879</date>
+                            <biblScope unit="issue">69</biblScope>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>Codifica realizzata nell'ambito del corso di Informatica Umanistica,
+                   Università di Pisa, a.a. 2025–2026. Cfr. il <ref target="#rassegna_corpus">teiHeader del corpus</ref>
+                   per la descrizione completa del progetto.</p>
+            </projectDesc>
+            <projectDesc>
+                <p>Testo codificato nell'ambito del corpus digitale de «La Rassegna Settimanale»
+                   (Università di Pisa, Informatica Umanistica, a.a. 2025–2026).
+                   Si vedano le linee guida nel <gi>teiHeader</gi> del <gi>teiCorpus</gi>.</p>
+            </projectDesc>
+            <editorialDecl>
+                <normalization><p>Abbreviazioni sciolte con choice/abbr/expan.</p></normalization>
+                <hyphenation eol="all"><p>Sillabazioni di fine riga codificate con lb @break="no".</p></hyphenation>
+            </editorialDecl>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="it">Italiano ottocentesco (prosa saggistica, 1879).</language>
+            </langUsage>
+            <textClass>
+                <keywords>
+                    <term>istruzione pubblica</term>
+                    <term>politica scolastica</term>
+                    <term>Destra storica</term>
+                    <term>laicismo e cattolicesimo</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2026-05" who="#FlorisValenti">Revisione finale; aggiunta encodingDesc, profileDesc; collegato @ref per Montalembert.</change>
+            <change when="2026-03" who="#FlorisValenti">Prima codifica del testo.</change>
+        </revisionDesc>
+    </teiHeader>
+ <!-- Teizone  -->
+<facsimile> 
+  <surface xml:id="Full_Alfieri">
+    <graphic url='images/Bibliografia-_Volume_3,_Fascicolo_69,_C._Alfieri_Chi_ha_tempo_non_aspetti_tempo_Pag._330.png' width='566.4px' height='833.4px' />
 
-        <facsimile>
-            <surface xml:id="notizie_vol5_p40">
-                <graphic url='images/Notizie_Volume_5_Fascicolo_106,_Pag_40.png' width='597px' height='830px' />
-                <zone ulx="53" uly="21" lrx="83" lry="42" xml:id="Notizie5_NumeroPagina" corresp="#Cod_Notizie5_NumeroPagina"/>
-                <zone ulx="217" uly="20" lrx="404" lry="43" xml:id="Notizie5_Intestazione" corresp="#Cod_Notizie5_Intestazione"/>
-                <zone ulx="474" uly="23" lrx="568" lry="43" xml:id="Notizie5_NumeroVolumeFascicolo" corresp="#Cod_Notizie5_NumeroVolumeFascicolo"/>
-                <zone ulx="408" uly="491" lrx="472" lry="505" xml:id="Notizie5_Sezione" corresp="#Cod_Notizie5_Sezione"/>
-                <zone ulx="310" uly="506" lrx="568" lry="518" xml:id="Notizie5_riga1" corresp="#Cod_Notizie5_riga1"/>
-                <zone ulx="312" uly="518" lrx="567" lry="525" xml:id="Notizie5_riga2" corresp="#Cod_Notizie5_riga2"/>
-                <zone ulx="313" uly="526" lrx="565" lry="535" xml:id="Notizie5_riga3" corresp="#Cod_Notizie5_riga3"/>
-                <zone ulx="313" uly="536" lrx="568" lry="545" xml:id="Notizie5_riga4" corresp="#Cod_Notizie5_riga4"/>
-                <zone ulx="313" uly="545" lrx="567" lry="554" xml:id="Notizie5_riga5" corresp="#Cod_Notizie5_riga5"/>
-                <zone ulx="313" uly="555" lrx="567" lry="562" xml:id="Notizie5_riga6" corresp="#Cod_Notizie5_riga6"/>
-                <zone ulx="313" uly="563" lrx="391" lry="573" xml:id="Notizie5_riga7" corresp="#Cod_Notizie5_riga7"/>
-                <zone ulx="314" uly="573" lrx="566" lry="583" xml:id="Notizie5_riga8" corresp="#Cod_Notizie5_riga8"/>
-                <zone ulx="313" uly="584" lrx="566" lry="592" xml:id="Notizie5_riga9" corresp="#Cod_Notizie5_riga9"/>
-                <zone ulx="312" uly="593" lrx="565" lry="600" xml:id="Notizie5_riga10" corresp="#Cod_Notizie5_riga10"/>
-                <zone ulx="312" uly="602" lrx="431" lry="610" xml:id="Notizie5_riga11" corresp="#Cod_Notizie5_riga11"/>
-                <zone ulx="311" uly="615" lrx="568" lry="627" xml:id="Notizie5_riga12" corresp="#Cod_Notizie5_riga12"/>
-                <zone ulx="311" uly="626" lrx="565" lry="637" xml:id="Notizie5_riga13" corresp="#Cod_Notizie5_riga13"/>
-                <zone ulx="313" uly="637" lrx="567" lry="646" xml:id="Notizie5_riga14" corresp="#Cod_Notizie5_riga14"/>
-                <zone ulx="310" uly="646" lrx="400" lry="653" xml:id="Notizie5_riga15" corresp="#Cod_Notizie5_riga15"/>
-                <zone ulx="312" uly="654" lrx="564" lry="663" xml:id="Notizie5_riga16" corresp="#Cod_Notizie5_riga16"/>
-                <zone ulx="311" uly="663" lrx="563" lry="673" xml:id="Notizie5_riga17" corresp="#Cod_Notizie5_riga17"/>
-                <zone ulx="310" uly="673" lrx="567" lry="683" xml:id="Notizie5_riga18" corresp="#Cod_Notizie5_riga18"/>
-                <zone ulx="311" uly="684" lrx="564" lry="692" xml:id="Notizie5_riga19" corresp="#Cod_Notizie5_riga19"/>
-                <zone ulx="309" uly="692" lrx="563" lry="702" xml:id="Notizie5_riga20" corresp="#Cod_Notizie5_riga20"/>
-                <zone ulx="310" uly="702" lrx="456" lry="713" xml:id="Notizie5_riga21" corresp="#Cod_Notizie5_riga21"/>
-                <zone ulx="339" uly="716" lrx="439" lry="735" xml:id="Notizie5_NomiDirettori" corresp="#Notizie5_NomiDirettori"/>
-                <zone ulx="441" uly="719" lrx="529" lry="730" xml:id="Notizie5_RuoloDirettori" corresp="#Notizie5_RuoloDirettori"/>
-                <zone ulx="344" uly="736" lrx="420" lry="746" xml:id="Notizie5_NomeResponsabile" corresp="#Notizie5_NomeResponsabile"/>
-                <zone ulx="420" uly="736" lrx="507" lry="746" xml:id="Notizie5_RuoloResponsabile" corresp="#Notizie5_RuoloResponsabile"/>
-                <zone ulx="409" uly="748" lrx="556" lry="762" xml:id="Notizie5_LuogoDataTipografia" corresp="#Notizie5_LuogoDataTipografia"/>
-            </surface>
-        </facsimile>
+    <!-- Header / Intestazione pagina -->
+    <zone ulx="46" uly="35" lrx="66" lry="43" xml:id="Alfieri_header" corresp="#Cod_Alfieri_header"/>
 
-        <text xml:id="Notizie5_text">
-            <body>
-                <pb n="40" facs="#notizie_vol5_p40"/>
-                <fw type="pageNum" place="left" xml:id="Cod_Notizie5_NumeroPagina" facs="#Notizie5_NumeroPagina">40</fw>
-                <fw type="title" place="center" xml:id="Cod_Notizie5_Intestazione" facs="#Notizie5_Intestazione">LA RASSEGNA SETTIMANALE</fw>
-                <fw type="issue" place="right" xml:id="Cod_Notizie5_NumeroVolumeFascicolo" facs="#Notizie5_NumeroVolumeFascicolo">[VoL. 5°, N° 106 <milestone unit="headerBreak"/></fw>
-                <div type="article" xml:id="Notizie5_article">
-                <head rend="align(center) case(allcaps)" xml:id="Cod_Notizie5_Sezione" n="1" facs="#Notizie5_Sezione">
-                    <title type="main">NOTIZIE</title>
-                </head>
+    <!-- Titolo pagina -->
+    <zone ulx="217" uly="33" lrx="378" lry="42" xml:id="Alfieri_titolo" corresp="#Cod_Alfieri_titolo" />
 
-                <p xml:id="Notizie5_1" n="1">
-                    <lb xml:id="Cod_Notizie5_riga1" n="1" facs="#Notizie5_riga1"/>
-                    — È stato annunziato ultimamente dal signor <persName ref="#Posocco">Posocco</persName>
-                    nel <title level="j" ref="#FanfullaDomenica">Fanfulla
-                    <lb xml:id="Cod_Notizie5_riga2" n="2" facs="#Notizie5_riga2"/>
-                    della Domenica</title> che il <persName ref="#Viani"><roleName>cav.</roleName> Prospero Viani</persName> ha trovato la
-                    <title level="a">Cantica ine-
-                    <lb xml:id="Cod_Notizie5_riga3" n="3" facs="#Notizie5_riga3"/>
-                    dita</title> di <persName ref="#Leopardi">Giacomo Leopardi</persName> intitolata:
-                    <title level="a">L'appressamento della morte</title>, e
-                    <lb xml:id="Cod_Notizie5_riga4" n="4" facs="#Notizie5_riga4"/>
-                    che questa sarà pubblicata nel mese corrente nella seconda parte del-
-                    <lb xml:id="Cod_Notizie5_riga5" n="5" facs="#Notizie5_riga5"/>
-                    l'<title level="a">Appendice all'epistolario Leopardiano</title>.
-                    Possiamo aggiungere che que-
-                    <lb xml:id="Cod_Notizie5_riga6" n="6" facs="#Notizie5_riga6"/>
-                    st'appendice comprenderà pure un epigramma inedito del
-                    <persName ref="#Leopardi"><roleName type="epithet">Recanatese</roleName></persName>
-                    <lb xml:id="Cod_Notizie5_riga7" n="7" facs="#Notizie5_riga7"/>
-                    contro il <persName ref="#Tommaseo">Tommasèo</persName>.
-                </p>
+    <!-- Righe del corpo -->
+    <zone ulx="477" uly="35" lrx="551" lry="44" xml:id="Alfieri_riga1" corresp="#Cod_ALfieri_riga1"/>
+    <zone ulx="131" uly="62" lrx="211" lry="70" xml:id="Alfieri_riga2" corresp="#Cod_ALfieri_riga2"/>
+    <zone ulx="152" uly="74" lrx="190" lry="82" xml:id="Alfieri_riga3" corresp="#Cod_ALfieri_riga3"/>
+    <zone ulx="46" uly="83" lrx="296" lry="93" xml:id="Alfieri_riga4" corresp="#Cod_ALfieri_riga4"/>
+    <zone ulx="60" uly="94" lrx="232" lry="104" xml:id="Alfieri_riga5" corresp="#Cod_ALfieri_riga5"/>
+    <zone ulx="60" uly="111" lrx="296" lry="121" xml:id="Alfieri_riga6" corresp="#Cod_ALfieri_riga6"/>
+    <zone ulx="48" uly="123" lrx="297" lry="130" xml:id="Alfieri_riga7" corresp="#Cod_ALfieri_riga7"/>
+    <zone ulx="45" uly="132" lrx="298" lry="140" xml:id="Alfieri_riga8" corresp="#Cod_ALfieri_riga8"/>
+    <zone ulx="47" uly="144" lrx="295" lry="151" xml:id="Alfieri_riga9" corresp="#Cod_ALfieri_riga9"/>
+    <zone ulx="48" uly="153" lrx="296" lry="163" xml:id="Alfieri_riga10" corresp="#Cod_ALfieri_riga10"/>
+    <zone ulx="46" uly="165" lrx="296" lry="174" xml:id="Alfieri_riga11" corresp="#Cod_ALfieri_riga11"/>
+    <zone ulx="44" uly="176" lrx="296" lry="183" xml:id="Alfieri_riga12" corresp="#Cod_ALfieri_riga12"/>
+    <zone ulx="46" uly="187" lrx="108" lry="195" xml:id="Alfieri_riga13" corresp="#Cod_ALfieri_riga13"/>
+    <zone ulx="59" uly="196" lrx="298" lry="206" xml:id="Alfieri_riga14" corresp="#Cod_ALfieri_riga14"/>
+    <zone ulx="47" uly="208" lrx="297" lry="216" xml:id="Alfieri_riga15" corresp="#Cod_ALfieri_riga15"/>
+    <zone ulx="46" uly="220" lrx="296" lry="227" xml:id="Alfieri_riga16" corresp="#Cod_ALfieri_riga16"/>
+    <zone ulx="47" uly="231" lrx="295" lry="236" xml:id="Alfieri_riga17" corresp="#Cod_ALfieri_riga17"/>
+    <zone ulx="47" uly="241" lrx="296" lry="247" xml:id="Alfieri_riga18" corresp="#Cod_ALfieri_riga18"/>
+    <zone ulx="46" uly="250" lrx="295" lry="258" xml:id="Alfieri_riga19" corresp="#Cod_ALfieri_riga19"/>
+    <zone ulx="46" uly="262" lrx="296" lry="270" xml:id="Alfieri_riga20" corresp="#Cod_ALfieri_riga20"/>
+    <zone ulx="46" uly="272" lrx="297" lry="282" xml:id="Alfieri_riga21" corresp="#Cod_ALfieri_riga21"/>
+    <zone ulx="44" uly="284" lrx="297" lry="290" xml:id="Alfieri_riga22" corresp="#Cod_ALfieri_riga22"/>
+    <zone ulx="46" uly="294" lrx="296" lry="303" xml:id="Alfieri_riga23" corresp="#Cod_ALfieri_riga23"/>
+    <zone ulx="45" uly="306" lrx="299" lry="312" xml:id="Alfieri_riga24" corresp="#Cod_ALfieri_riga24"/>
+    <zone ulx="45" uly="316" lrx="296" lry="323" xml:id="Alfieri_riga25" corresp="#Cod_ALfieri_riga25"/>
+    <zone ulx="47" uly="327" lrx="298" lry="335" xml:id="Alfieri_riga26" corresp="#Cod_ALfieri_riga26"/>
+    <zone ulx="44" uly="338" lrx="295" lry="345" xml:id="Alfieri_riga27" corresp="#Cod_ALfieri_riga27"/>
+    <zone ulx="43" uly="350" lrx="296" lry="357" xml:id="Alfieri_riga28" corresp="#Cod_ALfieri_riga28"/>
+    <zone ulx="46" uly="359" lrx="296" lry="367" xml:id="Alfieri_riga29" corresp="#Cod_ALfieri_riga29"/>
+    <zone ulx="43" uly="370" lrx="298" lry="378" xml:id="Alfieri_riga30" corresp="#Cod_ALfieri_riga30"/>
+    <zone ulx="43" uly="380" lrx="296" lry="389" xml:id="Alfieri_riga31" corresp="#Cod_ALfieri_riga31"/>
+    <zone ulx="46" uly="392" lrx="298" lry="399" xml:id="Alfieri_riga32" corresp="#Cod_ALfieri_riga32"/>
+    <zone ulx="46" uly="404" lrx="295" lry="411" xml:id="Alfieri_riga33" corresp="#Cod_ALfieri_riga33"/>
+    <zone ulx="47" uly="415" lrx="295" lry="422" xml:id="Alfieri_riga34" corresp="#Cod_ALfieri_riga34"/>
+    <zone ulx="47" uly="426" lrx="295" lry="431" xml:id="Alfieri_riga35" corresp="#Cod_ALfieri_riga35"/>
+    <zone ulx="45" uly="433" lrx="298" lry="441" xml:id="Alfieri_riga36" corresp="#Cod_ALfieri_riga36"/>
+    <zone ulx="47" uly="445" lrx="298" lry="452" xml:id="Alfieri_riga37" corresp="#Cod_ALfieri_riga37"/>
+    <zone ulx="46" uly="454" lrx="298" lry="466" xml:id="Alfieri_riga38" corresp="#Cod_ALfieri_riga38"/>
+    <zone ulx="47" uly="468" lrx="298" lry="474" xml:id="Alfieri_riga39" corresp="#Cod_ALfieri_riga39"/>
+    <zone ulx="46" uly="478" lrx="294" lry="486" xml:id="Alfieri_riga40" corresp="#Cod_ALfieri_riga40"/>
+    <zone ulx="44" uly="486" lrx="295" lry="496" xml:id="Alfieri_riga41" corresp="#Cod_ALfieri_riga41"/>
+    <zone ulx="47" uly="498" lrx="295" lry="506" xml:id="Alfieri_riga42" corresp="#Cod_ALfieri_riga42"/>
+    <zone ulx="45" uly="506" lrx="296" lry="514" xml:id="Alfieri_riga43" corresp="#Cod_ALfieri_riga43"/>
+    <zone ulx="44" uly="518" lrx="295" lry="529" xml:id="Alfieri_riga44" corresp="#Cod_ALfieri_riga44"/>
+    <zone ulx="45" uly="531" lrx="295" lry="538" xml:id="Alfieri_riga45" corresp="#Cod_ALfieri_riga45"/>
+    <zone ulx="46" uly="540" lrx="296" lry="548" xml:id="Alfieri_riga46" corresp="#Cod_ALfieri_riga46"/>
+    <zone ulx="47" uly="550" lrx="296" lry="561" xml:id="Alfieri_riga47" corresp="#Cod_ALfieri_riga47"/>
+    <zone ulx="46" uly="562" lrx="295" lry="571" xml:id="Alfieri_riga48" corresp="#Cod_ALfieri_riga48"/>
+    <zone ulx="44" uly="575" lrx="295" lry="582" xml:id="Alfieri_riga49" corresp="#Cod_ALfieri_riga49"/>
+    <zone ulx="44" uly="586" lrx="296" lry="592" xml:id="Alfieri_riga50" corresp="#Cod_ALfieri_riga50"/>
+    <zone ulx="47" uly="594" lrx="297" lry="604" xml:id="Alfieri_riga51" corresp="#Cod_ALfieri_riga51"/>
+    <zone ulx="44" uly="606" lrx="299" lry="614" xml:id="Alfieri_riga52" corresp="#Cod_ALfieri_riga52"/>
+    <zone ulx="45" uly="617" lrx="298" lry="626" xml:id="Alfieri_riga53" corresp="#Cod_ALfieri_riga53"/>
+    <zone ulx="44" uly="628" lrx="227" lry="636" xml:id="Alfieri_riga54" corresp="#Cod_ALfieri_riga54"/>
+  </surface>
+</facsimile>
+<!--Testo articolo-->
+<text xml:id="Alfieri_text" subtype="bibliography">
+    <body>
+        <div type="article">
+        <pb n="330" facs="#Full_Alfieri"/>
+        
+        <fw type="pageNum" place="left" xml:id="Cod_Alfieri_header" facs="#Alfieri_header">330</fw>
+        <fw type="title" place="center" xml:id="Cod_Alfieri_titolo" facs="#Alfieri_titolo">LA RASSEGNA SETTIMANALE</fw>
+        <fw type="issue" place="right" xml:id="Cod_ALfieri_riga1" facs="#Alfieri_riga1">
+            [Vol. 3°, N° 69]
+            <milestone unit="headerBreak"/>
+        </fw>
 
-                <p xml:id="Notizie5_2" n="2">
-                    <lb xml:id="Cod_Notizie5_riga8" n="8" facs="#Notizie5_riga8"/>
-                    — Il signor <persName ref="#Buchanan">Buchanan</persName> ha scritto un poema che uscirà nella pros-
-                    <lb xml:id="Cod_Notizie5_riga9" n="9" facs="#Notizie5_riga9"/>
-                    sima <title level="j" ref="#ContemporaryReview">Contemporary Review</title>. È la storia di un fanciullo educato senza
-                    <lb xml:id="Cod_Notizie5_riga10" n="10" facs="#Notizie5_riga10"/>
-                    nessuna <term type="tema">idea religiosa</term> di nessun genere. Dal nome del fanciullo,
-                    <persName type="fictional">Giu-<lb xml:id="Cod_Notizie5_riga11" n="11" facs="#Notizie5_riga11" break="no"/>stiniano</persName>, è intitolato il poema.
-                </p>
+        <head rend="align(center) case(allcaps)" xml:id="Cod_ALfieri_riga2" n="1" facs="#Alfieri_riga2">
+            <term type="tema">BIBLIOGRAFIA</term>.
+        </head>
+        <head rend="align(center) case(allcaps)" xml:id="Cod_ALfieri_riga3" n="2" facs="#Alfieri_riga3">
+            <term type="tema">POLITICA</term>.
+        </head>
 
-                <p xml:id="Notizie5_3" n="3">
-                    <lb xml:id="Cod_Notizie5_riga12" n="12" facs="#Notizie5_riga12"/>
-                    — Il <date when="1879-12-27">27 decembre p. s.</date> morì improvvisamente <persName ref="#Dixon">G. Hepworth Dixon</persName>.
-                    <lb xml:id="Cod_Notizie5_riga13" n="13" facs="#Notizie5_riga13"/>
-                    Egli è noto specialmente per i suoi <term type="tema">viaggi</term> nell'estremo <placeName ref="#Occidente">Occidente</placeName>, in
-                    <lb xml:id="Cod_Notizie5_riga14" n="14" facs="#Notizie5_riga14"/>
-                    <placeName ref="#Russia">Russia</placeName>, in <placeName ref="#Palestina">Palestina</placeName> e in <placeName ref="#Cipro">Cipro</placeName>,
-                    e per le sue importantissime indagini
-                    <lb xml:id="Cod_Notizie5_riga15" n="15" facs="#Notizie5_riga15"/>
-                    <term type="disciplina">etnologiche</term> in <placeName ref="#America">America</placeName>.
-                </p>
+        <p xml:id="Alfieri_citazione_bibl" n="1">
+            <lb xml:id="Cod_ALfieri_riga4" n="4" facs="#Alfieri_riga4"/>
+            <persName ref="#C_Alfieri">CARLO ALFIERI</persName>. <title level="m" rend="italic">Chi ha tempo non aspetti tempo. Pareri d’un 
+            <lb xml:id="Cod_ALfieri_riga5" n="5" facs="#Alfieri_riga5"/>
+            Senatore</title>. — <placeName ref="#RM">Roma</placeName> <orgName ref="#Tip_Senato">Tip. del Senato</orgName>, <date when="1879">1879</date>.
+        </p>
 
-                <p xml:id="Notizie5_4" n="4">
-                    <lb xml:id="Cod_Notizie5_riga16" n="16" facs="#Notizie5_riga16"/>
-                    — I naturalisti e i soci della <orgName ref="#SocietaGeograficaRussa">Società geografica russa</orgName>, hanno de-
-                    <lb xml:id="Cod_Notizie5_riga17" n="17" facs="#Notizie5_riga17"/>
-                    liberato di pubblicare un'opera importante che avrà il titolo:
-                    <title level="m">Rivista
-                    <lb xml:id="Cod_Notizie5_riga18" n="18" facs="#Notizie5_riga18"/>
-                    delle spedizioni e dei viaggi scientifici russi fatti durante il regno dello
-                    <lb xml:id="Cod_Notizie5_riga19" n="19" facs="#Notizie5_riga19"/>
-                    Czar attuale</title>. Essi hanno in animo di pubblicarlo per il venticinquesimo
-                    <lb xml:id="Cod_Notizie5_riga20" n="20" facs="#Notizie5_riga20"/>
-                    anniversario dell'ascensione al trono dell'imperatore <persName ref="#AlessandroII">Alessandro II</persName>,
-                    <lb xml:id="Cod_Notizie5_riga21" n="21" facs="#Notizie5_riga21"/>
-                    che sarà il <date when="1880-02-19">19 febbraio (2 marzo) 1880</date>.
-                </p>
-                </div><!-- /div type="article" -->
+        <p xml:id="Alfieri_paragrafo1" n="2">
+            <lb xml:id="Cod_ALfieri_riga6" n="6" facs="#Alfieri_riga6"/>
+            Da alcuni anni <choice><abbr>l’on.</abbr><expan>l’onorevole</expan></choice> <persName ref="#C_Alfieri">Alfieri</persName> suole, di quando in quando, 
+            <lb xml:id="Cod_ALfieri_riga7" n="7" facs="#Alfieri_riga7"/>
+            dire al pubblico le ragioni, che lo fanno essere malcontento
+            <lb xml:id="Cod_ALfieri_riga8" n="8" facs="#Alfieri_riga8"/>
+            delle nostre condizioni politiche. Fedele a questa sua buona
+            <lb xml:id="Cod_ALfieri_riga9" n="9" facs="#Alfieri_riga9"/>
+            abitudine egli ripubblica ora alcune lettere già apparse nella
+            <lb xml:id="Cod_ALfieri_riga10" n="10" facs="#Alfieri_riga10"/>
+            <title level="j" rend="italic">Gazzetta Piemontese</title>, precedute da un proemio, e chiuse con
+            <lb xml:id="Cod_ALfieri_riga11" n="11" facs="#Alfieri_riga11"/>
+            due altre lettere al <roleName>prof.</roleName> <persName ref="#P_Sbarbaro">Sbarbaro</persName> intorno al <term type="corrente">partito con-
+            <lb xml:id="Cod_ALfieri_riga12" n="12" facs="#Alfieri_riga12" break="no"/>
+            servatore</term>, ed alla trasformazione della <orgName ref="#DestraS">Destra</orgName> nella <term type="corrente">demo-
+            <lb xml:id="Cod_ALfieri_riga13" n="13" facs="#Alfieri_riga13" break="no"/>
+            crazia liberale</term>.
+        </p>
 
-                <div type="colophon">
-                    <p>
-                        <lb xml:id="Cod_Notizie5_riga22" n="22" facs="#Notizie5_NomiDirettori"/>
-                        <persName ref="#L_Franchetti">LEOPOLDO FRANCHETTI</persName> |
-                        <lb xml:id="Cod_Notizie5_riga23" n="23" facs="#Notizie5_NomiDirettori"/>
-                        <persName ref="#S_Sonnino">SIDNEY SONNINO</persName>
-                        <lb xml:id="Cod_Notizie5_riga24" n="24" facs="#Notizie5_RuoloDirettori"/>
-                        } Direttori Proprietari.
-                    </p>
-                    <p>
-                        <lb xml:id="Cod_Notizie5_riga25" n="25" facs="#Notizie5_NomeResponsabile"/>
-                        <persName ref="#P_Pampaloni">PIETRO PAMPALONI</persName>,
-                        <lb xml:id="Cod_Notizie5_riga26" n="26" facs="#Notizie5_RuoloResponsabile"/>
-                        Gerente Responsabile.
-                    </p>
-                    <p>
-                        <lb xml:id="Cod_Notizie5_riga27" n="27" facs="#Notizie5_LuogoDataTipografia"/>
-                        <placeName ref="#RM">ROMA</placeName>, <date when="1880">1880</date>. — <orgName ref="#Tip_Barbera">Tipografia BARBÈRA</orgName>.
-                    </p>
-                </div>
-            </body>
-        </text>
+        <p xml:id="Alfieri_paragrafo2" n="3">
+            <lb xml:id="Cod_ALfieri_riga14" n="14" facs="#Alfieri_riga14"/>
+            <choice><abbr>L’on.</abbr><expan>L’onorevole</expan></choice> <roleName>Senatore</roleName> rammenta com’egli avesse ben augurato
+            <lb xml:id="Cod_ALfieri_riga15" n="15" facs="#Alfieri_riga15"/>
+            della <orgName ref="#Sinistra">Sinistra</orgName>, quando questa, per salire al potere, si fece
+            <lb xml:id="Cod_ALfieri_riga16" n="16" facs="#Alfieri_riga16"/>
+            a difendere la causa dei capitali e dell’<term type="tema">industria privata</term> 
+            <lb xml:id="Cod_ALfieri_riga17" n="17" facs="#Alfieri_riga17"/>
+            applicata alla costruzione ed all’esercizio delle nostre fer-
+            <lb xml:id="Cod_ALfieri_riga18" n="18" facs="#Alfieri_riga18" break="no"/>
+            rovie. Quella causa sembra <choice><abbr>all’A.</abbr><expan>all'Autore</expan></choice> essere stata poscia abban-
+            <lb xml:id="Cod_ALfieri_riga19" n="19" facs="#Alfieri_riga19" break="no"/>
+            donata dalla <orgName ref="#Sinistra">Sinistra</orgName>, la quale ha così perduto le sue sim-
+            <lb xml:id="Cod_ALfieri_riga20" n="20" facs="#Alfieri_riga20" break="no"/>
+            patie. La <orgName ref="#DestraS">Destra</orgName> poi nel frattempo ha proclamato a suo
+            <lb xml:id="Cod_ALfieri_riga21" n="21" facs="#Alfieri_riga21"/>
+            <lb xml:id="Cod_ALfieri_riga22" n="22" facs="#Alfieri_riga22"/>
+            capo <persName ref="#Q_Sella">Sella</persName>, il più autorevole rappresentante dell’<term type="corrente">autoritarismo democra-
+            <lb xml:id="Cod_ALfieri_riga23" n="23" facs="#Alfieri_riga23" break="no"/>
+            tico</term> nello stato nostro.
+            <lb xml:id="Cod_ALfieri_riga24" n="24" facs="#Alfieri_riga24"/>
+            Il <term type="corrente">partito conservatore</term> doveva necessariamente essere inclinato
+            <lb xml:id="Cod_ALfieri_riga25" n="25" facs="#Alfieri_riga25"/>
+            a favorire l’influenza delle autorità ecclesiastiche nella no-
+            <lb xml:id="Cod_ALfieri_riga26" n="26" facs="#Alfieri_riga26" break="no"/>
+            stra politica. Questa dichiarazione, che a noi pare conforme
+            <lb xml:id="Cod_ALfieri_riga27" n="27" facs="#Alfieri_riga27"/>
+            alla verità, dispiacque molto <choice><abbr>all’on.</abbr><expan>all’onorevole</expan></choice> <persName ref="#C_Alfieri">Alfieri</persName>, il quale, nel rim-
+            <lb xml:id="Cod_ALfieri_riga28" n="28" facs="#Alfieri_riga28"/>
+            proverarla ingiustamente al <persName ref="#Q_Sella">Sella</persName>, non riesce a contenere
+            <lb xml:id="Cod_ALfieri_riga29" n="29" facs="#Alfieri_riga29"/>
+            in giusta misura l’espressione del suo malcontento. Eppure
+            <lb xml:id="Cod_ALfieri_riga30" n="30" facs="#Alfieri_riga30"/>
+            se ci fosse modo di trasformare, come vorrebbe l’<persName ref="#C_Alfieri">Alfieri</persName>,
+            <lb xml:id="Cod_ALfieri_riga31" n="31" facs="#Alfieri_riga31"/>
+            la <orgName ref="#DestraS">Destra</orgName> in un partito di liberisti cattolici della scuola
+            <lb xml:id="Cod_ALfieri_riga32" n="32" facs="#Alfieri_riga32"/>
+            del <persName ref="#Montalembert">Montalembert</persName>, questo appunto sarebbe che il <persName ref="#Q_Sella">Sella</persName>
+            <lb xml:id="Cod_ALfieri_riga33" n="33" facs="#Alfieri_riga33"/>
+            e lo <persName ref="#B_Spaventa">Spaventa</persName> con altri autoritari democratici passassero
+            <lb xml:id="Cod_ALfieri_riga34" n="34" facs="#Alfieri_riga34"/>
+            a <orgName ref="#Sinistra">Sinistra</orgName>. Le intenzioni <choice><abbr>dell’on.</abbr><expan>dell’onorevole</expan></choice> <roleName>Senatore</roleName> sono eccel-
+            <lb xml:id="Cod_ALfieri_riga35" n="35" facs="#Alfieri_riga35" break="no"/>
+            lenti: i suoi ideali politici degni di rispetto, molte delle sue
+            <lb xml:id="Cod_ALfieri_riga36" n="36" facs="#Alfieri_riga36"/>
+            considerazioni giuste, l’operosità sua <choice><sic>patriotticaè</sic><corr>patriottica è</corr></choice> lode-
+            <lb xml:id="Cod_ALfieri_riga37" n="37" facs="#Alfieri_riga37" break="no"/>
+            vole; ma bisogna anche aggiungere che in tutto ciò ch’egli
+            <lb xml:id="Cod_ALfieri_riga38" n="38" facs="#Alfieri_riga38"/>
+            pubblica o fa, si cerca invano qualche precisione di concetti,
+            <lb xml:id="Cod_ALfieri_riga39" n="39" facs="#Alfieri_riga39"/>
+            qualche chiarezza di fini. Com’è vago il suo cattolicismo, così
+            <lb xml:id="Cod_ALfieri_riga40" n="40" facs="#Alfieri_riga40"/>
+            è indeterminato il <term type="corrente">liberalismo democratico</term> ch’egli invoca.
+            <lb xml:id="Cod_ALfieri_riga41" n="41" facs="#Alfieri_riga41"/>
+            Egli non istudia la realtà politica in sè stessa; la <orgName ref="#Chiesa">Chiesa</orgName>,
+            <lb xml:id="Cod_ALfieri_riga42" n="42" facs="#Alfieri_riga42"/>
+            lo <orgName ref="#Stato">Stato</orgName>, la <term type="tema">democrazia</term>, e il <term type="corrente">liberalismo</term> in <placeName ref="#ITA">Italia</placeName> così come 
+            <lb xml:id="Cod_ALfieri_riga43" n="43" facs="#Alfieri_riga43"/>
+            sono, come li ha fatti la storia, e come uscirono dagli av-
+            <lb xml:id="Cod_ALfieri_riga44" n="44" facs="#Alfieri_riga44" break="no"/>
+            venimenti e dal moto degli interessi e dei pensieri contempo-
+            <lb xml:id="Cod_ALfieri_riga45" n="45" facs="#Alfieri_riga45" break="no"/>
+            ranei. Gli sfugge pertanto il concetto dei limiti entro i quali
+            <lb xml:id="Cod_ALfieri_riga46" n="46" facs="#Alfieri_riga46"/>
+            una loro modificazione è possibile. Egli si è formato, sulle
+            <lb xml:id="Cod_ALfieri_riga47" n="47" facs="#Alfieri_riga47"/>
+            tracce di alcuni maestri, un ideale politico, una dottrina
+            <lb xml:id="Cod_ALfieri_riga48" n="48" facs="#Alfieri_riga48"/>
+            molto più astratta ch’egli non creda, e vorrebbe che tutti
+            <lb xml:id="Cod_ALfieri_riga49" n="49" facs="#Alfieri_riga49"/>
+            s’inchinassero a quei suoi <choice><sic>fantasimi;s’illude</sic><corr>fantasimi; s’illude</corr></choice> quando gli pare 
+            <lb xml:id="Cod_ALfieri_riga50" n="50" facs="#Alfieri_riga50"/>
+            di aver trovati compagni nel suo culto, si sdegna quando
+            <lb xml:id="Cod_ALfieri_riga51" n="51" facs="#Alfieri_riga51"/>
+            s’avvede d’aver troppo sperato. In questo opuscolo egli si
+            <lb xml:id="Cod_ALfieri_riga52" n="52" facs="#Alfieri_riga52"/>
+            mostra molto fiducioso nei nuovi <term type="corrente">conservatori</term>, i quali, o non 
+            <lb xml:id="Cod_ALfieri_riga53" n="53" facs="#Alfieri_riga53"/>
+            si faranno vivi, o si mostreranno assai diversi da quelli, che
+            <lb xml:id="Cod_ALfieri_riga54" n="54" facs="#Alfieri_riga54"/>
+            <choice><abbr>l’on.</abbr><expan>l’onorevole</expan></choice> <roleName>Senatore</roleName> vagheggia a lui somiglianti.
+        </p>
+        </div>
+    </body>
+</text>
     </TEI>
 
-    <!-- ============================================================
-         TEI 4 — Notizie Vol. 8, Fasc. 188, p. 96
-         ============================================================ -->
-    <TEI xml:id="TEI_NotizieVol8">
-        <teiHeader>
-            <fileDesc>
-                <titleStmt><title level="a">Sezione Notizie (da La Rassegna Settimanale, Volume 8, Fascicolo 188, del 7 Agosto 1881)</title><respStmt xml:id="FlorisValenti_T7"><resp>Codifica TEI-XML</resp><persName>Rebecca Floris</persName><persName>Diletta Valenti</persName></respStmt></titleStmt>
-                <publicationStmt>
-                    <publisher>Università di Pisa — Corso di Informatica Umanistica</publisher>
-                    <pubPlace>Pisa</pubPlace>
-                    <date when="2026">2026</date>
-                    <availability status="free">
-                        <licence target="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</licence>
-                    </availability>
-                </publicationStmt>
-                <sourceDesc>
-                    <biblStruct>
-                        <monogr>
-                            <title level="j">La Rassegna Settimanale</title>
-                            <imprint>
-                                <publisher ref="#S_Sonnino">Sonnino</publisher>
-                                <pubPlace ref="#RM">Roma</pubPlace>
-                                <date when="1881-08-07">7 agosto 1881</date>
-                                <biblScope unit="volume">8</biblScope>
-                                <biblScope unit="issue">188</biblScope>
-                                <biblScope unit="page">96</biblScope>
-                            </imprint>
-                        </monogr>
-                    </biblStruct>
-                </sourceDesc>
-            </fileDesc>
-            <encodingDesc>
-                <projectDesc>
-                    <p>Codifica realizzata nell'ambito del corso di Informatica Umanistica,
-                       Università di Pisa, a.a. 2025–2026. Cfr. il <ref target="#rassegna_corpus">teiHeader del corpus</ref>
-                       per la descrizione completa del progetto.</p>
-                </projectDesc>
-                <editorialDecl>
-                    <normalization><p>Grafia originale conservata.</p></normalization>
-                    <hyphenation eol="all"><p>Sillabazioni di fine riga codificate con lb @break="no".</p></hyphenation>
-                </editorialDecl>
-            </encodingDesc>
-            <profileDesc>
-                <langUsage>
-                    <language ident="it">Italiano ottocentesco (prosa giornalistica breve, 1881).</language>
-                </langUsage>
-                <textClass>
-                    <keywords>
-                        <term>notizie culturali</term>
-                        <term>letteratura</term>
-                        <term>epigrammi</term>
-                    </keywords>
-                </textClass>
-            </profileDesc>
-            <revisionDesc>
-                <change when="2026-05" who="#FlorisValenti">Revisione finale; aggiunta encodingDesc, profileDesc.</change>
-                <change when="2026-04" who="#FlorisValenti">Prima codifica del testo.</change>
-            </revisionDesc>
-        </teiHeader>
-
-        <facsimile>
-            <surface xml:id="notizie_vol8_p96">
-                <graphic url='images/Notizie_Volume_8_Fascicolo_188_Pag._96.png' width='555px' height='830px' />
-                <zone ulx="27" uly="8" lrx="57" lry="20" xml:id="Notizie8_NumeroPagina" corresp="#Cod_Notizie8_NumeroPagina"/>
-                <zone ulx="202" uly="7" lrx="377" lry="19" xml:id="Notizie8_Intestazione" corresp="#Cod_Notizie8_Intestazione"/>
-                <zone ulx="455" uly="7" lrx="547" lry="24" xml:id="Notizie8_NumeroVolumeFascicolo" corresp="#Cod_Notizie8_NumeroVolumeFascicolo"/>
-                <zone ulx="389" uly="644" lrx="455" lry="659" xml:id="Notizie8_Sezione" corresp="#Cod_Notizie8_Sezione"/>
-                <zone ulx="292" uly="657" lrx="548" lry="666" xml:id="Notizie8_riga1" corresp="#Cod_Notizie8_riga1"/>
-                <zone ulx="292" uly="667" lrx="546" lry="677" xml:id="Notizie8_riga2" corresp="#Cod_Notizie8_riga2"/>
-                <zone ulx="292" uly="676" lrx="546" lry="686" xml:id="Notizie8_riga3" corresp="#Cod_Notizie8_riga3"/>
-                <zone ulx="292" uly="686" lrx="548" lry="696" xml:id="Notizie8_riga4" corresp="#Cod_Notizie8_riga4"/>
-                <zone ulx="292" uly="696" lrx="548" lry="706" xml:id="Notizie8_riga5" corresp="#Cod_Notizie8_riga5"/>
-                <zone ulx="291" uly="706" lrx="548" lry="715" xml:id="Notizie8_riga6" corresp="#Cod_Notizie8_riga6"/>
-                <zone ulx="292" uly="715" lrx="517" lry="728" xml:id="Notizie8_riga7" corresp="#Cod_Notizie8_riga7"/>
-                <zone ulx="299" uly="729" lrx="394" lry="741" xml:id="Notizie8_NomeDirettori" corresp="#Notizie8_NomeDirettori"/>
-                <zone ulx="396" uly="728" lrx="478" lry="741" xml:id="Notizie8_RuoloDirettori" corresp="#Notizie8_RuoloDirettori"/>
-                <zone ulx="324" uly="743" lrx="403" lry="755" xml:id="Notizie8_NomeResponsabile" corresp="#Notizie8_NomeResponsabile"/>
-                <zone ulx="404" uly="741" lrx="478" lry="759" xml:id="Notizie8_RuoloResponsabile" corresp="#Notizie8_RuoloResponsabile"/>
-            </surface>
-        </facsimile>
-
-        <text xml:id="Notizie8_text">
-            <body>
-                <pb n="96" facs="#notizie_vol8_p96"/>
-                <fw type="pageNum" place="left" xml:id="Cod_Notizie8_NumeroPagina" facs="#Notizie8_NumeroPagina">96</fw>
-                <fw type="title" place="center" xml:id="Cod_Notizie8_Intestazione" facs="#Notizie8_Intestazione">LA RASSEGNA SETTIMANALE</fw>
-                <fw type="issue" place="right" xml:id="Cod_Notizie8_NumeroVolumeFascicolo" facs="#Notizie8_NumeroVolumeFascicolo">[Vol. 8°, N° 188 <milestone unit="headerBreak"/></fw>
-                <div type="article" xml:id="Notizie8_article">
-                <head rend="align(center) case(allcaps)" xml:id="Cod_Notizie8_Sezione" n="1" facs="#Notizie8_Sezione">
-                    <title type="main">NOTIZIE</title>
-                </head>
-
-                <p xml:id="Notizie8_1" n="1">
-                    <lb xml:id="Cod_Notizie8_riga1" n="1" facs="#Notizie8_riga1"/>
-                    — <persName ref="#Bonghi">Ruggero Bonghi</persName> annunzia la prossima pubblicazione di un
-                    <term type="tema">periodico critico-bibliografico</term>,
-                    <lb xml:id="Cod_Notizie8_riga2" n="2" facs="#Notizie8_riga2"/>
-                    da lui diretto, il quale si chiamerà
-                    «<title level="j" ref="#LaCultura">La Cultura,
-                    <lb xml:id="Cod_Notizie8_riga3" n="3" facs="#Notizie8_riga3"/>
-                    Rivista di scienze morali, di lettere ed arti</title>»: uscirà due volte al mese.
-                    <lb xml:id="Cod_Notizie8_riga4" n="4" facs="#Notizie8_riga4"/>
-                    Ciascun numero avrà tre parti cioè: recensioni, ossia analisi abbastanza
-                    <lb xml:id="Cod_Notizie8_riga5" n="5" facs="#Notizie8_riga5"/>
-                    lunghe e ragionate delle opere più segnalate; annunci di libri con un
-                    <lb xml:id="Cod_Notizie8_riga6" n="6" facs="#Notizie8_riga6"/>
-                    breve sunto del contenuto e osservazioni; notizie su i fatti principali at-
-                    <lb xml:id="Cod_Notizie8_riga7" n="7" facs="#Notizie8_riga7"/>
-                    tinenti alla <term type="tema">coltura</term> e all'<term type="tema">istruzione pubblica</term>
-                    in <placeName ref="#ITA">Italia</placeName> e fuori.
-                </p>
-                </div><!-- /div type="article" -->
-
-                <div type="colophon">
-                    <p>
-                        <lb xml:id="Cod_Notizie8_riga23" n="23" facs="#Notizie8_NomeDirettori"/>
-                        <persName ref="#S_Sonnino">SIDNEY SONNINO</persName>
-                        <lb xml:id="Cod_Notizie8_riga24" n="24" facs="#Notizie8_RuoloDirettori"/>
-                        } Direttore Proprietario.
-                    </p>
-                    <p>
-                        <lb xml:id="Cod_Notizie8_riga25" n="25" facs="#Notizie8_NomeResponsabile"/>
-                        <persName ref="#P_Pampaloni">PIETRO PAMPALONI</persName>,
-                        <lb xml:id="Cod_Notizie8_riga26" n="26" facs="#Notizie8_RuoloResponsabile"/>
-                        Gerente Responsabile.
-                    </p>
-                </div>
-            </body>
-        </text>
-    </TEI>
 
     <!-- ============================================================
-         TEI 5 — Virtù educatrice — Bibliografia
-                  Vol. 5, Fasc. 106, p. 39 — 11 gennaio 1880
+         TEI 5 — Virtù educatrice
          ============================================================ -->
     <TEI xml:id="TEI_VirtuEducatrice">
         <teiHeader>
@@ -3644,4 +3037,620 @@
         </text>
     </TEI>
 
+
+    <!-- ============================================================
+         TEI 6 - Notizie Volume 3
+         ============================================================ -->
+    <TEI xml:id="TEI_NotizieVol3">
+        <!--Notizie-->
+        <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Sezione Notizie (da La Rassegna Settimanale, Volume 3, Fascicolo 69, del 27 Aprile 1879)</title>
+                <respStmt xml:id="FlorisValenti_T4"><resp>Codifica TEI-XML</resp><persName>Rebecca Floris</persName><persName>Diletta Valenti</persName></respStmt>
+            </titleStmt>  
+            <publicationStmt>
+                <publisher>Università di Pisa — Corso di Informatica Umanistica</publisher>
+                <pubPlace>Pisa</pubPlace>
+                <date when="2026">2026</date>
+                <availability status="free">
+                    <licence target="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl>
+                    <title level="j">La Rassegna Settimanale</title>
+                    <date when="1879-04-27">27 Aprile 1879</date>
+                    <pubPlace ref="#RM">Roma</pubPlace>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>Codifica realizzata nell'ambito del corso di Informatica Umanistica,
+                   Università di Pisa, a.a. 2025–2026. Cfr. il <ref target="#rassegna_corpus">teiHeader del corpus</ref>
+                   per la descrizione completa del progetto.</p>
+            </projectDesc>
+            <projectDesc>
+                <p>Testo codificato nell'ambito del corpus digitale de «La Rassegna Settimanale»
+                   (Università di Pisa, Informatica Umanistica, a.a. 2025–2026).
+                   Si vedano le linee guida nel <gi>teiHeader</gi> del <gi>teiCorpus</gi>.</p>
+            </projectDesc>
+            <editorialDecl>
+                <normalization><p>Abbreviazioni sciolte con choice/abbr/expan.</p></normalization>
+                <hyphenation eol="all"><p>Sillabazioni di fine riga codificate con lb @break="no".</p></hyphenation>
+            </editorialDecl>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="it">Italiano ottocentesco (prosa giornalistica breve, 1879).</language>
+            </langUsage>
+            <textClass>
+                <keywords>
+                    <term>notizie culturali</term>
+                    <term>archeologia</term>
+                    <term>biblioteche</term>
+                    <term>scienze</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2026-05" who="#FlorisValenti">Revisione finale; aggiunta encodingDesc, profileDesc.</change>
+            <change when="2026-02" who="#FlorisValenti">Prima codifica del testo.</change>
+        </revisionDesc>
+    </teiHeader> 
+   <!--Teizone - Notizia Academy--> 
+<facsimile>
+<surface xml:id="NotizieVol3_Pag332">
+<graphic url="images/Notizie_Volume_3_Fascicolo_69_Pag._332.png" width="562.4px" height="831.4px"/>
+<zone ulx="42" uly="31" lrx="549" lry="51" xml:id="NotizieVol3_header" corresp="Cod_NotizieVol3_header"/>
+<zone ulx="403" uly="128" lrx="454" lry="138" xml:id="NotizieVol3_labelDx" corresp="Cod_NotizieVol3_labelDx"/>
+<zone ulx="327" uly="141" lrx="553" lry="150" xml:id="NotizieVol3_riga1" corresp="#Cod_NotizieVol3_riga1"/>
+<zone ulx="302" uly="153" lrx="553" lry="158" xml:id="NotizieVol3_riga2" corresp="#Cod_NotizieVol3_riga2"/>
+<zone ulx="303" uly="161" lrx="551" lry="167" xml:id="NotizieVol3_riga3" corresp="#Cod_NotizieVol3_riga3"/>
+<zone ulx="301" uly="170" lrx="554" lry="178" xml:id="NotizieVol3_riga4" corresp="#Cod_NotizieVol3_riga4"/>
+<zone ulx="301" uly="180" lrx="551" lry="188" xml:id="NotizieVol3_riga5" corresp="#Cod_NotizieVol3_riga5"/>
+<zone ulx="300" uly="190" lrx="552" lry="197" xml:id="NotizieVol3_riga6" corresp="#Cod_NotizieVol3_riga6"/>
+<zone ulx="299" uly="198" lrx="551" lry="207" xml:id="NotizieVol3_riga7" corresp="#Cod_NotizieVol3_riga7"/>
+<zone ulx="301" uly="211" lrx="555" lry="218" xml:id="NotizieVol3_riga8" corresp="#Cod_NotizieVol3_riga8"/>
+<zone ulx="298" uly="220" lrx="535" lry="226" xml:id="NotizieVol3_riga9" corresp="#Cod_NotizieVol3_riga9"/>
+<zone ulx="327" uly="231" lrx="555" lry="240" xml:id="NotizieVol3_riga10" corresp="#Cod_NotizieVol3_riga10"/>
+<zone ulx="302" uly="242" lrx="555" lry="249" xml:id="NotizieVol3_riga11" corresp="#Cod_NotizieVol3_riga11"/>
+<zone ulx="301" uly="252" lrx="554" lry="259" xml:id="NotizieVol3_riga12" corresp="#Cod_NotizieVol3_riga12"/>
+<zone ulx="303" uly="259" lrx="554" lry="270" xml:id="NotizieVol3_riga13" corresp="#Cod_NotizieVol3_riga13"/>
+<zone ulx="302" uly="270" lrx="552" lry="281" xml:id="NotizieVol3_riga14" corresp="#Cod_NotizieVol3_riga14"/>
+<zone ulx="299" uly="282" lrx="555" lry="288" xml:id="NotizieVol3_riga15" corresp="#Cod_NotizieVol3_riga15"/>
+<zone ulx="300" uly="290" lrx="555" lry="299" xml:id="NotizieVol3_riga16" corresp="#Cod_NotizieVol3_riga16"/>
+<zone ulx="299" uly="298" lrx="422" lry="307" xml:id="NotizieVol3_riga17" corresp="#Cod_NotizieVol3_riga17"/>
+<zone ulx="315" uly="315" lrx="555" lry="321" xml:id="NotizieVol3_riga18" corresp="#Cod_NotizieVol3_riga18"/>
+<zone ulx="300" uly="324" lrx="553" lry="330" xml:id="NotizieVol3_riga19" corresp="#Cod_NotizieVol3_riga19"/>
+<zone ulx="303" uly="334" lrx="558" lry="342" xml:id="NotizieVol3_riga20" corresp="#Cod_NotizieVol3_riga20"/>
+<zone ulx="303" uly="343" lrx="555" lry="351" xml:id="NotizieVol3_riga21" corresp="#Cod_NotizieVol3_riga21"/>
+<zone ulx="302" uly="352" lrx="555" lry="363" xml:id="NotizieVol3_riga22" corresp="#Cod_NotizieVol3_riga22"/>
+<zone ulx="299" uly="363" lrx="549" lry="372" xml:id="NotizieVol3_riga23" corresp="#Cod_NotizieVol3_riga23"/>
+<zone ulx="302" uly="373" lrx="554" lry="379" xml:id="NotizieVol3_riga24" corresp="#Cod_NotizieVol3_riga24"/>
+<zone ulx="313" uly="383" lrx="555" lry="394" xml:id="NotizieVol3_riga25" corresp="#Cod_NotizieVol3_riga25"/>
+<zone ulx="301" uly="396" lrx="549" lry="403" xml:id="NotizieVol3_riga26" corresp="#Cod_NotizieVol3_riga26"/>
+<zone ulx="302" uly="406" lrx="557" lry="415" xml:id="NotizieVol3_riga27" corresp="#Cod_NotizieVol3_riga27"/>
+<zone ulx="299" uly="417" lrx="551" lry="421" xml:id="NotizieVol3_riga28" corresp="#Cod_NotizieVol3_riga28"/>
+<zone ulx="299" uly="422" lrx="551" lry="430" xml:id="NotizieVol3_riga29" corresp="#Cod_NotizieVol3_riga29"/>
+<zone ulx="298" uly="435" lrx="553" lry="443" xml:id="NotizieVol3_riga30" corresp="#Cod_NotizieVol3_riga30"/>
+<zone ulx="300" uly="445" lrx="555" lry="452" xml:id="NotizieVol3_riga31" corresp="#Cod_NotizieVol3_riga31"/>
+<zone ulx="299" uly="454" lrx="548" lry="462" xml:id="NotizieVol3_riga32" corresp="#Cod_NotizieVol3_riga32"/>
+<zone ulx="302" uly="467" lrx="556" lry="469" xml:id="NotizieVol3_riga33" corresp="#Cod_NotizieVol3_riga33"/>
+<zone ulx="302" uly="473" lrx="548" lry="483" xml:id="NotizieVol3_riga34" corresp="#Cod_NotizieVol3_riga34"/>
+<zone ulx="299" uly="486" lrx="554" lry="491" xml:id="NotizieVol3_riga35" corresp="#Cod_NotizieVol3_riga35"/>
+<zone ulx="303" uly="493" lrx="551" lry="499" xml:id="NotizieVol3_riga36" corresp="#Cod_NotizieVol3_riga36"/>
+<zone ulx="294" uly="503" lrx="555" lry="510" xml:id="NotizieVol3_riga37" corresp="#Cod_NotizieVol3_riga37"/>
+<zone ulx="295" uly="513" lrx="558" lry="520" xml:id="NotizieVol3_riga38" corresp="#Cod_NotizieVol3_riga38"/>
+<zone ulx="304" uly="522" lrx="559" lry="531" xml:id="NotizieVol3_riga39" corresp="#Cod_NotizieVol3_riga39"/>
+<zone ulx="297" uly="533" lrx="552" lry="541" xml:id="NotizieVol3_riga40" corresp="#Cod_NotizieVol3_riga40"/>
+<zone ulx="295" uly="546" lrx="553" lry="549" xml:id="NotizieVol3_riga41" corresp="#Cod_NotizieVol3_riga41"/>
+<zone ulx="299" uly="551" lrx="551" lry="559" xml:id="NotizieVol3_riga42" corresp="#Cod_NotizieVol3_riga42"/>
+<zone ulx="295" uly="561" lrx="555" lry="567" xml:id="NotizieVol3_riga43" corresp="#Cod_NotizieVol3_riga43"/>
+<zone ulx="304" uly="569" lrx="544" lry="579" xml:id="NotizieVol3_riga44" corresp="#Cod_NotizieVol3_riga44"/>
+<zone ulx="297" uly="583" lrx="546" lry="589" xml:id="NotizieVol3_riga45" corresp="#Cod_NotizieVol3_riga45"/>
+<zone ulx="294" uly="591" lrx="547" lry="598" xml:id="NotizieVol3_riga46" corresp="#Cod_NotizieVol3_riga46"/>
+<zone ulx="296" uly="598" lrx="550" lry="607" xml:id="NotizieVol3_riga47" corresp="#Cod_NotizieVol3_riga47"/>
+<zone ulx="299" uly="609" lrx="547" lry="617" xml:id="NotizieVol3_riga48" corresp="#Cod_NotizieVol3_riga48"/>
+<zone ulx="507" uly="619" lrx="537" lry="627" xml:id="NotizieVol3_riga49" corresp="#Cod_NotizieVol3_riga49"/>
+<zone ulx="313" uly="631" lrx="554" lry="639" xml:id="NotizieVol3_riga50" corresp="#Cod_NotizieVol3_riga50"/>
+<zone ulx="298" uly="640" lrx="545" lry="648" xml:id="NotizieVol3_riga51" corresp="#Cod_NotizieVol3_riga51"/>
+<zone ulx="304" uly="648" lrx="547" lry="659" xml:id="NotizieVol3_riga52" corresp="#Cod_NotizieVol3_riga52"/>
+<zone ulx="303" uly="661" lrx="388" lry="669" xml:id="NotizieVol3_riga53" corresp="#Cod_NotizieVol3_riga53"/>
+<zone ulx="496" uly="659" lrx="544" lry="667" xml:id="NotizieVol3_riga54" corresp="#Cod_NotizieVol3_riga54"/>
+<zone ulx="317" uly="670" lrx="548" lry="678" xml:id="NotizieVol3_riga55" corresp="#Cod_NotizieVol3_riga55"/>
+<zone ulx="306" uly="683" lrx="547" lry="693" xml:id="NotizieVol3_riga56" corresp="#Cod_NotizieVol3_riga56"/>
+<zone ulx="301" uly="691" lrx="327" lry="700" xml:id="NotizieVol3_riga57" corresp="#Cod_NotizieVol3_riga57"/>
+<zone ulx="391" uly="706" lrx="457" lry="711" xml:id="NotizieVol3_riga58" corresp="#Cod_NotizieVol3_riga58"/>
+<zone ulx="314" uly="718" lrx="553" lry="724" xml:id="NotizieVol3_riga59" corresp="#Cod_NotizieVol3_riga59"/>
+<zone ulx="299" uly="728" lrx="337" lry="735" xml:id="NotizieVol3_riga60" corresp="#Cod_NotizieVol3_riga60"/>
+<zone ulx="332" uly="739" lrx="419" lry="748" xml:id="NotizieVol3_riga61" corresp="#Cod_NotizieVol3_riga61"/>
+<zone ulx="324" uly="750" lrx="393" lry="758" xml:id="NotizieVol3_riga62" corresp="#Cod_NotizieVol3_riga62"/>
+<zone ulx="426" uly="743" lrx="514" lry="755" xml:id="NotizieVol3_riga63" corresp="#Cod_NotizieVol3_riga63"/>
+<zone ulx="322" uly="762" lrx="493" lry="774" xml:id="NotizieVol3_riga64" corresp="#Cod_NotizieVol3_riga64"/>
+<zone ulx="387" uly="775" lrx="531" lry="785" xml:id="NotizieVol3_riga65" corresp="#Cod_NotizieVol3_riga65"/>
+</surface>
+</facsimile>
+<text xml:id="NotizieVol3_text" subtype="news">
+    <body>
+        <pb n="332" facs="#NotizieVol3_header"/>
+        <fw type="header" xml:id="Cod_NotizieVol3_header" facs="#NotizieVol3_header">
+            332 LA RASSEGNA SETTIMANALE Vol. 3°, N° 69
+        </fw>
+        <div type="article" xml:id="NotizieVol3_article">
+        <head rend="align(center) case(allcaps)" xml:id="Cod_NotizieVol3_labelDx" facs="#NotizieVol3_labelDx">
+            NOTIZIE.
+        </head>
+
+        <p xml:id="Notizie_P1" n="1">
+            <lb xml:id="Cod_NotizieVol3_riga1" n="1" facs="#NotizieVol3_riga1"/>
+            — La festa per il 50° anniversario della fondazione dell'<orgName ref="#Inst_Archeo_Ger">Istituto ar<lb xml:id="Cod_NotizieVol3_riga2" n="2" facs="#NotizieVol3_riga2" break="no"/>cheologico germanico</orgName> fu celebrata con grande solennità il 21 di aprile. 
+            <lb xml:id="Cod_NotizieVol3_riga3" n="3" facs="#NotizieVol3_riga3"/>
+            Furono editi vari libri in tale solenne circostanza, tra i quali è im<lb xml:id="Cod_NotizieVol3_riga4" n="4" facs="#NotizieVol3_riga4" break="no"/>portante il libro del <persName ref="#GB_DeRossi">commendatore de Rossi</persName>, intitolato: <title level="m">Storia gene<lb xml:id="Cod_NotizieVol3_riga5" n="5" facs="#NotizieVol3_riga5" break="no"/>rale delle misure e piante di Roma dalle sue origini a tutto il secolo XV.</title> 
+            <lb xml:id="Cod_NotizieVol3_riga6" n="6" facs="#NotizieVol3_riga6"/>
+            Questo libro trova il suo compimento nella pubblicazione che il <orgName ref="#Min_Istruzione">Mini<lb xml:id="Cod_NotizieVol3_riga7" n="7" facs="#NotizieVol3_riga7" break="no"/>stero dell'Istruzione</orgName> fece per la medesima circostanza, dando alla luce 
+            <lb xml:id="Cod_NotizieVol3_riga8" n="8" facs="#NotizieVol3_riga8"/>
+            una riproduzione della grande pianta di <placeName ref="#RM">Roma</placeName> di <persName ref="#L_Bufalini">L. Bufalini</persName>, tratta da 
+            <lb xml:id="Cod_NotizieVol3_riga9" n="9" facs="#NotizieVol3_riga9"/>
+            una copia rinvenuta a <placeName ref="#CN">Cuneo</placeName> nel convento di <placeName>S. M. degli Angeli</placeName>.
+        </p>
+
+        <p xml:id="Notizie_P2" n="2">
+            <lb xml:id="Cod_NotizieVol3_riga10" n="10" facs="#NotizieVol3_riga10"/>
+            — Nell’adunanza del <date when="1879-02-23">23 febbraio 1879</date>, della <orgName ref="#Deputazione_BO">R. Deputazione di 
+            <lb xml:id="Cod_NotizieVol3_riga11" n="11" facs="#NotizieVol3_riga11"/>
+            Storia patria di Bologna</orgName>, il <persName ref="#L_Manzoni">conte Luigi Manzoni</persName> ha letto la prima
+            <lb xml:id="Cod_NotizieVol3_riga12" n="12" facs="#NotizieVol3_riga12"/>
+            parte di un suo lavoro sulla storia e letteratura della leggenda di 
+            <lb xml:id="Cod_NotizieVol3_riga13" n="13" facs="#NotizieVol3_riga13"/>
+            <persName ref="#P_Gianni">Prete Gianni</persName>, menzionato nel <title level="m">Novellino</title> e famoso nelle cronache caval<lb xml:id="Cod_NotizieVol3_riga14" n="14" facs="#NotizieVol3_riga14" break="no"/>leresche del medio evo. In questa prima parte il <choice><abbr>signor</abbr><expan>signore</expan></choice> <persName ref="#L_Manzoni">Manzoni</persName> di<lb xml:id="Cod_NotizieVol3_riga15" n="15" facs="#NotizieVol3_riga15" break="no"/>scorre del poema in ottava rima sopra tale argomento, composto da 
+            <lb xml:id="Cod_NotizieVol3_riga16" n="16" facs="#NotizieVol3_riga16"/>
+            <persName ref="#G_Dati">Giuliano Dati</persName> sulla fine del <date>secolo XV</date>, più volte edita; ne chiarisce 
+            <lb xml:id="Cod_NotizieVol3_riga17" n="17" facs="#NotizieVol3_riga17"/>
+            le fonti, e n'espone il contenuto.
+            <note type="storica" resp="#FlorisValenti">La leggenda del <persName ref="#P_Gianni">Prete Gianni</persName>
+                — sovrano cristiano d'Oriente di cui narra già Marco Polo — ebbe larga fortuna
+                nel Medioevo come simbolo di un regno cristiano utopico oltre i confini del mondo
+                noto. Il lavoro del conte <persName ref="#L_Manzoni">Luigi Manzoni</persName>
+                si colloca nel filone positivistico della storia delle tradizioni medievali,
+                molto praticato nelle accademie italiane del secondo Ottocento.
+                <persName ref="#G_Dati">Giuliano Dati</persName> (1445–1524), il prelato poeta
+                che aveva già tradotto in ottava rima la lettera di Colombo, compose il suo
+                poema sul Prete Gianni attingendo a fonti portoghesi e latine.</note>
+        </p>
+
+        <p xml:id="Notizie_P3" n="3">
+            <lb xml:id="Cod_NotizieVol3_riga18" n="18" facs="#NotizieVol3_riga18"/>
+            — La <orgName ref="#Marciana">Biblioteca Marciana</orgName> ha acquistato recentemente un <term>Antifo<lb xml:id="Cod_NotizieVol3_riga19" n="19" facs="#NotizieVol3_riga19" break="no"/>nario</term> in pergamena, del <date>secolo XIV</date> (già appartenuto alla <orgName ref="#Conf_Carita">Confrater<lb xml:id="Cod_NotizieVol3_riga20" n="20" facs="#NotizieVol3_riga20" break="no"/>nita della Carità</orgName> di <placeName ref="#VE">Venezia</placeName>, e fatto a spese di questa), ornato di 
+            <lb xml:id="Cod_NotizieVol3_riga21" n="21" facs="#NotizieVol3_riga21"/>
+            venticinque miniature di rappresentazioni sacre. Nella seconda di dette 
+            <lb xml:id="Cod_NotizieVol3_riga22" n="22" facs="#NotizieVol3_riga22"/>
+            tavole miniate è scritto il nome dell’autore, che è <persName ref="#G_Gherardino">Giustino di maestro 
+            <lb xml:id="Cod_NotizieVol3_riga23" n="23" facs="#NotizieVol3_riga23"/>
+            Gherardino da Forlì</persName>. Il <term>cod.</term> è interessantissimo per la storia dell’arte, 
+            <lb xml:id="Cod_NotizieVol3_riga24" n="24" facs="#NotizieVol3_riga24"/>
+            e ci rivela il nome di un artista miniatore finora ignoto agli eruditi.
+        </p>
+
+        <p xml:id="Notizie_P4" n="4">
+            <lb xml:id="Cod_NotizieVol3_riga25" n="25" facs="#NotizieVol3_riga25"/>
+            Secondo il <title level="j">Globe</title> il programma ufficiale stabilito per la « Spedi<lb xml:id="Cod_NotizieVol3_riga26" n="26" facs="#NotizieVol3_riga26" break="no"/>zione Imperiale » nell’<placeName ref="#Asia_C">Asia centrale</placeName>, comandata dal <persName ref="#N_Costantinovich">Gran Duca Niccolò 
+            <lb xml:id="Cod_NotizieVol3_riga27" n="27" facs="#NotizieVol3_riga27"/>
+            Costantinovich</persName>, sarebbe il seguente: Lo Stato maggiore della spedi<lb xml:id="Cod_NotizieVol3_riga28" n="28" facs="#NotizieVol3_riga28" break="no"/>zione si comporrà di un <roleName>ingegnere</roleName>, di un <roleName>ufficiale</roleName> della flotta del Bal<lb xml:id="Cod_NotizieVol3_riga29" n="29" facs="#NotizieVol3_riga29" break="no"/>tico, di un <roleName>ispettore</roleName>, un <roleName>naturalista</roleName>, un <roleName>archeologo</roleName>, un <roleName>geologo</roleName>, un 
+            <lb xml:id="Cod_NotizieVol3_riga30" n="30" facs="#NotizieVol3_riga30"/>
+            <roleName>pittore</roleName>, un <roleName>topografo</roleName> ed un <roleName>corrispondente</roleName>. Scopo della spedizione è di 
+            <lb xml:id="Cod_NotizieVol3_riga31" n="31" facs="#NotizieVol3_riga31"/>
+            scegliere la strada che dovrà percorrere la <term>ferrovia dell’Asia centrale</term>, 
+            <lb xml:id="Cod_NotizieVol3_riga32" n="32" facs="#NotizieVol3_riga32"/>
+            esaminare la navigabilità dell’<placeName ref="#Oxus">Oxus</placeName> e decidere se è possibile di farlo 
+            <lb xml:id="Cod_NotizieVol3_riga33" n="33" facs="#NotizieVol3_riga33"/>
+            sboccare nel <placeName ref="#Caspio">Caspio</placeName>. La spedizione andrà dall’<placeName ref="#Ural">Ural</placeName> a <placeName ref="#Karasugai">Karasugai</placeName>, sul 
+            <lb xml:id="Cod_NotizieVol3_riga34" n="34" facs="#NotizieVol3_riga34"/>
+            <placeName ref="#Syr_Daria">Syr Daria</placeName>, poi per la via di <placeName ref="#Tashkend">Tashkend</placeName> e <placeName ref="#Samarcanda">Samarcanda</placeName> all’<placeName ref="#Oxus">Oxus</placeName> a <placeName ref="#Kunduz">Kunduz</placeName> 
+            <lb xml:id="Cod_NotizieVol3_riga35" n="35" facs="#NotizieVol3_riga35"/>
+            (<placeName ref="#Afghanistan">Afghanistan</placeName>); quindi lungo il fiume a <placeName ref="#Khiva">Khiva</placeName> e traverso il <placeName ref="#Kara_Kum">Kara Kum</placeName> 
+            <lb xml:id="Cod_NotizieVol3_riga36" n="36" facs="#NotizieVol3_riga36"/>
+            a <placeName ref="#Krasnovodsk">Krasnovodsk</placeName>. Lo scopo della spedizione sarà: 1. Raccogliere infor<lb xml:id="Cod_NotizieVol3_riga37" n="37" facs="#NotizieVol3_riga37" break="no"/>mazioni rispetto alla spesa per la <term>linea ferrata</term>, la possibilità di avere 
+            <lb xml:id="Cod_NotizieVol3_riga38" n="38" facs="#NotizieVol3_riga38"/>
+            il materiale da costruzione, sapere se il <term>combustibile</term> esiste lungo la 
+            <lb xml:id="Cod_NotizieVol3_riga39" n="39" facs="#NotizieVol3_riga39"/>
+            via o anche la quantità di lavoro che si può ottenere; 2. Studiare la 
+            <lb xml:id="Cod_NotizieVol3_riga40" n="40" facs="#NotizieVol3_riga40"/>
+            velocità dell’<placeName ref="#Oxus">Oxus</placeName>, l’altezza delle sue sponde, sapere quanta è la po<lb xml:id="Cod_NotizieVol3_riga41" n="41" facs="#NotizieVol3_riga41" break="no"/>polazione delle città e stabilimenti più vicini, e conoscere il commer<lb xml:id="Cod_NotizieVol3_riga42" n="42" facs="#NotizieVol3_riga42" break="no"/>cio che si fa sul fiume; 3. Esaminare le oasi di <placeName ref="#Khiva">Khiva</placeName>, le acque di 
+            <lb xml:id="Cod_NotizieVol3_riga43" n="43" facs="#NotizieVol3_riga43"/>
+            <placeName ref="#Sari_Kamish">Sari Kamish</placeName> e l’antico letto dell’<placeName ref="#Oxus">Oxus</placeName>, conosciuto comunemente col 
+            <lb xml:id="Cod_NotizieVol3_riga44" n="44" facs="#NotizieVol3_riga44"/>
+            nome di <placeName ref="#Uzboi">Uzboi</placeName>; 4. Fare delle osservazioni astronomiche lungo la strada, 
+            <lb xml:id="Cod_NotizieVol3_riga45" n="45" facs="#NotizieVol3_riga45"/>
+            tracciare dei piani militari, far disegni del paese, raccogliere oggetti 
+            <lb xml:id="Cod_NotizieVol3_riga46" n="46" facs="#NotizieVol3_riga46"/>
+            mineralogici, geologici, archeologici, di qualche importanza, e tenere 
+            <lb xml:id="Cod_NotizieVol3_riga47" n="47" facs="#NotizieVol3_riga47"/>
+            un diario. È anche possibile tuttavia, che nel caso di certi imbrogli 
+            <lb xml:id="Cod_NotizieVol3_riga48" n="48" facs="#NotizieVol3_riga48"/>
+            orientali, la spedizione geografica possa divenire militare contro <placeName ref="#Merv">Merv</placeName>. 
+            <lb xml:id="Cod_NotizieVol3_riga49" n="49" facs="#NotizieVol3_riga49"/>
+            (<title level="j">Nature</title>)
+        </p>
+
+        <p xml:id="Notizie_P5" n="5">
+            <lb xml:id="Cod_NotizieVol3_riga50" n="50" facs="#NotizieVol3_riga50"/>
+            — Il <persName ref="#Rocher">signor Rocher</persName>, di <placeName ref="#TLS">Tolosa</placeName>, ha chiamato <term>Amianthine</term> un nuovo 
+            <lb xml:id="Cod_NotizieVol3_riga51" n="51" facs="#NotizieVol3_riga51"/>
+            combustibile da lui inventato, del quale si parla molto in <placeName ref="#America">America</placeName>.
+            <lb xml:id="Cod_NotizieVol3_riga52" n="52" facs="#NotizieVol3_riga52"/>
+            È un composto di <term>amianto</term> ridotto in polvere finissima, <term>carbone di le<lb xml:id="Cod_NotizieVol3_riga53" n="53" facs="#NotizieVol3_riga53" break="no"/>gna</term> e <term>nitrato di piombo</term>. 
+            <lb xml:id="Cod_NotizieVol3_riga54" n="54" facs="#NotizieVol3_riga54"/>
+            (<title level="j">Athenæum</title>)
+        </p>
+
+        <p xml:id="Notizie_P6" n="6">
+            <lb xml:id="Cod_NotizieVol3_riga55" n="55" facs="#NotizieVol3_riga55"/>
+            — Il <date when="1879-04-06">6 aprile</date> morì a <placeName ref="#BL">Berlino</placeName> nell’età di 76 anni il celebre 
+            <lb xml:id="Cod_NotizieVol3_riga56" n="56" facs="#NotizieVol3_riga56"/>
+            fisico <persName ref="#HW_Dove">prof. Dove</persName>, che a giusto titolo si può chiamare il padre della meteo<lb xml:id="Cod_NotizieVol3_riga57" n="57" facs="#NotizieVol3_riga57" break="no"/>rologia.
+        </p>
+
+        </div><!-- /div article -->
+        <div type="errata">
+            <head rend="align(center)" xml:id="Cod_NotizieVol3_riga58" facs="#NotizieVol3_riga58">ERRATA-CORRIGE</head>
+            <p>
+                <lb xml:id="Cod_NotizieVol3_riga59" n="59" facs="#NotizieVol3_riga59"/>
+                Nel numero 68, pag. 309, col. 1ª, linea 22, invece di: <choice><sic>Cirici</sic><corr>Cinci</corr></choice>, leggasi: 
+                <lb xml:id="Cod_NotizieVol3_riga60" n="60" facs="#NotizieVol3_riga60"/>
+                <mentioned>Cinci</mentioned>.
+            </p>
+        </div>
+
+        <div type="colophon">
+            <p>
+                <lb xml:id="Cod_NotizieVol3_riga61" n="61" facs="#NotizieVol3_riga61"/>
+                <persName ref="#L_Franchetti">LEOPOLDO FRANCHETTI</persName> | 
+                <lb xml:id="Cod_NotizieVol3_riga62" n="62" facs="#NotizieVol3_riga62"/>
+                <persName ref="#S_Sonnino">SIDNEY SONNINO</persName> 
+                <lb xml:id="Cod_NotizieVol3_riga63" n="63" facs="#NotizieVol3_riga63"/>
+                } Proprietari Direttori.
+            </p>
+            <p>
+                <lb xml:id="Cod_NotizieVol3_riga64" n="64" facs="#NotizieVol3_riga64"/>
+                <persName ref="#P_Pampaloni">PIETRO PAMPALONI</persName>, Gerente Responsabile. 
+                <lb xml:id="Cod_NotizieVol3_riga65" n="65" facs="#NotizieVol3_riga65"/>
+                <placeName ref="#RM">ROMA</placeName>, <date when="1879">1879</date>. — <orgName ref="#Tip_Barbera">Tipografia BARBÈRA</orgName>.
+            </p>
+        </div>
+    </body>
+</text>
+    </TEI>
+
+
+    <!-- ============================================================
+         TEI 7 - Notizie Volume 5
+         ============================================================ -->
+    <TEI xml:id="TEI_NotizieVol5">
+        <teiHeader>
+            <fileDesc>
+                <titleStmt><title level="a">Sezione Notizie (da La Rassegna Settimanale, Volume 5, Fascicolo 106, dell'11 Gennaio 1880)</title><respStmt xml:id="FlorisValenti_T6"><resp>Codifica TEI-XML</resp><persName>Rebecca Floris</persName><persName>Diletta Valenti</persName></respStmt></titleStmt>
+                <publicationStmt>
+                    <publisher>Università di Pisa — Corso di Informatica Umanistica</publisher>
+                    <pubPlace>Pisa</pubPlace>
+                    <date when="2026">2026</date>
+                    <availability status="free">
+                        <licence target="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</licence>
+                    </availability>
+                </publicationStmt>
+                <sourceDesc>
+                    <biblStruct>
+                        <monogr>
+                            <title level="j">La Rassegna Settimanale</title>
+                            <imprint>
+                                <publisher ref="#L_Franchetti">Franchetti</publisher>
+                                <publisher ref="#S_Sonnino">Sonnino</publisher>
+                                <pubPlace ref="#RM">Roma</pubPlace>
+                                <date when="1880">1880</date>
+                                <biblScope unit="volume">5</biblScope>
+                                <biblScope unit="issue">106</biblScope>
+                                <biblScope unit="page">40</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                </sourceDesc>
+            </fileDesc>
+            <encodingDesc>
+                <projectDesc>
+                    <p>Codifica realizzata nell'ambito del corso di Informatica Umanistica,
+                       Università di Pisa, a.a. 2025–2026. Cfr. il <ref target="#rassegna_corpus">teiHeader del corpus</ref>
+                       per la descrizione completa del progetto.</p>
+                </projectDesc>
+                <projectDesc>
+                    <p>Testo codificato nell'ambito del corpus digitale de «La Rassegna Settimanale»
+                       (Università di Pisa, Informatica Umanistica, a.a. 2025–2026).
+                       Si vedano le linee guida nel <gi>teiHeader</gi> del <gi>teiCorpus</gi>.</p>
+                </projectDesc>
+                <editorialDecl>
+                    <normalization><p>Grafia originale conservata; abbreviazioni sciolte ove presenti.</p></normalization>
+                    <hyphenation eol="all"><p>Sillabazioni di fine riga codificate con lb @break="no".</p></hyphenation>
+                </editorialDecl>
+            </encodingDesc>
+            <profileDesc>
+                <langUsage>
+                    <language ident="it">Italiano ottocentesco (prosa giornalistica breve, 1880).</language>
+                </langUsage>
+                <textClass>
+                    <keywords>
+                        <term>notizie culturali</term>
+                        <term>letteratura</term>
+                        <term>inventori</term>
+                        <term>Russia</term>
+                    </keywords>
+                </textClass>
+            </profileDesc>
+            <revisionDesc>
+                <change when="2026-05" who="#FlorisValenti">Revisione finale; aggiunta encodingDesc, profileDesc.</change>
+                <change when="2026-04" who="#FlorisValenti">Prima codifica del testo.</change>
+            </revisionDesc>
+        </teiHeader>
+
+        <facsimile>
+            <surface xml:id="notizie_vol5_p40">
+                <graphic url='images/Notizie_Volume_5_Fascicolo_106,_Pag_40.png' width='597px' height='830px' />
+                <zone ulx="53" uly="21" lrx="83" lry="42" xml:id="Notizie5_NumeroPagina" corresp="#Cod_Notizie5_NumeroPagina"/>
+                <zone ulx="217" uly="20" lrx="404" lry="43" xml:id="Notizie5_Intestazione" corresp="#Cod_Notizie5_Intestazione"/>
+                <zone ulx="474" uly="23" lrx="568" lry="43" xml:id="Notizie5_NumeroVolumeFascicolo" corresp="#Cod_Notizie5_NumeroVolumeFascicolo"/>
+                <zone ulx="408" uly="491" lrx="472" lry="505" xml:id="Notizie5_Sezione" corresp="#Cod_Notizie5_Sezione"/>
+                <zone ulx="310" uly="506" lrx="568" lry="518" xml:id="Notizie5_riga1" corresp="#Cod_Notizie5_riga1"/>
+                <zone ulx="312" uly="518" lrx="567" lry="525" xml:id="Notizie5_riga2" corresp="#Cod_Notizie5_riga2"/>
+                <zone ulx="313" uly="526" lrx="565" lry="535" xml:id="Notizie5_riga3" corresp="#Cod_Notizie5_riga3"/>
+                <zone ulx="313" uly="536" lrx="568" lry="545" xml:id="Notizie5_riga4" corresp="#Cod_Notizie5_riga4"/>
+                <zone ulx="313" uly="545" lrx="567" lry="554" xml:id="Notizie5_riga5" corresp="#Cod_Notizie5_riga5"/>
+                <zone ulx="313" uly="555" lrx="567" lry="562" xml:id="Notizie5_riga6" corresp="#Cod_Notizie5_riga6"/>
+                <zone ulx="313" uly="563" lrx="391" lry="573" xml:id="Notizie5_riga7" corresp="#Cod_Notizie5_riga7"/>
+                <zone ulx="314" uly="573" lrx="566" lry="583" xml:id="Notizie5_riga8" corresp="#Cod_Notizie5_riga8"/>
+                <zone ulx="313" uly="584" lrx="566" lry="592" xml:id="Notizie5_riga9" corresp="#Cod_Notizie5_riga9"/>
+                <zone ulx="312" uly="593" lrx="565" lry="600" xml:id="Notizie5_riga10" corresp="#Cod_Notizie5_riga10"/>
+                <zone ulx="312" uly="602" lrx="431" lry="610" xml:id="Notizie5_riga11" corresp="#Cod_Notizie5_riga11"/>
+                <zone ulx="311" uly="615" lrx="568" lry="627" xml:id="Notizie5_riga12" corresp="#Cod_Notizie5_riga12"/>
+                <zone ulx="311" uly="626" lrx="565" lry="637" xml:id="Notizie5_riga13" corresp="#Cod_Notizie5_riga13"/>
+                <zone ulx="313" uly="637" lrx="567" lry="646" xml:id="Notizie5_riga14" corresp="#Cod_Notizie5_riga14"/>
+                <zone ulx="310" uly="646" lrx="400" lry="653" xml:id="Notizie5_riga15" corresp="#Cod_Notizie5_riga15"/>
+                <zone ulx="312" uly="654" lrx="564" lry="663" xml:id="Notizie5_riga16" corresp="#Cod_Notizie5_riga16"/>
+                <zone ulx="311" uly="663" lrx="563" lry="673" xml:id="Notizie5_riga17" corresp="#Cod_Notizie5_riga17"/>
+                <zone ulx="310" uly="673" lrx="567" lry="683" xml:id="Notizie5_riga18" corresp="#Cod_Notizie5_riga18"/>
+                <zone ulx="311" uly="684" lrx="564" lry="692" xml:id="Notizie5_riga19" corresp="#Cod_Notizie5_riga19"/>
+                <zone ulx="309" uly="692" lrx="563" lry="702" xml:id="Notizie5_riga20" corresp="#Cod_Notizie5_riga20"/>
+                <zone ulx="310" uly="702" lrx="456" lry="713" xml:id="Notizie5_riga21" corresp="#Cod_Notizie5_riga21"/>
+                <zone ulx="339" uly="716" lrx="439" lry="735" xml:id="Notizie5_NomiDirettori" corresp="#Notizie5_NomiDirettori"/>
+                <zone ulx="441" uly="719" lrx="529" lry="730" xml:id="Notizie5_RuoloDirettori" corresp="#Notizie5_RuoloDirettori"/>
+                <zone ulx="344" uly="736" lrx="420" lry="746" xml:id="Notizie5_NomeResponsabile" corresp="#Notizie5_NomeResponsabile"/>
+                <zone ulx="420" uly="736" lrx="507" lry="746" xml:id="Notizie5_RuoloResponsabile" corresp="#Notizie5_RuoloResponsabile"/>
+                <zone ulx="409" uly="748" lrx="556" lry="762" xml:id="Notizie5_LuogoDataTipografia" corresp="#Notizie5_LuogoDataTipografia"/>
+            </surface>
+        </facsimile>
+
+        <text xml:id="Notizie5_text">
+            <body>
+                <pb n="40" facs="#notizie_vol5_p40"/>
+                <fw type="pageNum" place="left" xml:id="Cod_Notizie5_NumeroPagina" facs="#Notizie5_NumeroPagina">40</fw>
+                <fw type="title" place="center" xml:id="Cod_Notizie5_Intestazione" facs="#Notizie5_Intestazione">LA RASSEGNA SETTIMANALE</fw>
+                <fw type="issue" place="right" xml:id="Cod_Notizie5_NumeroVolumeFascicolo" facs="#Notizie5_NumeroVolumeFascicolo">[VoL. 5°, N° 106 <milestone unit="headerBreak"/></fw>
+                <div type="article" xml:id="Notizie5_article">
+                <head rend="align(center) case(allcaps)" xml:id="Cod_Notizie5_Sezione" n="1" facs="#Notizie5_Sezione">
+                    <title type="main">NOTIZIE</title>
+                </head>
+
+                <p xml:id="Notizie5_1" n="1">
+                    <lb xml:id="Cod_Notizie5_riga1" n="1" facs="#Notizie5_riga1"/>
+                    — È stato annunziato ultimamente dal signor <persName ref="#Posocco">Posocco</persName>
+                    nel <title level="j" ref="#FanfullaDomenica">Fanfulla
+                    <lb xml:id="Cod_Notizie5_riga2" n="2" facs="#Notizie5_riga2"/>
+                    della Domenica</title> che il <persName ref="#Viani"><roleName>cav.</roleName> Prospero Viani</persName> ha trovato la
+                    <title level="a">Cantica ine-
+                    <lb xml:id="Cod_Notizie5_riga3" n="3" facs="#Notizie5_riga3"/>
+                    dita</title> di <persName ref="#Leopardi">Giacomo Leopardi</persName> intitolata:
+                    <title level="a">L'appressamento della morte</title>, e
+                    <lb xml:id="Cod_Notizie5_riga4" n="4" facs="#Notizie5_riga4"/>
+                    che questa sarà pubblicata nel mese corrente nella seconda parte del-
+                    <lb xml:id="Cod_Notizie5_riga5" n="5" facs="#Notizie5_riga5"/>
+                    l'<title level="a">Appendice all'epistolario Leopardiano</title>.
+                    Possiamo aggiungere che que-
+                    <lb xml:id="Cod_Notizie5_riga6" n="6" facs="#Notizie5_riga6"/>
+                    st'appendice comprenderà pure un epigramma inedito del
+                    <persName ref="#Leopardi"><roleName type="epithet">Recanatese</roleName></persName>
+                    <lb xml:id="Cod_Notizie5_riga7" n="7" facs="#Notizie5_riga7"/>
+                    contro il <persName ref="#Tommaseo">Tommasèo</persName>.
+                </p>
+
+                <p xml:id="Notizie5_2" n="2">
+                    <lb xml:id="Cod_Notizie5_riga8" n="8" facs="#Notizie5_riga8"/>
+                    — Il signor <persName ref="#Buchanan">Buchanan</persName> ha scritto un poema che uscirà nella pros-
+                    <lb xml:id="Cod_Notizie5_riga9" n="9" facs="#Notizie5_riga9"/>
+                    sima <title level="j" ref="#ContemporaryReview">Contemporary Review</title>. È la storia di un fanciullo educato senza
+                    <lb xml:id="Cod_Notizie5_riga10" n="10" facs="#Notizie5_riga10"/>
+                    nessuna <term type="tema">idea religiosa</term> di nessun genere. Dal nome del fanciullo,
+                    <persName type="fictional">Giu-<lb xml:id="Cod_Notizie5_riga11" n="11" facs="#Notizie5_riga11" break="no"/>stiniano</persName>, è intitolato il poema.
+                </p>
+
+                <p xml:id="Notizie5_3" n="3">
+                    <lb xml:id="Cod_Notizie5_riga12" n="12" facs="#Notizie5_riga12"/>
+                    — Il <date when="1879-12-27">27 decembre p. s.</date> morì improvvisamente <persName ref="#Dixon">G. Hepworth Dixon</persName>.
+                    <lb xml:id="Cod_Notizie5_riga13" n="13" facs="#Notizie5_riga13"/>
+                    Egli è noto specialmente per i suoi <term type="tema">viaggi</term> nell'estremo <placeName ref="#Occidente">Occidente</placeName>, in
+                    <lb xml:id="Cod_Notizie5_riga14" n="14" facs="#Notizie5_riga14"/>
+                    <placeName ref="#Russia">Russia</placeName>, in <placeName ref="#Palestina">Palestina</placeName> e in <placeName ref="#Cipro">Cipro</placeName>,
+                    e per le sue importantissime indagini
+                    <lb xml:id="Cod_Notizie5_riga15" n="15" facs="#Notizie5_riga15"/>
+                    <term type="disciplina">etnologiche</term> in <placeName ref="#America">America</placeName>.
+                </p>
+
+                <p xml:id="Notizie5_4" n="4">
+                    <lb xml:id="Cod_Notizie5_riga16" n="16" facs="#Notizie5_riga16"/>
+                    — I naturalisti e i soci della <orgName ref="#SocietaGeograficaRussa">Società geografica russa</orgName>, hanno de-
+                    <lb xml:id="Cod_Notizie5_riga17" n="17" facs="#Notizie5_riga17"/>
+                    liberato di pubblicare un'opera importante che avrà il titolo:
+                    <title level="m">Rivista
+                    <lb xml:id="Cod_Notizie5_riga18" n="18" facs="#Notizie5_riga18"/>
+                    delle spedizioni e dei viaggi scientifici russi fatti durante il regno dello
+                    <lb xml:id="Cod_Notizie5_riga19" n="19" facs="#Notizie5_riga19"/>
+                    Czar attuale</title>. Essi hanno in animo di pubblicarlo per il venticinquesimo
+                    <lb xml:id="Cod_Notizie5_riga20" n="20" facs="#Notizie5_riga20"/>
+                    anniversario dell'ascensione al trono dell'imperatore <persName ref="#AlessandroII">Alessandro II</persName>,
+                    <lb xml:id="Cod_Notizie5_riga21" n="21" facs="#Notizie5_riga21"/>
+                    che sarà il <date when="1880-02-19">19 febbraio (2 marzo) 1880</date>.
+                </p>
+                </div><!-- /div type="article" -->
+
+                <div type="colophon">
+                    <p>
+                        <lb xml:id="Cod_Notizie5_riga22" n="22" facs="#Notizie5_NomiDirettori"/>
+                        <persName ref="#L_Franchetti">LEOPOLDO FRANCHETTI</persName> |
+                        <lb xml:id="Cod_Notizie5_riga23" n="23" facs="#Notizie5_NomiDirettori"/>
+                        <persName ref="#S_Sonnino">SIDNEY SONNINO</persName>
+                        <lb xml:id="Cod_Notizie5_riga24" n="24" facs="#Notizie5_RuoloDirettori"/>
+                        } Direttori Proprietari.
+                    </p>
+                    <p>
+                        <lb xml:id="Cod_Notizie5_riga25" n="25" facs="#Notizie5_NomeResponsabile"/>
+                        <persName ref="#P_Pampaloni">PIETRO PAMPALONI</persName>,
+                        <lb xml:id="Cod_Notizie5_riga26" n="26" facs="#Notizie5_RuoloResponsabile"/>
+                        Gerente Responsabile.
+                    </p>
+                    <p>
+                        <lb xml:id="Cod_Notizie5_riga27" n="27" facs="#Notizie5_LuogoDataTipografia"/>
+                        <placeName ref="#RM">ROMA</placeName>, <date when="1880">1880</date>. — <orgName ref="#Tip_Barbera">Tipografia BARBÈRA</orgName>.
+                    </p>
+                </div>
+            </body>
+        </text>
+    </TEI>
+
+    <!-- ============================================================
+         TEI 8 - Notizie Volume 8
+         ============================================================ -->
+    <TEI xml:id="TEI_NotizieVol8">
+        <teiHeader>
+            <fileDesc>
+                <titleStmt><title level="a">Sezione Notizie (da La Rassegna Settimanale, Volume 8, Fascicolo 188, del 7 Agosto 1881)</title><respStmt xml:id="FlorisValenti_T7"><resp>Codifica TEI-XML</resp><persName>Rebecca Floris</persName><persName>Diletta Valenti</persName></respStmt></titleStmt>
+                <publicationStmt>
+                    <publisher>Università di Pisa — Corso di Informatica Umanistica</publisher>
+                    <pubPlace>Pisa</pubPlace>
+                    <date when="2026">2026</date>
+                    <availability status="free">
+                        <licence target="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</licence>
+                    </availability>
+                </publicationStmt>
+                <sourceDesc>
+                    <biblStruct>
+                        <monogr>
+                            <title level="j">La Rassegna Settimanale</title>
+                            <imprint>
+                                <publisher ref="#S_Sonnino">Sonnino</publisher>
+                                <pubPlace ref="#RM">Roma</pubPlace>
+                                <date when="1881-08-07">7 agosto 1881</date>
+                                <biblScope unit="volume">8</biblScope>
+                                <biblScope unit="issue">188</biblScope>
+                                <biblScope unit="page">96</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                </sourceDesc>
+            </fileDesc>
+            <encodingDesc>
+                <projectDesc>
+                    <p>Codifica realizzata nell'ambito del corso di Informatica Umanistica,
+                       Università di Pisa, a.a. 2025–2026. Cfr. il <ref target="#rassegna_corpus">teiHeader del corpus</ref>
+                       per la descrizione completa del progetto.</p>
+                </projectDesc>
+                <editorialDecl>
+                    <normalization><p>Grafia originale conservata.</p></normalization>
+                    <hyphenation eol="all"><p>Sillabazioni di fine riga codificate con lb @break="no".</p></hyphenation>
+                </editorialDecl>
+            </encodingDesc>
+            <profileDesc>
+                <langUsage>
+                    <language ident="it">Italiano ottocentesco (prosa giornalistica breve, 1881).</language>
+                </langUsage>
+                <textClass>
+                    <keywords>
+                        <term>notizie culturali</term>
+                        <term>letteratura</term>
+                        <term>epigrammi</term>
+                    </keywords>
+                </textClass>
+            </profileDesc>
+            <revisionDesc>
+                <change when="2026-05" who="#FlorisValenti">Revisione finale; aggiunta encodingDesc, profileDesc.</change>
+                <change when="2026-04" who="#FlorisValenti">Prima codifica del testo.</change>
+            </revisionDesc>
+        </teiHeader>
+
+        <facsimile>
+            <surface xml:id="notizie_vol8_p96">
+                <graphic url='images/Notizie_Volume_8_Fascicolo_188_Pag._96.png' width='555px' height='830px' />
+                <zone ulx="27" uly="8" lrx="57" lry="20" xml:id="Notizie8_NumeroPagina" corresp="#Cod_Notizie8_NumeroPagina"/>
+                <zone ulx="202" uly="7" lrx="377" lry="19" xml:id="Notizie8_Intestazione" corresp="#Cod_Notizie8_Intestazione"/>
+                <zone ulx="455" uly="7" lrx="547" lry="24" xml:id="Notizie8_NumeroVolumeFascicolo" corresp="#Cod_Notizie8_NumeroVolumeFascicolo"/>
+                <zone ulx="389" uly="644" lrx="455" lry="659" xml:id="Notizie8_Sezione" corresp="#Cod_Notizie8_Sezione"/>
+                <zone ulx="292" uly="657" lrx="548" lry="666" xml:id="Notizie8_riga1" corresp="#Cod_Notizie8_riga1"/>
+                <zone ulx="292" uly="667" lrx="546" lry="677" xml:id="Notizie8_riga2" corresp="#Cod_Notizie8_riga2"/>
+                <zone ulx="292" uly="676" lrx="546" lry="686" xml:id="Notizie8_riga3" corresp="#Cod_Notizie8_riga3"/>
+                <zone ulx="292" uly="686" lrx="548" lry="696" xml:id="Notizie8_riga4" corresp="#Cod_Notizie8_riga4"/>
+                <zone ulx="292" uly="696" lrx="548" lry="706" xml:id="Notizie8_riga5" corresp="#Cod_Notizie8_riga5"/>
+                <zone ulx="291" uly="706" lrx="548" lry="715" xml:id="Notizie8_riga6" corresp="#Cod_Notizie8_riga6"/>
+                <zone ulx="292" uly="715" lrx="517" lry="728" xml:id="Notizie8_riga7" corresp="#Cod_Notizie8_riga7"/>
+                <zone ulx="299" uly="729" lrx="394" lry="741" xml:id="Notizie8_NomeDirettori" corresp="#Notizie8_NomeDirettori"/>
+                <zone ulx="396" uly="728" lrx="478" lry="741" xml:id="Notizie8_RuoloDirettori" corresp="#Notizie8_RuoloDirettori"/>
+                <zone ulx="324" uly="743" lrx="403" lry="755" xml:id="Notizie8_NomeResponsabile" corresp="#Notizie8_NomeResponsabile"/>
+                <zone ulx="404" uly="741" lrx="478" lry="759" xml:id="Notizie8_RuoloResponsabile" corresp="#Notizie8_RuoloResponsabile"/>
+            </surface>
+        </facsimile>
+
+        <text xml:id="Notizie8_text">
+            <body>
+                <pb n="96" facs="#notizie_vol8_p96"/>
+                <fw type="pageNum" place="left" xml:id="Cod_Notizie8_NumeroPagina" facs="#Notizie8_NumeroPagina">96</fw>
+                <fw type="title" place="center" xml:id="Cod_Notizie8_Intestazione" facs="#Notizie8_Intestazione">LA RASSEGNA SETTIMANALE</fw>
+                <fw type="issue" place="right" xml:id="Cod_Notizie8_NumeroVolumeFascicolo" facs="#Notizie8_NumeroVolumeFascicolo">[Vol. 8°, N° 188 <milestone unit="headerBreak"/></fw>
+                <div type="article" xml:id="Notizie8_article">
+                <head rend="align(center) case(allcaps)" xml:id="Cod_Notizie8_Sezione" n="1" facs="#Notizie8_Sezione">
+                    <title type="main">NOTIZIE</title>
+                </head>
+
+                <p xml:id="Notizie8_1" n="1">
+                    <lb xml:id="Cod_Notizie8_riga1" n="1" facs="#Notizie8_riga1"/>
+                    — <persName ref="#Bonghi">Ruggero Bonghi</persName> annunzia la prossima pubblicazione di un
+                    <term type="tema">periodico critico-bibliografico</term>,
+                    <lb xml:id="Cod_Notizie8_riga2" n="2" facs="#Notizie8_riga2"/>
+                    da lui diretto, il quale si chiamerà
+                    «<title level="j" ref="#LaCultura">La Cultura,
+                    <lb xml:id="Cod_Notizie8_riga3" n="3" facs="#Notizie8_riga3"/>
+                    Rivista di scienze morali, di lettere ed arti</title>»: uscirà due volte al mese.
+                    <lb xml:id="Cod_Notizie8_riga4" n="4" facs="#Notizie8_riga4"/>
+                    Ciascun numero avrà tre parti cioè: recensioni, ossia analisi abbastanza
+                    <lb xml:id="Cod_Notizie8_riga5" n="5" facs="#Notizie8_riga5"/>
+                    lunghe e ragionate delle opere più segnalate; annunci di libri con un
+                    <lb xml:id="Cod_Notizie8_riga6" n="6" facs="#Notizie8_riga6"/>
+                    breve sunto del contenuto e osservazioni; notizie su i fatti principali at-
+                    <lb xml:id="Cod_Notizie8_riga7" n="7" facs="#Notizie8_riga7"/>
+                    tinenti alla <term type="tema">coltura</term> e all'<term type="tema">istruzione pubblica</term>
+                    in <placeName ref="#ITA">Italia</placeName> e fuori.
+                </p>
+                </div><!-- /div type="article" -->
+
+                <div type="colophon">
+                    <p>
+                        <lb xml:id="Cod_Notizie8_riga23" n="23" facs="#Notizie8_NomeDirettori"/>
+                        <persName ref="#S_Sonnino">SIDNEY SONNINO</persName>
+                        <lb xml:id="Cod_Notizie8_riga24" n="24" facs="#Notizie8_RuoloDirettori"/>
+                        } Direttore Proprietario.
+                    </p>
+                    <p>
+                        <lb xml:id="Cod_Notizie8_riga25" n="25" facs="#Notizie8_NomeResponsabile"/>
+                        <persName ref="#P_Pampaloni">PIETRO PAMPALONI</persName>,
+                        <lb xml:id="Cod_Notizie8_riga26" n="26" facs="#Notizie8_RuoloResponsabile"/>
+                        Gerente Responsabile.
+                    </p>
+                </div>
+            </body>
+        </text>
+    </TEI>
 </teiCorpus>
