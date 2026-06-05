@@ -1664,8 +1664,8 @@
         </p>
         
         <pb n="22" facs="#la_legge_sull_istruzione_pubblica_pag22"/>
-       <fw type="title" place="center" xml:id="Cod_la_legge_sull_istruzione_pubblica_pag_22_titolorassegna" facs="#sla_legge_sull_istruzione_pubblica_pag_21_titolorassegna">LA RASSEGNA SETTIMANALE</fw>
-        <fw type="issue" place="right" xml:id="Cod_la_legge_sull_istruzione_pubblica_pag_22_numerofascicolo" facs="#la_legge_sull_istruzione_pubblica_pag_22_numerovolumefascicolo">Vol. 5°, N° 106.
+       <fw type="title" place="center" xml:id="Cod_la_legge_sull_istruzione_pubblica_pag_22_titolorassegna" facs="#la_legge_sull_istruzione_pubblica_pag_21_titolorassegna">LA RASSEGNA SETTIMANALE</fw>
+        <fw type="issue" place="right" xml:id="#Cod_la_legge_sull_istruzione_pubblica_pag_22_volumefascic" facs="#la_legge_sull_istruzione_pubblica_pag_22_volumefascic">Vol. 5°, N° 106.
             <milestone unit="headerBreak"/>
         </fw>
 
