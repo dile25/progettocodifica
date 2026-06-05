@@ -1000,8 +1000,9 @@
             <lb xml:id="Cod_scuole_femminili313_riga27" n="27" facs="#scuole_femminili313_riga27"/>
             anzi per lo più, incapacissimi a fare i <roleName ref="#Maestri">maestri elementari</roleName>. 
             <lb xml:id="Cod_scuole_femminili313_riga28" n="28" facs="#scuole_femminili313_riga28"/>
-            Se noi mandassimo alle <orgName ref="#SNM">scuole normali maschili</orgName> tutti gli 
+            Che cosa si direbbe se, per risparmio di tempo e danaro,
             <lb xml:id="Cod_scuole_femminili313_riga29" n="29" facs="#scuole_femminili313_riga29"/>
+            Se noi mandassimo alle <orgName ref="#SNM">scuole normali maschili</orgName> tutti gli
             <lb xml:id="Cod_scuole_femminili313_riga30" n="30" facs="#scuole_femminili313_riga30"/>
             alunni che vanno alle <orgName ref="#ST">scuole tecniche</orgName>, ai <orgName ref="#GIN">ginnasi</orgName>, ai <orgName ref="#LIC">licei</orgName>,
             <lb xml:id="Cod_scuole_femminili313_riga31" n="31" facs="#scuole_femminili313_riga31"/>
@@ -1025,7 +1026,7 @@
             <lb xml:id="Cod_scuole_femminili313_riga40" n="40" facs="#scuole_femminili313_riga40" break="no"/>
             dere allo scopo. La <term ana="#cult_gen">cultura generale</term> è quindi nelle <orgName ref="#SNF">scuole
             <lb xml:id="Cod_scuole_femminili313_riga41" n="41" facs="#scuole_femminili313_riga41" break="no"/>
-            normali</orgName> ristretta in angusti confini, e non può estendersi, al-
+            normale</orgName> ristretta in angusti confini, e non può estendersi, al-
             <lb xml:id="Cod_scuole_femminili313_riga42" n="42" facs="#scuole_femminili313_riga42" break="no"/>
             largarsi largamente, come sarebbe necessario a quelle alunne
             <lb xml:id="Cod_scuole_femminili313_riga43" n="43" facs="#scuole_femminili313_riga43"/>
@@ -1371,6 +1372,7 @@
 <!--header seconda pagina-->
 <zone ulx="32" uly="45" lrx="46" lry="54" xml:id="la_legge_sull_istruzione_pubblica_pag_22_numeropagina" corresp="#Cod_la_legge_sull_istruzione_pubblica_pag_22_numeropagina"/>
 <zone ulx="202" uly="47" lrx="370" lry="54" xml:id="la_legge_sull_istruzione_pubblica_pag_22_titolorassegna" corresp="#Cod_la_legge_sull_istruzione_pubblica_pag_22_titolorassegna"/>
+<zone ulx="122" uly="68" lrx="440" lry="82" xml:id="la_legge_sull_istruzione_pubblica_pag_21_sottotitolorassegna" corresp="#Cod_sla_legge_sull_istruzione_pubblica_pag_21_sottotitolorassegna" />
 <zone ulx="458" uly="44" lrx="541" lry="53" xml:id="la_legge_sull_istruzione_pubblica_pag_22_volumefascicolo" corresp="#Cod_la_legge_sull_istruzione_pubblica_pag_22_volumefascic"/>
 <!--righe colonna sx seconda pagina-->
 <zone ulx="30" uly="75" lrx="279" lry="82" xml:id="IstruzionePubblica22_riga1" corresp="#Cod_IstruzionePubblica22_riga1"/>
@@ -1392,7 +1394,7 @@
 
         
         <fw type="title" place="center" xml:id="Cod_la_legge_sull_istruzione_pubblica_pag_21_titolorassegna" facs="#sla_legge_sull_istruzione_pubblica_pag_21_titolorassegna">LA RASSEGNA SETTIMANALE</fw>
-        <fw type="title" place="center" xml:id="la_legge_sull_istruzione_pubblica_pag_21_sottotitolorassegna" facs="#la_legge_sull_istruzione_pubblica_pag_21_titolorassegna">DI POLITICA, SCIENZE, LETTERE ED ARTI.</fw>
+        <fw type="title" place="center" xml:id="la_legge_sull_istruzione_pubblica_pag_21_sottotitolorassegna" facs="#la_legge_sull_istruzione_pubblica_pag_21_sottotitolorassegna">DI POLITICA, SCIENZE, LETTERE ED ARTI.</fw>
         
         <fw type="pageNum" place="left" xml:id="Cod_la_legge_sull_istruzione_pubblica_pag_21_numerovolume" facs="#la_legge_sull_istruzione_pubblica_pag_21_numerovolume">Vol. 5°.</fw>
         <fw type="title" place="center" xml:id="Cod_la_legge_sull_istruzione_pubblica_pag_21_data" facs="#sla_legge_sull_istruzione_pubblica_pag_21_data">Roma, 11 Gennaio 1880.</fw>
@@ -1662,6 +1664,11 @@
         </p>
         
         <pb n="22" facs="#la_legge_sull_istruzione_pubblica_pag22"/>
+       <fw type="title" place="center" xml:id="Cod_la_legge_sull_istruzione_pubblica_pag_22_titolorassegna" facs="#sla_legge_sull_istruzione_pubblica_pag_21_titolorassegna">LA RASSEGNA SETTIMANALE</fw>
+        <fw type="issue" place="right" xml:id="Cod_la_legge_sull_istruzione_pubblica_pag_22_numerofascicolo" facs="#la_legge_sull_istruzione_pubblica_pag_22_numerovolumefascicolo">Vol. 5°, N° 106.
+            <milestone unit="headerBreak"/>
+        </fw>
+
         <p xml:id="IstruzionePubblica22_paragrafo1" n="1">
             <lb xml:id="Cod_IstruzionePubblica22_riga1" n="1" facs="#IstruzionePubblica22_riga1"/>
             giacchè vengono mutate prima che questi risultati riescano vi
@@ -2657,8 +2664,9 @@
             <lb xml:id="Cod_ALfieri_riga20" n="20" facs="#Alfieri_riga20" break="no"/>
             patie. La <orgName ref="#DestraS">Destra</orgName> poi nel frattempo ha proclamato a suo
             <lb xml:id="Cod_ALfieri_riga21" n="21" facs="#Alfieri_riga21"/>
+            capo l’on.<persName ref="#Q_Sella">Sella</persName>, che al nostro <roleName>Senatore</roleName> sembra, col <persName ref="A_Bertani">Bertani</persName>,
             <lb xml:id="Cod_ALfieri_riga22" n="22" facs="#Alfieri_riga22"/>
-            capo <persName ref="#Q_Sella">Sella</persName>, il più autorevole rappresentante dell’<term type="corrente">autoritarismo democra-
+            il più autorevole rappresentante dell’<term type="corrente">autoritarismo democra-
             <lb xml:id="Cod_ALfieri_riga23" n="23" facs="#Alfieri_riga23" break="no"/>
             tico</term> nello stato nostro.
             <lb xml:id="Cod_ALfieri_riga24" n="24" facs="#Alfieri_riga24"/>
