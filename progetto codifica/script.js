@@ -1,408 +1,608 @@
-/* ============================================================
-   script_FlorisValenti.js — La Rassegna Settimanale · Corpus digitale
-   Funzionalità invariate rispetto all'originale, con correzioni
-   e adattamenti alla struttura del nuovo XML/XSLT.
-   ============================================================ */
+$(document).ready(function() { //funzione di inizializzazione di tutte le altre
+        initializeNavigation(); //per configurare menu di navigazione
+        setupTextLines(); //per suddividere il testo in righe cliccabili
+        initializeHighlighting(); //per impostare l'evidenziazione nel verificare collegamenti testo-immagine
+        setupZoneHighlighting(); //per configurare le aree semantiche
+        setupFormWork(); //per configurare le funzionalità dei form
+        setupReferences(); //per configurare la gestione dei riferimenti
+        setupEntityLinks(); //per trasformare i <ref> in link cliccabili per entità
+        setupColumnBreaks(); //per gestire le interruzioni di colonna e di pagina
 
-$(document).ready(function () {
-    initializeNavigation();      // menu a tendina + navigazione tra sezioni
-    setupTextLines();            // divide il testo in righe cliccabili
-    initializeHighlighting();    // verifica i collegamenti testo-immagine
-    setupZoneHighlighting();     // click zone SVG ↔ righe di testo
-    setupFormWork();             // fw (intestazioni di pagina) → text-line
-    setupReferences();           // placeholder gestione ref
-    setupEntityLinks();          // popup per persone, luoghi, termini
-    setupColumnBreaks();         // multi-column per i cb
+        //Smooth scroll: previene salto brutale quando si clicca un collegamento anchor, e applica offset di 70px
+        $('a[href^="#"]').not('.entity-link, .note-ref').on('click', function(event) {
+            event.preventDefault();
+            var target = $(this.hash);
+            if (target.length) {
+                $('html, body').scrollTop(target.offset().top - 70);
+            }
+        });
+        
+        setTimeout(resizeZones, 300);
+        $(window).on('load', function() {
+            resizeZones(); //ricalcola il layout (con setTimeout e al caricamento finestra) per regolare dimensioni e posizionamento degli elementi interattivi
+        });
+    });
 
-    // Smooth scroll per link anchor (esclusi entity-link e note-ref)
-    $('a[href^="#"]').not('.entity-link, .note-ref').on('click', function (e) {
-        e.preventDefault();
-        var target = $(this.hash);
-        if (target.length) {
-            $('html, body').scrollTop(target.offset().top - 70);
+    // Converte il contenuto TEI in righe di testo cliccabili
+    function setupTextLines() {
+        $('.text-paragraph, .list-item, p, .article-body > *, .text-column > *, .tei-list li, li').each(function() {
+            const container = $(this); 
+            
+            if (container.hasClass('processed-lines') || container.hasClass('line-break') || container.hasClass('text-line')) {
+                return;
+            }
+            
+            container.addClass('processed-lines');
+            processContainerLines(container); //chiamo la funzione che processa il contenuto del contenitore per trasformarlo in righe testuali
+        });
+        
+        $('.column-break, .page-break').each(function() {
+            if (!$(this).hasClass('text-line')) {
+                $(this).addClass('text-line');
+            } //le interruzioni di colonna e di pagina sono contrassegnate come text line cioè parte del flusso testuale
+        });
+        
+        $('.fw').each(function() {
+            if (!$(this).hasClass('text-line') && !$(this).hasClass('processed-lines')) {
+                $(this).addClass('text-line processed-lines');
+            }
+        }); //le intestazioni sono definite come righe autonome per poterle evidenziare o cliccare
+    }
+    
+    // Elabora un singolo container dividendolo in righe basandosi sui line breaks TEI
+    function processContainerLines(container) {
+        const lineBreaks = container.find('lb, .line-break');
+        //console.log('Contenitore: ', container); //Debug
+        
+        if (lineBreaks.length === 0) {
+            container.addClass('text-line');
+            const id = container.attr('id');
+            if (!id) {
+                container.attr('id', 'line-' + generateUniqueId());
+            }
+            return;
         }
-    });
+        
+        const containerId = container.attr('id') || 'container-' + generateUniqueId();
+        const originalContent = container.html();
+        const tempContainer = $('<div>').html(originalContent);
+        
+        let lineNumber = 1;
+        tempContainer.find('lb, .line-break').each(function() {
+            const lb = $(this);
+            // Il nuovo ID della linea (se non esiste, lo generiamo)
+            const lbId = lb.attr('id') || `${containerId}-lb-${lineNumber}`;
+            
+            // Se l'attributo data-break==="no", allora mettiamo un trattino
+            let markerHtml = `<span class="line-marker" data-line-id="${lbId}"></span>`;
+            if (lb.attr('data-break') === 'no') {
+                markerHtml = '-' + markerHtml;
+            }
+            
+            lb.before(markerHtml);
+            lineNumber++;
+        });
+        
+        const htmlWithMarkers = tempContainer.html();
+        // dividiamo lo span che abbiamo inserito: <span class="line-marker"…></span>
+        const parts = htmlWithMarkers.split(/<span class="line-marker"[^>]*><\/span>/);
+        
+        container.empty();
+        
+        parts.forEach((part, index) => {
+            if (part.trim()) {
+                // Cerchiamo l'ID del <span class="line-break"> o del <lb> (se presente) nella parte di HTML
+                const lbMatch = part.match(/<(?:lb|span[^>]*class="line-break"[^>]*)\s+id="([^"]+)"/);
+                const lineId = lbMatch ? lbMatch[1] : `${containerId}-line-${index + 1}`;
+                // Rimuoviamo tutti i tag <lb> e <span class="line-break">...</span>, lasciando intatti eventuali trattini
+                const cleanContent = part.replace(/<lb[^>]*>|<span[^>]*class="line-break"[^>]*><\/span>/g, '');
+                const line = $(`<div class="text-line" id="${lineId}">${cleanContent}</div>`);
+                container.append(line);
+            }
+        });
+        
+        container.removeClass('text-paragraph list-item');
+        console.log('Processed lines:', lineNumber - 1); // Debug
+        return lineNumber - 1; // Restituisco il numero di linee processate
+    }
+    // Genera ID univoci per elementi che non ne hanno uno
+    let idCounter = 0;
+    function generateUniqueId() {
+        return 'gen-' + Date.now() + '-' + (idCounter++);
+    }
+    // Gestisce il click tra elementi di testo e zone SVG del facsimile
+    function setupZoneHighlighting() {
+        $('svg rect').css('pointer-events', 'auto');
+        console.log('SVG rect elements:', $('svg rect')); // Debug
+        
+        $(document).on('click', 'svg rect', function(e) {
+            console.log('SVG rect clicked'); // Debug: Log when an SVG rect is clicked
+            e.stopPropagation();
+            
+            const rectClass = $(this).attr('class');
+            console.log('Assegnata classe', rectClass); //Debug
+            if (!rectClass) return;
+            
+            const targetElement = findElementById(rectClass);
+            
+            if (targetElement.length) {
+                $('svg rect.selected').removeClass('selected');
+                $('.highlight-text').removeClass('highlight-text');
+                
+                $(this).addClass('selected');
+                targetElement.addClass('highlight-text');
+                
+                scrollToElement(targetElement);
+            }
+        });
+        
+        $(document).on('click', '.text-line, .fw, .article-title, .column-break, .page-break', function(e) {
+            if ($(e.target).hasClass('note-ref') || $(e.target).closest('.note-ref, .entity-link').length) {
+                return;
+            }
+            
+            const elementId = $(this).attr('id');
+            if (!elementId) return;
+            
+            const rect = findRectById(elementId);
+            
+            if (rect.length) {
+                $('svg rect.selected').removeClass('selected');
+                $('.highlight-text').removeClass('highlight-text');
+                
+                $(this).addClass('highlight-text');
+                rect.addClass('selected');
+                
+                scrollToRect(rect);
+            }
+        });
+    }
+    // Trova elemento di testo tramite ID 
+    function findElementById(id) {
+        let element = $(`#${id}`); //quando si utilizza la sintassi dei template literal per interpolare le variabili, non si devono usare le parentesi graffe all'interno della stringa
+        console.log('Looking for element with ID:', id, element); // Debug
+        if (!element.length) {
+            element = $(`.text-line[id="${id}"]`);
+        }
+        if (!element.length) {
+            element = $(`[id="${id}"]`);
+        }
+        return element;
+    }
 
-    // Calcola le zone SVG dopo che le immagini sono caricate
-    setTimeout(resizeZones, 300);
-    $(window).on('load', function () { resizeZones(); });
-});
+    // Trova rettangolo SVG tramite ID con strategie multiple di ricerca
+    function findRectById(id) {
+        let rect = $('rect[id="${id}"]');
+        if (!rect.length) {
+            rect = $('rect[id*="${id}"]');
+        }
+        return rect;
+    }
+
+    // Scrolla la pagina per rendere visibile un elemento di testo
+    function scrollToElement(element) {
+        const container = element.closest('.text-column');
+        if (!container.length) return;
+
+        const containerTop = container.offset().top;
+        const elementTop = element.offset().top;
+        const scrollTop = elementTop - containerTop + container.scrollTop();
+
+        container.animate({
+            scrollTop: scrollTop
+        }, 300);
+    }
 
 
-/* ============================================================
-   NAVIGAZIONE — menu a tendina e switch tra sezioni
-   ============================================================ */
-function initializeNavigation() {
+    // Scrolla il container del facsimile per rendere visibile un rettangolo SVG
+    function scrollToRect(rect) {
+        const container = rect.closest('.facsimile-container');
+        if (!container.length) return;
 
-    // Apertura/chiusura dropdown
-    $('#navigation-fab button').on('click', function (e) {
-        $('.navigation-dropdown').toggleClass('active');
-        e.stopPropagation();
-    });
-    $('.navigation-dropdown').on('click', function (e) { e.stopPropagation(); });
+        const containerTop = container.offset().top;
+        const rectTop = rect.offset().top;
+        const scrollTop = rectTop - containerTop + container.scrollTop();
 
-    // Click sul link di una sezione
-    $('.section-link').on('click', function (e) {
-        e.preventDefault();
-        var targetId = $(this).attr('href');
+        container.animate({
+            scrollTop: scrollTop
+        }, 300);
+    }
 
-        // Sezioni dell'info-panel (persone, luoghi, ecc.)
-        var infoAnchors = ['#document-info', '#people-section', '#places-section', '#glossary-section'];
-        if (infoAnchors.indexOf(targetId) !== -1) {
-            showSection('#info-section');
-            setTimeout(function () {
-                var t = $(targetId);
-                if (t.length) $('html, body').scrollTop(t.offset().top - 70);
-            }, 100);
-        } else {
-            // Sezione articolo (id del TEI → id-section)
-            var sectionId = targetId + '-section';
-            showSection(sectionId);
+
+    //Verifica se la riga cliccata è visibile all'utente nell'immagine senza dover scorrere la pagina
+    function isElementInViewport(el) {
+        const rect = el.getBoundingClientRect(); //restituisce un oggetto DOMRect che fornisce informazioni sulla dimensione di un elemento e sulla sua posizione relativa alla finestra di visualizzazione (viewport). Come rect ha proprietà top, left, bottom, right, width, e height, che rappresentano le coordinate dell'elemento rispetto alla finestra di visualizzazione.
+        const container = el.closest('.text-column, .facsimile-column');
+        if (!container) return false;
+
+        const containerRect = container[0].getBoundingClientRect();
+
+        return (
+            rect.top >= containerRect.top &&
+            rect.left >= containerRect.left &&
+            rect.bottom <= containerRect.bottom &&
+            rect.right <= containerRect.right
+        ); //se true elemento è completamente visibile nel contenitore
+    } 
+
+    // Gestisce il menu di navigazione principale e la navigazione tra sezioni
+    function initializeNavigation() {
+        $('#navigation-fab button').on('click', function(event) {
+            $('.navigation-dropdown').toggleClass('active');
+            event.stopPropagation();
+        });
+        
+        $('.navigation-dropdown').on('click', function(event) {
+            event.stopPropagation();
+        });
+        
+        $('.section-link').on('click', function(event) {
+            event.preventDefault();
+            
+            var targetId = $(this).attr('href');
+            
+            if (targetId === '#document-info' || targetId === '#people-section' || 
+                targetId === '#places-section' || targetId === '#glossary-section') {
+                
+                $('.visible-section').removeClass('visible-section').addClass('hidden-section');
+                $('#info-section').removeClass('hidden-section').addClass('visible-section');
+                
+                setTimeout(function() {
+                    var target = $(targetId);
+                    if (target.length) {
+                        $('html, body').scrollTop(target.offset().top - 70);
+                    }
+                }, 100);
+            } else {
+                var sectionId = targetId + '-section';
+                
+                $('.visible-section').removeClass('visible-section').addClass('hidden-section');
+                $(sectionId).removeClass('hidden-section').addClass('visible-section');
+                
+                $('html, body').scrollTop(0);
+            }
+            
+            $('.navigation-dropdown').removeClass('active');
+        });
+        
+        $('#back-fab button, #forward-fab button').on('click', function() {
+            var sections = $('.article-section, #info-section');
+            var visibleSection = $('.visible-section');
+            var currentIndex = sections.index(visibleSection);
+            var newIndex;
+            
+            if ($(this).parent().attr('id') === 'back-fab') {
+                newIndex = (currentIndex - 1 + sections.length) % sections.length;
+            } else {
+                newIndex = (currentIndex + 1) % sections.length;
+            }
+            
+            visibleSection.removeClass('visible-section').addClass('hidden-section');
+            sections.eq(newIndex).removeClass('hidden-section').addClass('visible-section');
+            
             $('html, body').scrollTop(0);
-        }
+        });
+    }
 
-        $('.navigation-dropdown').removeClass('active');
+    // Verifica i collegamenti tra elementi di testo e rettangoli SVG
+    function initializeHighlighting() {
+        setTimeout(function() {
+            $('.text-line, .fw, .article-title, .column-break, .page-break').each(function() {
+                const id = $(this).attr('id');
+                if (id) {
+                    const rect = $(`rect[class="${id}"]`);
+                }
+            });
+        }, 100);
+    }
 
-        // Aggiorna il glossario visibile nella sidebar
-        var glossaryId = $(this).data('glossary-id');
-        if (glossaryId) {
+    //Gestisce il click sugli elementi del menu a tendina e mostra solo il glossario associato al testo selezionato
+    $(document).ready(function() {
+        $('.section-link').click(function(e) {
+            e.preventDefault();
+
+            // Nascondi tutti i glossari
             $('.glossary-group').hide();
+
+            // Ottieni l'ID del glossario associato al link cliccato
+            var glossaryId = $(this).data('glossary-id');
+
+            // Mostra solo il glossario associato
             $('#' + glossaryId).show();
-        }
+        });
     });
 
-    // Pulsanti avanti/indietro (se presenti)
-    $('#back-fab button, #forward-fab button').on('click', function () {
-        var sections   = $('.article-section, #info-section');
-        var visible    = $('.visible-section');
-        var current    = sections.index(visible);
-        var next       = $(this).parent().attr('id') === 'back-fab'
-                         ? (current - 1 + sections.length) % sections.length
-                         : (current + 1) % sections.length;
-        visible.removeClass('visible-section').addClass('hidden-section');
-        sections.eq(next).removeClass('hidden-section').addClass('visible-section');
-        $('html, body').scrollTop(0);
-    });
-}
 
-// Mostra una sezione e nasconde le altre
-function showSection(sectionSelector) {
-    $('.visible-section').removeClass('visible-section').addClass('hidden-section');
-    var sec = $(sectionSelector);
-    if (!sec.length && sectionSelector.charAt(0) !== '#') {
-        sec = $('#' + sectionSelector);
+    // Gestisce i click sui link delle entità (persone, luoghi, termini) per mostrare popup 
+    function setupEntityLinks() {
+        $(document).on('click', '.entity-link', function(e) {
+            e.preventDefault();
+            
+            const targetId = $(this).attr('href');
+            let targetElement;
+            
+            const personIds = [
+                '#D_Alighieri', '#A_Aulard', '#Aristotele', '#A_Bahnsen', '#A_Bain', '#J_Bentham', 
+                '#F_Boucher', '#G_Carducci', '#E_Caro', '#L_Carrau', '#C_Darwin', 
+                '#E_De_Amicis', '#J_M_De_Maistre', '#A_De_Saint_Beuve', '#R_Descartes', '#E_Fouillee', 
+                '#J_Fraunstadt', '#G_Garibaldi', '#T_Gautier', '#H_Heine', '#K_Hillebrand', 
+                '#V_Hugo', '#G_Leopardi', '#E_Levier', '#E_M_Littre', '#E_Magitot', 
+                '#P_Mantegazza', '#A_Manzoni', '#Pio_IX', '#J_S_Mill', '#A_F_Mummery', 
+                '#E_Panzacchi', '#Prometeo', '#J_E_Reclus', '#A_Rivaroli', '#H_Schaafhausen', 
+                '#A_Schopenhauer', '#H_Spencer', '#H_A_Taine', '#W_Taubert', '#L_Vanderkindere', 
+                '#E_v_Hartmann', '#fratelli_v_Schlegel', '#E_Zola'
+            ];
+            
+            if (targetId && personIds.some(id => targetId.startsWith(id))) {
+                targetElement = $(targetId);
+                showEntityCard(targetElement, 'person');
+                return;
+            }
+            
+            if (targetId && targetId.startsWith('#place-')) {
+                targetElement = $(targetId);
+                showEntityCard(targetElement, 'place');
+                return;
+            }
+            
+            if (targetId) {
+                targetElement = $(targetId);
+                
+                if (targetElement.length && (targetElement.hasClass('glossary-card') || targetElement.closest('#glossary-section').length)) {
+                    showEntityCard(targetElement, 'glossary');
+                    return;
+                }
+                
+                const glossaryPrefixes = [
+                    '#historical-', '#political-', '#religious-', '#educational-',
+                    '#banking-', '#discipline-', '#institutions-', '#location-',
+                    '#work-', '#royalty-', '#event-', '#org-', '#microfono',
+                    '#microscopio', '#concilio', '#amnistia'
+                ];
+                
+                if (glossaryPrefixes.some(prefix => targetId.startsWith(prefix))) {
+                    if (targetElement.length) {
+                        showEntityCard(targetElement, 'glossary');
+                        return;
+                    }
+                }
+            }
+            
+            if (targetId) {
+                targetElement = $(targetId);
+                if (targetElement.length) {
+                    $('html, body').scrollTop(targetElement.offset().top - 100);
+                }
+            }
+        });
     }
-    sec.removeClass('hidden-section').addClass('visible-section');
-}
 
-// Chiude il dropdown cliccando fuori
-$(document).on('click', function () {
-    $('.navigation-dropdown').removeClass('active');
-});
+    // Crea e mostra popup con informazioni dettagliate su un'entità
+    function showEntityCard(element, type) {
+        if (!element.length) {
+            return;
+        }
+        
+        let title, content, className;
+        
+        if (type === 'person') {
+            title = element.find('h3').text();
+            content = element.find('.person-details').html();
+            className = 'persName';
+        } else if (type === 'place') {
+            title = element.find('h3').text();
+            content = element.find('.person-details').html();
+            className = 'placeName';
+        } else if (type === 'glossary') {
+            title = element.find('h4').text();
+            content = element.find('.glossary-details').html();
+            if (!content) {
+                content = element.find('.definition-info').html();
+            }
+            if (!content) {
+                const clonedElement = element.clone();
+                clonedElement.find('h3').remove();
+                content = clonedElement.html();
+            }
+            className = 'term';
+        }
+        
+        if (!content) {
+            const clonedElement = element.clone();
+            clonedElement.find('h3').remove();
+            content = clonedElement.html();
+        }
+        
+        $('.entity-overlay').remove();
+        
+        const overlay = $(`
+            <div class="entity-overlay">
+                <div class="entity-card">
+                    <div class="entity-card-header ${className}">
+                        <h3>${title}</h3>
+                        <button class="entity-card-close">&times;</button>
+                    </div>
+                    <div class="entity-card-body">
+                        ${content}
+                    </div>
+                </div>
+            </div>
+        `);
+        
+        $('main').append(overlay);
+        
+        overlay.on('click', function(e) {
+            if ($(e.target).is('.entity-overlay') || $(e.target).is('.entity-card-close')) {
+                overlay.remove();
+            }
+        });
+        
+        $('.entity-card-close').on('click', function() {
+            overlay.remove();
+        });
+    }
+
+    // Gestisce i column break 
+    function setupColumnBreaks() {
+        $('.column-break').each(function() {
+            var columnBreak = $(this);
+            var div = columnBreak.closest('.text-div');
+            
+            div.removeClass('no-column').addClass('multi-column');
+        });
+    }
+
+    // placeholder per gestione riferimenti
+    function setupReferences() {
+    }
+    // Processa elementi fw (forme work) per intestazioni e piè di pagina, li rende cliccabili con classe text-line 
+    function setupFormWork() {
+        $('.fw').each(function() {
+            const fw = $(this);
+            const place = fw.attr('place') || '';
+            
+            const placeClass = place.replace(/\s+/g, '-');
+            if (placeClass) {
+                fw.addClass(placeClass);
+            }
+            
+            if (!fw.hasClass('text-line')) {
+                fw.addClass('text-line');
+            }
+        });
+    }
+
+    // Ridimensiona le zone SVG quando la finestra cambia dimensioni 
+    function resizeZones() {
+        $('.page-facsimile').each(function() {
+            const container = $(this);
+            const img = container.find('.facsimile-image');
+            
+            const currentWidth = img.width();
+            const originalWidth = parseInt(img.attr('width')) || 1000;
+            
+            const scale = currentWidth / originalWidth;
+            
+            const svg = container.find('svg');
+            if (svg.length) {
+                const originalViewBox = svg.attr('viewBox')?.split(',');
+                if (originalViewBox) {
+                    svg.attr('viewBox', `0,0,${originalViewBox[2]},${originalViewBox[3]}`);
+                    svg.attr('width', currentWidth);
+                    svg.attr('height', img.height());
+                }
+            }
+        });
+    }
+
+    $(window).on('resize', function() {
+        resizeZones();
+    });
+
+    $(document).on('click', function() {
+        $('.navigation-dropdown').removeClass('active');
+    });
 
 
 /* ============================================================
-   RIGHE DI TESTO — suddivide i paragrafi in div.text-line
+   NOTE POPUP — gestione click su .note-trigger
    ============================================================ */
-function setupTextLines() {
-    $('.text-paragraph, .list-item, p, .article-body > *, .text-column > *').each(function () {
-        var container = $(this);
-        if (container.hasClass('processed-lines') ||
-            container.hasClass('line-break') ||
-            container.hasClass('text-line')) return;
-        container.addClass('processed-lines');
-        processContainerLines(container);
-    });
+$(document).ready(function () {
 
-    // column-break e page-break sono già righe di per sé
-    $('.column-break, .page-break').each(function () {
-        if (!$(this).hasClass('text-line')) $(this).addClass('text-line');
-    });
-
-    // fw: intestazioni di pagina
-    $('.fw').each(function () {
-        if (!$(this).hasClass('text-line') && !$(this).hasClass('processed-lines')) {
-            $(this).addClass('text-line processed-lines');
-        }
-    });
-}
-
-// Elabora un container dividendolo in righe sui lb TEI
-function processContainerLines(container) {
-    var lineBreaks = container.find('lb, .line-break');
-    if (lineBreaks.length === 0) {
-        container.addClass('text-line');
-        if (!container.attr('id')) container.attr('id', 'line-' + generateUniqueId());
-        return 0;
+    // Crea overlay una volta sola
+    if (!$('.note-overlay').length) {
+        $('body').append('<div class="note-overlay"></div>');
     }
 
-    var containerId   = container.attr('id') || 'container-' + generateUniqueId();
-    var tempContainer = $('<div>').html(container.html());
-    var lineNumber    = 1;
-
-    tempContainer.find('lb, .line-break').each(function () {
-        var lb     = $(this);
-        var lbId   = lb.attr('id') || (containerId + '-lb-' + lineNumber);
-        var marker = '<span class="line-marker" data-line-id="' + lbId + '"></span>';
-        if (lb.attr('data-break') === 'no') marker = '-' + marker;
-        lb.before(marker);
-        lineNumber++;
-    });
-
-    // Separa sugli span marcatori
-    var parts = tempContainer.html().split(/<span class="line-marker"[^>]*><\/span>/);
-    container.empty();
-
-    parts.forEach(function (part, index) {
-        if (!part.trim()) return;
-        // Recupera l'id del lb se presente nella parte
-        var lbMatch = part.match(/<(?:lb|span[^>]*class="line-break"[^>]*)\s+id="([^"]+)"/);
-        var lineId  = lbMatch ? lbMatch[1] : (containerId + '-line-' + (index + 1));
-        // Rimuove i tag lb e span.line-break residui
-        var clean   = part.replace(/<lb[^>]*>|<span[^>]*class="line-break"[^>]*><\/span>/g, '');
-        container.append($('<div class="text-line" id="' + lineId + '">' + clean + '</div>'));
-    });
-
-    container.removeClass('text-paragraph list-item');
-    return lineNumber - 1;
-}
-
-// Contatore ID univoci
-var _idCounter = 0;
-function generateUniqueId() {
-    return 'gen-' + Date.now() + '-' + (_idCounter++);
-}
-
-
-/* ============================================================
-   ZONE SVG ↔ RIGHE DI TESTO — click per evidenziare
-   ============================================================ */
-function setupZoneHighlighting() {
-    $('svg rect').css('pointer-events', 'auto');
-
-    // Click su un rettangolo SVG → evidenzia la riga di testo corrispondente
-    $(document).on('click', 'svg rect', function (e) {
+    // Click sul simbolo nota
+    $(document).on('click', '.note-trigger', function (e) {
         e.stopPropagation();
-        var rectClass = $(this).attr('class');
-        if (!rectClass || rectClass === 'selected') return;
+        var nid = $(this).data('note-id');
+        var popup = $('#note-' + nid);
+        if (!popup.length) return;
 
-        // La classe del rect coincide con l'id della riga (senza #)
-        var targetEl = findElementById(rectClass);
-        if (targetEl.length) {
-            clearHighlights();
-            $(this).addClass('selected');
-            targetEl.addClass('highlight-text');
-            scrollToElement(targetEl);
+        // Chiudi eventuali altri popup aperti
+        $('.note-popup.visible').removeClass('visible');
+        // Apri questo
+        popup.addClass('visible');
+        $('.note-overlay').addClass('visible');
+    });
+
+    // Chiusura tramite bottone X
+    $(document).on('click', '.note-popup-close', function (e) {
+        e.stopPropagation();
+        $(this).closest('.note-popup').removeClass('visible');
+        $('.note-overlay').removeClass('visible');
+    });
+
+    // Chiusura cliccando l'overlay
+    $(document).on('click', '.note-overlay', function () {
+        $('.note-popup.visible').removeClass('visible');
+        $(this).removeClass('visible');
+    });
+
+    // Chiusura con Escape
+    $(document).on('keydown', function (e) {
+        if (e.key === 'Escape') {
+            $('.note-popup.visible').removeClass('visible');
+            $('.note-overlay').removeClass('visible');
         }
     });
 
-    // Click su una riga di testo → evidenzia il rettangolo SVG corrispondente
-    $(document).on('click', '.text-line, .fw, .article-title, .column-break, .page-break', function (e) {
-        // Non intercettare click su link o note
-        if ($(e.target).closest('.note-ref, .entity-link').length) return;
-        var elementId = $(this).attr('id');
-        if (!elementId) return;
 
-        var rect = findRectByClass(elementId);
-        if (rect.length) {
-            clearHighlights();
-            $(this).addClass('highlight-text');
-            rect.addClass('selected');
-            scrollToRect(rect);
-        }
+    /* ============================================================
+       NAVBAR DROPDOWN — apertura/chiusura menu a tendina
+       ============================================================ */
+
+    // Click sul bottone dropdown
+    $(document).on('click', '.dropdown-toggle', function (e) {
+        e.stopPropagation();
+        var item = $(this).closest('.nav-item');
+        var isOpen = item.hasClass('open');
+        // Chiudi tutti
+        $('.nav-item').removeClass('open');
+        // Apri quello cliccato (se era chiuso)
+        if (!isOpen) item.addClass('open');
     });
-}
 
-function clearHighlights() {
-    $('svg rect.selected').removeClass('selected');
-    $('.highlight-text').removeClass('highlight-text');
-}
-
-// Cerca un elemento di testo per id (varie strategie)
-function findElementById(id) {
-    var el = $('#' + CSS.escape(id));
-    if (!el.length) el = $('.text-line[id="' + id + '"]');
-    if (!el.length) el = $('[id="' + id + '"]');
-    return el;
-}
-
-// Cerca un rettangolo SVG per classe (= id della riga)
-function findRectByClass(id) {
-    // Nel tuo XML il rect ha class uguale all'id del lb (senza #)
-    return $('svg rect[class="' + id + '"], svg rect[class*="' + id + '"]').first();
-}
-
-// Scorre la colonna testo per rendere visibile l'elemento
-function scrollToElement(element) {
-    var container = element.closest('.text-column');
-    if (!container.length) return;
-    var offset = element.offset().top - container.offset().top + container.scrollTop();
-    container.animate({ scrollTop: offset }, 250);
-}
-
-// Scorre la colonna facsimile per rendere visibile il rettangolo
-function scrollToRect(rect) {
-    var container = rect.closest('.facsimile-container');
-    if (!container.length) return;
-    var offset = rect.offset().top - container.offset().top + container.scrollTop();
-    container.animate({ scrollTop: offset }, 250);
-}
-
-
-/* ============================================================
-   FORM-WORK — fw → text-line con classe di posizione
-   ============================================================ */
-function setupFormWork() {
-    $('.fw').each(function () {
-        var fw        = $(this);
-        var placeAttr = fw.attr('data-place') || fw.attr('place') || '';
-        var placeClass = placeAttr.replace(/\s+/g, '-');
-        if (placeClass) fw.addClass(placeClass);
-        if (!fw.hasClass('text-line')) fw.addClass('text-line');
-    });
-}
-
-
-/* ============================================================
-   COLUMN BREAKS — aggiunge classe multi-column al div padre
-   ============================================================ */
-function setupColumnBreaks() {
-    $('.column-break').each(function () {
-        $(this).closest('.text-div').removeClass('no-column').addClass('multi-column');
-    });
-}
-
-
-/* ============================================================
-   REFERENCES — placeholder (estendibile)
-   ============================================================ */
-function setupReferences() { /* estendibile */ }
-
-
-/* ============================================================
-   ENTITY LINKS — popup per persone, luoghi, termini/glossario
-   ============================================================ */
-function setupEntityLinks() {
-    $(document).on('click', '.entity-link', function (e) {
+    // Click su un link del dropdown → naviga alla sezione
+    $(document).on('click', '.dropdown-menu a.section-link', function (e) {
         e.preventDefault();
         var href = $(this).attr('href');
         if (!href) return;
+        $('.nav-item').removeClass('open');
 
-        // Rimuove il # iniziale per cercare l'elemento
-        var targetId = href.replace(/^#/, '');
-        var targetEl = $('#' + CSS.escape(targetId));
-        if (!targetEl.length) return;
-
-        // Determina il tipo in base alle classi del target
-        if (targetEl.hasClass('person-card') || targetEl.closest('.people-section').length) {
-            showEntityCard(targetEl, 'person');
-        } else if (targetEl.hasClass('person-card') && targetEl.closest('.places-section').length) {
-            showEntityCard(targetEl, 'place');
-        } else if (targetEl.hasClass('glossary-card') || targetEl.closest('#glossary-section').length) {
-            showEntityCard(targetEl, 'glossary');
+        var infoAnchors = ['#document-info', '#people-section', '#places-section', '#glossary-section'];
+        if (infoAnchors.indexOf(href) !== -1) {
+            showSection('#info-section');
+            setTimeout(function () {
+                var t = $(href);
+                if (t.length) $('html, body').scrollTop(t.offset().top - 70);
+            }, 80);
         } else {
-            // Fallback: scroll all'ancora
-            $('html, body').scrollTop(targetEl.offset().top - 100);
+            var sectionId = href.replace('#', '') + '-section';
+            showSection(sectionId);
+            $('html, body').scrollTop(0);
         }
     });
-}
 
-// Crea e mostra il popup con le informazioni dell'entità
-function showEntityCard(element, type) {
-    if (!element.length) return;
-
-    var title, content, headerClass;
-
-    if (type === 'person' || type === 'place') {
-        title       = element.find('h3').first().text();
-        content     = element.find('.person-details').html() || '';
-        headerClass = type === 'person' ? 'persName' : 'placeName';
-    } else {
-        title       = element.find('h4').first().text();
-        content     = element.find('.glossary-details').html() ||
-                      element.find('.definition-info').html() || '';
-        headerClass = 'term';
-    }
-
-    if (!content) {
-        var clone = element.clone();
-        clone.find('h3, h4').remove();
-        content = clone.html();
-    }
-
-    // Rimuove eventuali popup esistenti
-    $('.entity-overlay').remove();
-
-    var overlay = $(
-        '<div class="entity-overlay">' +
-            '<div class="entity-card">' +
-                '<div class="entity-card-header ' + headerClass + '">' +
-                    '<h3>' + title + '</h3>' +
-                    '<button class="entity-card-close" aria-label="Chiudi">&times;</button>' +
-                '</div>' +
-                '<div class="entity-card-body">' + content + '</div>' +
-            '</div>' +
-        '</div>'
-    );
-
-    // Aggiunge alla main visibile (compatibile con layout a sezioni)
-    var mainContainer = $('.visible-section .main, .visible-section main, .visible-section').first();
-    if (!mainContainer.length) mainContainer = $('body');
-    mainContainer.append(overlay);
-
-    // Chiusura
-    overlay.on('click', function (e) {
-        if ($(e.target).is('.entity-overlay') || $(e.target).is('.entity-card-close')) {
-            overlay.remove();
-        }
+    // Click sul logo → sezione info
+    $(document).on('click', '.nav-logo.section-link', function (e) {
+        e.preventDefault();
+        showSection('#info-section');
+        $('html, body').scrollTop(0);
     });
-    // Chiusura con Escape
-    $(document).one('keydown.entity-overlay', function (e) {
-        if (e.key === 'Escape') overlay.remove();
+
+    // Chiudi dropdown cliccando fuori
+    $(document).on('click', function () {
+        $('.nav-item').removeClass('open');
     });
+
+});
+
+function showSection(selector) {
+    $('.visible-section').removeClass('visible-section').addClass('hidden-section');
+    var sec = $(selector);
+    if (!sec.length) sec = $('#' + selector.replace('#', ''));
+    sec.removeClass('hidden-section').addClass('visible-section');
 }
-
-
-/* ============================================================
-   INIZIALIZZAZIONE HIGHLIGHTING — verifica coppie lb-rect
-   ============================================================ */
-function initializeHighlighting() {
-    setTimeout(function () {
-        var missing = 0;
-        $('.text-line, .fw, .article-title').each(function () {
-            var id = $(this).attr('id');
-            if (id && !findRectByClass(id).length) missing++;
-        });
-        if (missing > 0) {
-            console.info('[Rassegna] ' + missing + ' righe senza zona facsimile corrispondente.');
-        }
-    }, 150);
-}
-
-
-/* ============================================================
-   RESIZE ZONE SVG — ricalcola dimensioni al resize finestra
-   ============================================================ */
-function resizeZones() {
-    $('.page-facsimile').each(function () {
-        var container   = $(this);
-        var img         = container.find('.facsimile-image');
-        var currentW    = img.width();
-        var originalW   = parseInt(img.attr('width')) || 1000;
-        var scale       = currentW / originalW;
-        var svg         = container.find('svg');
-
-        if (svg.length) {
-            var vb = (svg.attr('viewBox') || '').split(',');
-            if (vb.length === 4) {
-                svg.attr({
-                    viewBox: '0,0,' + vb[2] + ',' + vb[3],
-                    width:   currentW,
-                    height:  img.height()
-                });
-            }
-        }
-    });
-}
-
-$(window).on('resize', resizeZones);

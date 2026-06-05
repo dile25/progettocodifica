@@ -29,39 +29,59 @@
             <body>
                 <div class="site">
 
-                    <!-- NAVIGAZIONE SUPERIORE FISSA -->
-!-- NAVIGAZIONE SUPERIORE FISSA -->
-                    <div class="top-navigation">
-                        <div class="nav-dropdown" id="navigation-fab">
-                            <button class="button-33">
-                                <span>&#9776; Vai ai testi e alle altre sezioni&#8230;</span>
-                            </button>
-                            <div class="navigation-dropdown">
-                                <div class="dropdown-section">
-                                    <h3>Informazioni generali</h3>
-                                    <a href="#document-info" class="section-link">Informazioni sulla codifica</a><br/>
-                                    <a href="#people-section" class="section-link">Persone menzionate</a><br/>
-                                    <a href="#places-section" class="section-link">Luoghi menzionati</a><br/>
-                                    <a href="#glossary-section" class="section-link">Glossario</a>
-                                </div>
-                                <div class="dropdown-section">
-                                    <h3>Testi codificati</h3>
-                                    <xsl:for-each select="/tei:teiCorpus/tei:TEI">
-                                        <a href="#{@xml:id}" class="section-link" data-glossary-id="{@xml:id}_gloss">
-                                            <span class="section-title">
-                                                <xsl:value-of select="tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title[1]"/>
-                                            </span>
-                                        </a><br/>
-                                    </xsl:for-each>
-                                </div>
-                                <div class="dropdown-section">
-                                    <h3>Link utili</h3>
-                                    <a href="https://tei-c.org/guidelines/" class="external-link" target="_blank">TEI Guidelines</a><br/>
-                                    <a href="https://creativecommons.org/licenses/by-nc/4.0/" class="external-link" target="_blank">Licenza CC BY-NC 4.0</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <nav class="navbar">
+    <div class="nav-container">
+        <a href="#info-section" class="nav-logo section-link"><em>La Rassegna Settimanale</em></a>
+        <ul class="nav-menu">
+
+            <li class="nav-item dropdown">
+                <button class="dropdown-toggle">Articoli &#9662;</button>
+                <ul class="dropdown-menu">
+                    <li><a href="#TEI_scuolenormali" class="section-link">I locali delle scuole normali femminili</a></li>
+                    <li><a href="#TEI_istruzionepubblica" class="section-link">La legge sull&#8217;istruzione pubblica</a></li>
+                    <li><a href="#TEI_lavoromentale" class="section-link">Il lavoro mentale nelle scuole</a></li>
+                </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+                <button class="dropdown-toggle">Bibliografia &#9662;</button>
+                <ul class="dropdown-menu">
+                    <li><a href="#TEI_BibliografiaAlfieri" class="section-link">Carlo Alfieri. Chi ha tempo non aspetti tempo. Pareri d'un Senatore.</a></li>
+                    <li><a href="#TEI_VirtuEducatrice" class="section-link">Domenico Caprile. Virt&#249; educatrice, studi morali </a></li>
+                </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+                <button class="dropdown-toggle">Notizie &#9662;</button>
+                <ul class="dropdown-menu">
+                    <li><a href="#TEI_NotizieVol3" class="section-link">Notizie &#8212; Vol. 3, Fasc. 69</a></li>
+                    <li><a href="#TEI_NotizieVol5" class="section-link">Notizie &#8212; Vol. 5, Fasc. 106</a></li>
+                    <li><a href="#TEI_NotizieVol8" class="section-link">Notizie &#8212; Vol. 8, Fasc. 188</a></li>
+                </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+                <button class="dropdown-toggle">Informazioni &#9662;</button>
+                <ul class="dropdown-menu">
+                    <li><a href="#document-info" class="section-link">Informazioni sulla codifica</a></li>
+                    <li><a href="#people-section" class="section-link">Persone menzionate</a></li>
+                    <li><a href="#places-section" class="section-link">Luoghi menzionati</a></li>
+                    <li><a href="#?-section" class="section-link">Glossario</a></li>
+                </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+                <button class="dropdown-toggle">Link utili &#9662;</button>
+                <ul class="dropdown-menu">
+                    <li><a href="https://www.tei-c.org/" target="_blank">Sito TEI Consortium</a></li>
+                    <li><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">Licenza CC BY-NC 4.0</a></li>
+                </ul>
+            </li>
+
+        </ul>
+    </div>
+</nav>
+
                     <!-- SEZIONE INFORMAZIONI GENERALI -->
                     <section id="info-section" class="general-info visible-section">
                         <div class="main-logo-container">
@@ -626,5 +646,41 @@
     <!-- Sopprimi metadati dall'output visibile -->
     <xsl:template match="tei:teiHeader"/>
     <xsl:template match="tei:facsimile[not(parent::tei:TEI)]"/>
+    
+    <!-- ============================================================
+         TEMPLATE: note nel testo — simbolo cliccabile + popup
+         ============================================================ -->
+    <xsl:template match="tei:note[ancestor::tei:text]">
+        <xsl:variable name="nid" select="generate-id()"/>
+        <xsl:variable name="ntype" select="@type"/>
+        <span class="note-trigger" data-note-id="{$nid}" title="Nota {$ntype}">
+            <xsl:choose>
+                <xsl:when test="$ntype='storica'">&#x2731;</xsl:when>
+                <xsl:when test="$ntype='filologica'">&#x2020;</xsl:when>
+                <xsl:otherwise>&#x2217;</xsl:otherwise>
+            </xsl:choose>
+        </span>
+        <span class="note-popup" id="note-{$nid}" data-note-type="{$ntype}" role="tooltip" aria-hidden="true">
+            <span class="note-popup-header">
+                <span class="note-popup-type">
+                    <xsl:choose>
+                        <xsl:when test="$ntype='storica'">Nota storica</xsl:when>
+                        <xsl:when test="$ntype='filologica'">Nota filologica</xsl:when>
+                        <xsl:otherwise>Nota</xsl:otherwise>
+                    </xsl:choose>
+                </span>
+                <button class="note-popup-close" aria-label="Chiudi">&#x00D7;</button>
+            </span>
+            <span class="note-popup-body"><xsl:apply-templates/></span>
+        </span>
+    </xsl:template>
+
+    <!-- note fuori dal testo (standOff, teiHeader): ignora -->
+    <xsl:template match="tei:note[not(ancestor::tei:text)]"/>
+
+    <!-- colophon -->
+    <xsl:template match="tei:div[@type='colophon']">
+        <div class="colophon"><xsl:apply-templates/></div>
+    </xsl:template>
 
 </xsl:stylesheet>

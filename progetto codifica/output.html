@@ -9,30 +9,40 @@
    </head>
    <body>
       <div class="site">
-         
-         
-         !-- NAVIGAZIONE SUPERIORE FISSA --&gt;
-         
-         <div class="top-navigation">
-            <div class="nav-dropdown" id="navigation-fab"><button class="button-33"><span>☰ Vai ai testi e alle altre sezioni…</span></button><div class="navigation-dropdown">
-                  <div class="dropdown-section">
-                     <h3>Informazioni generali</h3><a href="#document-info" class="section-link">Informazioni sulla codifica</a><br><a href="#people-section" class="section-link">Persone menzionate</a><br><a href="#places-section" class="section-link">Luoghi menzionati</a><br><a href="#glossary-section" class="section-link">Glossario</a></div>
-                  <div class="dropdown-section">
-                     <h3>Testi codificati</h3><a href="#TEI_scuolenormali" class="section-link" data-glossary-id="TEI_scuolenormali_gloss"><span class="section-title">I locali delle scuole normali femminili (da La Rassegna Settimanale, Volume 3, Fascicolo
-                           69, del 27 Aprile 1879)</span></a><br><a href="#TEI_istruzionepubblica" class="section-link" data-glossary-id="TEI_istruzionepubblica_gloss"><span class="section-title"> La legge sull'istruzione pubblica (da La Rassegna Settimanale, Volume 5, Fascicolo
-                           106, dell'11 Gennaio 1880)</span></a><br><a href="#TEI_LavoroMentale" class="section-link" data-glossary-id="TEI_LavoroMentale_gloss"><span class="section-title">Il lavoro mentale nelle scuole (da La Rassegna Settimanale, Volume 8, Fascicolo 188,
-                           del 7 Agosto 1881)</span></a><br><a href="#TEI_BibliografiaAlfieri" class="section-link" data-glossary-id="TEI_BibliografiaAlfieri_gloss"><span class="section-title">Bibliografia: Carlo Alfieri, Chi ha tempo non aspetti tempo. Pareri d'un Senatore.
-                           - Roma Tip. del Senato, 1879 (da La Rassegna Settimanale, Volume 3, Fascicolo 69,
-                           del 27 Aprile 1879)</span></a><br><a href="#TEI_VirtuEducatrice" class="section-link" data-glossary-id="TEI_VirtuEducatrice_gloss"><span class="section-title">Bibliografia: Domenico Caprile, Virtù Educatrice, studi morali, 3a edizione, Genova,
-                           1880 (da La Rassegna Settimanale, Volume 5, Fascicolo 196, dell'11 Gennaio 1880)</span></a><br><a href="#TEI_NotizieVol3" class="section-link" data-glossary-id="TEI_NotizieVol3_gloss"><span class="section-title">Sezione Notizie (da La Rassegna Settimanale, Volume 3, Fascicolo 69, del 27 Aprile
-                           1879)</span></a><br><a href="#TEI_NotizieVol5" class="section-link" data-glossary-id="TEI_NotizieVol5_gloss"><span class="section-title">Sezione Notizie (da La Rassegna Settimanale, Volume 5, Fascicolo 106, dell'11 Gennaio
-                           1880)</span></a><br><a href="#TEI_NotizieVol8" class="section-link" data-glossary-id="TEI_NotizieVol8_gloss"><span class="section-title">Sezione Notizie (da La Rassegna Settimanale, Volume 8, Fascicolo 188, del 7 Agosto
-                           1881)</span></a><br></div>
-                  <div class="dropdown-section">
-                     <h3>Link utili</h3><a href="https://tei-c.org/guidelines/" class="external-link" target="_blank">TEI Guidelines</a><br><a href="https://creativecommons.org/licenses/by-nc/4.0/" class="external-link" target="_blank">Licenza CC BY-NC 4.0</a></div>
-               </div>
+         <nav class="navbar">
+            <div class="nav-container"><a href="#info-section" class="nav-logo section-link"><em>La Rassegna Settimanale</em></a><ul class="nav-menu">
+                  <li class="nav-item dropdown"><button class="dropdown-toggle">Articoli ▾</button><ul class="dropdown-menu">
+                        <li><a href="#TEI_scuolenormali" class="section-link">I locali delle scuole normali femminili</a></li>
+                        <li><a href="#TEI_istruzionepubblica" class="section-link">La legge sull’istruzione pubblica</a></li>
+                        <li><a href="#TEI_lavoromentale" class="section-link">Il lavoro mentale nelle scuole</a></li>
+                     </ul>
+                  </li>
+                  <li class="nav-item dropdown"><button class="dropdown-toggle">Bibliografia ▾</button><ul class="dropdown-menu">
+                        <li><a href="#TEI_BibliografiaAlfieri" class="section-link">Carlo Alfieri. Chi ha tempo non aspetti tempo. Pareri d'un Senatore.</a></li>
+                        <li><a href="#TEI_VirtuEducatrice" class="section-link">Domenico Caprile. Virtù educatrice, studi morali </a></li>
+                     </ul>
+                  </li>
+                  <li class="nav-item dropdown"><button class="dropdown-toggle">Notizie ▾</button><ul class="dropdown-menu">
+                        <li><a href="#TEI_NotizieVol3" class="section-link">Notizie — Vol. 3, Fasc. 69</a></li>
+                        <li><a href="#TEI_NotizieVol5" class="section-link">Notizie — Vol. 5, Fasc. 106</a></li>
+                        <li><a href="#TEI_NotizieVol8" class="section-link">Notizie — Vol. 8, Fasc. 188</a></li>
+                     </ul>
+                  </li>
+                  <li class="nav-item dropdown"><button class="dropdown-toggle">Informazioni ▾</button><ul class="dropdown-menu">
+                        <li><a href="#document-info" class="section-link">Informazioni sulla codifica</a></li>
+                        <li><a href="#people-section" class="section-link">Persone menzionate</a></li>
+                        <li><a href="#places-section" class="section-link">Luoghi menzionati</a></li>
+                        <li><a href="#?-section" class="section-link">Glossario</a></li>
+                     </ul>
+                  </li>
+                  <li class="nav-item dropdown"><button class="dropdown-toggle">Link utili ▾</button><ul class="dropdown-menu">
+                        <li><a href="https://www.tei-c.org/" target="_blank">Sito TEI Consortium</a></li>
+                        <li><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">Licenza CC BY-NC 4.0</a></li>
+                     </ul>
+                  </li>
+               </ul>
             </div>
-         </div>
+         </nav>
          <section id="info-section" class="general-info visible-section">
             <div class="main-logo-container">
                <h1 class="corpus-title"><em>La Rassegna Settimanale</em></h1>
@@ -1063,12 +1073,12 @@
                                     ancora questo numero, se non si vuole che le <span class="entity orgName" style="background-color:#93c5fd;"><a href="#SNF" class="entity-link">scuole fem-
                                           <span class="line-break" id="Cod_scuole_femminili313_riga93" data-line-break="true" data-break="no"></span>
                                           minili</a></span> divengano <span class="term entity-term" style="background-color:#a5f3fc;"><a href="#ammazzatoi" class="entity-link">ammazzatoi</a></span>.
-                                    Il termine «ammazzatoi», di forte carica retorica
-                                    e inusuale nella prosa giornalistica dell'epoca, è da interpretarsi come iperbole
-                                    polemica per denunciare le condizioni igieniche letali degli ambienti scolastici.
-                                    L'uso di un lessico così crudo è coerente con il tono d'inchiesta militante della
-                                    Rassegna Settimanale, che si proponeva di sollecitare
-                                    l'intervento delle autorità attraverso l'indignazione del lettore colto.
+                                    <span class="note-trigger" data-note-id="d1e2526" title="Nota filologica">†</span><span class="note-popup" id="note-d1e2526" data-note-type="filologica" role="tooltip" aria-hidden="true"><span class="note-popup-header"><span class="note-popup-type">Nota filologica</span><button class="note-popup-close" aria-label="Chiudi">×</button></span><span class="note-popup-body">Il termine «ammazzatoi», di forte carica retorica
+                                          e inusuale nella prosa giornalistica dell'epoca, è da interpretarsi come iperbole
+                                          polemica per denunciare le condizioni igieniche letali degli ambienti scolastici.
+                                          L'uso di un lessico così crudo è coerente con il tono d'inchiesta militante della
+                                          Rassegna Settimanale, che si proponeva di sollecitare
+                                          l'intervento delle autorità attraverso l'indignazione del lettore colto.</span></span>
                                     Quando la legge tace, e non 
                                     <span class="line-break" id="Cod_scuole_femminili313_riga94" data-line-break="true"></span>
                                     vi sono ordini in contrario, noi crediamo che si possa biasi-
@@ -1080,13 +1090,13 @@
                                     al modo. Non crediamo si possa disputare quanto al <span class="term entity-term" style="background-color:#a5f3fc;"><a href="#diritto" class="entity-link">diritto</a></span>, 
                                     <span class="line-break" id="Cod_scuole_femminili313_riga98" data-line-break="true"></span>
                                     e diremmo anche al <span class="term entity-term" style="background-color:#a5f3fc;"><a href="#dovere" class="entity-link">dovere</a></span>, di provvedere.
-                                    L'appello al «diritto e dovere» dell'autorità
-                                    scolastica di intervenire si inscrive nel quadro normativo post-unitario.
-                                    La legge Casati del 1859, ancora in vigore nel 1879, non prevedeva
-                                    norme specifiche sull'igiene degli edifici scolastici. Solo con la
-                                    legge Coppino del 1877 e i successivi regolamenti si iniziò a
-                                    codificare l'obbligo di ambienti salubri, ma l'applicazione restava largamente
-                                    disattesa, soprattutto nelle province del Mezzogiorno e in quelle montane del Nord.
+                                    <span class="note-trigger" data-note-id="d1e2553" title="Nota storica">✱</span><span class="note-popup" id="note-d1e2553" data-note-type="storica" role="tooltip" aria-hidden="true"><span class="note-popup-header"><span class="note-popup-type">Nota storica</span><button class="note-popup-close" aria-label="Chiudi">×</button></span><span class="note-popup-body">L'appello al «diritto e dovere» dell'autorità
+                                          scolastica di intervenire si inscrive nel quadro normativo post-unitario.
+                                          La legge Casati del 1859, ancora in vigore nel 1879, non prevedeva
+                                          norme specifiche sull'igiene degli edifici scolastici. Solo con la
+                                          legge Coppino del 1877 e i successivi regolamenti si iniziò a
+                                          codificare l'obbligo di ambienti salubri, ma l'applicazione restava largamente
+                                          disattesa, soprattutto nelle province del Mezzogiorno e in quelle montane del Nord.</span></span>
                                     <span class="line-break" id="Cod_scuole_femminili313_riga99" data-line-break="true"></span>
                                     <span class="line-break" id="Cod_scuole_femminili313_riga100" data-line-break="true"></span>
                                     </p>
@@ -1603,7 +1613,7 @@
                </main>
             </article>
          </section>
-         <section class="article-section hidden-section" id="TEI_LavoroMentale-section">
+         <section class="article-section hidden-section" id="TEI_lavoromentale-section">
             <article class="document">
                <header class="document-header">
                   <h2 class="title">Il lavoro mentale nelle scuole (da La Rassegna Settimanale, Volume 8, Fascicolo 188,
@@ -1945,12 +1955,12 @@
                                     i lavori che si danno da fare a casa, l'enorme abuso della
                                     <span class="line-break" id="Cod_LavoroMentale93_riga17" data-line-break="true"></span>
                                     <span class="term entity-term" style="background-color:#fca5a5;">memoria</span> e perfino l'ordine della distribuzione delle materie.
-                                    La critica all'abuso della memoria come strumento pedagogico
-                                    riflette il dibattito europeo degli anni Settanta e Ottanta dell'Ottocento
-                                    sull'educazione intuitiva, ispirata al metodo pestalozziano e alle riforme
-                                    herbariane, che privilegiavano la comprensione attiva rispetto alla
-                                    ripetizione mnemonica. Posizioni simili circolavano in Italia nella rivista
-                                    La Cultura e nei congressi pedagogici del tempo.
+                                    <span class="note-trigger" data-note-id="d1e4474" title="Nota storica">✱</span><span class="note-popup" id="note-d1e4474" data-note-type="storica" role="tooltip" aria-hidden="true"><span class="note-popup-header"><span class="note-popup-type">Nota storica</span><button class="note-popup-close" aria-label="Chiudi">×</button></span><span class="note-popup-body">La critica all'abuso della memoria come strumento pedagogico
+                                          riflette il dibattito europeo degli anni Settanta e Ottanta dell'Ottocento
+                                          sull'educazione intuitiva, ispirata al metodo pestalozziano e alle riforme
+                                          herbariane, che privilegiavano la comprensione attiva rispetto alla
+                                          ripetizione mnemonica. Posizioni simili circolavano in Italia nella rivista
+                                          La Cultura e nei congressi pedagogici del tempo.</span></span>
                                     </p>
                                  
                                  
@@ -2100,11 +2110,11 @@
                                     gl'istituti tecnici, essa è molto grave. Ma c'è di peggio
                                     <span class="line-break" id="Cod_LavoroMentale93_riga88" data-line-break="true"></span>
                                     assai.
-                                    Il riferimento alla statistica comparata
-                                    tra studenti liceali e tecnici allude probabilmente ai dati raccolti da
-                                    <span class="entity persName" id="" style="background-color:#fde68a;"><a href="#Tamassia" class="entity-link">Tamassia</a></span> nel suo opuscolo del 1881.
-                                    Il metodo comparativo — ancora non standardizzato — era tipico della medicina
-                                    legale dell'epoca, influenzata dal positivismo lombrosiano.
+                                    <span class="note-trigger" data-note-id="d1e4824" title="Nota filologica">†</span><span class="note-popup" id="note-d1e4824" data-note-type="filologica" role="tooltip" aria-hidden="true"><span class="note-popup-header"><span class="note-popup-type">Nota filologica</span><button class="note-popup-close" aria-label="Chiudi">×</button></span><span class="note-popup-body">Il riferimento alla statistica comparata
+                                          tra studenti liceali e tecnici allude probabilmente ai dati raccolti da
+                                          <span class="entity persName" id="" style="background-color:#fde68a;"><a href="#Tamassia" class="entity-link">Tamassia</a></span> nel suo opuscolo del 1881.
+                                          Il metodo comparativo — ancora non standardizzato — era tipico della medicina
+                                          legale dell'epoca, influenzata dal positivismo lombrosiano.</span></span>
                                     </p>
                                  
                                  
@@ -2201,15 +2211,15 @@
                                     cento, si arriva alle classi più elevate (scuole reali, ginnasi)
                                     </p>
                                  
-                                 
-                                 <span class="line-break" id="Cod_LavoroMentale93_piedipagina_riga1" data-line-break="true"></span>
-                                 * Le intemperanze del lavoro mentale nelle scuole,
-                                 (N. 17 dell'«Igiene
-                                 <span class="line-break" id="Cod_LavoroMentale93_piedipagina_riga2" data-line-break="true"></span>
-                                 popolare», pubblicazione della <span class="entity orgName" style="background-color:#93c5fd;"><a href="#SocietaItalianaIgiene" class="entity-link">Società Italiana d'igiene</a></span>). —
-                                 <span class="entity placeName" style="background-color:#f9a8d4;"><a href="#Milano" class="entity-link">Milano</a></span>,
-                                 <span class="entity orgName" style="background-color:#93c5fd;"><a href="#Sonzogno" class="entity-link">Son-<span class="line-break" id="Cod_LavoroMentale93_piedipagina_riga3" data-line-break="true" data-break="no"></span>zogno</a></span>, <span class="entity date" style="background-color:#86efac;" data-when="1881">1881</span>.
-                                 
+                                 <span class="note-trigger" data-note-id="d1e5035" title="Nota ">∗</span><span class="note-popup" id="note-d1e5035" data-note-type="" role="tooltip" aria-hidden="true"><span class="note-popup-header"><span class="note-popup-type">Nota</span><button class="note-popup-close" aria-label="Chiudi">×</button></span><span class="note-popup-body">
+                                       <span class="line-break" id="Cod_LavoroMentale93_piedipagina_riga1" data-line-break="true"></span>
+                                       * Le intemperanze del lavoro mentale nelle scuole,
+                                       (N. 17 dell'«Igiene
+                                       <span class="line-break" id="Cod_LavoroMentale93_piedipagina_riga2" data-line-break="true"></span>
+                                       popolare», pubblicazione della <span class="entity orgName" style="background-color:#93c5fd;"><a href="#SocietaItalianaIgiene" class="entity-link">Società Italiana d'igiene</a></span>). —
+                                       <span class="entity placeName" style="background-color:#f9a8d4;"><a href="#Milano" class="entity-link">Milano</a></span>,
+                                       <span class="entity orgName" style="background-color:#93c5fd;"><a href="#Sonzogno" class="entity-link">Son-<span class="line-break" id="Cod_LavoroMentale93_piedipagina_riga3" data-line-break="true" data-break="no"></span>zogno</a></span>, <span class="entity date" style="background-color:#86efac;" data-when="1881">1881</span>.
+                                       </span></span>
                                  
                                  
                                  <div class="page-break" id=""><span>— Pag. 94 —</span></div>
@@ -2353,15 +2363,15 @@
                                     avanzare armonicamente in ogni forma delle belle potenze
                                     <span class="line-break" id="Cod_LavoroMentale94_riga58" data-line-break="true"></span>
                                     della natura.
-                                    La chiusa dell'articolo — il richiamo alla
-                                    progressione «armonica» come antidoto agli eccessi del progresso intellettuale
-                                    — riecheggia i principi dell'educazione integrale teorizzata da
-                                    <span class="entity persName" id="" style="background-color:#fde68a;"><a href="#H_Spencer" class="entity-link">Herbert Spencer</a></span> in
-                                    Education: Intellectual, Moral and Physical (1861),
-                                    opera tradotta in italiano nel 1875 e molto letta nell'ambiente
-                                    della Rassegna Settimanale. La sigla «G. S.»
-                                    non è stata ancora identificata con certezza; alcuni studiosi la attribuiscono
-                                    a un collaboratore anonimo della redazione romana.
+                                    <span class="note-trigger" data-note-id="d1e5406" title="Nota storica">✱</span><span class="note-popup" id="note-d1e5406" data-note-type="storica" role="tooltip" aria-hidden="true"><span class="note-popup-header"><span class="note-popup-type">Nota storica</span><button class="note-popup-close" aria-label="Chiudi">×</button></span><span class="note-popup-body">La chiusa dell'articolo — il richiamo alla
+                                          progressione «armonica» come antidoto agli eccessi del progresso intellettuale
+                                          — riecheggia i principi dell'educazione integrale teorizzata da
+                                          <span class="entity persName" id="" style="background-color:#fde68a;"><a href="#H_Spencer" class="entity-link">Herbert Spencer</a></span> in
+                                          Education: Intellectual, Moral and Physical (1861),
+                                          opera tradotta in italiano nel 1875 e molto letta nell'ambiente
+                                          della Rassegna Settimanale. La sigla «G. S.»
+                                          non è stata ancora identificata con certezza; alcuni studiosi la attribuiscono
+                                          a un collaboratore anonimo della redazione romana.</span></span>
                                     </p>
                                  
                                  <span class="line-break" id="Cod_LavoroMentale94_Sigla" data-line-break="true"></span>
@@ -3074,15 +3084,15 @@
                                     <span class="entity persName" id="" style="background-color:#fde68a;"><a href="#G_Dati" class="entity-link">Giuliano Dati</a></span> sulla fine del <span class="entity date" style="background-color:#86efac;">secolo XV</span>, più volte edita; ne chiarisce 
                                     <span class="line-break" id="Cod_NotizieVol3_riga17" data-line-break="true"></span>
                                     le fonti, e n'espone il contenuto.
-                                    La leggenda del <span class="entity persName" id="" style="background-color:#fde68a;"><a href="#P_Gianni" class="entity-link">Prete Gianni</a></span>
-                                    — sovrano cristiano d'Oriente di cui narra già Marco Polo — ebbe larga fortuna
-                                    nel Medioevo come simbolo di un regno cristiano utopico oltre i confini del mondo
-                                    noto. Il lavoro del conte <span class="entity persName" id="" style="background-color:#fde68a;"><a href="#L_Manzoni" class="entity-link">Luigi Manzoni</a></span>
-                                    si colloca nel filone positivistico della storia delle tradizioni medievali,
-                                    molto praticato nelle accademie italiane del secondo Ottocento.
-                                    <span class="entity persName" id="" style="background-color:#fde68a;"><a href="#G_Dati" class="entity-link">Giuliano Dati</a></span> (1445–1524), il prelato poeta
-                                    che aveva già tradotto in ottava rima la lettera di Colombo, compose il suo
-                                    poema sul Prete Gianni attingendo a fonti portoghesi e latine.
+                                    <span class="note-trigger" data-note-id="d1e6929" title="Nota storica">✱</span><span class="note-popup" id="note-d1e6929" data-note-type="storica" role="tooltip" aria-hidden="true"><span class="note-popup-header"><span class="note-popup-type">Nota storica</span><button class="note-popup-close" aria-label="Chiudi">×</button></span><span class="note-popup-body">La leggenda del <span class="entity persName" id="" style="background-color:#fde68a;"><a href="#P_Gianni" class="entity-link">Prete Gianni</a></span>
+                                          — sovrano cristiano d'Oriente di cui narra già Marco Polo — ebbe larga fortuna
+                                          nel Medioevo come simbolo di un regno cristiano utopico oltre i confini del mondo
+                                          noto. Il lavoro del conte <span class="entity persName" id="" style="background-color:#fde68a;"><a href="#L_Manzoni" class="entity-link">Luigi Manzoni</a></span>
+                                          si colloca nel filone positivistico della storia delle tradizioni medievali,
+                                          molto praticato nelle accademie italiane del secondo Ottocento.
+                                          <span class="entity persName" id="" style="background-color:#fde68a;"><a href="#G_Dati" class="entity-link">Giuliano Dati</a></span> (1445–1524), il prelato poeta
+                                          che aveva già tradotto in ottava rima la lettera di Colombo, compose il suo
+                                          poema sul Prete Gianni attingendo a fonti portoghesi e latine.</span></span>
                                     </p>
                                  
                                  
@@ -3176,7 +3186,7 @@
                                  </div>
                               
                               
-                              <div class="text-div no-column" id="" data-type="colophon">
+                              <div class="colophon">
                                  
                                  <p class="text-paragraph" id="">
                                     <span class="line-break" id="Cod_NotizieVol3_riga61" data-line-break="true"></span>
@@ -3361,7 +3371,7 @@
                                  </div>
                               
                               
-                              <div class="text-div no-column" id="" data-type="colophon">
+                              <div class="colophon">
                                  
                                  <p class="text-paragraph" id="">
                                     <span class="line-break" id="Cod_Notizie5_NomiDirettori" data-line-break="true"></span>
@@ -3446,8 +3456,8 @@
                                  <rect x="292" y="696" width="256" height="10" class="Cod_Notizie8_riga5"/>
                                  <rect x="291" y="706" width="257" height="9" class="Cod_Notizie8_riga6"/>
                                  <rect x="292" y="715" width="225" height="13" class="Cod_Notizie8_riga7"/>
-                                 <rect x="299" y="729" width="95" height="12" class="Notizie8_NomeDirettori"/>
-                                 <rect x="396" y="728" width="82" height="13" class="Notizie8_RuoloDirettori"/>
+                                 <rect x="299" y="729" width="95" height="12" class="Notizie8_NomeDirettore"/>
+                                 <rect x="396" y="728" width="82" height="13" class="Notizie8_RuoloDirettore"/>
                                  <rect x="324" y="743" width="79" height="12" class="Notizie8_NomeResponsabile"/>
                                  <rect x="404" y="741" width="74" height="18" class="Notizie8_RuoloResponsabile"/></svg></div>
                         </div>
@@ -3493,19 +3503,19 @@
                                  </div>
                               
                               
-                              <div class="text-div no-column" id="" data-type="colophon">
+                              <div class="colophon">
                                  
                                  <p class="text-paragraph" id="">
-                                    <span class="line-break" id="Cod_Notizie8_riga23" data-line-break="true"></span>
+                                    <span class="line-break" id="Cod_Notizie8_NomeDirettore" data-line-break="true"></span>
                                     <span class="entity persName" id="" style="background-color:#fde68a;"><a href="#S_Sonnino" class="entity-link">SIDNEY SONNINO</a></span>
-                                    <span class="line-break" id="Cod_Notizie8_riga24" data-line-break="true"></span>
-                                    } Direttore Proprietario.
+                                    <span class="line-break" id="Cod_Notizie8_RuoloDirettore" data-line-break="true"></span>
+                                    Direttore Proprietario.
                                     </p>
                                  
                                  <p class="text-paragraph" id="">
-                                    <span class="line-break" id="Cod_Notizie8_riga25" data-line-break="true"></span>
+                                    <span class="line-break" id="Cod_Notizie8_NomeResponsabile" data-line-break="true"></span>
                                     <span class="entity persName" id="" style="background-color:#fde68a;"><a href="#P_Pampaloni" class="entity-link">PIETRO PAMPALONI</a></span>,
-                                    <span class="line-break" id="Cod_Notizie8_riga26" data-line-break="true"></span>
+                                    <span class="line-break" id="Cod_Notizie8_RuoloResponsabile" data-line-break="true"></span>
                                     Gerente Responsabile.
                                     </p>
                                  </div>

@@ -1692,7 +1692,7 @@
     <!-- ============================================================
          TEI 3 — Il lavoro mentale nelle scuole
          ============================================================ -->
-    <TEI xml:id="TEI_LavoroMentale">
+    <TEI xml:id="TEI_lavoromentale">
         <teiHeader>
             <fileDesc>
                 <titleStmt>
