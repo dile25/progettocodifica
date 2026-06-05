@@ -526,8 +526,6 @@
             <place xml:id="Merv"><placeName>Merv</placeName></place>
             <place xml:id="America"><placeName>America</placeName></place>
             <place xml:id="SUD"><placeName>Mezzogiorno</placeName><desc>Riferimento alle province meridionali.</desc></place>
-
-            <!-- ── da lavoromentale / notizie / virtueducatrice (nuovi) ── -->
             <place xml:id="Francia" type="country">
                 <placeName>Francia</placeName>
                 <location><geo>46.2276 2.2137</geo></location>
