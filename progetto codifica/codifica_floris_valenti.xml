@@ -141,601 +141,856 @@
         </revisionDesc>
     </teiHeader>
 
-    <!-- ============================================================
-         STANDOFF UNIFICATO
-         Tutte le entità di tutti i file, con xml:id univoci.
-         Convenzione prefissi per evitare collisioni:
-           persone già in validare_completo → xml:id originali mantenuti
-           persone nuove da lavoromentale/notizie/virtu → xml:id originali mantenuti
-           luoghi già in validare_completo → xml:id originali mantenuti
-           luoghi nuovi → xml:id nuovi aggiunti in fondo
+<!-- ============================================================
+         STANDOFF UNIFICATO — versione finale
+         Tutte le entità del corpus con dati completati.
+         Sostituire integralmente la sezione <standOff>...</standOff>
+         nel file codifica_floris_valenti.xml
          ============================================================ -->
 
     <standOff>
 
         <!-- ══════════════════════════════════════════
-             LISTPERSON — tutte le persone del corpus
+             LISTPERSON
              ══════════════════════════════════════════ -->
         <listPerson>
 
-            <!-- ── da validare_completo ── -->
+            <!-- ── Personaggi storici con ruolo istituzionale ── -->
+
             <person xml:id="FP_Perez">
                 <persName><forename>Francesco</forename> <forename>Paolo</forename> <surname>Perez</surname></persName>
                 <birth><date when="1812">1812</date></birth>
                 <death><date when="1892">1892</date></death>
-                <occupation>Ministro della Pubblica Istruzione (1878-1879).</occupation>
+                <occupation>Ministro della Pubblica Istruzione del Regno d'Italia (1878–1879)</occupation>
+                <note>Giurista e letterato siciliano; durante il suo mandato ministeriale fu al centro del dibattito sull'istruzione femminile e sulle condizioni delle scuole normali.</note>
                 <idno type="VIAF">71502858</idno>
                 <idno type="Wikidata">Q3755588</idno>
             </person>
-            <person xml:id="C_Darwin">
-                <persName><forename>Charles</forename> <surname>Darwin</surname></persName>
-                <birth><date when="1809">1809</date></birth>
-                <death><date when="1882">1882</date></death>
-                <occupation>Naturalista e geologo; teorico dell'evoluzione per selezione naturale</occupation>
-                <idno type="VIAF">27063124</idno>
-                <idno type="Wikidata">Q1035</idno>
-            </person>
-            <person xml:id="H_Spencer">
-                <persName><forename>Herbert</forename> <surname>Spencer</surname></persName>
-                <birth><date when="1820">1820</date></birth>
-                <death><date when="1903">1903</date></death>
-                <occupation>Filosofo e sociologo; principale esponente del positivismo evoluzionistico</occupation>
-                <idno type="VIAF">39377694</idno>
-                <idno type="Wikidata">Q48193</idno>
-            </person>
-            <person xml:id="JS_Mill">
-                <persName><forename>John</forename> <forename>Stuart</forename> <surname>Mill</surname></persName>
-                <birth><date when="1806">1806</date></birth>
-                <death><date when="1873">1873</date></death>
-                <occupation>Filosofo, economista e politico liberale; esponente dell'utilitarismo</occupation>
-                <idno type="VIAF">31975535</idno>
-                <idno type="Wikidata">Q151803</idno>
-            </person>
-            <person xml:id="C_Alfieri">
-                <persName><forename>Carlo</forename> <surname>Alfieri di Sostegno</surname></persName>
-                <birth><date when="1827">1827</date></birth>
-                <death><date when="1897">1897</date></death>
-                <occupation>Senatore e pubblicista</occupation>
-                <note>Fondatore della Scuola di scienze politiche di Firenze.</note>
-            </person>
-            <person xml:id="P_Sbarbaro">
-                <persName><forename>Pietro</forename> <surname>Sbarbaro</surname></persName>
-                <birth><date when="1838">1838</date></birth>
-                <death><date when="1893">1893</date></death>
-                <occupation>Docente di economia e giornalista polemico</occupation>
-                <note>Direttore de "Le Forche Caudine".</note>
-            </person>
-            <person xml:id="Q_Sella">
-                <persName><forename>Quintino</forename> <surname>Sella</surname></persName>
-                <birth><date when="1827">1827</date></birth>
-                <death><date when="1884">1884</date></death>
-                <occupation>Statista della Destra Storica, scienziato e alpinista</occupation>
-            </person>
-            <person xml:id="A_Bertani">
-                <persName><forename>Agostino</forename> <surname>Bertani</surname></persName>
-                <birth><date when="1812">1812</date></birth>
-                <death><date when="1886">1886</date></death>
-                <occupation>Medico e politico; leader della Sinistra estrema</occupation>
-            </person>
-            <person xml:id="B_Spaventa">
-                <persName><forename>Bertrando</forename> <surname>Spaventa</surname></persName>
-                <birth><date when="1817">1817</date></birth>
-                <death><date when="1883">1883</date></death>
-                <occupation>Filosofo idealista hegeliano e deputato</occupation>
-            </person>
-            <person xml:id="GB_DeRossi">
-                <persName><forename>Giovanni</forename> <forename>Battista</forename> <surname>de Rossi</surname></persName>
-                <occupation>Archeologo delle catacombe cristiane</occupation>
-            </person>
-            <person xml:id="L_Bufalini">
-                <persName><forename>Leonardo</forename> <surname>Bufalini</surname></persName>
-                <occupation>Architetto e cartografo</occupation>
-                <death><date when="1567">1567</date></death>
-                <note>Celebre per la pianta di Roma del 1551 citata nel testo come supporto fondamentale agli studi topografici del De Rossi.</note>
-            </person>
-            <person xml:id="N_Costantinovich">
-                <persName><roleName>Gran Duca</roleName> <forename>Niccolò</forename> <surname>Costantinovich</surname></persName>
-                <birth><date when="1850">1850</date></birth>
-                <death><date when="1918">1918</date></death>
-                <affiliation>Famiglia Romanov</affiliation>
-                <note>Esiliato in Asia Centrale, fu promotore di infrastrutture irrigue e ferroviarie nel Turkestan.</note>
-            </person>
-            <person xml:id="G_Dati">
-                <persName><forename>Giuliano</forename> <surname>Dati</surname></persName>
-                <birth><date when="1445">1445</date></birth>
-                <death><date when="1524">1524</date></death>
-                <occupation>Prelato e poeta</occupation>
-                <note>Tradusse in ottava rima la lettera di Colombo e scrisse poemi sul Prete Gianni.</note>
-            </person>
-            <person xml:id="HW_Dove">
-                <persName><roleName>Prof.</roleName> <forename>Heinrich</forename> <forename>Wilhelm</forename> <surname>Dove</surname></persName>
-                <birth><date when="1803">1803</date></birth>
-                <occupation>Fisico e meteorologo</occupation>
-                <note>Padre della meteorologia moderna.</note>
-            </person>
+
             <person xml:id="L_Franchetti">
                 <persName><forename>Leopoldo</forename> <surname>Franchetti</surname></persName>
                 <birth><date when="1847">1847</date></birth>
                 <death><date when="1917">1917</date></death>
-                <occupation>Senatore e studioso</occupation>
-                <note>Fondatore e proprietario della Rassegna Settimanale insieme a Sidney Sonnino.</note>
+                <occupation>Politico, studioso e pubblicista; senatore del Regno d'Italia</occupation>
+                <note>Co-fondatore e proprietario de «La Rassegna Settimanale» insieme a Sidney Sonnino; noto per l'inchiesta sulle condizioni della Sicilia (1876).</note>
                 <idno type="VIAF">64021351</idno>
                 <idno type="Wikidata">Q3825986</idno>
             </person>
-            <person xml:id="G_Gherardino">
-                <persName><forename>Giustino</forename> <nameLink>di maestro</nameLink> <surname>Gherardino da Forlì</surname></persName>
-                <occupation>Miniatore</occupation>
-                <note>Artista del XIV secolo la cui identità è stata rivelata dal codice acquisito dalla Biblioteca Marciana.</note>
-            </person>
-            <person xml:id="P_Gianni">
-                <persName>Prete Gianni</persName>
-                <note type="myth" resp="#FlorisValenti">Leggendario sovrano cristiano d'Oriente, figura centrale dell'immaginario medievale.</note>
-            </person>
-            <person xml:id="L_Manzoni">
-                <persName><roleName>Conte</roleName> <forename>Luigi</forename> <surname>Manzoni</surname></persName>
-                <birth><date when="1844">1844</date></birth>
-                <death><date when="1905">1905</date></death>
-                <occupation>Bibliografo e uomo politico</occupation>
-                <affiliation ref="#Deputazione_BO">R. Deputazione di Storia patria di Bologna</affiliation>
-            </person>
-            <person xml:id="P_Pampaloni">
-                <persName><forename>Pietro</forename> <surname>Pampaloni</surname></persName>
-                <occupation>Gerente responsabile della Rassegna Settimanale</occupation>
-                <affiliation ref="#Tip_Barbera">Tipografia Barbèra</affiliation>
-            </person>
-            <person xml:id="Rocher">
-                <persName>
-                    <choice><abbr>Sig.</abbr><expan>Signor</expan></choice>
-                    <surname>Rocher</surname>
-                </persName>
-                <residence><placeName ref="#TLS">Tolosa</placeName></residence>
-                <occupation>Inventore del nuovo combustibile Amianthine.</occupation>
-            </person>
+
             <person xml:id="S_Sonnino">
                 <persName><forename>Sidney</forename> <surname>Sonnino</surname></persName>
                 <birth><date when="1847">1847</date></birth>
                 <death><date when="1922">1922</date></death>
-                <occupation>Uomo di stato</occupation>
-                <note>Co-fondatore della rivista e futuro Presidente del Consiglio del Regno d'Italia.</note>
+                <occupation>Uomo di stato; due volte Presidente del Consiglio (1906 e 1909–1910); Ministro degli Esteri durante la Prima Guerra Mondiale</occupation>
+                <note>Co-fondatore de «La Rassegna Settimanale»; dopo la cessazione della rivista intraprese la carriera politica divenendo uno dei principali statisti dell'Italia liberale.</note>
                 <idno type="VIAF">64021350</idno>
                 <idno type="Wikidata">Q313933</idno>
             </person>
-            <person xml:id="Provv">
-                <persName>Provveditore agli Studi</persName>
-                <note>Funzionario ministeriale a capo dell'amministrazione scolastica della provincia.</note>
-            </person>
-            <person xml:id="Dir">
-                <persName>Direttore scolastico</persName>
-                <note>Responsabile dell'istituto.</note>
-            </person>
-            <person xml:id="Maestre">
-                <persName>Maestre elementari</persName>
-                <note>Professione d'uscita delle Scuole Normali Femminili.</note>
-            </person>
-            <person xml:id="Maestri">
-                <persName>Maestri elementari</persName>
-                <note>Professione d'uscita</note>
-            </person>
-            <person xml:id="Alunne">
-                <persName>Alunne / Scolare</persName>
-                <note>Giovani donne (15-19 anni) soggette a condizioni ambientali insalubri.</note>
+
+            <person xml:id="P_Pampaloni">
+                <persName><forename>Pietro</forename> <surname>Pampaloni</surname></persName>
+                <occupation>Gerente responsabile de «La Rassegna Settimanale»</occupation>
+                <note>Figura di riferimento tipografico-editoriale della rivista; il suo nome compare nel colophon di tutti i fascicoli del corpus.</note>
             </person>
 
-            <!-- ── da lavoromentale_codificato_fin ── -->
-            <person xml:id="Tamassia">
-                <persName><forename>Arrigo</forename> <surname>Tamassia</surname></persName>
-                <birth><date when="1848">1848</date></birth>
-                <death><date when="1917">1917</date></death>
-                <occupation>Professore di medicina legale</occupation>
-                <affiliation ref="#UniversitàPavia">Università di Pavia</affiliation>
-                <note>Autore del libretto «Le intemperanze del lavoro mentale nelle scuole», Sonzogno, Milano 1881.</note>
-                <idno type="VIAF">44387809</idno>
-                <idno type="Wikidata">Q3975024</idno>
-            </person>
-            <person xml:id="Finkelnburg">
-                <persName><surname>Finkelnburg</surname></persName>
-                <occupation>Igienista tedesco</occupation>
-                <note>Relatore al Congresso tedesco d'igiene pubblica di Norimberga (1877); ricercatore sulla miopia nelle scuole di Amburgo.</note>
-            </person>
-            <person xml:id="Sacchi">
-                <persName><forename>Achille</forename> <surname>Sacchi</surname></persName>
-                <occupation>Medico italiano</occupation>
-                <note>Propose lo studio dell'influenza dell'educazione sulle alienazioni mentali al Congresso degli alienisti di Imola (1877).</note>
-            </person>
-            <person xml:id="Mozzini">
-                <persName><surname>Mozzini</surname></persName>
-                <occupation>Medico italiano</occupation>
-                <note>Intervenne al Congresso internazionale d'igiene di Torino (1880) sui programmi scolastici e la salute dei fanciulli.</note>
-            </person>
-            <person xml:id="Cohn">
-                <persName><surname>Cohn</surname></persName>
-                <occupation>Ricercatore tedesco</occupation>
-                <note>Condusse studi statistici sulla miopia nelle scuole rurali e urbane della Germania.</note>
-            </person>
-            <person xml:id="Becker">
-                <persName><surname>Becker</surname></persName>
-                <occupation>Medico</occupation>
-                <note>Studiò cefalalgia e rinorragia su 3564 alunni delle scuole di Darmstadt.</note>
-            </person>
-            <person xml:id="Guillaume">
-                <persName><surname>Guillaume</surname></persName>
-                <occupation>Medico</occupation>
-                <note>Rilevò dati su cefalalgia e rinorragia nel collegio municipale di Neuchâtel.</note>
-            </person>
-            <person xml:id="Virchow">
-                <persName><forename>Rudolf</forename> <surname>Virchow</surname></persName>
-                <birth><date when="1821">1821</date></birth>
-                <death><date when="1902">1902</date></death>
-                <occupation>Patologo tedesco; fondatore della patologia cellulare</occupation>
-                <note>Segnalò la frequenza di malattie respiratorie e congestioni nelle scuole.</note>
-                <idno type="VIAF">61550437</idno>
-                <idno type="Wikidata">Q58095</idno>
-            </person>
-            <person xml:id="Warrentrapp">
-                <persName><surname>Warrentrapp</surname></persName>
-                <note>Partecipante alla discussione al Congresso tedesco d'igiene pubblica di Norimberga (1877).</note>
-            </person>
-            <person xml:id="Colin">
-                <persName><surname>Colin</surname></persName>
-                <note>Partecipante alla discussione al Congresso tedesco d'igiene pubblica di Norimberga (1877).</note>
-            </person>
-
-            <!-- ── da notizie5 ── -->
-            <person xml:id="Posocco">
-                <persName><surname>Posocco</surname></persName>
-                <note>Collaboratore del Fanfulla della Domenica; annunciò la scoperta del manoscritto leopardiano.</note>
-            </person>
-            <person xml:id="Viani">
-                <persName><roleName>cav.</roleName> <forename>Prospero</forename> <surname>Viani</surname></persName>
-                <occupation>Filologo e studioso</occupation>
-                <note>Scoprì la cantica inedita di Leopardi L'appressamento della morte.</note>
-            </person>
-            <person xml:id="Leopardi">
-                <persName><forename>Giacomo</forename> <surname>Leopardi</surname></persName>
-                <birth><date when="1798">1798</date></birth>
-                <death><date when="1837">1837</date></death>
-                <occupation>Poeta, filosofo e filologo italiano; massimo esponente del Romanticismo in Italia</occupation>
-                <note>Originario di Recanati; detto anche «il Recanatese».</note>
-                <idno type="VIAF">32012148</idno>
-                <idno type="Wikidata">Q1396</idno>
-            </person>
-            <person xml:id="Tommaseo">
-                <persName><forename>Niccolò</forename> <surname>Tommasèo</surname></persName>
-                <birth><date when="1802">1802</date></birth>
-                <death><date when="1874">1874</date></death>
-                <occupation>Letterato, linguista e lessicografo; autore del grande «Dizionario della lingua italiana»</occupation>
-                <note>Bersaglio di un epigramma inedito di Leopardi.</note>
-                <idno type="VIAF">56609589</idno>
-                <idno type="Wikidata">Q280930</idno>
-            </person>
-            <person xml:id="Buchanan">
-                <persName><surname>Buchanan</surname></persName>
-                <occupation>Scrittore</occupation>
-                <note>Autore di un poema intitolato Giustiniano, in uscita sulla Contemporary Review.</note>
-            </person>
-            <person xml:id="Dixon">
-                <persName><forename>G.</forename> <surname>Hepworth Dixon</surname></persName>
-                <death><date when="1879-12-27">27 dicembre 1879</date></death>
-                <occupation>Viaggiatore ed etnologo inglese</occupation>
-                <note>Noto per esplorazioni in Russia, Palestina, Cipro e America.</note>
-            </person>
-            <person xml:id="AlessandroII">
-                <persName><roleName>Imperatore</roleName> <forename>Alessandro</forename> <genName>II</genName></persName>
-                <birth><date when="1818">1818</date></birth>
-                <death><date when="1881">1881</date></death>
-                <note>Imperatore di Russia; il venticinquesimo anniversario della sua ascensione al trono era previsto per il 19 febbraio (2 marzo) 1880.</note>
-            </person>
-
-            <!-- ── da notizie8 ── -->
             <person xml:id="Bonghi">
                 <persName><forename>Ruggero</forename> <surname>Bonghi</surname></persName>
                 <birth><date when="1826">1826</date></birth>
                 <death><date when="1895">1895</date></death>
-                <occupation>Politico e scrittore italiano; Ministro della Pubblica Istruzione (1874-1876)</occupation>
-                <note>Annuncia la fondazione della rivista La Cultura.</note>
+                <occupation>Politico, filologo e scrittore; Ministro della Pubblica Istruzione (1874–1876)</occupation>
+                <note>Promotore della riforma scolastica post-unitaria; nel 1881 annunciò la fondazione de «La Cultura, Rivista di scienze morali, di lettere ed arti», periodico critico-bibliografico a uscita bimestrale.</note>
                 <idno type="VIAF">56618816</idno>
                 <idno type="Wikidata">Q464765</idno>
             </person>
 
-            <!-- ── da virtueducatrice ── -->
-            <person xml:id="Caprile">
-                <persName><forename>Domenico</forename> <surname>Caprile</surname></persName>
-                <occupation>Scrittore di opere morali e religiose</occupation>
-                <note>Autore di «Virtù educatrice, studi morali», 3a edizione, Genova 1880. Il recensore ne critica il metodo educativo dogmatico e antiscientifico.</note>
-            </person>
-            <person xml:id="STeresa">
-                <persName><roleName>Santa</roleName> <forename>Teresa</forename> <nameLink>d'Avila</nameLink></persName>
-                <birth><date when="1515">1515</date></birth>
-                <death><date when="1582">1582</date></death>
-                <occupation>Mistica carmelitana</occupation>
-                <note>Citata come termine di paragone iperbolico per il metodo spiritualista del Caprile.</note>
+            <person xml:id="Q_Sella">
+                <persName><forename>Quintino</forename> <surname>Sella</surname></persName>
+                <birth><date when="1827">1827</date></birth>
+                <death><date when="1884">1884</date></death>
+                <occupation>Statista della Destra Storica; Ministro delle Finanze; mineralogista e alpinista</occupation>
+                <note>Fondatore del Club Alpino Italiano (1863); noto per la politica del pareggio di bilancio e per l'istruzione tecnica e scientifica.</note>
             </person>
 
-            <!-- ── aggiunto in fase di revisione corpus ── -->
+            <person xml:id="A_Bertani">
+                <persName><forename>Agostino</forename> <surname>Bertani</surname></persName>
+                <birth><date when="1812">1812</date></birth>
+                <death><date when="1886">1886</date></death>
+                <occupation>Medico e politico; leader della Sinistra radicale in Parlamento</occupation>
+                <note>Garibaldino; promotore delle riforme sanitarie e dell'istruzione popolare; avversario della politica scolastica moderata della Destra Storica.</note>
+            </person>
+
+            <person xml:id="B_Spaventa">
+                <persName><forename>Bertrando</forename> <surname>Spaventa</surname></persName>
+                <birth><date when="1817">1817</date></birth>
+                <death><date when="1883">1883</date></death>
+                <occupation>Filosofo idealista di ispirazione hegeliana; professore universitario e deputato</occupation>
+                <note>Insieme al fratello Silvio, figura di riferimento della cultura laica e liberale del Risorgimento; contribuì al dibattito sull'istruzione laica dello Stato.</note>
+            </person>
+
+            <person xml:id="P_Sbarbaro">
+                <persName><forename>Pietro</forename> <surname>Sbarbaro</surname></persName>
+                <birth><date when="1838">1838</date></birth>
+                <death><date when="1893">1893</date></death>
+                <occupation>Professore di economia politica e giornalista polemico</occupation>
+                <note>Direttore de «Le Forche Caudine»; noto per i suoi attacchi alla classe dirigente universitaria e politica italiana.</note>
+            </person>
+
             <person xml:id="Montalembert">
                 <persName><roleName>Conte</roleName> <forename>Charles</forename> <nameLink>de</nameLink> <surname>Montalembert</surname></persName>
                 <birth><date when="1810">1810</date></birth>
                 <death><date when="1870">1870</date></death>
                 <occupation>Politico, storico e pubblicista francese; esponente del cattolicesimo liberale</occupation>
-                <note>Deputato e poi senatore francese; difensore della libertà di insegnamento della Chiesa.
-                      Nel testo della Rassegna è menzionato in relazione all'istruzione laica e cattolica
-                      nell'ambito del dibattito sull'educazione post-unitaria.</note>
+                <note>Deputato e poi senatore francese; principale difensore della libertà di insegnamento della Chiesa cattolica; nel corpus citato nel dibattito sull'istruzione laica e religiosa nel periodo post-unitario.</note>
                 <idno type="VIAF">2476802</idno>
                 <idno type="Wikidata">Q273487</idno>
+            </person>
+
+            <!-- ── Scienziati e pensatori del corpus ── -->
+
+            <person xml:id="C_Darwin">
+                <persName><forename>Charles</forename> <surname>Darwin</surname></persName>
+                <birth><date when="1809">1809</date></birth>
+                <death><date when="1882">1882</date></death>
+                <occupation>Naturalista e geologo britannico; autore della teoria dell'evoluzione per selezione naturale</occupation>
+                <note>Il suo pensiero è richiamato nel corpus come fondamento teorico delle discussioni sull'igiene scolastica e sull'educazione in prospettiva evoluzionistica.</note>
+                <idno type="VIAF">27063124</idno>
+                <idno type="Wikidata">Q1035</idno>
+            </person>
+
+            <person xml:id="H_Spencer">
+                <persName><forename>Herbert</forename> <surname>Spencer</surname></persName>
+                <birth><date when="1820">1820</date></birth>
+                <death><date when="1903">1903</date></death>
+                <occupation>Filosofo e sociologo britannico; principale esponente del positivismo evoluzionistico</occupation>
+                <note>Autore di «Education: Intellectual, Moral and Physical» (1861), opera ampiamente discussa nel corpus in relazione alla pedagogia scientifica.</note>
+                <idno type="VIAF">39377694</idno>
+                <idno type="Wikidata">Q48193</idno>
+            </person>
+
+            <person xml:id="JS_Mill">
+                <persName><forename>John</forename> <forename>Stuart</forename> <surname>Mill</surname></persName>
+                <birth><date when="1806">1806</date></birth>
+                <death><date when="1873">1873</date></death>
+                <occupation>Filosofo, economista e politico liberale britannico; esponente dell'utilitarismo</occupation>
+                <note>Riferimento teorico del liberalismo laico dei redattori della Rassegna in materia di istruzione e libertà individuale.</note>
+                <idno type="VIAF">31975535</idno>
+                <idno type="Wikidata">Q151803</idno>
+            </person>
+
+            <person xml:id="Virchow">
+                <persName><forename>Rudolf</forename> <surname>Virchow</surname></persName>
+                <birth><date when="1821">1821</date></birth>
+                <death><date when="1902">1902</date></death>
+                <occupation>Patologo e antropologo tedesco; fondatore della patologia cellulare; deputato al Reichstag</occupation>
+                <note>Segnalò la frequenza di malattie respiratorie e congestioni nelle scuole; i suoi dati statistici sono citati da Tamassia nel libretto sul lavoro mentale.</note>
+                <idno type="VIAF">61550437</idno>
+                <idno type="Wikidata">Q58095</idno>
+            </person>
+
+            <person xml:id="Tamassia">
+                <persName><forename>Arrigo</forename> <surname>Tamassia</surname></persName>
+                <birth><date when="1848">1848</date></birth>
+                <death><date when="1917">1917</date></death>
+                <occupation>Professore di medicina legale e psichiatria forense all'Università di Pavia</occupation>
+                <note>Autore del libretto «Le intemperanze del lavoro mentale nelle scuole» (Sonzogno, Milano 1881), discusso nella rubrica Notizie del corpus; pioniere della psichiatria forense italiana.</note>
+                <idno type="VIAF">44387809</idno>
+                <idno type="Wikidata">Q3975024</idno>
+            </person>
+
+            <person xml:id="Finkelnburg">
+                <persName><forename>Karl</forename> <surname>Finkelnburg</surname></persName>
+                <birth><date when="1832">1832</date></birth>
+                <death><date when="1896">1896</date></death>
+                <occupation>Medico igienista tedesco; professore di medicina all'Università di Bonn</occupation>
+                <note>Presentò la relazione sui danni del sovraccarico scolastico al Congresso tedesco di igiene pubblica di Norimberga (1877); condusse ricerche sulla diffusione della miopia nelle scuole di Amburgo.</note>
+            </person>
+
+            <person xml:id="Cohn">
+                <persName><forename>Hermann</forename> <surname>Cohn</surname></persName>
+                <birth><date when="1838">1838</date></birth>
+                <death><date when="1906">1906</date></death>
+                <occupation>Oculista tedesco; professore all'Università di Breslavia</occupation>
+                <note>Condusse sistematici studi statistici sulla diffusione della miopia nelle scuole rurali e urbane della Germania; i suoi risultati influenzarono le riforme scolastiche igieniche in tutta Europa.</note>
+                <idno type="VIAF">47556837</idno>
+            </person>
+
+            <person xml:id="Becker">
+                <persName><surname>Becker</surname></persName>
+                <occupation>Medico tedesco</occupation>
+                <note>Condusse uno studio su 3564 alunni delle scuole di Darmstadt, rilevando cefalalgia nel 40% dei casi e rinorragia nel 22%; i risultati furono citati da Tamassia come prova dei danni del sovraccarico scolastico.</note>
+            </person>
+
+            <person xml:id="Guillaume">
+                <persName><surname>Guillaume</surname></persName>
+                <occupation>Medico svizzero</occupation>
+                <note>Rilevò dati analoghi a quelli di Becker nel collegio municipale di Neuchâtel; i suoi risultati contribuirono al dibattito internazionale sull'igiene scolastica.</note>
+            </person>
+
+            <person xml:id="Sacchi">
+                <persName><forename>Achille</forename> <surname>Sacchi</surname></persName>
+                <birth><date when="1827">1827</date></birth>
+                <death><date when="1890">1890</date></death>
+                <occupation>Medico psichiatra e alienista; direttore del manicomio di Reggio Emilia</occupation>
+                <note>Propose al Congresso degli alienisti italiani di Imola (1877) lo studio sistematico dell'influenza dell'educazione sulle alienazioni mentali; aprì il dibattito che continuò nei congressi successivi.</note>
+            </person>
+
+            <person xml:id="Mozzini">
+                <persName><surname>Mozzini</surname></persName>
+                <occupation>Medico igienista italiano</occupation>
+                <note>Intervenne al Congresso internazionale d'igiene di Torino (1880) sull'influenza dei programmi scolastici sulla salute dei fanciulli; i suoi dati furono ripresi da Tamassia nel libretto sul lavoro mentale.</note>
+            </person>
+
+            <person xml:id="Warrentrapp">
+                <persName><forename>Georg</forename> <surname>Varrentrapp</surname></persName>
+                <birth><date when="1809">1809</date></birth>
+                <death><date when="1886">1886</date></death>
+                <occupation>Medico igienista tedesco; pioniere dell'igiene urbana a Francoforte sul Meno</occupation>
+                <note>Partecipò alla discussione al Congresso tedesco d'igiene pubblica di Norimberga (1877) sulla relazione di Finkelnburg sul sovraccarico scolastico.</note>
+            </person>
+
+            <person xml:id="Colin">
+                <persName><surname>Colin</surname></persName>
+                <occupation>Medico igienista</occupation>
+                <note>Partecipò alla discussione al Congresso tedesco d'igiene pubblica di Norimberga (1877) sulla relazione di Finkelnburg; il suo intervento è citato da Tamassia nel resoconto del dibattito.</note>
+            </person>
+
+            <person xml:id="HW_Dove">
+                <persName><roleName>Prof.</roleName> <forename>Heinrich</forename> <forename>Wilhelm</forename> <surname>Dove</surname></persName>
+                <birth><date when="1803">1803</date></birth>
+                <death><date when="1879-04-06">6 aprile 1879</date><placeName ref="#BL">Berlino</placeName></death>
+                <occupation>Fisico e meteorologo tedesco; professore ordinario all'Università di Berlino</occupation>
+                <note>Fondatore della meteorologia scientifica moderna; sviluppò la legge del vento che porta il suo nome; morì a 76 anni come riportato nella rubrica Notizie del fascicolo 69.</note>
+                <idno type="VIAF">57409803</idno>
+                <idno type="Wikidata">Q76547</idno>
+            </person>
+
+            <!-- ── Figure legate alle Notizie culturali ── -->
+
+            <person xml:id="GB_DeRossi">
+                <persName><forename>Giovanni</forename> <forename>Battista</forename> <surname>de Rossi</surname></persName>
+                <birth><date when="1822">1822</date></birth>
+                <death><date when="1894">1894</date></death>
+                <occupation>Archeologo cristiano; fondatore dell'archeologia delle catacombe romane</occupation>
+                <note>Curatore delle Inscriptiones Christianae Urbis Romae; si avvalse della pianta di Roma del Bufalini (1551), ritrovata a Cuneo, per lo studio della topografia delle catacombe.</note>
+                <idno type="VIAF">100173065</idno>
+                <idno type="Wikidata">Q315880</idno>
+            </person>
+
+            <person xml:id="L_Bufalini">
+                <persName><forename>Leonardo</forename> <surname>Bufalini</surname></persName>
+                <death><date when="1567">1567</date></death>
+                <occupation>Architetto e cartografo italiano</occupation>
+                <note>Autore della celebre pianta di Roma del 1551, documento cartografico di eccezionale importanza per la topografia urbana antica; una copia fu ritrovata a Cuneo e utilizzata da De Rossi per i suoi studi sulle catacombe.</note>
+            </person>
+
+            <person xml:id="N_Costantinovich">
+                <persName><roleName>Gran Duca</roleName> <forename>Niccolò</forename> <surname>Costantinovich</surname></persName>
+                <birth><date when="1850">1850</date></birth>
+                <death><date when="1918">1918</date></death>
+                <occupation>Principe della famiglia Romanov; promotore di infrastrutture in Asia centrale</occupation>
+                <affiliation>Famiglia Romanov</affiliation>
+                <note>Esiliato in Asia Centrale per scandalo di corte; fu promotore di canali irrigui e infrastrutture ferroviarie nel Turkestan; comandò la spedizione geografica descritta nella rubrica Notizie del fascicolo 69.</note>
+            </person>
+
+            <person xml:id="G_Dati">
+                <persName><forename>Giuliano</forename> <surname>Dati</surname></persName>
+                <birth><date when="1445">1445</date></birth>
+                <death><date when="1524">1524</date></death>
+                <occupation>Prelato e poeta fiorentino</occupation>
+                <note>Tradusse in ottava rima la lettera di Cristoforo Colombo sulle Indie; compose un poema sul Prete Gianni attingendo a fonti portoghesi e latine, oggetto dello studio del conte Manzoni.</note>
+            </person>
+
+            <person xml:id="L_Manzoni">
+                <persName><roleName>Conte</roleName> <forename>Luigi</forename> <surname>Manzoni</surname></persName>
+                <birth><date when="1844">1844</date></birth>
+                <death><date when="1905">1905</date></death>
+                <occupation>Bibliografo, uomo politico e studioso di tradizioni medievali</occupation>
+                <affiliation ref="#Deputazione_BO">R. Deputazione di Storia patria di Bologna</affiliation>
+                <note>Presentò alla Deputazione di Storia patria di Bologna uno studio sulla leggenda del Prete Gianni, con particolare attenzione al poema in ottava rima di Giuliano Dati.</note>
+            </person>
+
+            <person xml:id="P_Gianni">
+                <persName>Prete Gianni</persName>
+                <note type="storica" resp="#FlorisValenti">Leggendario sovrano cristiano d'Oriente, già menzionato da Marco Polo; figura centrale dell'immaginario medievale come simbolo di un regno cristiano utopico oltre i confini del mondo noto. La sua leggenda fu oggetto di numerosi studi nel filone positivistico della storia delle tradizioni medievali.</note>
+            </person>
+
+            <person xml:id="G_Gherardino">
+                <persName><forename>Giustino</forename> <nameLink>di maestro</nameLink> <surname>Gherardino da Forlì</surname></persName>
+                <occupation>Miniatore del XIV secolo</occupation>
+                <note>Artista la cui identità era fino ad allora ignota agli studiosi; il suo nome fu rivelato dall'iscrizione nella seconda tavola miniata dell'antifonario del XIV secolo acquisito dalla Biblioteca Marciana di Venezia.</note>
+            </person>
+
+            <person xml:id="Rocher">
+                <persName><surname>Rocher</surname></persName>
+                <residence><placeName ref="#TLS">Tolosa</placeName></residence>
+                <occupation>Inventore e sperimentatore</occupation>
+                <note>Inventore del combustibile denominato Amianthine, composto di amianto ridotto in polvere, carbone di legna e nitrato di piombo; la sua invenzione era oggetto di discussione negli ambienti scientifici americani al momento della pubblicazione della notizia.</note>
+            </person>
+
+            <person xml:id="Leopardi">
+                <persName><forename>Giacomo</forename> <surname>Leopardi</surname></persName>
+                <birth><date when="1798">1798</date></birth>
+                <death><date when="1837">1837</date></death>
+                <occupation>Poeta, filosofo e filologo; massimo esponente del Romanticismo italiano</occupation>
+                <note>Originario di Recanati (detto anche «il Recanatese»); la notizia riguarda la scoperta del manoscritto della cantica giovanile L'appressamento della morte (1816) tra le carte del canonico Cancellieri a Massa.</note>
+                <idno type="VIAF">32012148</idno>
+                <idno type="Wikidata">Q1396</idno>
+            </person>
+
+            <person xml:id="Tommaseo">
+                <persName><forename>Niccolò</forename> <surname>Tommasèo</surname></persName>
+                <birth><date when="1802">1802</date></birth>
+                <death><date when="1874">1874</date></death>
+                <occupation>Letterato, linguista e lessicografo; autore del Dizionario della lingua italiana</occupation>
+                <note>Bersaglio di un epigramma satirico inedito di Leopardi, rinvenuto nel manoscritto scoperto da Viani; l'epigramma è riportato nella notizia del fascicolo 106.</note>
+                <idno type="VIAF">56609589</idno>
+                <idno type="Wikidata">Q280930</idno>
+            </person>
+
+            <person xml:id="Posocco">
+                <persName><surname>Posocco</surname></persName>
+                <occupation>Giornalista e collaboratore letterario</occupation>
+                <note>Collaboratore del Fanfulla della Domenica; annunciò sulla rivista la scoperta del manoscritto leopardiano contenente la cantica giovanile L'appressamento della morte e l'epigramma su Tommaseo.</note>
+            </person>
+
+            <person xml:id="Viani">
+                <persName><roleName>Cav.</roleName> <forename>Prospero</forename> <surname>Viani</surname></persName>
+                <birth><date when="1812">1812</date></birth>
+                <death><date when="1892">1892</date></death>
+                <occupation>Filologo e lessicografo; collaboratore del Dizionario di Tommaseo e Bellini</occupation>
+                <note>Scoprì tra le carte del canonico Cancellieri a Massa il manoscritto contenente la cantica giovanile inedita di Leopardi L'appressamento della morte (scritta nel 1816) e l'epigramma su Tommaseo.</note>
+            </person>
+
+            <person xml:id="Buchanan">
+                <persName><forename>Robert</forename> <surname>Buchanan</surname></persName>
+                <birth><date when="1841">1841</date></birth>
+                <death><date when="1901">1901</date></death>
+                <occupation>Poeta, romanziere e drammaturgo scozzese</occupation>
+                <note>Annunciò la prossima pubblicazione del poema Giustiniano sulla Contemporary Review; noto per la polemica letteraria contro la scuola preraffaellita (The Fleshly School of Poetry, 1871).</note>
+                <idno type="VIAF">56613866</idno>
+                <idno type="Wikidata">Q523929</idno>
+            </person>
+
+            <person xml:id="Dixon">
+                <persName><forename>George</forename> <forename>Hepworth</forename> <surname>Dixon</surname></persName>
+                <birth><date when="1820">1820</date></birth>
+                <death><date when="1879-12-27">27 dicembre 1879</date></death>
+                <occupation>Scrittore, giornalista e viaggiatore inglese; direttore dell'Athenaeum (1853–1869)</occupation>
+                <note>Noto per i resoconti di viaggio in Russia, Palestina, Cipro e America del Nord; la sua morte fu annunciata nella rubrica Notizie del fascicolo 106.</note>
+                <idno type="VIAF">29529766</idno>
+                <idno type="Wikidata">Q5554736</idno>
+            </person>
+
+            <person xml:id="AlessandroII">
+                <persName><roleName>Imperatore</roleName> <forename>Alessandro</forename> <genName>II</genName></persName>
+                <birth><date when="1818">1818</date></birth>
+                <death><date when="1881">1881</date></death>
+                <occupation>Imperatore di Russia (1855–1881); riformatore; abolì la servitù della gleba nel 1861</occupation>
+                <note>Il venticinquesimo anniversario della sua ascensione al trono (19 febbraio / 2 marzo 1880) era previsto come evento di grande celebrazione; fu assassinato nel marzo 1881.</note>
+            </person>
+
+            <person xml:id="C_Alfieri">
+                <persName><forename>Carlo</forename> <surname>Alfieri di Sostegno</surname></persName>
+                <birth><date when="1827">1827</date></birth>
+                <death><date when="1897">1897</date></death>
+                <occupation>Senatore, politico e pubblicista liberale</occupation>
+                <note>Fondatore della Scuola di scienze sociali e politiche «Cesare Alfieri» di Firenze (1875); autore di «Chi ha tempo non aspetti tempo», recensito nella sezione Bibliografia del corpus.</note>
+            </person>
+
+            <person xml:id="Caprile">
+                <persName><forename>Domenico</forename> <surname>Caprile</surname></persName>
+                <occupation>Scrittore di pedagogia morale e religiosa</occupation>
+                <note>Autore di «Virtù educatrice, studi morali» (3a ed., Genova 1880); la Rassegna ne critica il metodo educativo dogmatico e antiscientifico, fondato sulla devozione religiosa in contrasto con la pedagogia laica e positiva.</note>
+            </person>
+
+            <person xml:id="STeresa">
+                <persName><roleName>Santa</roleName> <forename>Teresa</forename> <nameLink>d'</nameLink><placeName>Avila</placeName></persName>
+                <birth><date when="1515">1515</date></birth>
+                <death><date when="1582">1582</date></death>
+                <occupation>Mistica e riformatrice carmelitana; Dottore della Chiesa</occupation>
+                <note>Citata come termine di paragone iperbolico nella recensione di «Virtù educatrice»: il recensore ironizza sul metodo spiritualista di Caprile paragonandolo all'ascetismo mistico teresiano.</note>
+            </person>
+
+            <!-- ── Figure funzionali (ruoli generici del sistema scolastico) ── -->
+
+            <person xml:id="Provv">
+                <persName>Provveditore agli Studi</persName>
+                <occupation>Funzionario ministeriale a capo dell'amministrazione scolastica provinciale</occupation>
+                <note>Nominato dal Ministero della Pubblica Istruzione; aveva il compito di vigilare sulle scuole della provincia e poteva, in assenza di norme specifiche, limitare il numero delle alunne per ragioni igieniche, come discusso nell'articolo sulle Scuole Normali Femminili.</note>
+            </person>
+
+            <person xml:id="Dir">
+                <persName>Direttore scolastico</persName>
+                <occupation>Responsabile amministrativo e didattico dell'istituto</occupation>
+                <note>Aveva facoltà di proporre al Consiglio Provinciale limitazioni alle ammissioni in caso di sovraffollamento; figura chiave nel dibattito sulle condizioni igieniche delle scuole normali.</note>
+            </person>
+
+            <person xml:id="Maestre">
+                <persName>Maestre elementari</persName>
+                <occupation>Insegnanti di scuola elementare; principale sbocco professionale delle Scuole Normali Femminili</occupation>
+                <note>Nel periodo post-unitario erano sottorpagate rispetto ai colleghi maschi e spesso costrette a lavorare in condizioni igieniche precarie; il corpus documenta le conseguenze fisiche del sovraffollamento scolastico sulle future maestre già durante la formazione.</note>
+            </person>
+
+            <person xml:id="Maestri">
+                <persName>Maestri elementari</persName>
+                <occupation>Insegnanti di scuola elementare; sbocco professionale delle Scuole Normali Maschili</occupation>
+                <note>Nel dibattito del corpus sono contrapposti alle maestre in termini di condizioni lavorative e retributive; la disparità di trattamento era oggetto di critica da parte dei riformatori dell'istruzione.</note>
+            </person>
+
+            <person xml:id="Alunne">
+                <persName>Alunne delle Scuole Normali</persName>
+                <occupation>Studentesse in formazione magistrale</occupation>
+                <note>Giovani donne (tipicamente tra i 15 e i 19 anni) iscritte alle Scuole Normali Femminili; il corpus documenta le gravi conseguenze sulla loro salute del sovraffollamento e delle cattive condizioni igieniche degli edifici scolastici: pallore, mal di testa, rinorragia, fino a casi di malattia grave e morte.</note>
             </person>
 
         </listPerson>
 
         <!-- ══════════════════════════════════════════
-             LISTPLACE — tutti i luoghi del corpus
+             LISTPLACE
              ══════════════════════════════════════════ -->
         <listPlace>
 
-            <!-- ── da validare_completo (mantenuti invariati) ── -->
+            <!-- ── Italia ── -->
             <place xml:id="ITA" type="country">
                 <placeName>Italia</placeName>
                 <location><geo>41.8719 12.5674</geo></location>
+                <desc>Il Regno d'Italia (1861–1946); contesto politico e geografico dell'intero corpus.</desc>
             </place>
+
             <place xml:id="RM" type="city">
                 <placeName>Roma</placeName>
-                <location>
-                    <country key="ITA" ref="#ITA">Italia</country>
-                    <geo>41.8902 12.4922</geo>
-                </location>
-                <desc>Sede della redazione de «La Rassegna Settimanale». Capitale del Regno d'Italia dal 1871.</desc>
+                <location><country ref="#ITA">Italia</country><geo>41.8902 12.4922</geo></location>
+                <desc>Capitale del Regno d'Italia dal 1871; sede della redazione e della tipografia de «La Rassegna Settimanale».</desc>
             </place>
-            <place xml:id="BL" type="city">
-                <placeName>Berlino</placeName>
-                <location><country key="DE">Germania</country><geo>52.5200 13.4050</geo></location>
-            </place>
+
             <place xml:id="CN" type="city">
                 <placeName>Cuneo</placeName>
-                <location><settlement>Cuneo</settlement><region>Piemonte</region><country>Italia</country></location>
-                <desc>Luogo del rinvenimento della copia della pianta di Roma del Bufalini.</desc>
+                <location><region>Piemonte</region><country ref="#ITA">Italia</country></location>
+                <desc>Città piemontese dove fu ritrovata la copia della pianta di Roma del Bufalini (1551), utilizzata da De Rossi per gli studi topografici sulle catacombe.</desc>
             </place>
+
             <place xml:id="VE" type="city">
                 <placeName>Venezia</placeName>
-                <location><settlement>Venezia</settlement><region>Veneto</region><country>Italia</country></location>
-                <desc>Sede della Biblioteca Marciana e della Confraternita della Carità.</desc>
+                <location><region>Veneto</region><country ref="#ITA">Italia</country></location>
+                <desc>Sede della Biblioteca Marciana, che acquisì un pregiato antifonario miniato del XIV secolo, e della Confraternita della Carità che lo aveva commissionato.</desc>
             </place>
-            <place xml:id="TLS" type="city">
-                <placeName>Tolosa</placeName>
-                <location><settlement>Tolosa</settlement><country>Francia</country></location>
+
+            <place xml:id="Pavia" type="city">
+                <placeName>Pavia</placeName>
+                <location><region>Lombardia</region><country ref="#ITA">Italia</country></location>
+                <desc>Sede dell'Università dove insegnava Arrigo Tamassia, autore del libretto sul lavoro mentale nelle scuole.</desc>
             </place>
-            <place xml:id="Asia_C">
-                <placeName>Asia centrale</placeName>
-                <desc>Vasta regione interna dell'Asia, teatro della spedizione del Gran Duca Niccolò Costantinovich.</desc>
+
+            <place xml:id="Milano" type="city">
+                <placeName>Milano</placeName>
+                <location><region>Lombardia</region><country ref="#ITA">Italia</country></location>
+                <desc>Sede della casa editrice Sonzogno, che pubblicò nel 1881 il libretto di Tamassia «Le intemperanze del lavoro mentale nelle scuole».</desc>
             </place>
-            <place xml:id="Ural"><placeName>Ural</placeName></place>
-            <place xml:id="Oxus">
-                <placeName>Oxus</placeName>
-                <placeName type="modern">Amu Daria</placeName>
+
+            <place xml:id="Torino" type="city">
+                <placeName>Torino</placeName>
+                <location><region>Piemonte</region><country ref="#ITA">Italia</country></location>
+                <desc>Sede del Congresso internazionale d'igiene del 1880, dove Mozzini richiamò l'attenzione sui danni dei programmi scolastici.</desc>
             </place>
-            <place xml:id="Syr_Daria"><placeName>Syr Daria</placeName></place>
-            <place xml:id="Khiva"><placeName>Khiva</placeName></place>
-            <place xml:id="Uzboi"><placeName>Uzboi</placeName></place>
-            <place xml:id="Caspio"><placeName>Mar Caspio</placeName></place>
-            <place xml:id="Afghanistan"><placeName>Afghanistan</placeName></place>
-            <place xml:id="Karasugai"><placeName>Karasugai</placeName></place>
-            <place xml:id="Tashkend"><placeName>Tashkend</placeName></place>
-            <place xml:id="Samarcanda"><placeName>Samarcanda</placeName></place>
-            <place xml:id="Kunduz"><placeName>Kunduz</placeName></place>
-            <place xml:id="Kara_Kum"><placeName>Kara Kum</placeName></place>
-            <place xml:id="Krasnovodsk"><placeName>Krasnovodsk</placeName></place>
-            <place xml:id="Sari_Kamish"><placeName>Sari Kamish</placeName></place>
-            <place xml:id="Merv"><placeName>Merv</placeName></place>
-            <place xml:id="America"><placeName>America</placeName></place>
-            <place xml:id="SUD"><placeName>Mezzogiorno</placeName><desc>Riferimento alle province meridionali.</desc></place>
+
+            <place xml:id="Padova" type="city">
+                <placeName>Padova</placeName>
+                <location><region>Veneto</region><country ref="#ITA">Italia</country></location>
+            </place>
+
+            <place xml:id="Genova" type="city">
+                <placeName>Genova</placeName>
+                <location><region>Liguria</region><country ref="#ITA">Italia</country></location>
+                <desc>Luogo di pubblicazione della 3a edizione di «Virtù educatrice» di Domenico Caprile (1880).</desc>
+            </place>
+
+            <place xml:id="ReggioEmilia" type="city">
+                <placeName>Reggio d'Emilia</placeName>
+                <location><region>Emilia-Romagna</region><country ref="#ITA">Italia</country></location>
+                <desc>Sede del manicomio diretto da Achille Sacchi e del congresso degli alienisti che rimise il tema del lavoro mentale all'ordine del giorno.</desc>
+            </place>
+
+            <place xml:id="Imola" type="city">
+                <placeName>Imola</placeName>
+                <location><region>Emilia-Romagna</region><country ref="#ITA">Italia</country></location>
+                <desc>Sede del Congresso degli alienisti italiani del 1877, dove Sacchi propose lo studio sistematico dell'influenza dell'educazione sulle alienazioni mentali.</desc>
+            </place>
+
+            <place xml:id="Voghera" type="city">
+                <placeName>Voghera</placeName>
+                <location><region>Lombardia</region><country ref="#ITA">Italia</country></location>
+                <desc>Sede del congresso degli alienisti italiani successivo a quello di Reggio Emilia, dove il tema del lavoro mentale era atteso all'ordine del giorno.</desc>
+            </place>
+
+            <place xml:id="SUD">
+                <placeName>Mezzogiorno</placeName>
+                <desc>Riferimento alle province meridionali del Regno d'Italia; nel corpus citato per le condizioni particolarmente precarie degli edifici scolastici e per la difficoltà di applicazione delle norme igieniche.</desc>
+            </place>
+
+            <!-- ── Europa ── -->
+            <place xml:id="Europa">
+                <placeName>Europa</placeName>
+                <desc>Contesto geografico e culturale di riferimento del corpus; il dibattito sull'igiene scolastica si svolse in parallelo in Italia, Germania, Svizzera e Francia tra gli anni Settanta e Ottanta dell'Ottocento.</desc>
+            </place>
+
             <place xml:id="Francia" type="country">
                 <placeName>Francia</placeName>
                 <location><geo>46.2276 2.2137</geo></location>
+                <desc>Paese di origine del signor Rocher (Tolosa); sede di riviste di riferimento citate nel corpus e della Scuola politecnica di Parigi.</desc>
             </place>
+
+            <place xml:id="Parigi" type="city">
+                <placeName>Parigi</placeName>
+                <location><country ref="#Francia">Francia</country><geo>48.8566 2.3522</geo></location>
+                <desc>Sede della Scuola politecnica; i dati sulla mortalità dei suoi alunni per eccesso di studio sono citati da Tamassia come esempio estremo dei danni del lavoro mentale.</desc>
+            </place>
+
+            <place xml:id="TLS" type="city">
+                <placeName>Tolosa</placeName>
+                <location><country ref="#Francia">Francia</country></location>
+                <desc>Città della Francia meridionale; luogo di residenza del signor Rocher, inventore del combustibile Amianthine.</desc>
+            </place>
+
             <place xml:id="Inghilterra" type="country">
                 <placeName>Inghilterra</placeName>
+                <location><geo>52.3555 -1.1743</geo></location>
+                <desc>Paese di origine di G. Hepworth Dixon; sede di riviste letterarie citate nel corpus (Athenaeum, Contemporary Review).</desc>
             </place>
+
             <place xml:id="Germania" type="country">
                 <placeName>Germania</placeName>
                 <location><geo>51.1657 10.4515</geo></location>
+                <desc>Paese di riferimento per la ricerca sull'igiene scolastica nel corpus; sede dei principali congressi citati da Tamassia (Norimberga 1877, Eisenach 1880).</desc>
             </place>
-            <place xml:id="Europa">
-                <placeName>Europa</placeName>
+
+            <place xml:id="BL" type="city">
+                <placeName>Berlino</placeName>
+                <location><country ref="#Germania">Germania</country><geo>52.5200 13.4050</geo></location>
+                <desc>Sede dell'Università dove insegnava Heinrich Wilhelm Dove; città dove il fisico morì il 6 aprile 1879.</desc>
             </place>
-            <place xml:id="Pavia" type="city">
-                <placeName>Pavia</placeName>
-                <location><settlement>Pavia</settlement><region>Lombardia</region><country>Italia</country></location>
-            </place>
-            <place xml:id="Padova" type="city">
-                <placeName>Padova</placeName>
-                <location><settlement>Padova</settlement><region>Veneto</region><country>Italia</country></location>
-            </place>
-            <place xml:id="Torino" type="city">
-                <placeName>Torino</placeName>
-                <location><settlement>Torino</settlement><region>Piemonte</region><country>Italia</country></location>
-            </place>
+
             <place xml:id="Norimberga" type="city">
                 <placeName>Norimberga</placeName>
-                <location><settlement>Norimberga</settlement><country>Germania</country></location>
-                <desc>Sede del Congresso tedesco d'igiene pubblica (1877).</desc>
+                <location><country ref="#Germania">Germania</country></location>
+                <desc>Sede del Congresso tedesco d'igiene pubblica del 1877, dove Finkelnburg presentò la relazione sui danni del sovraccarico scolastico, avviando il dibattito internazionale sull'igiene scolastica.</desc>
             </place>
+
             <place xml:id="Eisenach" type="city">
                 <placeName>Eisenach</placeName>
-                <location><settlement>Eisenach</settlement><country>Germania</country></location>
-                <desc>Sede del Congresso degli alienisti tedeschi (1880).</desc>
+                <location><country ref="#Germania">Germania</country></location>
+                <desc>Sede del Congresso degli alienisti tedeschi del 1880, dove fu riconosciuto come pericoloso il piano di studi vigente nelle scuole secondarie tedesche.</desc>
             </place>
-            <place xml:id="Imola" type="city">
-                <placeName>Imola</placeName>
-                <location><settlement>Imola</settlement><region>Emilia-Romagna</region><country>Italia</country></location>
-                <desc>Sede del Congresso degli alienisti italiani (1877).</desc>
-            </place>
-            <place xml:id="ReggioEmilia" type="city">
-                <placeName>Reggio d'Emilia</placeName>
-                <location><settlement>Reggio Emilia</settlement><region>Emilia-Romagna</region><country>Italia</country></location>
-            </place>
-            <place xml:id="Voghera" type="city">
-                <placeName>Voghera</placeName>
-                <location><settlement>Voghera</settlement><region>Lombardia</region><country>Italia</country></location>
-            </place>
-            <place xml:id="Parigi" type="city">
-                <placeName>Parigi</placeName>
-                <location><settlement>Parigi</settlement><country>Francia</country><geo>48.8566 2.3522</geo></location>
-            </place>
+
             <place xml:id="Darmstadt" type="city">
                 <placeName>Darmstadt</placeName>
-                <location><settlement>Darmstadt</settlement><country>Germania</country></location>
+                <location><country ref="#Germania">Germania</country></location>
+                <desc>Città tedesca dove il medico Becker condusse il suo studio su 3564 alunni, rilevando alta incidenza di cefalalgia e rinorragia.</desc>
             </place>
+
             <place xml:id="Amburgo" type="city">
                 <placeName>Amburgo</placeName>
-                <location><settlement>Amburgo</settlement><country>Germania</country></location>
+                <location><country ref="#Germania">Germania</country></location>
+                <desc>Città tedesca dove Finkelnburg condusse ricerche sulla diffusione della miopia nelle scuole urbane.</desc>
             </place>
+
             <place xml:id="Neuchatel" type="city">
                 <placeName>Neuchâtel</placeName>
-                <location><settlement>Neuchâtel</settlement><country>Svizzera</country></location>
+                <location><country>Svizzera</country></location>
+                <desc>Città svizzera dove il medico Guillaume condusse studi sull'incidenza di cefalalgia e rinorragia nel collegio municipale locale.</desc>
             </place>
-            <place xml:id="Milano" type="city">
-                <placeName>Milano</placeName>
-                <location><settlement>Milano</settlement><region>Lombardia</region><country>Italia</country></location>
-            </place>
-            <place xml:id="Genova" type="city">
-                <placeName>Genova</placeName>
-                <location><settlement>Genova</settlement><region>Liguria</region><country>Italia</country></location>
-                <desc>Luogo di pubblicazione della 3a edizione dell'opera di Caprile.</desc>
-            </place>
+
             <place xml:id="Russia" type="country">
                 <placeName>Russia</placeName>
+                <location><geo>61.5240 105.3188</geo></location>
+                <desc>Impero russo nel periodo del corpus (1879–1881); protagonista dell'espansione in Asia centrale e citata in relazione alla spedizione del Gran Duca Costantinovich e ai viaggi di Dixon.</desc>
             </place>
+
             <place xml:id="Palestina">
                 <placeName>Palestina</placeName>
+                <desc>Regione storica del Vicino Oriente; visitata da G. Hepworth Dixon nei suoi viaggi di esplorazione, descritti nelle sue opere di letteratura di viaggio.</desc>
             </place>
+
             <place xml:id="Cipro">
                 <placeName>Cipro</placeName>
+                <desc>Isola del Mediterraneo orientale; visitata da G. Hepworth Dixon; passata sotto protettorato britannico nel 1878, l'anno prima della pubblicazione della notizia nel corpus.</desc>
             </place>
+
+            <!-- ── Asia centrale ── -->
+            <place xml:id="Asia_C">
+                <placeName>Asia centrale</placeName>
+                <desc>Vasta regione interna dell'Asia, teatro dell'espansione russa nella seconda metà dell'Ottocento; contesto geografico della spedizione del Gran Duca Niccolò Costantinovich descritta nella rubrica Notizie del fascicolo 69.</desc>
+            </place>
+
+            <place xml:id="Ural">
+                <placeName>Ural</placeName>
+                <desc>Catena montuosa che segna il confine tradizionale tra Europa e Asia; punto di partenza della spedizione geografica del Gran Duca Costantinovich descritta nella rubrica Notizie.</desc>
+            </place>
+
+            <place xml:id="Oxus">
+                <placeName>Oxus</placeName>
+                <placeName type="modern">Amu Daria</placeName>
+                <desc>Fiume dell'Asia centrale (odierno Amu Daria); uno degli obiettivi della spedizione era studiarne la navigabilità e la possibilità di collegarlo al Mar Caspio tramite il vecchio letto dell'Uzboi.</desc>
+            </place>
+
+            <place xml:id="Syr_Daria">
+                <placeName>Syr Daria</placeName>
+                <desc>Fiume dell'Asia centrale (l'antico Jassarte), che scorre attraverso Kazakhstan e Uzbekistan verso il Mar d'Aral; tappa della spedizione del Gran Duca Costantinovich.</desc>
+            </place>
+
+            <place xml:id="Karasugai">
+                <placeName>Karasugai</placeName>
+                <desc>Località sul fiume Syr Daria, nell'attuale Kazakhstan; primo punto intermedio del percorso della spedizione geografica russa descritta nel corpus.</desc>
+            </place>
+
+            <place xml:id="Tashkend">
+                <placeName>Tashkend</placeName>
+                <placeName type="modern">Tashkent</placeName>
+                <desc>Capitale dell'attuale Uzbekistan; annessa alla Russia nel 1865 e sede del governatorato generale del Turkestan; tappa della spedizione geografica del Gran Duca.</desc>
+            </place>
+
+            <place xml:id="Samarcanda">
+                <placeName>Samarcanda</placeName>
+                <placeName type="modern">Samarkand</placeName>
+                <desc>Antica città dell'Asia centrale, nell'attuale Uzbekistan; celebre per i monumenti timuridi e la posizione sulla Via della Seta; conquistata dalla Russia nel 1868 e tappa della spedizione geografica.</desc>
+            </place>
+
+            <place xml:id="Kunduz">
+                <placeName>Kunduz</placeName>
+                <desc>Città dell'Afghanistan settentrionale sul fiume omonimo, affluente dell'Oxus; punto di arrivo della spedizione geografica prima del percorso lungo il fiume verso il Caspio.</desc>
+            </place>
+
+            <place xml:id="Afghanistan">
+                <placeName>Afghanistan</placeName>
+                <desc>Paese dell'Asia centrale; tappa del percorso della spedizione geografica del Gran Duca Costantinovich; teatro del Grande Gioco tra Russia e Gran Bretagna nel periodo del corpus.</desc>
+            </place>
+
+            <place xml:id="Khiva">
+                <placeName>Khiva</placeName>
+                <desc>Città dell'odierno Uzbekistan, storica capitale del Khanato di Khiva; conquistata dalla Russia nel 1873 e annessa come protettorato; tappa della spedizione geografica descritta nel corpus.</desc>
+            </place>
+
+            <place xml:id="Uzboi">
+                <placeName>Uzboi</placeName>
+                <desc>Antico letto del fiume Oxus, oggi canale asciutto nel deserto del Kara Kum; oggetto di interesse scientifico e militare russo per il suo possibile utilizzo come via d'acqua verso il Caspio.</desc>
+            </place>
+
+            <place xml:id="Caspio">
+                <placeName>Mar Caspio</placeName>
+                <desc>Il più grande lago salato del mondo, tra Europa e Asia; destinazione finale del progetto di collegamento idroviario con l'Oxus studiato dalla spedizione del Gran Duca Costantinovich.</desc>
+            </place>
+
+            <place xml:id="Kara_Kum">
+                <placeName>Kara Kum</placeName>
+                <desc>Vasto deserto di sabbia nell'attuale Turkmenistan; uno dei deserti più estesi dell'Asia centrale; attraversato dalla spedizione nel tratto finale verso Krasnovodsk.</desc>
+            </place>
+
+            <place xml:id="Krasnovodsk">
+                <placeName>Krasnovodsk</placeName>
+                <placeName type="modern">Turkmenbashi</placeName>
+                <desc>Porto sul Mar Caspio nell'attuale Turkmenistan; destinazione finale della spedizione geografica e base logistica russa fondamentale per il controllo dell'Asia centrale.</desc>
+            </place>
+
+            <place xml:id="Sari_Kamish">
+                <placeName>Sari Kamish</placeName>
+                <desc>Depressione geografica ai confini tra Uzbekistan e Turkmenistan, collegata all'antico letto dell'Oxus; oggetto di indagine della spedizione per valutare la possibilità di ripristinare il corso d'acqua verso il Caspio.</desc>
+            </place>
+
+            <place xml:id="Merv">
+                <placeName>Merv</placeName>
+                <placeName type="modern">Mary</placeName>
+                <desc>Antica oasi e città dell'Asia centrale, nell'attuale Turkmenistan; uno dei centri storici più importanti della Via della Seta; il testo allude alla possibilità che la spedizione geografica si trasformasse in spedizione militare contro Merv, poi conquistata dalla Russia nel 1884.</desc>
+            </place>
+
+            <place xml:id="America">
+                <placeName>America</placeName>
+                <desc>Riferimento al continente americano, in particolare agli Stati Uniti; citato nel corpus per la diffusione del combustibile Amianthine inventato da Rocher e per i viaggi esplorativi di Dixon.</desc>
+            </place>
+
             <place xml:id="Occidente">
                 <placeName>Occidente</placeName>
-                <note>Nel contesto della notizia su Dixon indica l'America del Nord/Ovest.</note>
+                <desc>Nel contesto della notizia su Dixon indica l'America del Nord e del Nord-Ovest, teatro dei suoi viaggi esplorativi in regioni di frontiera.</desc>
             </place>
 
         </listPlace>
 
         <!-- ══════════════════════════════════════════
-             LISTORG — Organizzazioni e istituzioni citate
-             Aggiunta in fase di revisione corpus per conformità TEI P5
+             LISTORG
              ══════════════════════════════════════════ -->
         <listOrg>
 
-            <!-- Istituzioni scolastiche (tipologie) -->
             <org xml:id="SNM">
                 <orgName>Scuole Normali Maschili</orgName>
-                <desc>Istituti per la formazione dei maestri elementari maschili nel sistema scolastico italiano post-unitario.</desc>
-            </org>
-            <org xml:id="ST">
-                <orgName>Scuole Tecniche</orgName>
-                <desc>Istituti di istruzione secondaria inferiore a indirizzo tecnico-pratico, previsti dalla legge Casati (1859).</desc>
-            </org>
-            <org xml:id="GIN">
-                <orgName>Ginnasi</orgName>
-                <desc>Scuole secondarie inferiori a indirizzo classico, preparatorie al liceo classico.</desc>
-            </org>
-            <org xml:id="LIC">
-                <orgName>Licei</orgName>
-                <desc>Scuole secondarie superiori a indirizzo classico, preparatorie all'università.</desc>
-            </org>
-            <org xml:id="IT">
-                <orgName>Istituti Tecnici</orgName>
-                <desc>Scuole secondarie superiori a indirizzo tecnico-scientifico, previste dalla riforma post-unitaria.</desc>
-            </org>
-            <org xml:id="EDUC">
-                <orgName>Educandati</orgName>
-                <desc>Istituti privati, spesso religiosi, per l'educazione delle fanciulle di famiglie abbienti.</desc>
-            </org>
-            <org xml:id="SPRIV">
-                <orgName>Scuole Private</orgName>
-                <desc>Istituti scolastici non statali, soggetti a vigilanza del Ministero della Pubblica Istruzione.</desc>
+                <desc>Istituti per la formazione dei maestri elementari maschili nel sistema scolastico italiano post-unitario; istituiti dalla legge Casati (1859).</desc>
             </org>
 
-            <!-- Istituzioni editoriali e politiche -->
+            <org xml:id="ST">
+                <orgName>Scuole Tecniche</orgName>
+                <desc>Istituti di istruzione secondaria inferiore a indirizzo tecnico-pratico, previsti dalla legge Casati (1859); alternativi al percorso classico del ginnasio.</desc>
+            </org>
+
+            <org xml:id="GIN">
+                <orgName>Ginnasi</orgName>
+                <desc>Scuole secondarie inferiori a indirizzo classico, preparatorie al liceo classico; parte del percorso d'élite del sistema scolastico post-unitario.</desc>
+            </org>
+
+            <org xml:id="LIC">
+                <orgName>Licei</orgName>
+                <desc>Scuole secondarie superiori a indirizzo classico, preparatorie all'università; nella discussione del corpus rappresentano il livello di istruzione più gravoso e ritenuto più dannoso per la salute.</desc>
+            </org>
+
+            <org xml:id="IT">
+                <orgName>Istituti Tecnici</orgName>
+                <desc>Scuole secondarie superiori a indirizzo tecnico-scientifico, previste dalla riforma post-unitaria; formavanola classe tecnica e commerciale del Paese.</desc>
+            </org>
+
+            <org xml:id="EDUC">
+                <orgName>Educandati</orgName>
+                <desc>Istituti privati, spesso religiosi, per l'educazione residenziale delle fanciulle di famiglie abbienti; contrapposti alle scuole normali statali nel dibattito sull'istruzione femminile.</desc>
+            </org>
+
+            <org xml:id="SPRIV">
+                <orgName>Scuole Private</orgName>
+                <desc>Istituti scolastici non statali, soggetti a vigilanza del Ministero della Pubblica Istruzione; al centro del dibattito sulla libertà di insegnamento tra Stato e Chiesa.</desc>
+            </org>
+
             <org xml:id="Tip_Senato">
                 <orgName>Tipografia del Senato</orgName>
                 <placeName ref="#RM">Roma</placeName>
-                <desc>Officina tipografica ufficiale del Senato del Regno d'Italia, con sede a Roma; pubblicava atti parlamentari e documenti ufficiali.</desc>
+                <desc>Officina tipografica ufficiale del Senato del Regno d'Italia; pubblicava atti parlamentari e documenti ufficiali.</desc>
             </org>
+
             <org xml:id="DestraS">
                 <orgName>Destra Storica</orgName>
-                <desc>Coalizione politica conservatrice-liberale che governò il Regno d'Italia dal 1861 al 1876 (cosiddetta «Rivoluzione parlamentare»). Erede del pensiero cavouriano, favorevole a un'istruzione statale laica ma moderata.</desc>
+                <desc>Coalizione politica conservatrice-liberale che governò il Regno d'Italia dal 1861 al 1876; erede del pensiero cavouriano, favorevole a un'istruzione statale laica ma moderata e al pareggio di bilancio.</desc>
             </org>
+
             <org xml:id="Chiesa">
                 <orgName>Chiesa Cattolica</orgName>
-                <desc>Istituzione religiosa cattolica; nel contesto del corpus, attore centrale nel dibattito sull'istruzione femminile e sulla libertà d'insegnamento nel periodo post-unitario.</desc>
+                <desc>Istituzione religiosa; attore centrale nel dibattito sull'istruzione femminile e sulla libertà d'insegnamento nel periodo post-unitario; in conflitto con lo Stato italiano dopo il 1870 per la questione romana.</desc>
                 <idno type="Wikidata">Q9592</idno>
             </org>
+
             <org xml:id="Stato">
                 <orgName>Stato italiano</orgName>
-                <desc>Il Regno d'Italia (1861–1946), considerato come attore istituzionale nel dibattito sull'istruzione pubblica laica e obbligatoria.</desc>
+                <desc>Il Regno d'Italia (1861–1946) come attore istituzionale nel dibattito sull'istruzione pubblica laica e obbligatoria; contrapposto alla Chiesa nella gestione delle scuole.</desc>
+            </org>
+
+            <org xml:id="UniversitàPavia">
+                <orgName>Università di Pavia</orgName>
+                <placeName ref="#Pavia">Pavia</placeName>
+                <desc>Antico ateneo lombardo (fondato nel 1361); sede della cattedra di medicina legale di Arrigo Tamassia, autore del libretto sul lavoro mentale nelle scuole.</desc>
+            </org>
+
+            <org xml:id="Tip_Barbera">
+                <orgName>Tipografia Barbèra</orgName>
+                <placeName ref="#RM">Roma</placeName>
+                <desc>Tipografia romana incaricata della stampa de «La Rassegna Settimanale»; il suo nome compare nel colophon di tutti i fascicoli del corpus.</desc>
+            </org>
+
+            <org xml:id="Sonzogno">
+                <orgName>Sonzogno</orgName>
+                <placeName ref="#Milano">Milano</placeName>
+                <desc>Casa editrice milanese fondata da Edoardo Sonzogno; pubblicò nel 1881 il libretto di Tamassia «Le intemperanze del lavoro mentale nelle scuole» nella collana «Igiene popolare» della Società Italiana d'igiene.</desc>
+            </org>
+
+            <org xml:id="Deputazione_BO">
+                <orgName>R. Deputazione di Storia patria di Bologna</orgName>
+                <desc>Istituzione accademica fondata nel 1860; dedita alla ricerca e alla pubblicazione di documenti storici bolognesi; sede della lettura del conte Manzoni sulla leggenda del Prete Gianni.</desc>
+            </org>
+
+            <org xml:id="Marciana">
+                <orgName>Biblioteca Marciana</orgName>
+                <placeName ref="#VE">Venezia</placeName>
+                <desc>Storica biblioteca pubblica di Venezia (fondata nel 1468 dal cardinale Bessarione); acquisì un prezioso antifonario miniato del XIV secolo, rivelando il nome del miniatore Giustino di maestro Gherardino da Forlì.</desc>
+            </org>
+
+            <org xml:id="Conf_Carita">
+                <orgName>Confraternita della Carità</orgName>
+                <placeName ref="#VE">Venezia</placeName>
+                <desc>Antica associazione laica veneziana di assistenza ai poveri; commissionò e finanziò l'antifonario miniato del XIV secolo poi acquisito dalla Biblioteca Marciana.</desc>
+            </org>
+
+            <org xml:id="Inst_Archeo_Ger">
+                <orgName>Istituto Archeologico Germanico</orgName>
+                <placeName ref="#RM">Roma</placeName>
+                <desc>Istituto di ricerca fondato a Roma nel 1829 per lo studio dell'antichità classica; punto di riferimento internazionale per l'archeologia romana, citato nel corpus in relazione agli studi topografici di De Rossi.</desc>
+            </org>
+
+            <org xml:id="SocietaGeograficaRussa">
+                <orgName>Società geografica russa</orgName>
+                <desc>Organizzazione scientifica fondata a San Pietroburgo nel 1845; promosse e finanziò numerose spedizioni geografiche in Asia centrale; decise di pubblicare la Rivista delle spedizioni e dei viaggi scientifici russi citata nel corpus.</desc>
+            </org>
+
+            <org xml:id="SocietaItalianaIgiene">
+                <orgName>Società Italiana d'igiene</orgName>
+                <desc>Organizzazione scientifica italiana fondata nel 1879; pubblicava la collana «Igiene popolare» nell'ambito della quale uscì nel 1881 il libretto di Tamassia sul lavoro mentale nelle scuole.</desc>
+            </org>
+
+            <org xml:id="ScuolaPolitecnica">
+                <orgName>Scuola politecnica di Parigi</orgName>
+                <placeName ref="#Parigi">Parigi</placeName>
+                <desc>Prestigioso istituto superiore tecnico-scientifico francese (fondato nel 1794); i dati sulla elevata mortalità dei suoi alunni per eccesso di studio sono citati da Tamassia come caso estremo dei danni del sovraccarico scolastico.</desc>
+            </org>
+
+            <org xml:id="CongressoTedesco">
+                <orgName>Congresso tedesco d'igiene pubblica (Norimberga, 1877)</orgName>
+                <desc>Congresso scientifico tenuto a Norimberga nel 1877; Finkelnburg vi presentò la relazione pionieristica sui danni fisici e mentali del sovraccarico scolastico, avviando il dibattito internazionale sull'igiene nelle scuole.</desc>
+            </org>
+
+            <org xml:id="CongressoAlienistiTedeschi">
+                <orgName>Congresso degli alienisti tedeschi (Eisenach, 1880)</orgName>
+                <desc>Congresso psichiatrico tenuto a Eisenach nel 1880; riconobbe ufficialmente come pericoloso l'attuale piano di studi nelle scuole secondarie tedesche per l'alto rischio di disturbi mentali.</desc>
+            </org>
+
+            <org xml:id="CongressoAlienistiItaliani">
+                <orgName>Congresso degli alienisti italiani (Imola, 1877)</orgName>
+                <desc>Congresso psichiatrico italiano tenuto a Imola nel 1877; Achille Sacchi vi propose lo studio sistematico dell'influenza dell'educazione sulle alienazioni mentali, aprendo il dibattito italiano sull'igiene scolastica.</desc>
+            </org>
+
+            <org xml:id="CongressoReggioEmilia">
+                <orgName>Congresso degli alienisti italiani (Reggio d'Emilia)</orgName>
+                <desc>Congresso psichiatrico successivo a quello di Imola; rimise il tema dell'igiene scolastica all'ordine del giorno e lo rinviò al successivo congresso di Voghera.</desc>
+            </org>
+
+            <org xml:id="CongressoIgiene">
+                <orgName>Congresso internazionale d'igiene (Torino, 1880)</orgName>
+                <desc>Congresso scientifico tenuto a Torino nel 1880; Mozzini vi richiamò l'attenzione sull'influenza dei programmi scolastici sulla salute dei fanciulli, consolidando il dibattito internazionale.</desc>
             </org>
 
         </listOrg>
 
         <!-- ══════════════════════════════════════════
-             GLOSSARI E LISTORG (da validare_completo, invariati)
+             GLOSSARI
              ══════════════════════════════════════════ -->
 
         <list type="glossary" xml:id="glossario_critico">
             <head>Glossario Unificato: Istituzioni, Norme e Concetti</head>
             <label><term type="org" xml:id="Min_Istruzione">Ministero della Pubblica Istruzione</term></label>
-            <item><gloss corresp="#Min_Istruzione">Organo centrale del governo italiano preposto all'amministrazione del sistema scolastico nazionale.</gloss></item>
+            <item><gloss corresp="#Min_Istruzione">Organo centrale del governo italiano preposto all'amministrazione del sistema scolastico nazionale; istituito con la legge Casati (1859); al centro del dibattito sulla riforma dell'istruzione femminile documentata nel corpus.</gloss></item>
             <label><term type="org" xml:id="CPS">Consiglio Provinciale Scolastico</term></label>
-            <item><gloss corresp="#CPS">Ente locale incaricato della gestione e della vigilanza sulle scuole della provincia.</gloss></item>
+            <item><gloss corresp="#CPS">Ente locale incaricato della gestione e della vigilanza sulle scuole della provincia; presieduto dal Provveditore agli Studi; aveva potere consultivo sulle ammissioni e sulle condizioni igieniche degli edifici scolastici.</gloss></item>
             <label><term type="org" xml:id="Consiglio_Istr">Consiglio Superiore di Pubblica Istruzione</term></label>
-            <item><gloss corresp="#Consiglio_Istr">Massimo organo consultivo del Ministero; spesso i suoi pareri obbligatori venivano ignorati dai ministri.</gloss></item>
+            <item><gloss corresp="#Consiglio_Istr">Massimo organo consultivo del Ministero della Pubblica Istruzione; esprimeva pareri vincolanti sulle riforme scolastiche, spesso ignorati dai ministri nel periodo post-unitario.</gloss></item>
             <label><term type="org" xml:id="Rassegna">La Rassegna Settimanale</term></label>
-            <item><gloss corresp="#Rassegna">Rivista di orientamento politico e culturale attiva nel periodo post-unitario.</gloss></item>
+            <item><gloss corresp="#Rassegna">Rivista di politica, scienze, lettere ed arti fondata a Roma nel 1878 da Leopoldo Franchetti e Sidney Sonnino; pubblicata fino al 1882; punto di riferimento del liberalismo moderato post-unitario e del dibattito sull'istruzione e la questione meridionale.</gloss></item>
             <label><term type="political_party" xml:id="Destra">Destra Storica</term></label>
-            <item><gloss corresp="#Destra">Fazione politica erede di Cavour, caratterizzata da un orientamento conservatore liberale.</gloss></item>
+            <item><gloss corresp="#Destra">Coalizione politica erede di Cavour che governò il Regno d'Italia dal 1861 al 1876; caratterizzata da un orientamento conservatore-liberale, favorevole a un'istruzione statale laica ma controllata e al rigore finanziario.</gloss></item>
             <label><term type="political_party" xml:id="Sinistra">Sinistra Storica</term></label>
-            <item><gloss corresp="#Sinistra">Schieramento politico di stampo liberal-progressista che salì al potere nel 1876.</gloss></item>
+            <item><gloss corresp="#Sinistra">Schieramento politico di stampo liberal-progressista salito al potere nel 1876 con la «Rivoluzione parlamentare»; promosse l'estensione dell'istruzione obbligatoria e la laicizzazione della scuola.</gloss></item>
             <label><term type="law" xml:id="Legge_Casati">Legge Casati (1859)</term></label>
-            <item><gloss corresp="#Legge_Casati">Riforma fondamentale della scuola italiana; stabilì l'obbligatorietà del primo biennio elementare.</gloss></item>
+            <item><gloss corresp="#Legge_Casati">Riforma fondamentale del sistema scolastico italiano emanata da Gabrio Casati; stabilì l'obbligatorietà del primo biennio elementare, istituì le scuole normali per la formazione degli insegnanti e regolò l'istruzione classica e tecnica secondaria.</gloss></item>
             <label><term xml:id="SNF">Scuole Normali Femminili</term></label>
-            <item><gloss corresp="#SNF">Istituti per la formazione delle maestre elementari.</gloss></item>
+            <item><gloss corresp="#SNF">Istituti per la formazione delle maestre elementari, istituiti dalla legge Casati (1859); nel periodo post-unitario erano spesso sovraffollati, alloggiati in locali inadeguati e privi di norme igieniche; tema centrale degli articoli sulle scuole normali e sul lavoro mentale.</gloss></item>
         </list>
 
         <list type="glossary" xml:id="glossario_rassegna_notizie">
             <head>Glossario: Istituzioni, Scienza e Cultura</head>
-            <label><term type="org" xml:id="Inst_Archeo_Ger">Istituto archeologico germanico</term></label>
-            <item><gloss corresp="#Inst_Archeo_Ger">Importante istituto di ricerca fondato a Roma nel 1829.</gloss></item>
-            <label><term type="org" xml:id="Deputazione_BO">R. Deputazione di Storia patria di Bologna</term></label>
-            <item><gloss corresp="#Deputazione_BO">Istituzione accademica dedicata alla ricerca e pubblicazione di documenti storici bolognesi.</gloss></item>
-            <label><term type="org" xml:id="Marciana">Biblioteca Marciana</term></label>
-            <item><gloss corresp="#Marciana">Storica biblioteca di Venezia, citata per l'acquisto di un prezioso antifonario del XIV secolo.</gloss></item>
-            <label><term type="org" xml:id="Conf_Carita">Confraternita della Carità</term></label>
-            <item><gloss corresp="#Conf_Carita">Antica associazione laica veneziana che commissionò l'antifonario miniato.</gloss></item>
-            <label><term type="org" xml:id="UniversitàPavia">Università di Pavia</term></label>
-            <item><gloss corresp="#UniversitàPavia">Ateneo lombardo in cui insegna il prof. Arrigo Tamassia, autore del libretto sul lavoro mentale.</gloss></item>
-            <label><term type="org" xml:id="CongressoTedesco">Congresso tedesco d'igiene pubblica (Norimberga, 1877)</term></label>
-            <item><gloss corresp="#CongressoTedesco">Congresso scientifico in cui Finkelnburg presentò la relazione sui danni del sistema scolastico.</gloss></item>
-            <label><term type="org" xml:id="CongressoAlienistiTedeschi">Congresso degli alienisti tedeschi (Eisenach, 1880)</term></label>
-            <item><gloss corresp="#CongressoAlienistiTedeschi">Congresso in cui fu riconosciuto pericoloso il piano attuale di studi.</gloss></item>
-            <label><term type="org" xml:id="CongressoAlienistiItaliani">Congresso degli alienisti italiani (Imola, 1877)</term></label>
-            <item><gloss corresp="#CongressoAlienistiItaliani">Congresso in cui Achille Sacchi propose lo studio dell'influenza dell'educazione sulle alienazioni mentali.</gloss></item>
-            <label><term type="org" xml:id="CongressoReggioEmilia">Congresso degli alienisti italiani (Reggio d'Emilia)</term></label>
-            <item><gloss corresp="#CongressoReggioEmilia">Congresso successivo a quello di Imola; rimise il tema all'ordine del giorno per il prossimo di Voghera.</gloss></item>
-            <label><term type="org" xml:id="CongressoIgiene">Congresso internazionale d'igiene (Torino, 1880)</term></label>
-            <item><gloss corresp="#CongressoIgiene">Congresso in cui Mozzini richiamò l'attenzione sull'influenza dei programmi scolastici sulla salute.</gloss></item>
-            <label><term type="org" xml:id="ScuolaPolitecnica">Scuola politecnica di Parigi</term></label>
-            <item><gloss corresp="#ScuolaPolitecnica">Istituto superiore francese; i dati sulla mortalità dei suoi alunni sono citati da Tamassia.</gloss></item>
-            <label><term type="org" xml:id="SocietaGeograficaRussa">Società geografica russa</term></label>
-            <item><gloss corresp="#SocietaGeograficaRussa">Organizzazione scientifica russa; decise di pubblicare la Rivista delle spedizioni e dei viaggi scientifici russi.</gloss></item>
-            <label><term type="org" xml:id="SocietaItalianaIgiene">Società Italiana d'igiene</term></label>
-            <item><gloss corresp="#SocietaItalianaIgiene">Organizzazione scientifica italiana; pubblica la collana «Igiene popolare» in cui esce il libretto di Tamassia.</gloss></item>
-            <label><term type="org" xml:id="Tip_Barbera">Tipografia Barbèra</term></label>
-            <item><gloss corresp="#Tip_Barbera">Tipografia romana usata per la stampa della Rassegna Settimanale.</gloss></item>
-            <label><term type="org" xml:id="Sonzogno">Sonzogno</term></label>
-            <item><gloss corresp="#Sonzogno">Casa editrice milanese; pubblica nel 1881 il libretto di Tamassia.</gloss></item>
             <label><term type="rivista" xml:id="FanfullaDomenica">Fanfulla della Domenica</term></label>
-            <item><gloss corresp="#FanfullaDomenica">Rivista letteraria italiana in cui Posocco annunciò la scoperta del manoscritto leopardiano.</gloss></item>
+            <item><gloss corresp="#FanfullaDomenica">Supplemento domenicale del quotidiano Fanfulla; importante rivista letteraria italiana del tardo Ottocento; su di essa Posocco annunciò la scoperta del manoscritto leopardiano.</gloss></item>
             <label><term type="rivista" xml:id="ContemporaryReview">Contemporary Review</term></label>
-            <item><gloss corresp="#ContemporaryReview">Rivista britannica in cui era atteso il poema di Buchanan intitolato Giustiniano.</gloss></item>
+            <item><gloss corresp="#ContemporaryReview">Rivista letteraria e culturale britannica fondata nel 1866; su di essa era attesa la pubblicazione del poema Giustiniano di Robert Buchanan.</gloss></item>
             <label><term type="rivista" xml:id="LaCultura">La Cultura, Rivista di scienze morali, di lettere ed arti</term></label>
-            <item><gloss corresp="#LaCultura">Periodico critico-bibliografico annunciato da Ruggero Bonghi, con uscita bimestrale.</gloss></item>
+            <item><gloss corresp="#LaCultura">Periodico critico-bibliografico fondato da Ruggero Bonghi nel 1881; a uscita bimestrale, comprendeva recensioni ragionate, annunci di libri e notizie culturali; annunciato nella rubrica Notizie del fascicolo 188.</gloss></item>
         </list>
 
     </standOff>
@@ -939,9 +1194,11 @@
             <milestone unit="headerBreak"/>
         </fw>
 
-        <p xml:id="Scuole_Normali313_paragrafo1" n="1">
-            <lb xml:id="Cod_scuole_femminili313_titoloarticolo" n="1" facs="#scuole_femminili313_titoloarticolo"/>
-            I LOCALI DELLE SCUOLE NORMALI FEMMINILI.
+            <head rend="align(center) case(allcaps)" xml:id="Cod_scuole_femminili313_titoloarticolo" n="1" facs="#scuole_femminili313_titoloarticolo">
+                    <title type="main">I LOCALI DELLE SCUOLE NORMALI FEMMINILI.</title>
+                </head>
+
+            <p xml:id="Scuole_Normali313_paragrafo1" n="1">     
             <lb xml:id="Cod_scuole_femminili313_riga1" n="1" facs="#scuole_femminili313_riga1"/>
             Nella <orgName ref="#Rassegna">Rassegna</orgName> del <date when="1879-04-13">13 aprile</date> pubblicammo una lettera,
             <lb xml:id="Cod_scuole_femminili313_riga2" n="2" facs="#scuole_femminili313_riga2"/>
@@ -1371,7 +1628,7 @@
 <!--header seconda pagina-->
 <zone ulx="32" uly="45" lrx="46" lry="54" xml:id="la_legge_sull_istruzione_pubblica_pag_22_numeropagina" corresp="#Cod_la_legge_sull_istruzione_pubblica_pag_22_numeropagina"/>
 <zone ulx="202" uly="47" lrx="370" lry="54" xml:id="la_legge_sull_istruzione_pubblica_pag_22_titolorassegna" corresp="#Cod_la_legge_sull_istruzione_pubblica_pag_22_titolorassegna"/>
-<zone ulx="458" uly="44" lrx="541" lry="53" xml:id="la_legge_sull_istruzione_pubblica_pag_22_volumefascicolo" corresp="#Cod_la_legge_sull_istruzione_pubblica_pag_22_volumefascic"/>
+<zone ulx="458" uly="44" lrx="541" lry="53" xml:id="la_legge_sull_istruzione_pubblica_pag_22_volumefascicolo" corresp="#Cod_la_legge_sull_istruzione_pubblica_pag_22_volumefascicolo"/>
 <!--righe colonna sx seconda pagina-->
 <zone ulx="30" uly="75" lrx="279" lry="82" xml:id="IstruzionePubblica22_riga1" corresp="#Cod_IstruzionePubblica22_riga1"/>
 <zone ulx="28" uly="83" lrx="282" lry="91" xml:id="IstruzionePubblica22_riga2" corresp="#Cod_IstruzionePubblica22_riga2"/>
@@ -1389,10 +1646,9 @@
     <body>
         <div type="article">
         <pb n="21" facs="#la_legge_sull_istruzione_pubblica_pag_21"/>
-
-        
+ 
         <fw type="title" place="center" xml:id="Cod_la_legge_sull_istruzione_pubblica_pag_21_titolorassegna" facs="#sla_legge_sull_istruzione_pubblica_pag_21_titolorassegna">LA RASSEGNA SETTIMANALE</fw>
-        <fw type="title" place="center" xml:id="la_legge_sull_istruzione_pubblica_pag_21_sottotitolorassegna" facs="#la_legge_sull_istruzione_pubblica_pag_21_titolorassegna">DI POLITICA, SCIENZE, LETTERE ED ARTI.</fw>
+        <fw type="title" place="center" xml:id="Cod_la_legge_sull_istruzione_pubblica_pag_21_sottotitolorassegna" facs="#la_legge_sull_istruzione_pubblica_pag_21_titolorassegna">DI POLITICA, SCIENZE, LETTERE ED ARTI.</fw>
         
         <fw type="pageNum" place="left" xml:id="Cod_la_legge_sull_istruzione_pubblica_pag_21_numerovolume" facs="#la_legge_sull_istruzione_pubblica_pag_21_numerovolume">Vol. 5°.</fw>
         <fw type="title" place="center" xml:id="Cod_la_legge_sull_istruzione_pubblica_pag_21_data" facs="#sla_legge_sull_istruzione_pubblica_pag_21_data">Roma, 11 Gennaio 1880.</fw>
@@ -1400,11 +1656,11 @@
             <milestone unit="headerBreak"/>
         </fw>
 
+        <head rend="align(center) case(allcaps)" xml:id="Cod_la_legge_sull_istruzione_pubblica_pag_21_titoloarticolo" n="1" facs="#la_legge_sull_istruzione_pubblica_pag_21_titoloarticolo">
+                    <title type="main">LA LEGGE SULL'ISTRUZIONE PUBBLICA.</title>
+                </head>
 
         <p xml:id="IstruzionePubblica21_paragrafo1" n="1">
-            <lb xml:id="Cod_la_legge_sull_istruzione_pubblica_pag_21_titoloarticolo" n="1" facs="#la_legge_sull_istruzione_pubblica_pag_21_titoloarticolo"/>
-            LA LEGGE SULL'ISTRUZIONE PUBBLICA.
-
             <lb xml:id="Cod_IstruzionePubblica21_riga1" n="1" facs="#IstruzionePubblica21_riga1"/>
             È appena passato qualche mese, che tutto il <term type="collettivo">corpo in
             <lb xml:id="Cod_IstruzionePubblica21_riga2" n="2" facs="#IstruzionePubblica21_riga2" break="no"/>
@@ -1662,6 +1918,12 @@
         </p>
         
         <pb n="22" facs="#la_legge_sull_istruzione_pubblica_pag22"/>
+
+<!--header seconda pagina-->
+                <fw type="pageNum" place="left" xml:id="Cod_la_legge_sull_istruzione_pubblica_pag_22_numeropagina" facs="#la_legge_sull_istruzione_pubblica_pag_22_numeropagina">22</fw>
+                <fw type="title" place="center" xml:id="Cod_la_legge_sull_istruzione_pubblica_pag_22_titolorassegna" facs="#la_legge_sull_istruzione_pubblica_pag_22_titolorassegna">LA RASSEGNA SETTIMANALE</fw>
+                <fw type="issue" place="right" xml:id="Cod_la_legge_sull_istruzione_pubblica_pag_22_volumefascicolo" facs="#Lla_legge_sull_istruzione_pubblica_pag_22_volumefascicolo">[VoL. 5°, N° 106 <milestone unit="headerBreak"/></fw>
+
         <p xml:id="IstruzionePubblica22_paragrafo1" n="1">
             <lb xml:id="Cod_IstruzionePubblica22_riga1" n="1" facs="#IstruzionePubblica22_riga1"/>
             giacchè vengono mutate prima che questi risultati riescano vi
@@ -2890,7 +3152,7 @@
 
                 <p xml:id="Cod_VirtuEducatrice39_Scheda" n="1">
                     <lb xml:id="Cod_VirtuEducatrice39_AutoreTitoloEdizione" n="1" facs="#VirtuEducatrice39_AutoreTitoloEdizione"/>
-                    <persName ref="#Caprile">Domenico Caprile</persName>,
+                    <persName ref="#Caprile">DOMENICO CAPRILE</persName>,
                     <title level="m">Virtù educatrice, studi morali</title>, 3a edizione,
                     <lb xml:id="Cod_VirtuEducatrice39_LuogoData" n="2" facs="#VirtuEducatrice39_LuogoData"/>
                     <placeName ref="#Genova">Genova</placeName>, <date when="1880">1880</date>.

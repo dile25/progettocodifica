@@ -27,60 +27,58 @@
                 </title>
             </head>
             <body>
-                <div class="site">
-
-                    <nav class="navbar">
+                <nav class="navbar">
     <div class="nav-container">
-        <a href="#info-section" class="nav-logo section-link"><em>La Rassegna Settimanale</em></a>
+        <a href="#info-section" class="nav-logo">La Rassegna Settimanale</a>
         <ul class="nav-menu">
-
+            
             <li class="nav-item dropdown">
-                <button class="dropdown-toggle">Articoli &#9662;</button>
+                <a href="#" class="dropdown-toggle" onclick="return false;">Informazioni generali ▾</a>
                 <ul class="dropdown-menu">
-                    <li><a href="#TEI_scuolenormali" class="section-link">I locali delle scuole normali femminili</a></li>
-                    <li><a href="#TEI_istruzionepubblica" class="section-link">La legge sull&#8217;istruzione pubblica</a></li>
-                    <li><a href="#TEI_lavoromentale" class="section-link">Il lavoro mentale nelle scuole</a></li>
+                    <li><a href="#info-section">Presentazione del progetto</a></li>
+                    <li><a href="#glossary-section">Glossario dei Termini</a></li>
                 </ul>
             </li>
 
             <li class="nav-item dropdown">
-                <button class="dropdown-toggle">Bibliografia &#9662;</button>
+                <a href="#" class="dropdown-toggle" onclick="return false;">Articoli ▾</a>
                 <ul class="dropdown-menu">
-                    <li><a href="#TEI_BibliografiaAlfieri" class="section-link">Carlo Alfieri. Chi ha tempo non aspetti tempo. Pareri d'un Senatore.</a></li>
-                    <li><a href="#TEI_VirtuEducatrice" class="section-link">Domenico Caprile. Virt&#249; educatrice, studi morali </a></li>
+                    <li><a href="#TEI_scuolenormali-section" class="section-link">I locali delle scuole normali femminili (Vol. 3)</a></li>
+                    <li><a href="#TEI_istruzionepubblica-section" class="section-link">La legge sull'istruzione pubblica (Vol. 5)</a></li>
+                    <li><a href="#TEI_lavoromentale-section" class="section-link">Il lavoro mentale nelle scuole (Vol. 8)</a></li>
+                </ul>
+            </li>
+            
+            <li class="nav-item dropdown">
+                <a href="#" class="dropdown-toggle" onclick="return false;">Bibliografia ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#TEI_BibliografiaAlfieri-section" class="section-link">Carlo Alfieri — Chi ha tempo non aspetti tempo (Vol. 3)</a></li>
+                    <li><a href="#TEI_VirtuEducatrice-section" class="section-link">Domenico Caprile — Virtù Educatrice (Vol. 5)</a></li>
+                </ul>
+            </li>
+            
+            <li class="nav-item dropdown">
+                <a href="#" class="dropdown-toggle" onclick="return false;">Notizie ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#TEI_NotizieVol3-section" class="section-link">Notizie Fascicolo 69 (Vol. 3)</a></li>
+                    <li><a href="#TEI_NotizieVol5-section" class="section-link">Notizie Fascicolo 106 (Vol. 5)</a></li>
+                    <li><a href="#TEI_NotizieVol8-section" class="section-link">Notizie Fascicolo 188 (Vol. 8)</a></li>
                 </ul>
             </li>
 
             <li class="nav-item dropdown">
-                <button class="dropdown-toggle">Notizie &#9662;</button>
+                <a href="#" class="dropdown-toggle" onclick="return false;">Link utili ▾</a>
                 <ul class="dropdown-menu">
-                    <li><a href="#TEI_NotizieVol3" class="section-link">Notizie &#8212; Vol. 3, Fasc. 69</a></li>
-                    <li><a href="#TEI_NotizieVol5" class="section-link">Notizie &#8212; Vol. 5, Fasc. 106</a></li>
-                    <li><a href="#TEI_NotizieVol8" class="section-link">Notizie &#8212; Vol. 8, Fasc. 188</a></li>
+                    <li><a href="https://www.tei-c.org/" target="_blank">Sito Ufficiale TEI Consortium</a></li>
+                    <li><a href="https://github.com/" target="_blank">Repository del Progetto</a></li>
                 </ul>
             </li>
-
-            <li class="nav-item dropdown">
-                <button class="dropdown-toggle">Informazioni &#9662;</button>
-                <ul class="dropdown-menu">
-                    <li><a href="#document-info" class="section-link">Informazioni sulla codifica</a></li>
-                    <li><a href="#people-section" class="section-link">Persone menzionate</a></li>
-                    <li><a href="#places-section" class="section-link">Luoghi menzionati</a></li>
-                    <li><a href="#?-section" class="section-link">Glossario</a></li>
-                </ul>
-            </li>
-
-            <li class="nav-item dropdown">
-                <button class="dropdown-toggle">Link utili &#9662;</button>
-                <ul class="dropdown-menu">
-                    <li><a href="https://www.tei-c.org/" target="_blank">Sito TEI Consortium</a></li>
-                    <li><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">Licenza CC BY-NC 4.0</a></li>
-                </ul>
-            </li>
-
         </ul>
     </div>
 </nav>
+                <div class="site">
+
+                    
 
                     <!-- SEZIONE INFORMAZIONI GENERALI -->
                     <section id="info-section" class="general-info visible-section">
@@ -647,38 +645,38 @@
     <xsl:template match="tei:teiHeader"/>
     <xsl:template match="tei:facsimile[not(parent::tei:TEI)]"/>
     
-    <!-- ============================================================
-         TEMPLATE: note nel testo — simbolo cliccabile + popup
-         ============================================================ -->
+    <!-- Note nel testo: simbolo cliccabile + popup -->
     <xsl:template match="tei:note[ancestor::tei:text]">
         <xsl:variable name="nid" select="generate-id()"/>
         <xsl:variable name="ntype" select="@type"/>
-        <span class="note-trigger" data-note-id="{$nid}" title="Nota {$ntype}">
+        <span class="note-trigger" data-note-id="{$nid}">
             <xsl:choose>
                 <xsl:when test="$ntype='storica'">&#x2731;</xsl:when>
                 <xsl:when test="$ntype='filologica'">&#x2020;</xsl:when>
+                <xsl:when test="$ntype='biografica'">&#x2605;</xsl:when>
                 <xsl:otherwise>&#x2217;</xsl:otherwise>
             </xsl:choose>
         </span>
-        <span class="note-popup" id="note-{$nid}" data-note-type="{$ntype}" role="tooltip" aria-hidden="true">
+        <span class="note-popup" id="note-{$nid}" data-note-type="{$ntype}">
             <span class="note-popup-header">
                 <span class="note-popup-type">
                     <xsl:choose>
                         <xsl:when test="$ntype='storica'">Nota storica</xsl:when>
                         <xsl:when test="$ntype='filologica'">Nota filologica</xsl:when>
+                        <xsl:when test="$ntype='biografica'">Nota biografica</xsl:when>
                         <xsl:otherwise>Nota</xsl:otherwise>
                     </xsl:choose>
                 </span>
-                <button class="note-popup-close" aria-label="Chiudi">&#x00D7;</button>
+                <button class="note-popup-close">&#x00D7;</button>
             </span>
             <span class="note-popup-body"><xsl:apply-templates/></span>
         </span>
     </xsl:template>
 
-    <!-- note fuori dal testo (standOff, teiHeader): ignora -->
+    <!-- Note fuori dal testo (standOff, teiHeader): sopprimi -->
     <xsl:template match="tei:note[not(ancestor::tei:text)]"/>
 
-    <!-- colophon -->
+    <!-- Colophon -->
     <xsl:template match="tei:div[@type='colophon']">
         <div class="colophon"><xsl:apply-templates/></div>
     </xsl:template>
