@@ -148,7 +148,7 @@
          nel file codifica_floris_valenti.xml
          ============================================================ -->
 
-    <standOff>
+<standOff>
 
         <!-- ══════════════════════════════════════════
              LISTPERSON
@@ -528,7 +528,7 @@
             <person xml:id="Maestre">
                 <persName>Maestre elementari</persName>
                 <occupation>Insegnanti di scuola elementare; principale sbocco professionale delle Scuole Normali Femminili</occupation>
-                <note>Nel periodo post-unitario erano sottorpagate rispetto ai colleghi maschi e spesso costrette a lavorare in condizioni igieniche precarie; il corpus documenta le conseguenze fisiche del sovraffollamento scolastico sulle future maestre già durante la formazione.</note>
+                <note>Nel periodo post-unitario erano sottopagate rispetto ai colleghi maschi e spesso costrette a lavorare in condizioni igieniche precarie; il corpus documenta le conseguenze fisiche del sovraffollamento scolastico sulle future maestre già durante la formazione.</note>
             </person>
 
             <person xml:id="Maestri">
@@ -578,7 +578,7 @@
             <place xml:id="Pavia" type="city">
                 <placeName>Pavia</placeName>
                 <location><region>Lombardia</region><country ref="#ITA">Italia</country></location>
-                <desc>Sede dell'Università dove insegnava Arrigo Tamassia, autore del libretto sul lavoro mentale nelle scuole.</desc>
+                <desc>Sede dell'Università di Pavia dove insegnava Arrigo Tamassia, autore del libretto sul lavoro mentale nelle scuole.</desc>
             </place>
 
             <place xml:id="Milano" type="city">
@@ -596,6 +596,7 @@
             <place xml:id="Padova" type="city">
                 <placeName>Padova</placeName>
                 <location><region>Veneto</region><country ref="#ITA">Italia</country></location>
+                <desc>Città veneta citata nel corpus in relazione al dibattito sull'istruzione secondaria e universitaria nell'Italia post-unitaria.</desc>
             </place>
 
             <place xml:id="Genova" type="city">
@@ -622,15 +623,23 @@
                 <desc>Sede del congresso degli alienisti italiani successivo a quello di Reggio Emilia, dove il tema del lavoro mentale era atteso all'ordine del giorno.</desc>
             </place>
 
-            <place xml:id="SUD">
+            <place xml:id="SUD" type="region">
                 <placeName>Mezzogiorno</placeName>
+                <location><country ref="#ITA">Italia</country></location>
                 <desc>Riferimento alle province meridionali del Regno d'Italia; nel corpus citato per le condizioni particolarmente precarie degli edifici scolastici e per la difficoltà di applicazione delle norme igieniche.</desc>
             </place>
 
             <!-- ── Europa ── -->
-            <place xml:id="Europa">
+            <place xml:id="Europa" type="continent">
                 <placeName>Europa</placeName>
+                <location><geo>54.5260 15.2551</geo></location>
                 <desc>Contesto geografico e culturale di riferimento del corpus; il dibattito sull'igiene scolastica si svolse in parallelo in Italia, Germania, Svizzera e Francia tra gli anni Settanta e Ottanta dell'Ottocento.</desc>
+            </place>
+
+            <place xml:id="Svizzera" type="country">
+                <placeName>Svizzera</placeName>
+                <location><geo>46.8182 8.2275</geo></location>
+                <desc>Paese di riferimento per le ricerche sull'igiene scolastica; sede degli studi del medico Guillaume a Neuchâtel.</desc>
             </place>
 
             <place xml:id="Francia" type="country">
@@ -647,7 +656,7 @@
 
             <place xml:id="TLS" type="city">
                 <placeName>Tolosa</placeName>
-                <location><country ref="#Francia">Francia</country></location>
+                <location><country ref="#Francia">Francia</country><geo>43.6047 1.4442</geo></location>
                 <desc>Città della Francia meridionale; luogo di residenza del signor Rocher, inventore del combustibile Amianthine.</desc>
             </place>
 
@@ -671,31 +680,31 @@
 
             <place xml:id="Norimberga" type="city">
                 <placeName>Norimberga</placeName>
-                <location><country ref="#Germania">Germania</country></location>
+                <location><country ref="#Germania">Germania</country><geo>49.4521 11.0767</geo></location>
                 <desc>Sede del Congresso tedesco d'igiene pubblica del 1877, dove Finkelnburg presentò la relazione sui danni del sovraccarico scolastico, avviando il dibattito internazionale sull'igiene scolastica.</desc>
             </place>
 
             <place xml:id="Eisenach" type="city">
                 <placeName>Eisenach</placeName>
-                <location><country ref="#Germania">Germania</country></location>
+                <location><country ref="#Germania">Germania</country><geo>50.9746 10.3244</geo></location>
                 <desc>Sede del Congresso degli alienisti tedeschi del 1880, dove fu riconosciuto come pericoloso il piano di studi vigente nelle scuole secondarie tedesche.</desc>
             </place>
 
             <place xml:id="Darmstadt" type="city">
                 <placeName>Darmstadt</placeName>
-                <location><country ref="#Germania">Germania</country></location>
+                <location><country ref="#Germania">Germania</country><geo>49.8728 8.6512</geo></location>
                 <desc>Città tedesca dove il medico Becker condusse il suo studio su 3564 alunni, rilevando alta incidenza di cefalalgia e rinorragia.</desc>
             </place>
 
             <place xml:id="Amburgo" type="city">
                 <placeName>Amburgo</placeName>
-                <location><country ref="#Germania">Germania</country></location>
+                <location><country ref="#Germania">Germania</country><geo>53.5753 10.0153</geo></location>
                 <desc>Città tedesca dove Finkelnburg condusse ricerche sulla diffusione della miopia nelle scuole urbane.</desc>
             </place>
 
             <place xml:id="Neuchatel" type="city">
                 <placeName>Neuchâtel</placeName>
-                <location><country>Svizzera</country></location>
+                <location><country ref="#Svizzera">Svizzera</country><geo>46.9930 6.9318</geo></location>
                 <desc>Città svizzera dove il medico Guillaume condusse studi sull'incidenza di cefalalgia e rinorragia nel collegio municipale locale.</desc>
             </place>
 
@@ -705,108 +714,108 @@
                 <desc>Impero russo nel periodo del corpus (1879–1881); protagonista dell'espansione in Asia centrale e citata in relazione alla spedizione del Gran Duca Costantinovich e ai viaggi di Dixon.</desc>
             </place>
 
-            <place xml:id="Palestina">
+            <place xml:id="Palestina" type="region">
                 <placeName>Palestina</placeName>
                 <desc>Regione storica del Vicino Oriente; visitata da G. Hepworth Dixon nei suoi viaggi di esplorazione, descritti nelle sue opere di letteratura di viaggio.</desc>
             </place>
 
-            <place xml:id="Cipro">
+            <place xml:id="Cipro" type="island">
                 <placeName>Cipro</placeName>
                 <desc>Isola del Mediterraneo orientale; visitata da G. Hepworth Dixon; passata sotto protettorato britannico nel 1878, l'anno prima della pubblicazione della notizia nel corpus.</desc>
             </place>
 
             <!-- ── Asia centrale ── -->
-            <place xml:id="Asia_C">
+            <place xml:id="Asia_C" type="region">
                 <placeName>Asia centrale</placeName>
                 <desc>Vasta regione interna dell'Asia, teatro dell'espansione russa nella seconda metà dell'Ottocento; contesto geografico della spedizione del Gran Duca Niccolò Costantinovich descritta nella rubrica Notizie del fascicolo 69.</desc>
             </place>
 
-            <place xml:id="Ural">
+            <place xml:id="Ural" type="mountain">
                 <placeName>Ural</placeName>
                 <desc>Catena montuosa che segna il confine tradizionale tra Europa e Asia; punto di partenza della spedizione geografica del Gran Duca Costantinovich descritta nella rubrica Notizie.</desc>
             </place>
 
-            <place xml:id="Oxus">
+            <place xml:id="Oxus" type="river">
                 <placeName>Oxus</placeName>
                 <placeName type="modern">Amu Daria</placeName>
                 <desc>Fiume dell'Asia centrale (odierno Amu Daria); uno degli obiettivi della spedizione era studiarne la navigabilità e la possibilità di collegarlo al Mar Caspio tramite il vecchio letto dell'Uzboi.</desc>
             </place>
 
-            <place xml:id="Syr_Daria">
+            <place xml:id="Syr_Daria" type="river">
                 <placeName>Syr Daria</placeName>
                 <desc>Fiume dell'Asia centrale (l'antico Jassarte), che scorre attraverso Kazakhstan e Uzbekistan verso il Mar d'Aral; tappa della spedizione del Gran Duca Costantinovich.</desc>
             </place>
 
-            <place xml:id="Karasugai">
+            <place xml:id="Karasugai" type="city">
                 <placeName>Karasugai</placeName>
                 <desc>Località sul fiume Syr Daria, nell'attuale Kazakhstan; primo punto intermedio del percorso della spedizione geografica russa descritta nel corpus.</desc>
             </place>
 
-            <place xml:id="Tashkend">
+            <place xml:id="Tashkend" type="city">
                 <placeName>Tashkend</placeName>
                 <placeName type="modern">Tashkent</placeName>
                 <desc>Capitale dell'attuale Uzbekistan; annessa alla Russia nel 1865 e sede del governatorato generale del Turkestan; tappa della spedizione geografica del Gran Duca.</desc>
             </place>
 
-            <place xml:id="Samarcanda">
+            <place xml:id="Samarcanda" type="city">
                 <placeName>Samarcanda</placeName>
                 <placeName type="modern">Samarkand</placeName>
                 <desc>Antica città dell'Asia centrale, nell'attuale Uzbekistan; celebre per i monumenti timuridi e la posizione sulla Via della Seta; conquistata dalla Russia nel 1868 e tappa della spedizione geografica.</desc>
             </place>
 
-            <place xml:id="Kunduz">
+            <place xml:id="Kunduz" type="city">
                 <placeName>Kunduz</placeName>
                 <desc>Città dell'Afghanistan settentrionale sul fiume omonimo, affluente dell'Oxus; punto di arrivo della spedizione geografica prima del percorso lungo il fiume verso il Caspio.</desc>
             </place>
 
-            <place xml:id="Afghanistan">
+            <place xml:id="Afghanistan" type="country">
                 <placeName>Afghanistan</placeName>
                 <desc>Paese dell'Asia centrale; tappa del percorso della spedizione geografica del Gran Duca Costantinovich; teatro del Grande Gioco tra Russia e Gran Bretagna nel periodo del corpus.</desc>
             </place>
 
-            <place xml:id="Khiva">
+            <place xml:id="Khiva" type="city">
                 <placeName>Khiva</placeName>
                 <desc>Città dell'odierno Uzbekistan, storica capitale del Khanato di Khiva; conquistata dalla Russia nel 1873 e annessa come protettorato; tappa della spedizione geografica descritta nel corpus.</desc>
             </place>
 
-            <place xml:id="Uzboi">
+            <place xml:id="Uzboi" type="river">
                 <placeName>Uzboi</placeName>
                 <desc>Antico letto del fiume Oxus, oggi canale asciutto nel deserto del Kara Kum; oggetto di interesse scientifico e militare russo per il suo possibile utilizzo come via d'acqua verso il Caspio.</desc>
             </place>
 
-            <place xml:id="Caspio">
+            <place xml:id="Caspio" type="lake">
                 <placeName>Mar Caspio</placeName>
                 <desc>Il più grande lago salato del mondo, tra Europa e Asia; destinazione finale del progetto di collegamento idroviario con l'Oxus studiato dalla spedizione del Gran Duca Costantinovich.</desc>
             </place>
 
-            <place xml:id="Kara_Kum">
+            <place xml:id="Kara_Kum" type="desert">
                 <placeName>Kara Kum</placeName>
                 <desc>Vasto deserto di sabbia nell'attuale Turkmenistan; uno dei deserti più estesi dell'Asia centrale; attraversato dalla spedizione nel tratto finale verso Krasnovodsk.</desc>
             </place>
 
-            <place xml:id="Krasnovodsk">
+            <place xml:id="Krasnovodsk" type="city">
                 <placeName>Krasnovodsk</placeName>
                 <placeName type="modern">Turkmenbashi</placeName>
                 <desc>Porto sul Mar Caspio nell'attuale Turkmenistan; destinazione finale della spedizione geografica e base logistica russa fondamentale per il controllo dell'Asia centrale.</desc>
             </place>
 
-            <place xml:id="Sari_Kamish">
+            <place xml:id="Sari_Kamish" type="region">
                 <placeName>Sari Kamish</placeName>
                 <desc>Depressione geografica ai confini tra Uzbekistan e Turkmenistan, collegata all'antico letto dell'Oxus; oggetto di indagine della spedizione per valutare la possibilità di ripristinare il corso d'acqua verso il Caspio.</desc>
             </place>
 
-            <place xml:id="Merv">
+            <place xml:id="Merv" type="city">
                 <placeName>Merv</placeName>
                 <placeName type="modern">Mary</placeName>
                 <desc>Antica oasi e città dell'Asia centrale, nell'attuale Turkmenistan; uno dei centri storici più importanti della Via della Seta; il testo allude alla possibilità che la spedizione geografica si trasformasse in spedizione militare contro Merv, poi conquistata dalla Russia nel 1884.</desc>
             </place>
 
-            <place xml:id="America">
+            <place xml:id="America" type="continent">
                 <placeName>America</placeName>
                 <desc>Riferimento al continente americano, in particolare agli Stati Uniti; citato nel corpus per la diffusione del combustibile Amianthine inventato da Rocher e per i viaggi esplorativi di Dixon.</desc>
             </place>
 
-            <place xml:id="Occidente">
+            <place xml:id="Occidente" type="region">
                 <placeName>Occidente</placeName>
                 <desc>Nel contesto della notizia su Dixon indica l'America del Nord e del Nord-Ovest, teatro dei suoi viaggi esplorativi in regioni di frontiera.</desc>
             </place>
@@ -818,9 +827,15 @@
              ══════════════════════════════════════════ -->
         <listOrg>
 
+            <!-- ── Istituti scolastici ── -->
             <org xml:id="SNM">
                 <orgName>Scuole Normali Maschili</orgName>
                 <desc>Istituti per la formazione dei maestri elementari maschili nel sistema scolastico italiano post-unitario; istituiti dalla legge Casati (1859).</desc>
+            </org>
+
+            <org xml:id="SNF_org">
+                <orgName>Scuole Normali Femminili</orgName>
+                <desc>Istituti per la formazione delle maestre elementari, istituiti dalla legge Casati (1859); nel periodo post-unitario erano spesso sovraffollati, alloggiati in locali inadeguati e privi di norme igieniche; tema centrale degli articoli sulle scuole normali e sul lavoro mentale.</desc>
             </org>
 
             <org xml:id="ST">
@@ -840,7 +855,7 @@
 
             <org xml:id="IT">
                 <orgName>Istituti Tecnici</orgName>
-                <desc>Scuole secondarie superiori a indirizzo tecnico-scientifico, previste dalla riforma post-unitaria; formavanola classe tecnica e commerciale del Paese.</desc>
+                <desc>Scuole secondarie superiori a indirizzo tecnico-scientifico, previste dalla riforma post-unitaria; formavano la classe tecnica e commerciale del Paese.</desc>
             </org>
 
             <org xml:id="EDUC">
@@ -853,15 +868,30 @@
                 <desc>Istituti scolastici non statali, soggetti a vigilanza del Ministero della Pubblica Istruzione; al centro del dibattito sulla libertà di insegnamento tra Stato e Chiesa.</desc>
             </org>
 
-            <org xml:id="Tip_Senato">
-                <orgName>Tipografia del Senato</orgName>
-                <placeName ref="#RM">Roma</placeName>
-                <desc>Officina tipografica ufficiale del Senato del Regno d'Italia; pubblicava atti parlamentari e documenti ufficiali.</desc>
+            <!-- ── Istituzioni di governo e controllo scolastico ── -->
+            <org xml:id="Min_Istruzione">
+                <orgName>Ministero della Pubblica Istruzione</orgName>
+                <desc>Organo centrale del governo italiano preposto all'amministrazione del sistema scolastico nazionale; istituito con la legge Casati (1859); al centro del dibattito sulla riforma dell'istruzione femminile documentata nel corpus.</desc>
+            </org>
+
+            <org xml:id="CPS">
+                <orgName>Consiglio Provinciale Scolastico</orgName>
+                <desc>Ente locale incaricato della gestione e della vigilanza sulle scuole della provincia; presieduto dal Provveditore agli Studi; aveva potere consultivo sulle ammissioni e sulle condizioni igieniche degli edifici scolastici.</desc>
+            </org>
+
+            <org xml:id="Consiglio_Istr">
+                <orgName>Consiglio Superiore di Pubblica Istruzione</orgName>
+                <desc>Massimo organo consultivo del Ministero della Pubblica Istruzione; esprimeva pareri vincolanti sulle riforme scolastiche, spesso ignorati dai ministri nel periodo post-unitario.</desc>
             </org>
 
             <org xml:id="DestraS">
                 <orgName>Destra Storica</orgName>
                 <desc>Coalizione politica conservatrice-liberale che governò il Regno d'Italia dal 1861 al 1876; erede del pensiero cavouriano, favorevole a un'istruzione statale laica ma moderata e al pareggio di bilancio.</desc>
+            </org>
+
+            <org xml:id="SinistraS">
+                <orgName>Sinistra Storica</orgName>
+                <desc>Schieramento politico di stampo liberal-progressista salito al potere nel 1876 con la «Rivoluzione parlamentare»; promosse l'estensione dell'istruzione obbligatoria e la laicizzazione della scuola.</desc>
             </org>
 
             <org xml:id="Chiesa">
@@ -875,22 +905,17 @@
                 <desc>Il Regno d'Italia (1861–1946) come attore istituzionale nel dibattito sull'istruzione pubblica laica e obbligatoria; contrapposto alla Chiesa nella gestione delle scuole.</desc>
             </org>
 
+            <!-- ── Istituzioni accademiche e scientifiche ── -->
             <org xml:id="UniversitàPavia">
                 <orgName>Università di Pavia</orgName>
                 <placeName ref="#Pavia">Pavia</placeName>
                 <desc>Antico ateneo lombardo (fondato nel 1361); sede della cattedra di medicina legale di Arrigo Tamassia, autore del libretto sul lavoro mentale nelle scuole.</desc>
             </org>
 
-            <org xml:id="Tip_Barbera">
-                <orgName>Tipografia Barbèra</orgName>
-                <placeName ref="#RM">Roma</placeName>
-                <desc>Tipografia romana incaricata della stampa de «La Rassegna Settimanale»; il suo nome compare nel colophon di tutti i fascicoli del corpus.</desc>
-            </org>
-
-            <org xml:id="Sonzogno">
-                <orgName>Sonzogno</orgName>
-                <placeName ref="#Milano">Milano</placeName>
-                <desc>Casa editrice milanese fondata da Edoardo Sonzogno; pubblicò nel 1881 il libretto di Tamassia «Le intemperanze del lavoro mentale nelle scuole» nella collana «Igiene popolare» della Società Italiana d'igiene.</desc>
+            <org xml:id="ScuolaPolitecnica">
+                <orgName>Scuola politecnica di Parigi</orgName>
+                <placeName ref="#Parigi">Parigi</placeName>
+                <desc>Prestigioso istituto superiore tecnico-scientifico francese (fondato nel 1794); i dati sulla elevata mortalità dei suoi alunni per eccesso di studio sono citati da Tamassia come caso estremo dei danni del sovraccarico scolastico.</desc>
             </org>
 
             <org xml:id="Deputazione_BO">
@@ -926,12 +951,7 @@
                 <desc>Organizzazione scientifica italiana fondata nel 1879; pubblicava la collana «Igiene popolare» nell'ambito della quale uscì nel 1881 il libretto di Tamassia sul lavoro mentale nelle scuole.</desc>
             </org>
 
-            <org xml:id="ScuolaPolitecnica">
-                <orgName>Scuola politecnica di Parigi</orgName>
-                <placeName ref="#Parigi">Parigi</placeName>
-                <desc>Prestigioso istituto superiore tecnico-scientifico francese (fondato nel 1794); i dati sulla elevata mortalità dei suoi alunni per eccesso di studio sono citati da Tamassia come caso estremo dei danni del sovraccarico scolastico.</desc>
-            </org>
-
+            <!-- ── Congressi scientifici ── -->
             <org xml:id="CongressoTedesco">
                 <orgName>Congresso tedesco d'igiene pubblica (Norimberga, 1877)</orgName>
                 <desc>Congresso scientifico tenuto a Norimberga nel 1877; Finkelnburg vi presentò la relazione pionieristica sui danni fisici e mentali del sovraccarico scolastico, avviando il dibattito internazionale sull'igiene nelle scuole.</desc>
@@ -957,6 +977,31 @@
                 <desc>Congresso scientifico tenuto a Torino nel 1880; Mozzini vi richiamò l'attenzione sull'influenza dei programmi scolastici sulla salute dei fanciulli, consolidando il dibattito internazionale.</desc>
             </org>
 
+            <!-- ── Case editrici e tipografie ── -->
+            <org xml:id="Tip_Senato">
+                <orgName>Tipografia del Senato</orgName>
+                <placeName ref="#RM">Roma</placeName>
+                <desc>Officina tipografica ufficiale del Senato del Regno d'Italia; pubblicava atti parlamentari e documenti ufficiali.</desc>
+            </org>
+
+            <org xml:id="Tip_Barbera">
+                <orgName>Tipografia Barbèra</orgName>
+                <placeName ref="#RM">Roma</placeName>
+                <desc>Tipografia romana incaricata della stampa de «La Rassegna Settimanale»; il suo nome compare nel colophon di tutti i fascicoli del corpus.</desc>
+            </org>
+
+            <org xml:id="Sonzogno">
+                <orgName>Sonzogno</orgName>
+                <placeName ref="#Milano">Milano</placeName>
+                <desc>Casa editrice milanese fondata da Edoardo Sonzogno; pubblicò nel 1881 il libretto di Tamassia «Le intemperanze del lavoro mentale nelle scuole» nella collana «Igiene popolare» della Società Italiana d'igiene.</desc>
+            </org>
+
+            <!-- ── La rivista ── -->
+            <org xml:id="Rassegna">
+                <orgName>La Rassegna Settimanale</orgName>
+                <desc>Rivista di politica, scienze, lettere ed arti fondata a Roma nel 1878 da Leopoldo Franchetti e Sidney Sonnino; pubblicata fino al 1882; punto di riferimento del liberalismo moderato post-unitario e del dibattito sull'istruzione e la questione meridionale.</desc>
+            </org>
+
         </listOrg>
 
         <!-- ══════════════════════════════════════════
@@ -964,32 +1009,22 @@
              ══════════════════════════════════════════ -->
 
         <list type="glossary" xml:id="glossario_critico">
-            <head>Glossario Unificato: Istituzioni, Norme e Concetti</head>
-            <label><term type="org" xml:id="Min_Istruzione">Ministero della Pubblica Istruzione</term></label>
-            <item><gloss corresp="#Min_Istruzione">Organo centrale del governo italiano preposto all'amministrazione del sistema scolastico nazionale; istituito con la legge Casati (1859); al centro del dibattito sulla riforma dell'istruzione femminile documentata nel corpus.</gloss></item>
-            <label><term type="org" xml:id="CPS">Consiglio Provinciale Scolastico</term></label>
-            <item><gloss corresp="#CPS">Ente locale incaricato della gestione e della vigilanza sulle scuole della provincia; presieduto dal Provveditore agli Studi; aveva potere consultivo sulle ammissioni e sulle condizioni igieniche degli edifici scolastici.</gloss></item>
-            <label><term type="org" xml:id="Consiglio_Istr">Consiglio Superiore di Pubblica Istruzione</term></label>
-            <item><gloss corresp="#Consiglio_Istr">Massimo organo consultivo del Ministero della Pubblica Istruzione; esprimeva pareri vincolanti sulle riforme scolastiche, spesso ignorati dai ministri nel periodo post-unitario.</gloss></item>
-            <label><term type="org" xml:id="Rassegna">La Rassegna Settimanale</term></label>
-            <item><gloss corresp="#Rassegna">Rivista di politica, scienze, lettere ed arti fondata a Roma nel 1878 da Leopoldo Franchetti e Sidney Sonnino; pubblicata fino al 1882; punto di riferimento del liberalismo moderato post-unitario e del dibattito sull'istruzione e la questione meridionale.</gloss></item>
-            <label><term type="political_party" xml:id="Destra">Destra Storica</term></label>
-            <item><gloss corresp="#Destra">Coalizione politica erede di Cavour che governò il Regno d'Italia dal 1861 al 1876; caratterizzata da un orientamento conservatore-liberale, favorevole a un'istruzione statale laica ma controllata e al rigore finanziario.</gloss></item>
-            <label><term type="political_party" xml:id="Sinistra">Sinistra Storica</term></label>
-            <item><gloss corresp="#Sinistra">Schieramento politico di stampo liberal-progressista salito al potere nel 1876 con la «Rivoluzione parlamentare»; promosse l'estensione dell'istruzione obbligatoria e la laicizzazione della scuola.</gloss></item>
+            <head>Glossario: Leggi, Concetti e Movimenti politici</head>
             <label><term type="law" xml:id="Legge_Casati">Legge Casati (1859)</term></label>
             <item><gloss corresp="#Legge_Casati">Riforma fondamentale del sistema scolastico italiano emanata da Gabrio Casati; stabilì l'obbligatorietà del primo biennio elementare, istituì le scuole normali per la formazione degli insegnanti e regolò l'istruzione classica e tecnica secondaria.</gloss></item>
-            <label><term xml:id="SNF">Scuole Normali Femminili</term></label>
-            <item><gloss corresp="#SNF">Istituti per la formazione delle maestre elementari, istituiti dalla legge Casati (1859); nel periodo post-unitario erano spesso sovraffollati, alloggiati in locali inadeguati e privi di norme igieniche; tema centrale degli articoli sulle scuole normali e sul lavoro mentale.</gloss></item>
+            <label><term type="concept" xml:id="Destra">Destra Storica</term></label>
+            <item><gloss corresp="#Destra">Coalizione politica erede di Cavour che governò il Regno d'Italia dal 1861 al 1876; caratterizzata da un orientamento conservatore-liberale, favorevole a un'istruzione statale laica ma controllata e al rigore finanziario. Cfr. <ref target="#DestraS">voce nella listOrg</ref>.</gloss></item>
+            <label><term type="concept" xml:id="Sinistra">Sinistra Storica</term></label>
+            <item><gloss corresp="#Sinistra">Schieramento politico di stampo liberal-progressista salito al potere nel 1876 con la «Rivoluzione parlamentare»; promosse l'estensione dell'istruzione obbligatoria e la laicizzazione della scuola. Cfr. <ref target="#SinistraS">voce nella listOrg</ref>.</gloss></item>
         </list>
 
         <list type="glossary" xml:id="glossario_rassegna_notizie">
-            <head>Glossario: Istituzioni, Scienza e Cultura</head>
-            <label><term type="rivista" xml:id="FanfullaDomenica">Fanfulla della Domenica</term></label>
+            <head>Glossario: Riviste e Periodici citati nel corpus</head>
+            <label><term type="periodical" xml:id="FanfullaDomenica">Fanfulla della Domenica</term></label>
             <item><gloss corresp="#FanfullaDomenica">Supplemento domenicale del quotidiano Fanfulla; importante rivista letteraria italiana del tardo Ottocento; su di essa Posocco annunciò la scoperta del manoscritto leopardiano.</gloss></item>
-            <label><term type="rivista" xml:id="ContemporaryReview">Contemporary Review</term></label>
+            <label><term type="periodical" xml:id="ContemporaryReview">Contemporary Review</term></label>
             <item><gloss corresp="#ContemporaryReview">Rivista letteraria e culturale britannica fondata nel 1866; su di essa era attesa la pubblicazione del poema Giustiniano di Robert Buchanan.</gloss></item>
-            <label><term type="rivista" xml:id="LaCultura">La Cultura, Rivista di scienze morali, di lettere ed arti</term></label>
+            <label><term type="periodical" xml:id="LaCultura">La Cultura, Rivista di scienze morali, di lettere ed arti</term></label>
             <item><gloss corresp="#LaCultura">Periodico critico-bibliografico fondato da Ruggero Bonghi nel 1881; a uscita bimestrale, comprendeva recensioni ragionate, annunci di libri e notizie culturali; annunciato nella rubrica Notizie del fascicolo 188.</gloss></item>
         </list>
 
@@ -1018,7 +1053,7 @@
                         <monogr>
                             <title level="j">La Rassegna Settimanale</title>
                             <imprint>
-                                <publisher>Franchetti e Sonnino</publisher>
+                                <publisher>Tipografia Barbèra</publisher>
                                 <pubPlace ref="#RM">Roma</pubPlace>
                                 <date when="1879">1879</date>
                                 <biblScope unit="volume">3</biblScope>
@@ -1972,7 +2007,7 @@
                         <monogr>
                             <title level="j">La Rassegna Settimanale</title>
                             <imprint>
-                                <publisher ref="#S_Sonnino">Sonnino</publisher>
+                                <publisher ref="#S_Sonnino">Tipografia Barbera</publisher>
                                 <pubPlace ref="#RM">Roma</pubPlace>
                                 <date when="1881-08-07">7 agosto 1881</date>
                                 <biblScope unit="volume">8</biblScope>
@@ -2750,6 +2785,7 @@
                             <pubPlace>Roma</pubPlace>
                             <date when="1879-04-27">27 Aprile 1879</date>
                             <biblScope unit="issue">69</biblScope>
+                            <biblScope unit="page" >330</biblScope>
                         </imprint>
                     </monogr>
                 </biblStruct>
@@ -3015,8 +3051,7 @@
                         <monogr>
                             <title level="j">La Rassegna Settimanale</title>
                             <imprint>
-                                <publisher ref="#L_Franchetti">Franchetti</publisher>
-                                <publisher ref="#S_Sonnino">Sonnino</publisher>
+                                <publisher>Tipografia Barbèra</publisher>
                                 <pubPlace ref="#RM">Roma</pubPlace>
                                 <date when="1880-01-11">11 gennaio 1880</date>
                                 <biblScope unit="volume">5</biblScope>
@@ -3330,12 +3365,20 @@
                 </availability>
             </publicationStmt>
             <sourceDesc>
-                <bibl>
-                    <title level="j">La Rassegna Settimanale</title>
-                    <date when="1879-04-27">27 Aprile 1879</date>
-                    <pubPlace ref="#RM">Roma</pubPlace>
-                </bibl>
-            </sourceDesc>
+    <biblStruct>
+        <monogr>
+            <title level="j">La Rassegna Settimanale</title>
+            <imprint>
+                <publisher>Tipografia Barbèra</publisher>
+                <pubPlace ref="#RM">Roma</pubPlace>
+                <date when="1879-04-27">27 Aprile 1879</date>
+                <biblScope unit="volume">3</biblScope>
+                <biblScope unit="issue">69</biblScope>
+                <biblScope unit="page">332</biblScope>
+            </imprint>
+        </monogr>
+    </biblStruct>
+</sourceDesc>
         </fileDesc>
         <encodingDesc>
             <projectDesc>
@@ -3616,14 +3659,13 @@
                         <monogr>
                             <title level="j">La Rassegna Settimanale</title>
                             <imprint>
-                                <publisher ref="#L_Franchetti">Franchetti</publisher>
-                                <publisher ref="#S_Sonnino">Sonnino</publisher>
+                                <publisher>Tipografia Barbèra</publisher>
                                 <pubPlace ref="#RM">Roma</pubPlace>
-                                <date when="1880">1880</date>
+                                <date when="1880-01-11">1880</date>
                                 <biblScope unit="volume">5</biblScope>
                                 <biblScope unit="issue">106</biblScope>
                                 <biblScope unit="page">40</biblScope>
-                            </imprint>
+                              </imprint>  
                         </monogr>
                     </biblStruct>
                 </sourceDesc>
@@ -3810,19 +3852,19 @@
                     </availability>
                 </publicationStmt>
                 <sourceDesc>
-                    <biblStruct>
-                        <monogr>
-                            <title level="j">La Rassegna Settimanale</title>
-                            <imprint>
-                                <publisher ref="#S_Sonnino">Sonnino</publisher>
-                                <pubPlace ref="#RM">Roma</pubPlace>
-                                <date when="1881-08-07">7 agosto 1881</date>
-                                <biblScope unit="volume">8</biblScope>
-                                <biblScope unit="issue">188</biblScope>
-                                <biblScope unit="page">96</biblScope>
-                            </imprint>
-                        </monogr>
-                    </biblStruct>
+                <biblStruct>
+    <monogr>
+        <title level="j">La Rassegna Settimanale</title>
+        <imprint>
+            <publisher>Tipografia Barbèra</publisher>
+            <pubPlace ref="#RM">Roma</pubPlace>
+            <date when="1881-08-07">7 Agosto 1881</date>
+            <biblScope unit="volume">8</biblScope>
+            <biblScope unit="issue">188</biblScope>
+            <biblScope unit="page">96</biblScope>
+        </imprint>
+    </monogr>
+</biblStruct>
                 </sourceDesc>
             </fileDesc>
             <encodingDesc>

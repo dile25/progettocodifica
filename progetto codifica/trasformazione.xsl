@@ -122,19 +122,19 @@
                                             </div>
                                             <xsl:if test="tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:biblStruct/tei:monogr/tei:imprint/tei:publisher">
                                                 <div class="publication-info-line">
-                                                    <strong>Editore: </strong>
+                                                    <strong>Casa Editrice: </strong>
                                                     <xsl:value-of select="tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:biblStruct/tei:monogr/tei:imprint/tei:publisher"/>
                                                 </div>
                                             </xsl:if>
                                             <xsl:if test="tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:biblStruct/tei:monogr/tei:imprint/tei:pubPlace">
                                                 <div class="publication-info-line">
-                                                    <strong>Luogo: </strong>
+                                                    <strong>Luogo di pubblicazione: </strong>
                                                     <xsl:value-of select="tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:biblStruct/tei:monogr/tei:imprint/tei:pubPlace"/>
                                                 </div>
                                             </xsl:if>
                                             <xsl:if test="tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:biblStruct/tei:monogr/tei:imprint/tei:date">
                                                 <div class="publication-info-line">
-                                                    <strong>Anno: </strong>
+                                                    <strong>Anno di pubblicazione: </strong>
                                                     <xsl:value-of select="tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:biblStruct/tei:monogr/tei:imprint/tei:date"/>
                                                 </div>
                                             </xsl:if>
@@ -167,7 +167,7 @@
                                             </xsl:if>
                                             <xsl:if test="tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:respStmt">
                                                 <div class="publication-info-line">
-                                                    <strong>Codifica: </strong>
+                                                    <strong>Codifica a cura di: </strong>
                                                     <xsl:for-each select="tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:respStmt/tei:persName">
                                                         <xsl:value-of select="."/>
                                                         <xsl:if test="position() != last()"><xsl:text>, </xsl:text></xsl:if>

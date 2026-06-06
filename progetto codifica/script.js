@@ -1,18 +1,24 @@
 /* ============================================================
    script_FlorisValenti.js — La Rassegna Settimanale · Corpus digitale
-   Funzionalità invariate rispetto all'originale, con correzioni
-   e adattamenti alla struttura del nuovo XML/XSLT.
    ============================================================ */
 
+/* ── Alias ID per retrocompatibilità con i ref nel testo ──────
+   Nel testo: ref="#SNF"  →  nel standOff: xml:id="SNF_org"
+   Aggiungere qui eventuali futuri disallineamenti.
+   ──────────────────────────────────────────────────────────── */
+var ID_ALIASES = {
+    'SNF': 'SNF_org'
+};
+
 $(document).ready(function () {
-    initializeNavigation();      // menu a tendina + navigazione tra sezioni
-    setupTextLines();            // divide il testo in righe cliccabili
-    initializeHighlighting();    // verifica i collegamenti testo-immagine
-    setupZoneHighlighting();     // click zone SVG ↔ righe di testo
-    setupFormWork();             // fw (intestazioni di pagina) → text-line
-    setupReferences();           // placeholder gestione ref
-    setupEntityLinks();          // popup per persone, luoghi, termini
-    setupColumnBreaks();         // multi-column per i cb
+    initializeNavigation();
+    setupTextLines();
+    initializeHighlighting();
+    setupZoneHighlighting();
+    setupFormWork();
+    setupReferences();
+    setupEntityLinks();
+    setupColumnBreaks();
 
     // Smooth scroll per link anchor (esclusi entity-link e note-ref)
     $('a[href^="#"]').not('.entity-link, .note-ref').on('click', function (e) {
@@ -23,7 +29,7 @@ $(document).ready(function () {
         }
     });
 
-    // Calcola le zone SVG dopo che le immagini sono caricate
+    // Ricalcola le zone SVG dopo il caricamento immagini
     setTimeout(resizeZones, 300);
     $(window).on('load', function () { resizeZones(); });
 });
@@ -34,14 +40,14 @@ $(document).ready(function () {
    ============================================================ */
 function initializeNavigation() {
 
-    // ── Vecchia tendina (retrocompatibilità) ──
+    // Vecchia tendina (retrocompatibilità)
     $('#navigation-fab button').on('click', function (e) {
         $('.navigation-dropdown').toggleClass('active');
         e.stopPropagation();
     });
     $('.navigation-dropdown').on('click', function (e) { e.stopPropagation(); });
 
-    // ── Navbar orizzontale: apri/chiudi dropdown ──
+    // Navbar orizzontale: apri/chiudi dropdown
     $(document).on('click', '.dropdown-toggle', function (e) {
         e.preventDefault();
         e.stopPropagation();
@@ -51,7 +57,7 @@ function initializeNavigation() {
         if (!isOpen) item.addClass('open');
     });
 
-    // ── Click su qualsiasi link di navigazione ──
+    // Click su qualsiasi link di navigazione
     $(document).on('click', '.section-link, .dropdown-menu a[href^="#"]', function (e) {
         e.preventDefault();
         e.stopPropagation();
@@ -67,15 +73,15 @@ function initializeNavigation() {
         }
     });
 
-    // ── Click sul logo ──
-    $(document).on('click', '.nav-logo', function (e) {
+    // Click sul logo/brand
+    $(document).on('click', '.nav-logo, .navbar-brand', function (e) {
         e.preventDefault();
         $('.nav-item').removeClass('open');
         showSection('#info-section');
         $('html, body').scrollTop(0);
     });
 
-    // ── Pulsanti avanti/indietro (se presenti) ──
+    // Pulsanti avanti/indietro (se presenti)
     $('#back-fab button, #forward-fab button').on('click', function () {
         var sections = $('.article-section, #info-section');
         var visible  = $('.visible-section');
@@ -101,7 +107,6 @@ function navigateTo(href) {
             }, 100);
         }
     } else {
-        // href tipo '#TEI_scuolenormali' oppure '#TEI_scuolenormali-section'
         var id = href.replace(/^#/, '');
         var sectionId = id.endsWith('-section') ? id : id + '-section';
         showSection('#' + sectionId);
@@ -119,7 +124,7 @@ function showSection(sectionSelector) {
     sec.removeClass('hidden-section').addClass('visible-section');
 }
 
-// Chiude il dropdown cliccando fuori
+// Chiude dropdown cliccando fuori
 $(document).on('click', function () {
     $('.navigation-dropdown').removeClass('active');
     $('.nav-item').removeClass('open');
@@ -139,12 +144,10 @@ function setupTextLines() {
         processContainerLines(container);
     });
 
-    // column-break e page-break sono già righe di per sé
     $('.column-break, .page-break').each(function () {
         if (!$(this).hasClass('text-line')) $(this).addClass('text-line');
     });
 
-    // fw: intestazioni di pagina
     $('.fw').each(function () {
         if (!$(this).hasClass('text-line') && !$(this).hasClass('processed-lines')) {
             $(this).addClass('text-line processed-lines');
@@ -152,7 +155,6 @@ function setupTextLines() {
     });
 }
 
-// Elabora un container dividendolo in righe sui lb TEI
 function processContainerLines(container) {
     var lineBreaks = container.find('lb, .line-break');
     if (lineBreaks.length === 0) {
@@ -174,16 +176,13 @@ function processContainerLines(container) {
         lineNumber++;
     });
 
-    // Separa sugli span marcatori
     var parts = tempContainer.html().split(/<span class="line-marker"[^>]*><\/span>/);
     container.empty();
 
     parts.forEach(function (part, index) {
         if (!part.trim()) return;
-        // Recupera l'id del lb se presente nella parte
         var lbMatch = part.match(/<(?:lb|span[^>]*class="line-break"[^>]*)\s+id="([^"]+)"/);
         var lineId  = lbMatch ? lbMatch[1] : (containerId + '-line-' + (index + 1));
-        // Rimuove i tag lb e span.line-break residui
         var clean   = part.replace(/<lb[^>]*>|<span[^>]*class="line-break"[^>]*><\/span>/g, '');
         container.append($('<div class="text-line" id="' + lineId + '">' + clean + '</div>'));
     });
@@ -192,7 +191,6 @@ function processContainerLines(container) {
     return lineNumber - 1;
 }
 
-// Contatore ID univoci
 var _idCounter = 0;
 function generateUniqueId() {
     return 'gen-' + Date.now() + '-' + (_idCounter++);
@@ -205,13 +203,10 @@ function generateUniqueId() {
 function setupZoneHighlighting() {
     $('svg rect').css('pointer-events', 'auto');
 
-    // Click su un rettangolo SVG → evidenzia la riga di testo corrispondente
     $(document).on('click', 'svg rect', function (e) {
         e.stopPropagation();
         var rectClass = $(this).attr('class');
         if (!rectClass || rectClass === 'selected') return;
-
-        // La classe del rect coincide con l'id della riga (senza #)
         var targetEl = findElementById(rectClass);
         if (targetEl.length) {
             clearHighlights();
@@ -221,13 +216,10 @@ function setupZoneHighlighting() {
         }
     });
 
-    // Click su una riga di testo → evidenzia il rettangolo SVG corrispondente
     $(document).on('click', '.text-line, .fw, .article-title, .column-break, .page-break', function (e) {
-        // Non intercettare click su link o note
-        if ($(e.target).closest('.note-ref, .entity-link').length) return;
+        if ($(e.target).closest('.note-ref, .entity-link, .entity').length) return;
         var elementId = $(this).attr('id');
         if (!elementId) return;
-
         var rect = findRectByClass(elementId);
         if (rect.length) {
             clearHighlights();
@@ -243,7 +235,6 @@ function clearHighlights() {
     $('.highlight-text').removeClass('highlight-text');
 }
 
-// Cerca un elemento di testo per id (varie strategie)
 function findElementById(id) {
     var el = $('#' + CSS.escape(id));
     if (!el.length) el = $('.text-line[id="' + id + '"]');
@@ -251,13 +242,10 @@ function findElementById(id) {
     return el;
 }
 
-// Cerca un rettangolo SVG per classe (= id della riga)
 function findRectByClass(id) {
-    // Nel tuo XML il rect ha class uguale all'id del lb (senza #)
     return $('svg rect[class="' + id + '"], svg rect[class*="' + id + '"]').first();
 }
 
-// Scorre la colonna testo per rendere visibile l'elemento
 function scrollToElement(element) {
     var container = element.closest('.text-column');
     if (!container.length) return;
@@ -265,7 +253,6 @@ function scrollToElement(element) {
     container.animate({ scrollTop: offset }, 250);
 }
 
-// Scorre la colonna facsimile per rendere visibile il rettangolo
 function scrollToRect(rect) {
     var container = rect.closest('.facsimile-container');
     if (!container.length) return;
@@ -279,8 +266,8 @@ function scrollToRect(rect) {
    ============================================================ */
 function setupFormWork() {
     $('.fw').each(function () {
-        var fw        = $(this);
-        var placeAttr = fw.attr('data-place') || fw.attr('place') || '';
+        var fw         = $(this);
+        var placeAttr  = fw.attr('data-place') || fw.attr('place') || '';
         var placeClass = placeAttr.replace(/\s+/g, '-');
         if (placeClass) fw.addClass(placeClass);
         if (!fw.hasClass('text-line')) fw.addClass('text-line');
@@ -308,58 +295,91 @@ function setupReferences() { /* estendibile */ }
    ENTITY LINKS — popup per persone, luoghi, termini/glossario
    ============================================================ */
 function setupEntityLinks() {
-    $(document).on('click', '.entity-link', function (e) {
+
+    // Intercetta click su link entità e su span entità cliccabili
+    $(document).on('click', '.entity-link, span.entity', function (e) {
         e.preventDefault();
-        var href = $(this).attr('href');
-        if (!href) return;
+        e.stopPropagation();
 
-        // Rimuove il # iniziale per cercare l'elemento
-        var targetId = href.replace(/^#/, '');
+        // Recupera il ref: dall'href del link, oppure dall'href del link figlio
+        var href = $(this).attr('href') ||
+                   $(this).find('a.entity-link').first().attr('href');
+        if (!href || href === '#') return;
+
+        var rawId    = href.replace(/^#/, '');
+        // Applica alias (es. SNF → SNF_org)
+        var targetId = ID_ALIASES[rawId] || rawId;
         var targetEl = $('#' + CSS.escape(targetId));
-        if (!targetEl.length) return;
 
-        // Determina il tipo in base alle classi del target
-        if (targetEl.hasClass('person-card') || targetEl.closest('.people-section').length) {
-            showEntityCard(targetEl, 'person');
-        } else if (targetEl.hasClass('person-card') && targetEl.closest('.places-section').length) {
-            showEntityCard(targetEl, 'place');
-        } else if (targetEl.hasClass('glossary-card') || targetEl.closest('#glossary-section').length) {
-            showEntityCard(targetEl, 'glossary');
-        } else {
-            // Fallback: scroll all'ancora
-            $('html, body').scrollTop(targetEl.offset().top - 100);
+        if (!targetEl.length) {
+            console.warn('[Rassegna] Entità non trovata nel DOM: #' + targetId);
+            return;
         }
+
+        // Determina il tipo in base al tag/contenitore dell'elemento target
+        var tagName  = targetEl.prop('tagName') ? targetEl.prop('tagName').toLowerCase() : '';
+        var type;
+
+        if (targetEl.hasClass('person-card') && !targetEl.closest('.places-section').length) {
+            type = 'person';
+        } else if (targetEl.hasClass('person-card') && targetEl.closest('.places-section').length) {
+            type = 'place';
+        } else if (targetEl.hasClass('glossary-card') || targetEl.closest('#glossary-section').length) {
+            type = 'glossary';
+        } else if (tagName === 'person' || targetEl.closest('listPerson, .listPerson').length) {
+            type = 'person';
+        } else {
+            // Fallback: naviga alla sezione e scrolla all'elemento
+            var section = targetEl.closest('.article-section, #info-section');
+            if (section.length && !section.hasClass('visible-section')) {
+                showSection('#' + section.attr('id'));
+            }
+            setTimeout(function () {
+                $('html, body').animate({ scrollTop: targetEl.offset().top - 80 }, 300);
+            }, 150);
+            return;
+        }
+
+        showEntityCard(targetEl, type);
     });
 }
 
-// Crea e mostra il popup con le informazioni dell'entità
+/* ── Raccoglie i dati dell'entità e costruisce il popup ── */
 function showEntityCard(element, type) {
     if (!element.length) return;
 
     var title, content, headerClass;
 
-    if (type === 'person' || type === 'place') {
-        title       = element.find('h3').first().text();
+    if (type === 'person') {
+        title       = element.find('h3').first().text().trim();
         content     = element.find('.person-details').html() || '';
-        headerClass = type === 'person' ? 'persName' : 'placeName';
+        headerClass = 'persName';
+    } else if (type === 'place') {
+        title       = element.find('h3').first().text().trim();
+        content     = element.find('.person-details').html() || '';
+        headerClass = 'placeName';
     } else {
-        title       = element.find('h4').first().text();
+        // glossary / term
+        title       = element.find('h4').first().text().trim();
         content     = element.find('.glossary-details').html() ||
                       element.find('.definition-info').html() || '';
         headerClass = 'term';
     }
 
-    if (!content) {
+    // Fallback contenuto: intero innerHTML senza titolo
+    if (!content || !content.trim()) {
         var clone = element.clone();
         clone.find('h3, h4').remove();
-        content = clone.html();
+        content = clone.html().trim();
     }
+
+    if (!title) title = '—';
 
     // Rimuove eventuali popup esistenti
     $('.entity-overlay').remove();
 
     var overlay = $(
-        '<div class="entity-overlay">' +
+        '<div class="entity-overlay" role="dialog" aria-modal="true">' +
             '<div class="entity-card">' +
                 '<div class="entity-card-header ' + headerClass + '">' +
                     '<h3>' + title + '</h3>' +
@@ -370,20 +390,25 @@ function showEntityCard(element, type) {
         '</div>'
     );
 
-    // Aggiunge alla main visibile (compatibile con layout a sezioni)
-    var mainContainer = $('.visible-section .main, .visible-section main, .visible-section').first();
+    // Appende al contenitore della sezione visibile, o al body
+    var mainContainer = $('.visible-section').first();
     if (!mainContainer.length) mainContainer = $('body');
     mainContainer.append(overlay);
 
-    // Chiusura
+    // Chiusura: click sul backdrop o sul pulsante ×
     overlay.on('click', function (e) {
         if ($(e.target).is('.entity-overlay') || $(e.target).is('.entity-card-close')) {
             overlay.remove();
+            $(document).off('keydown.entity-overlay');
         }
     });
+
     // Chiusura con Escape
-    $(document).one('keydown.entity-overlay', function (e) {
-        if (e.key === 'Escape') overlay.remove();
+    $(document).on('keydown.entity-overlay', function (e) {
+        if (e.key === 'Escape') {
+            overlay.remove();
+            $(document).off('keydown.entity-overlay');
+        }
     });
 }
 
@@ -406,17 +431,15 @@ function initializeHighlighting() {
 
 
 /* ============================================================
-   RESIZE ZONE SVG — ricalcola dimensioni al resize finestra
+   RESIZE ZONE SVG
    ============================================================ */
 function resizeZones() {
     $('.page-facsimile').each(function () {
-        var container   = $(this);
-        var img         = container.find('.facsimile-image');
-        var currentW    = img.width();
-        var originalW   = parseInt(img.attr('width')) || 1000;
-        var scale       = currentW / originalW;
-        var svg         = container.find('svg');
-
+        var container = $(this);
+        var img       = container.find('.facsimile-image');
+        var currentW  = img.width();
+        var originalW = parseInt(img.attr('width')) || 1000;
+        var svg       = container.find('svg');
         if (svg.length) {
             var vb = (svg.attr('viewBox') || '').split(',');
             if (vb.length === 4) {
@@ -444,7 +467,7 @@ $(document).ready(function () {
 
     $(document).on('click', '.note-trigger', function (e) {
         e.stopPropagation();
-        var nid = $(this).data('note-id');
+        var nid   = $(this).data('note-id');
         var popup = $('#note-' + nid);
         if (!popup.length) return;
         $('.note-popup.visible').removeClass('visible');
