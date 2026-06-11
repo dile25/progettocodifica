@@ -1038,7 +1038,6 @@
             <fileDesc>
                 <titleStmt>
                     <title level="a">I locali delle scuole normali femminili (da La Rassegna Settimanale, Volume 3, Fascicolo 69, del 27 Aprile 1879)</title>
-                    <title level="a">Notizie — Vol. 3, Fasc. 69</title>
                     <respStmt xml:id="FlorisValenti_T1"><resp>Codifica TEI-XML</resp><persName>Rebecca Floris</persName><persName>Diletta Valenti</persName></respStmt> 
                 </titleStmt>
                 <publicationStmt>
@@ -1051,11 +1050,11 @@
                 <sourceDesc>
                     <biblStruct>
                         <monogr>
-                            <title level="j">La Rassegna Settimanale</title>
+                            <title level="j">La Rassegna Settimanale di Politica, Scienze, Lettere ed Arti</title>
                             <imprint>
                                 <publisher>Tipografia Barbèra</publisher>
                                 <pubPlace ref="#RM">Roma</pubPlace>
-                                <date when="1879">1879</date>
+                                <date when="1879-04-27">27 Aprile 1879</date>
                                 <biblScope unit="volume">3</biblScope>
                                 <biblScope unit="issue">69</biblScope>
                                 <biblScope unit="page" n="313">313</biblScope>
@@ -1461,22 +1460,23 @@
         <!-- ============================================================
          TEI 2- La legge sull'istruzione pubblica
          ============================================================ -->
+
 <TEI xml:id="TEI_istruzionepubblica">
         <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title> La legge sull'istruzione pubblica (da La Rassegna Settimanale, Volume 5, Fascicolo 106, dell'11 Gennaio 1880)</title>
-                <respStmt xml:id="FlorisValenti_T3"><resp>Codifica TEI-XML</resp><persName>Rebecca Floris</persName><persName>Diletta Valenti</persName></respStmt>
+                <title level="a"> La legge sull'istruzione pubblica (da La Rassegna Settimanale, Volume 5, Fascicolo 106, dell'11 Gennaio 1880)</title>
+                <respStmt xml:id="FlorisValenti_T2"><resp>Codifica TEI-XML</resp><persName>Rebecca Floris</persName><persName>Diletta Valenti</persName></respStmt>
             </titleStmt>
             <publicationStmt>
                 <publisher>Università di Pisa - Informatica Umanistica</publisher>
-                <date when="2025">2025</date>
+                <date when="2026">2026</date>
                 <availability status="free"><p>Accesso aperto per fini accademici.</p></availability>
             </publicationStmt>
             <sourceDesc>
                 <biblStruct xml:id="Rassegna_106_Bibl">
                     <monogr>
-                        <title level="j">La Rassegna Settimanale di politica, scienze, lettere ed arti</title>
+                        <title level="j">La Rassegna Settimanale di Politica, Scienze, Lettere ed Arti</title>
                         <imprint>
                             <publisher>Tipografia Barbèra</publisher>
                             <pubPlace>Roma</pubPlace>
@@ -1993,8 +1993,8 @@
         <teiHeader>
             <fileDesc>
                 <titleStmt>
+                    <respStmt xml:id="FlorisValenti_T3"><resp>Codifica TEI-XML</resp><persName>Rebecca Floris</persName><persName>Diletta Valenti</persName></respStmt>
                     <title level="a">Il lavoro mentale nelle scuole (da La Rassegna Settimanale, Volume 8, Fascicolo 188, del 7 Agosto 1881)</title>
-                    <author>G. S.</author>
                 </titleStmt>
                 <publicationStmt>
                     <publisher>Università di Pisa — Corso di Informatica Umanistica</publisher>
@@ -2007,9 +2007,9 @@
                 <sourceDesc>
                     <biblStruct>
                         <monogr>
-                            <title level="j">La Rassegna Settimanale</title>
+                            <title level="j">La Rassegna Settimanale di Politica, Scienze, Lettere ed Arti</title>
                             <imprint>
-                                <publisher ref="#S_Sonnino">Tipografia Barbera</publisher>
+                                <publisher>Tipografia Barbera</publisher>
                                 <pubPlace ref="#RM">Roma</pubPlace>
                                 <date when="1881-08-07">7 agosto 1881</date>
                                 <biblScope unit="volume">8</biblScope>
@@ -2771,21 +2771,22 @@
         <fileDesc>
             <titleStmt>
                 <title>Bibliografia: Carlo Alfieri, Chi ha tempo non aspetti tempo. Pareri d'un Senatore. - Roma Tip. del Senato, 1879 (da La Rassegna Settimanale, Volume 3, Fascicolo 69, del 27 Aprile 1879)</title>
-                <respStmt xml:id="FlorisValenti_T2"><resp>Codifica TEI-XML</resp><persName>Rebecca Floris</persName><persName>Diletta Valenti</persName></respStmt>
+                <respStmt xml:id="FlorisValenti_T4"><resp>Codifica TEI-XML</resp><persName>Rebecca Floris</persName><persName>Diletta Valenti</persName></respStmt>
             </titleStmt>
             <publicationStmt>
                 <publisher>Università di Pisa - Informatica Umanistica</publisher>
-                <date when="2025">2025</date>
+                <date when="2026">2026</date>
                 <availability status="free"><p>Accesso aperto per fini accademici.</p></availability>
             </publicationStmt>
             <sourceDesc>
                 <biblStruct xml:id="Rassegna_69">
                     <monogr>
-                        <title level="j">La Rassegna Settimanale di politica, scienze, lettere ed arti</title>
+                        <title level="j">La Rassegna Settimanale di Politica, Scienze, Lettere ed Arti</title>
                         <imprint>
                             <publisher>Tipografia Barbèra</publisher>
                             <pubPlace>Roma</pubPlace>
                             <date when="1879-04-27">27 Aprile 1879</date>
+                            <biblScope unit="volume">3</biblScope>
                             <biblScope unit="issue">69</biblScope>
                             <biblScope unit="page" n="330" >330</biblScope>
                         </imprint>
@@ -3038,7 +3039,7 @@
             <fileDesc>
                 <titleStmt>
                     <title level="a">Bibliografia: Domenico Caprile, Virtù Educatrice, studi morali, 3a edizione, Genova, 1880 (da La Rassegna Settimanale, Volume 5, Fascicolo 196, dell'11 Gennaio 1880)</title>
-                    <respStmt xml:id="FlorisValenti_T8"><resp>Codifica TEI-XML</resp><persName>Rebecca Floris</persName><persName>Diletta Valenti</persName></respStmt>
+                    <respStmt xml:id="FlorisValenti_T5"><resp>Codifica TEI-XML</resp><persName>Rebecca Floris</persName><persName>Diletta Valenti</persName></respStmt>
                 </titleStmt>
                 <publicationStmt>
                     <publisher>Università di Pisa — Corso di Informatica Umanistica</publisher>
@@ -3051,7 +3052,7 @@
                 <sourceDesc>
                     <biblStruct>
                         <monogr>
-                            <title level="j">La Rassegna Settimanale</title>
+                            <title level="j">La Rassegna Settimanale di Politica, Scienze, Lettere ed Arti</title>
                             <imprint>
                                 <publisher>Tipografia Barbèra</publisher>
                                 <pubPlace ref="#RM">Roma</pubPlace>
@@ -3351,12 +3352,11 @@
          TEI 6 - Notizie Volume 3
          ============================================================ -->
     <TEI xml:id="TEI_NotizieVol3">
-        <!--Notizie-->
         <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Sezione Notizie (da La Rassegna Settimanale, Volume 3, Fascicolo 69, del 27 Aprile 1879)</title>
-                <respStmt xml:id="FlorisValenti_T4"><resp>Codifica TEI-XML</resp><persName>Rebecca Floris</persName><persName>Diletta Valenti</persName></respStmt>
+                <respStmt xml:id="FlorisValenti_T6"><resp>Codifica TEI-XML</resp><persName>Rebecca Floris</persName><persName>Diletta Valenti</persName></respStmt>
             </titleStmt>  
             <publicationStmt>
                 <publisher>Università di Pisa — Corso di Informatica Umanistica</publisher>
@@ -3369,7 +3369,7 @@
             <sourceDesc>
     <biblStruct>
         <monogr>
-            <title level="j">La Rassegna Settimanale</title>
+            <title level="j">La Rassegna Settimanale di Politica, Scienze, Lettere ed Arti</title>
             <imprint>
                 <publisher>Tipografia Barbèra</publisher>
                 <pubPlace ref="#RM">Roma</pubPlace>
@@ -3647,7 +3647,8 @@
     <TEI xml:id="TEI_NotizieVol5">
         <teiHeader>
             <fileDesc>
-                <titleStmt><title level="a">Sezione Notizie (da La Rassegna Settimanale, Volume 5, Fascicolo 106, dell'11 Gennaio 1880)</title><respStmt xml:id="FlorisValenti_T6"><resp>Codifica TEI-XML</resp><persName>Rebecca Floris</persName><persName>Diletta Valenti</persName></respStmt></titleStmt>
+                <titleStmt><title level="a">Sezione Notizie (da La Rassegna Settimanale, Volume 5, Fascicolo 106, dell'11 Gennaio 1880)</title>
+                <respStmt xml:id="FlorisValenti_T7"><resp>Codifica TEI-XML</resp><persName>Rebecca Floris</persName><persName>Diletta Valenti</persName></respStmt></titleStmt>
                 <publicationStmt>
                     <publisher>Università di Pisa — Corso di Informatica Umanistica</publisher>
                     <pubPlace>Pisa</pubPlace>
@@ -3659,11 +3660,11 @@
                 <sourceDesc>
                     <biblStruct>
                         <monogr>
-                            <title level="j">La Rassegna Settimanale</title>
+                            <title level="j">La Rassegna Settimanale di Politica, Scienze, Lettere ed Arti</title>
                             <imprint>
                                 <publisher>Tipografia Barbèra</publisher>
                                 <pubPlace ref="#RM">Roma</pubPlace>
-                                <date when="1880-01-11">1880</date>
+                                <date when="1880-01-11">11 Gennaio 1880</date>
                                 <biblScope unit="volume">5</biblScope>
                                 <biblScope unit="issue">106</biblScope>
                                 <biblScope unit="page" n="40">40</biblScope>
@@ -3844,7 +3845,8 @@
     <TEI xml:id="TEI_NotizieVol8">
         <teiHeader>
             <fileDesc>
-                <titleStmt><title level="a">Sezione Notizie (da La Rassegna Settimanale, Volume 8, Fascicolo 188, del 7 Agosto 1881)</title><respStmt xml:id="FlorisValenti_T7"><resp>Codifica TEI-XML</resp><persName>Rebecca Floris</persName><persName>Diletta Valenti</persName></respStmt></titleStmt>
+                <titleStmt><title level="a">Sezione Notizie (da La Rassegna Settimanale, Volume 8, Fascicolo 188, del 7 Agosto 1881)</title>
+                <respStmt xml:id="FlorisValenti_T8"><resp>Codifica TEI-XML</resp><persName>Rebecca Floris</persName><persName>Diletta Valenti</persName></respStmt></titleStmt>
                 <publicationStmt>
                     <publisher>Università di Pisa — Corso di Informatica Umanistica</publisher>
                     <pubPlace>Pisa</pubPlace>
@@ -3856,7 +3858,7 @@
                 <sourceDesc>
                 <biblStruct>
     <monogr>
-        <title level="j">La Rassegna Settimanale</title>
+        <title level="j">La Rassegna Settimanale di Politica, Scienze, Lettere ed Arti</title>
         <imprint>
             <publisher>Tipografia Barbèra</publisher>
             <pubPlace ref="#RM">Roma</pubPlace>
