@@ -8,3 +8,66 @@ java -cp "saxon-he-13.0.jar:xmlresolver-6.0.23.jar:xmlresolver-6.0.23-data.jar:c
 
 cd "progetto codifica"
 java -cp ".;saxon-he-13.0.jar;xmlresolver-6.0.23.jar;xmlresolver-6.0.23-data.jar" net.sf.saxon.Transform -s:codifica_floris_valenti.xml -xsl:trasformazione.xsl -o:output.html
+
+  <!-- ============================================================
+         TEI 1 — I locali delle Scuole Normali Femminili
+         ============================================================ -->
+    <TEI xml:id="TEI_scuolenormali">
+        <teiHeader>
+            <fileDesc>
+                <titleStmt>
+                    <title level="a">I locali delle scuole normali femminili (da La Rassegna Settimanale, Volume 3, Fascicolo 69, del 27 Aprile 1879)</title>
+                    <respStmt xml:id="FlorisValenti_T1"><resp>Codifica TEI-XML</resp><persName>Rebecca Floris</persName><persName>Diletta Valenti</persName></respStmt> 
+                </titleStmt>
+                <publicationStmt>
+                    <publisher>Università di Pisa — Corso di Informatica Umanistica</publisher>
+                    <date when="2026">2026</date>
+                    <availability status="free">
+                        <licence target="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</licence>
+                    </availability>
+                </publicationStmt>
+                <sourceDesc>
+                    <biblStruct>
+                        <monogr>
+                            <title level="j">La Rassegna Settimanale di Politica, Scienze, Lettere ed Arti</title>
+                            <imprint>
+                                <publisher>Tipografia Barbèra</publisher>
+                                <pubPlace ref="#RM">Roma</pubPlace>
+                                <date when="1879-04-27">27 Aprile 1879</date>
+                                <biblScope unit="volume">3</biblScope>
+                                <biblScope unit="issue">69</biblScope>
+                                <biblScope unit="page" n="313">313</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                </sourceDesc>
+            </fileDesc>
+            <encodingDesc>
+                <projectDesc>
+                    <p>Codifica realizzata nell'ambito del corso di Informatica Umanistica,
+                       Università di Pisa, a.a. 2025–2026. Cfr. il <ref target="#rassegna_corpus">teiHeader del corpus</ref>
+                       per la descrizione completa del progetto.</p>
+                </projectDesc>
+                <editorialDecl>
+                    <normalization><p>Abbreviazioni sciolte con choice/abbr/expan; grafia originale conservata.</p></normalization>
+                    <hyphenation eol="all"><p>Sillabazioni di fine riga codificate con lb @break="no".</p></hyphenation>
+                </editorialDecl>
+            </encodingDesc>
+            <profileDesc>
+                <langUsage>
+                    <language ident="it">Italiano ottocentesco (prosa giornalistica, 1879).</language>
+                </langUsage>
+                <textClass>
+                    <keywords>
+                        <term>istruzione femminile</term>
+                        <term>igiene scolastica</term>
+                        <term>Scuole Normali</term>
+                        <term>Italia post-unitaria</term>
+                    </keywords>
+                </textClass>
+            </profileDesc>
+            <revisionDesc>
+                <change when="2026-05" who="#FlorisValenti">Revisione finale; aggiunta encodingDesc, profileDesc.</change>
+                <change when="2026-02" who="#FlorisValenti">Prima codifica del testo.</change>
+            </revisionDesc>
+        </teiHeader>

@@ -130,7 +130,7 @@
         <revisionDesc>
             <change when="2026-05" who="#FlorisValenti">Unificazione del corpus in teiCorpus;
                 integrazione dello standOff con entità da tutti i file; revisione finale
-                dei @ref e aggiunta di encodingDesc, profileDesc, revisionDesc,
+                dei @ref e aggiunta di revisionDesc,
                 identificatori VIAF e note filologiche.</change>
             <change when="2026-04" who="#FlorisValenti">Codifica degli articoli «Notizie» Vol. 5
                 fasc. 106 e Vol. 8 fasc. 188, e «Virtù educatrice».</change>
@@ -1063,37 +1063,8 @@
                     </biblStruct>
                 </sourceDesc>
             </fileDesc>
-            <encodingDesc>
-                <projectDesc>
-                    <p>Codifica realizzata nell'ambito del corso di Informatica Umanistica,
-                       Università di Pisa, a.a. 2025–2026. Cfr. il <ref target="#rassegna_corpus">teiHeader del corpus</ref>
-                       per la descrizione completa del progetto.</p>
-                </projectDesc>
-                <projectDesc>
-                    <p>Testo codificato nell'ambito del corpus digitale de «La Rassegna Settimanale»
-                       (Università di Pisa, Informatica Umanistica, a.a. 2025–2026).
-                       Si vedano le linee guida nel <gi>teiHeader</gi> del <gi>teiCorpus</gi>.</p>
-                </projectDesc>
-                <editorialDecl>
-                    <normalization><p>Abbreviazioni sciolte con choice/abbr/expan; grafia originale conservata.</p></normalization>
-                    <hyphenation eol="all"><p>Sillabazioni di fine riga codificate con lb @break="no".</p></hyphenation>
-                </editorialDecl>
-            </encodingDesc>
-            <profileDesc>
-                <langUsage>
-                    <language ident="it">Italiano ottocentesco (prosa giornalistica, 1879).</language>
-                </langUsage>
-                <textClass>
-                    <keywords>
-                        <term>istruzione femminile</term>
-                        <term>igiene scolastica</term>
-                        <term>Scuole Normali</term>
-                        <term>Italia post-unitaria</term>
-                    </keywords>
-                </textClass>
-            </profileDesc>
             <revisionDesc>
-                <change when="2026-05" who="#FlorisValenti">Revisione finale; aggiunta encodingDesc, profileDesc.</change>
+                <change when="2026-05" who="#FlorisValenti">Revisione finale.</change>
                 <change when="2026-02" who="#FlorisValenti">Prima codifica del testo.</change>
             </revisionDesc>
         </teiHeader>
@@ -1489,37 +1460,8 @@
                 </biblStruct>
             </sourceDesc>
         </fileDesc>
-        <encodingDesc>
-            <projectDesc>
-                <p>Codifica realizzata nell'ambito del corso di Informatica Umanistica,
-                   Università di Pisa, a.a. 2025–2026. Cfr. il <ref target="#rassegna_corpus">teiHeader del corpus</ref>
-                   per la descrizione completa del progetto.</p>
-            </projectDesc>
-            <projectDesc>
-                <p>Testo codificato nell'ambito del corpus digitale de «La Rassegna Settimanale»
-                   (Università di Pisa, Informatica Umanistica, a.a. 2025–2026).
-                   Si vedano le linee guida nel <gi>teiHeader</gi> del <gi>teiCorpus</gi>.</p>
-            </projectDesc>
-            <editorialDecl>
-                <normalization><p>Abbreviazioni sciolte con choice/abbr/expan.</p></normalization>
-                <hyphenation eol="all"><p>Sillabazioni di fine riga codificate con lb @break="no".</p></hyphenation>
-            </editorialDecl>
-        </encodingDesc>
-        <profileDesc>
-            <langUsage>
-                <language ident="it">Italiano ottocentesco (prosa saggistica, 1880).</language>
-            </langUsage>
-            <textClass>
-                <keywords>
-                    <term>istruzione pubblica</term>
-                    <term>legge scolastica</term>
-                    <term>decentramento</term>
-                    <term>Italia post-unitaria</term>
-                </keywords>
-            </textClass>
-        </profileDesc>
         <revisionDesc>
-            <change when="2026-05" who="#FlorisValenti">Revisione finale; aggiunta encodingDesc, profileDesc.</change>
+            <change when="2026-05" who="#FlorisValenti">Revisione finale.</change>
             <change when="2026-03" who="#FlorisValenti">Prima codifica del testo.</change>
         </revisionDesc>
     </teiHeader>
@@ -2020,39 +1962,8 @@
                     </biblStruct>
                 </sourceDesc>
             </fileDesc>
-            <encodingDesc>
-                <projectDesc>
-                    <p>Codifica realizzata nell'ambito del corso di Informatica Umanistica,
-                       Università di Pisa, a.a. 2025–2026. Cfr. il <ref target="#rassegna_corpus">teiHeader del corpus</ref>
-                       per la descrizione completa del progetto.</p>
-                </projectDesc>
-                <projectDesc>
-                    <p>Testo codificato nell'ambito del corpus digitale de «La Rassegna Settimanale»
-                       (Università di Pisa, Informatica Umanistica, a.a. 2025–2026).
-                       Si vedano le linee guida nel <gi>teiHeader</gi> del <gi>teiCorpus</gi>.</p>
-                </projectDesc>
-                <editorialDecl>
-                    <normalization><p>Abbreviazioni sciolte con choice/abbr/expan.</p></normalization>
-                    <hyphenation eol="all"><p>Sillabazioni di fine riga codificate con lb @break="no".</p></hyphenation>
-                </editorialDecl>
-            </encodingDesc>
-            <profileDesc>
-                <langUsage>
-                    <language ident="it">Italiano ottocentesco (prosa saggistica medico-pedagogica, 1881).</language>
-                    <language ident="de">Tedesco (riferimenti a pubblicazioni mediche tedesche).</language>
-                </langUsage>
-                <textClass>
-                    <keywords>
-                        <term>igiene scolastica</term>
-                        <term>lavoro mentale</term>
-                        <term>miopia</term>
-                        <term>riforma scolastica</term>
-                        <term>medicina e pedagogia</term>
-                    </keywords>
-                </textClass>
-            </profileDesc>
             <revisionDesc>
-                <change when="2026-05" who="#FlorisValenti">Revisione finale; aggiunta encodingDesc, profileDesc, note filologiche e storiche nel body.</change>
+                <change when="2026-05" who="#FlorisValenti">Revisione finale; note filologiche e storiche nel body.</change>
                 <change when="2026-03" who="#FlorisValenti">Prima codifica del testo.</change>
             </revisionDesc>
         </teiHeader>
@@ -2794,37 +2705,8 @@
                 </biblStruct>
             </sourceDesc>
         </fileDesc>
-        <encodingDesc>
-            <projectDesc>
-                <p>Codifica realizzata nell'ambito del corso di Informatica Umanistica,
-                   Università di Pisa, a.a. 2025–2026. Cfr. il <ref target="#rassegna_corpus">teiHeader del corpus</ref>
-                   per la descrizione completa del progetto.</p>
-            </projectDesc>
-            <projectDesc>
-                <p>Testo codificato nell'ambito del corpus digitale de «La Rassegna Settimanale»
-                   (Università di Pisa, Informatica Umanistica, a.a. 2025–2026).
-                   Si vedano le linee guida nel <gi>teiHeader</gi> del <gi>teiCorpus</gi>.</p>
-            </projectDesc>
-            <editorialDecl>
-                <normalization><p>Abbreviazioni sciolte con choice/abbr/expan.</p></normalization>
-                <hyphenation eol="all"><p>Sillabazioni di fine riga codificate con lb @break="no".</p></hyphenation>
-            </editorialDecl>
-        </encodingDesc>
-        <profileDesc>
-            <langUsage>
-                <language ident="it">Italiano ottocentesco (prosa saggistica, 1879).</language>
-            </langUsage>
-            <textClass>
-                <keywords>
-                    <term>istruzione pubblica</term>
-                    <term>politica scolastica</term>
-                    <term>Destra storica</term>
-                    <term>laicismo e cattolicesimo</term>
-                </keywords>
-            </textClass>
-        </profileDesc>
         <revisionDesc>
-            <change when="2026-05" who="#FlorisValenti">Revisione finale; aggiunta encodingDesc, profileDesc; collegato @ref per Montalembert.</change>
+            <change when="2026-05" who="#FlorisValenti">Revisione finale.</change>
             <change when="2026-03" who="#FlorisValenti">Prima codifica del testo.</change>
         </revisionDesc>
     </teiHeader>
@@ -3065,37 +2947,8 @@
                     </biblStruct>
                 </sourceDesc>
             </fileDesc>
-            <encodingDesc>
-                <projectDesc>
-                    <p>Codifica realizzata nell'ambito del corso di Informatica Umanistica,
-                       Università di Pisa, a.a. 2025–2026. Cfr. il <ref target="#rassegna_corpus">teiHeader del corpus</ref>
-                       per la descrizione completa del progetto.</p>
-                </projectDesc>
-                <projectDesc>
-                    <p>Testo codificato nell'ambito del corpus digitale de «La Rassegna Settimanale»
-                       (Università di Pisa, Informatica Umanistica, a.a. 2025–2026).
-                       Si vedano le linee guida nel <gi>teiHeader</gi> del <gi>teiCorpus</gi>.</p>
-                </projectDesc>
-                <editorialDecl>
-                    <normalization><p>Abbreviazioni sciolte con choice/abbr/expan.</p></normalization>
-                    <hyphenation eol="all"><p>Sillabazioni di fine riga codificate con lb @break="no".</p></hyphenation>
-                </editorialDecl>
-            </encodingDesc>
-            <profileDesc>
-                <langUsage>
-                    <language ident="it">Italiano ottocentesco (prosa critico-bibliografica, 1880).</language>
-                </langUsage>
-                <textClass>
-                    <keywords>
-                        <term>recensione bibliografica</term>
-                        <term>educazione morale</term>
-                        <term>spiritualismo</term>
-                        <term>virtù</term>
-                    </keywords>
-                </textClass>
-            </profileDesc>
             <revisionDesc>
-                <change when="2026-05" who="#FlorisValenti">Revisione finale; aggiunta encodingDesc, profileDesc.</change>
+                <change when="2026-05" who="#FlorisValenti">Revisione finale.</change>
                 <change when="2026-04" who="#FlorisValenti">Prima codifica del testo.</change>
             </revisionDesc>
         </teiHeader>
@@ -3382,37 +3235,8 @@
     </biblStruct>
 </sourceDesc>
         </fileDesc>
-        <encodingDesc>
-            <projectDesc>
-                <p>Codifica realizzata nell'ambito del corso di Informatica Umanistica,
-                   Università di Pisa, a.a. 2025–2026. Cfr. il <ref target="#rassegna_corpus">teiHeader del corpus</ref>
-                   per la descrizione completa del progetto.</p>
-            </projectDesc>
-            <projectDesc>
-                <p>Testo codificato nell'ambito del corpus digitale de «La Rassegna Settimanale»
-                   (Università di Pisa, Informatica Umanistica, a.a. 2025–2026).
-                   Si vedano le linee guida nel <gi>teiHeader</gi> del <gi>teiCorpus</gi>.</p>
-            </projectDesc>
-            <editorialDecl>
-                <normalization><p>Abbreviazioni sciolte con choice/abbr/expan.</p></normalization>
-                <hyphenation eol="all"><p>Sillabazioni di fine riga codificate con lb @break="no".</p></hyphenation>
-            </editorialDecl>
-        </encodingDesc>
-        <profileDesc>
-            <langUsage>
-                <language ident="it">Italiano ottocentesco (prosa giornalistica breve, 1879).</language>
-            </langUsage>
-            <textClass>
-                <keywords>
-                    <term>notizie culturali</term>
-                    <term>archeologia</term>
-                    <term>biblioteche</term>
-                    <term>scienze</term>
-                </keywords>
-            </textClass>
-        </profileDesc>
         <revisionDesc>
-            <change when="2026-05" who="#FlorisValenti">Revisione finale; aggiunta encodingDesc, profileDesc.</change>
+            <change when="2026-05" who="#FlorisValenti">Revisione finale.</change>
             <change when="2026-02" who="#FlorisValenti">Prima codifica del testo.</change>
         </revisionDesc>
     </teiHeader> 
@@ -3673,37 +3497,8 @@
                     </biblStruct>
                 </sourceDesc>
             </fileDesc>
-            <encodingDesc>
-                <projectDesc>
-                    <p>Codifica realizzata nell'ambito del corso di Informatica Umanistica,
-                       Università di Pisa, a.a. 2025–2026. Cfr. il <ref target="#rassegna_corpus">teiHeader del corpus</ref>
-                       per la descrizione completa del progetto.</p>
-                </projectDesc>
-                <projectDesc>
-                    <p>Testo codificato nell'ambito del corpus digitale de «La Rassegna Settimanale»
-                       (Università di Pisa, Informatica Umanistica, a.a. 2025–2026).
-                       Si vedano le linee guida nel <gi>teiHeader</gi> del <gi>teiCorpus</gi>.</p>
-                </projectDesc>
-                <editorialDecl>
-                    <normalization><p>Grafia originale conservata; abbreviazioni sciolte ove presenti.</p></normalization>
-                    <hyphenation eol="all"><p>Sillabazioni di fine riga codificate con lb @break="no".</p></hyphenation>
-                </editorialDecl>
-            </encodingDesc>
-            <profileDesc>
-                <langUsage>
-                    <language ident="it">Italiano ottocentesco (prosa giornalistica breve, 1880).</language>
-                </langUsage>
-                <textClass>
-                    <keywords>
-                        <term>notizie culturali</term>
-                        <term>letteratura</term>
-                        <term>inventori</term>
-                        <term>Russia</term>
-                    </keywords>
-                </textClass>
-            </profileDesc>
             <revisionDesc>
-                <change when="2026-05" who="#FlorisValenti">Revisione finale; aggiunta encodingDesc, profileDesc.</change>
+                <change when="2026-05" who="#FlorisValenti">Revisione finale.</change>
                 <change when="2026-04" who="#FlorisValenti">Prima codifica del testo.</change>
             </revisionDesc>
         </teiHeader>
@@ -3871,31 +3666,8 @@
 </biblStruct>
                 </sourceDesc>
             </fileDesc>
-            <encodingDesc>
-                <projectDesc>
-                    <p>Codifica realizzata nell'ambito del corso di Informatica Umanistica,
-                       Università di Pisa, a.a. 2025–2026. Cfr. il <ref target="#rassegna_corpus">teiHeader del corpus</ref>
-                       per la descrizione completa del progetto.</p>
-                </projectDesc>
-                <editorialDecl>
-                    <normalization><p>Grafia originale conservata.</p></normalization>
-                    <hyphenation eol="all"><p>Sillabazioni di fine riga codificate con lb @break="no".</p></hyphenation>
-                </editorialDecl>
-            </encodingDesc>
-            <profileDesc>
-                <langUsage>
-                    <language ident="it">Italiano ottocentesco (prosa giornalistica breve, 1881).</language>
-                </langUsage>
-                <textClass>
-                    <keywords>
-                        <term>notizie culturali</term>
-                        <term>letteratura</term>
-                        <term>epigrammi</term>
-                    </keywords>
-                </textClass>
-            </profileDesc>
             <revisionDesc>
-                <change when="2026-05" who="#FlorisValenti">Revisione finale; aggiunta encodingDesc, profileDesc.</change>
+                <change when="2026-05" who="#FlorisValenti">Revisione finale.</change>
                 <change when="2026-04" who="#FlorisValenti">Prima codifica del testo.</change>
             </revisionDesc>
         </teiHeader>
