@@ -1483,6 +1483,7 @@
                             <date when="1880-01-11">11 Gennaio 1880</date>
                             <biblScope unit="volume">5</biblScope>
                             <biblScope unit="issue">106</biblScope>
+                            <biblScope unit="page" from="21" to="22">21-22</biblScope>
                         </imprint>
                     </monogr>
                 </biblStruct>
