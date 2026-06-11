@@ -6,3 +6,5 @@ java -cp "saxon-he-13.0.jar:xmlresolver-6.0.23.jar:xmlresolver-6.0.23-data.jar:c
 
 //rebeccafloris
 
+cd "progetto codifica"
+java -cp ".;saxon-he-13.0.jar;xmlresolver-6.0.23.jar;xmlresolver-6.0.23-data.jar" net.sf.saxon.Transform -s:codifica_floris_valenti.xml -xsl:trasformazione.xsl -o:output.html
