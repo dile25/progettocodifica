@@ -134,7 +134,7 @@
                                             </xsl:if>
                                             <xsl:if test="tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:biblStruct/tei:monogr/tei:imprint/tei:date">
                                                 <div class="publication-info-line">
-                                                    <strong>Anno di pubblicazione: </strong>
+                                                    <strong>Data di pubblicazione: </strong>
                                                     <xsl:value-of select="tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:biblStruct/tei:monogr/tei:imprint/tei:date"/>
                                                 </div>
                                             </xsl:if>
