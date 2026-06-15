@@ -320,11 +320,11 @@ function setupEntityLinks() {
         var tagName  = targetEl.prop('tagName') ? targetEl.prop('tagName').toLowerCase() : '';
         var type;
 
-        if (targetEl.hasClass('person-card') && !targetEl.closest('.places-section').length) {
+       if (targetEl.hasClass('person-card') && !targetEl.closest('.places-section').length) {
             type = 'person';
         } else if (targetEl.hasClass('person-card') && targetEl.closest('.places-section').length) {
             type = 'place';
-        } else if (targetEl.hasClass('glossary-card') || targetEl.closest('#glossary-section').length) {
+        } else if (targetEl.hasClass('glossary-card') || targetEl.hasClass('org-card') || targetEl.closest('#glossary-section').length) {
             type = 'glossary';
         } else if (tagName === 'person' || targetEl.closest('listPerson, .listPerson').length) {
             type = 'person';

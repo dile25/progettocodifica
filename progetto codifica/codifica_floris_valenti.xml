@@ -1003,6 +1003,94 @@
             </org>
 
         </listOrg>
+        <!-- ══════════════════════════════════════════
+     GLOSSARIO: Termini tecnici del corpus
+     (igienico-pedagogici, giuridici, disciplinari)
+     ══════════════════════════════════════════ -->
+<list type="glossary" xml:id="glossario_termini_tecnici">
+    <head>Glossario: Termini igienico-pedagogici e giuridici</head>
+
+    <!-- ── Termini patologici ── -->
+    <label><term type="patologia" xml:id="patologia">Salute (deterioramento della)</term></label>
+    <item><gloss>Condizione fisica delle alunne delle scuole normali femminili, sistematicamente compromessa dal sovraffollamento, dalla mancanza di aria e luce, e dal sovraccarico di studio; tema centrale del dibattito igienico documentato nel corpus.</gloss></item>
+
+    <label><term type="patologia" xml:id="soffocare">Soffocamento da caldo</term></label>
+    <item><gloss>Sintomo acuto del sovraffollamento nelle aule: le alunne venivano messe in classi di cinquanta persone in spazi ristrettissimi, con temperature insostenibili d'estate.</gloss></item>
+
+    <label><term type="patologia" xml:id="impallidire">Impallidimento</term></label>
+    <item><gloss>Sintomo cronico del deterioramento della salute nelle scuole normali femminili, causato da aria viziata, scarsa luce e eccesso di studio; descritto da Tamassia come segnale precoce di malattia.</gloss></item>
+
+    <label><term type="patologia" xml:id="ammalarsi">Ammalarsi</term></label>
+    <item><gloss>Esito ricorrente del sovraffollamento scolastico nelle scuole normali femminili; il corpus documenta casi di malattia grave tra le allieve come conseguenza diretta delle condizioni igieniche.</gloss></item>
+
+    <label><term type="patologia" xml:id="morire">Morte per eccesso di studio</term></label>
+    <item><gloss>Esito estremo documentato nel corpus: alcune allieve delle scuole normali morirono per le conseguenze fisiche del sovraffollamento e del sovraccarico scolastico; evento citato per sollecitare l'intervento delle autorità.</gloss></item>
+
+    <label><term type="patologia" xml:id="deperimento">Deperimento fisico</term></label>
+    <item><gloss>Stato di deterioramento progressivo della salute fisica — pallore, magrezza, postura curva — descritto nel corpus come conseguenza tipica della frequenza prolungata nelle scuole normali femminili.</gloss></item>
+
+    <label><term type="patologia" xml:id="occhi">Disturbi visivi</term></label>
+    <item><gloss>Patologia oculare frequente tra le allieve delle scuole normali, causata dalla scarsa illuminazione delle aule e dal sovraccarico di lettura e scrittura.</gloss></item>
+
+    <label><term type="patologia" xml:id="mal_capo">Cefalea</term></label>
+    <item><gloss>Mal di testa cronico, sintomo ricorrente del deterioramento della salute nelle scuole normali femminili; associato ad aria viziata, sovraffollamento e sovraccarico cognitivo.</gloss></item>
+
+    <label><term type="patologia" xml:id="ammazzatoi">Ammazzatoi (metafora)</term></label>
+    <item><gloss>Termine polemico usato nell'articolo per denunciare le condizioni delle scuole normali femminili sovraffollate: ambienti paragonati a luoghi di morte per l'effetto devastante sulla salute delle allieve.</gloss></item>
+
+    <!-- ── Termini igienico-ambientali ── -->
+    <label><term type="patologia" xml:id="aria_luce">Aria e luce (carenza di)</term></label>
+    <item><gloss>Condizione igienica delle aule scolastiche sovraffollate: la mancanza di ventilazione e di illuminazione naturale era riconosciuta dalla medicina igienista dell'epoca come causa diretta di malattie tra gli scolari.</gloss></item>
+
+    <label><term type="patologia" xml:id="malsani">Locali malsani</term></label>
+    <item><gloss>Edifici scolastici privi dei requisiti igienici minimi: sovraffollati, mal ventilati, privi di luce sufficiente; la loro denuncia pubblica era uno degli obiettivi principali degli articoli sulle scuole normali femminili.</gloss></item>
+
+    <label><term type="patologia" xml:id="stipate">Classi stipate</term></label>
+    <item><gloss>Classi con un numero di allieve di gran lunga superiore al massimo consentito dalla legge; il corpus documenta casi di ottanta o novanta alunne in una sola classe.</gloss></item>
+
+    <!-- ── Termini didattico-pedagogici ── -->
+    <label><term type="disciplina" xml:id="istr_sup">Istruzione superiore</term></label>
+    <item><gloss>Livello di istruzione post-elementare, accessibile alle donne nel periodo post-unitario quasi esclusivamente tramite le scuole normali; il corpus denuncia la mancanza di alternative per le donne che volessero proseguire gli studi.</gloss></item>
+
+    <label><term type="disciplina" xml:id="istr_ele">Istruzione elementare</term></label>
+    <item><gloss>Primo grado del sistema scolastico italiano post-unitario, reso obbligatorio dalla legge Casati (1859); base della formazione delle maestre uscite dalle scuole normali.</gloss></item>
+
+    <label><term type="disciplina" xml:id="cult_gen">Cultura generale</term></label>
+    <item><gloss>Insieme di conoscenze trasversali (letteratura, storia, scienze) che le scuole normali avrebbero dovuto trasmettere alle future maestre; il corpus denuncia come il sovraffollamento e la cattiva organizzazione didattica tradiscano questo obiettivo.</gloss></item>
+
+    <label><term type="disciplina" xml:id="ripetizioni">Ripetizioni scolastiche</term></label>
+    <item><gloss>Sessioni di studio individuale o di piccolo gruppo fuori dall'orario scolastico; il corpus le cita come segnale di un sistema didattico inefficace, in cui le lezioni in aula non bastano a garantire l'apprendimento.</gloss></item>
+
+    <label><term type="disciplina" xml:id="num_max">Numero massimo di alunne</term></label>
+    <item><gloss>Limite legale al numero di allieve per classe, previsto dalla normativa scolastica ma sistematicamente ignorato nelle scuole normali femminili; il corpus ne denuncia il mancato rispetto come causa principale del sovraffollamento.</gloss></item>
+
+    <label><term type="disciplina" xml:id="valore">Profitto e disciplina scolastica</term></label>
+    <item><gloss>Indicatori della qualità dell'insegnamento: il corpus denuncia come nelle scuole normali sovraffollate il profitto fosse scarso e la disciplina impossibile da mantenere, con quaderni non corretti e ripetizioni mal fatte.</gloss></item>
+
+    <!-- ── Termini giuridico-istituzionali ── -->
+    <label><term type="normativa" xml:id="istituzione">Autorità scolastica</term></label>
+    <item><gloss>Insieme degli organi preposti alla gestione e alla vigilanza delle scuole (Ministero della Pubblica Istruzione, Provveditore agli Studi, Consiglio Provinciale Scolastico); il corpus ne critica l'inerzia di fronte alle denunce sulle condizioni igieniche delle scuole normali.</gloss></item>
+
+    <label><term type="normativa" xml:id="diritto">Diritto di intervento</term></label>
+    <item><gloss>Facoltà giuridica delle autorità scolastiche di limitare le ammissioni nelle scuole normali sovraffollate; il corpus sostiene che tale diritto esista e debba essere esercitato.</gloss></item>
+
+    <label><term type="normativa" xml:id="dovere">Dovere di provvedere</term></label>
+    <item><gloss>Obbligo morale e istituzionale delle autorità scolastiche di intervenire per migliorare le condizioni igieniche delle scuole normali femminili; concetto cardine dell'argomentazione dell'articolo.</gloss></item>
+
+    <!-- ── Termini dalla taxonomy (migrazione) ── -->
+    <label><term type="normativa" xml:id="QUAD">Quaderni scolastici</term></label>
+    <item><gloss>Materiale didattico di base utilizzato dagli studenti; la loro qualità e il loro peso erano oggetto di discussione igienica nel dibattito sul sovraccarico scolastico.</gloss></item>
+
+    <label><term type="normativa" xml:id="PAT_SUP">Patente di grado superiore</term></label>
+    <item><gloss>Certificazione rilasciata alle maestre che superavano l'esame di abilitazione all'insegnamento nelle scuole normali di grado superiore; titolo ambito ma ottenuto spesso a prezzo della salute.</gloss></item>
+
+    <label><term type="normativa" xml:id="DIP">Diplomi scolastici</term></label>
+    <item><gloss>Titoli di studio rilasciati al termine dei corsi delle scuole normali, tecniche o liceali; il corpus li cita come unico sbocco formativo concreto per le donne nell'Italia post-unitaria.</gloss></item>
+
+    <label><term type="normativa" xml:id="Statuto_Alb">Statuto Albertino (1848)</term></label>
+    <item><gloss>Legge fondamentale del Regno di Sardegna e poi del Regno d'Italia; garantiva la libertà di insegnamento e di stampa, cardini del dibattito sull'istruzione nel corpus.</gloss></item>
+
+</list>
 
         <!-- ══════════════════════════════════════════
              GLOSSARI

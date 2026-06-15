@@ -104,6 +104,12 @@
                                 <xsl:apply-templates select="/tei:teiCorpus/tei:standOff/tei:listPlace/tei:place"/>
                             </div>
                         </div>
+                        <div id="organisations-section" class="places-section">
+                            <h2>Organizzazioni menzionate</h2>
+                            <div class="people-grid">
+                                <xsl:apply-templates select="/tei:teiCorpus/tei:standOff/tei:listOrg/tei:org"/>
+                            </div>
+                        </div>
                     </section>
 
                     <!-- SEZIONI DEI SINGOLI TEI -->
@@ -394,6 +400,23 @@
                 <xsl:if test="tei:country"><p><strong>Paese: </strong><xsl:value-of select="tei:country"/></p></xsl:if>
                 <xsl:if test="tei:desc"><p><xsl:value-of select="tei:desc"/></p></xsl:if>
                 <xsl:if test="tei:note"><p class="note-info"><xsl:value-of select="tei:note"/></p></xsl:if>
+            </div>
+        </div>
+    </xsl:template>
+    <xsl:template match="tei:org">
+        <div class="glossary-card org-card" id="{@xml:id}">
+            <h4><xsl:value-of select="tei:orgName"/></h4>
+            <div class="glossary-details">
+                <xsl:if test="tei:placeName">
+                    <p><strong>Luogo: </strong><xsl:value-of select="tei:placeName"/></p>
+                </xsl:if>
+                <xsl:if test="tei:desc">
+                    <p class="definition-info"><xsl:value-of select="tei:desc"/></p>
+                </xsl:if>
+                <xsl:if test="tei:idno[@type='Wikidata']">
+                    <p><a href="https://www.wikidata.org/wiki/{tei:idno[@type='Wikidata']}"
+                          target="_blank" class="external-link">Wikidata</a></p>
+                </xsl:if>
             </div>
         </div>
     </xsl:template>
