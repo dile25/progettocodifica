@@ -236,9 +236,6 @@
                                             <div class="glossary-card" id="{tei:term/@xml:id}">
                                                 <h4>
                                                     <xsl:value-of select="tei:term"/>
-                                                    <xsl:if test="tei:term/@type">
-                                                        <span class="term-type"> (<xsl:value-of select="tei:term/@type"/>)</span>
-                                                    </xsl:if>
                                                 </h4>
                                                 <div class="glossary-details">
                                                     <p class="definition-info">
@@ -574,10 +571,19 @@
         <span class="term entity-term">
             <xsl:attribute name="style">
                 <xsl:choose>
-                    <xsl:when test="$t='disciplina'">background-color:#c4b5fd;</xsl:when>
-                    <xsl:when test="$t='tema'">background-color:#fca5a5;</xsl:when>
-                    <xsl:when test="$t='patologia'">background-color:#fdba74;</xsl:when>
-                    <xsl:otherwise>background-color:#a5f3fc;</xsl:otherwise>
+                   <xsl:when test="$t='disciplina'">background-color:#c4b5fd;</xsl:when>
+<xsl:when test="$t='tema'">background-color:#fca5a5;</xsl:when>
+<xsl:when test="$t='patologia'">background-color:#fdba74;</xsl:when>
+<xsl:when test="$t='normativa'">background-color:#c4b5fd;</xsl:when>
+<xsl:when test="$t='didattica'">background-color:#c4b5fd;</xsl:when>
+<xsl:when test="$t='valore'">background-color:#fca5a5;</xsl:when>
+<xsl:when test="$t='concetto'">background-color:#fca5a5;</xsl:when>
+<xsl:when test="$t='atto_legale'">background-color:#a5f3fc;</xsl:when>
+<xsl:when test="$t='sistema'">background-color:#fca5a5;</xsl:when>
+<xsl:when test="$t='corrente'">background-color:#fca5a5;</xsl:when>
+<xsl:when test="$t='periodical'">background-color:#a5f3fc;</xsl:when>
+<xsl:when test="$t='collettivo'">background-color:#fca5a5;</xsl:when>
+<xsl:otherwise>background-color:#a5f3fc;</xsl:otherwise>
                 </xsl:choose>
             </xsl:attribute>
             <xsl:choose>

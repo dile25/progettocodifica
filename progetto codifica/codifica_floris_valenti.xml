@@ -118,14 +118,6 @@
                 <language ident="fr">Francese (termini e riferimenti bibliografici).</language>
                 <language ident="de">Tedesco (riferimenti a pubblicazioni e studiosi tedeschi).</language>
             </langUsage>
-            <textClass>
-                <keywords scheme="http://id.loc.gov/authorities/subjects">
-                    <term>Education — Italy — History — 19th century</term>
-                    <term>Women — Education — Italy — 19th century</term>
-                    <term>Periodicals — Italy — History</term>
-                    <term>School hygiene — Italy — 19th century</term>
-                </keywords>
-            </textClass>
         </profileDesc>
         <revisionDesc>
             <change when="2026-05" who="#FlorisValenti">Unificazione del corpus in teiCorpus;
@@ -317,13 +309,10 @@
             <person xml:id="Becker">
                 <persName><surname>Becker</surname></persName>
                 <occupation>Medico tedesco</occupation>
-                <note>Condusse uno studio su 3564 alunni delle scuole di Darmstadt, rilevando cefalalgia nel 40% dei casi e rinorragia nel 22%; i risultati furono citati da Tamassia come prova dei danni del sovraccarico scolastico.</note>
-            </person>
-
-            <person xml:id="Guillaume">
+                <note>Condusse uno studio su 3564 alunni delle scuole di Darmstadt, rilevando cefalgia nel 27% dei casi (974 alunni) e rinorragia nell'11,3% (405 alunni), con le cifre minime nei primi anni di scuola; i risultati furono citati da Tamassia come prova dei danni del sovraccarico scolastico.</note>
                 <persName><surname>Guillaume</surname></persName>
                 <occupation>Medico svizzero</occupation>
-                <note>Rilevò dati analoghi a quelli di Becker nel collegio municipale di Neuchâtel; i suoi risultati contribuirono al dibattito internazionale sull'igiene scolastica.</note>
+                <note>Rilevò nel collegio municipale di Neuchâtel che il 40% degli alunni soffriva di dolori di capo e il 22% di rinorragia; i suoi risultati contribuirono al dibattito internazionale sull'igiene scolastica e sono citati da Tamassia nel libretto sul lavoro mentale.</note>
             </person>
 
             <person xml:id="Sacchi">
@@ -626,7 +615,7 @@
             <place xml:id="SUD" type="region">
                 <placeName>Mezzogiorno</placeName>
                 <location><country ref="#ITA">Italia</country></location>
-                <desc>Riferimento alle province meridionali del Regno d'Italia; nel corpus citato per le condizioni particolarmente precarie degli edifici scolastici e per la difficoltà di applicazione delle norme igieniche.</desc>
+                <desc>Le province meridionali del Regno d'Italia; nel corpus citato esplicitamente come luogo in cui si verificò il caso di sovraffollamento scolastico con allieve che impallidivano e alcune che morirono, documentato nell'articolo sui locali delle scuole normali femminili.</desc>
             </place>
 
             <!-- ── Europa ── -->
@@ -716,11 +705,13 @@
 
             <place xml:id="Palestina" type="region">
                 <placeName>Palestina</placeName>
+                <location><geo>31.9522 35.2332</geo></location>
                 <desc>Regione storica del Vicino Oriente; visitata da G. Hepworth Dixon nei suoi viaggi di esplorazione, descritti nelle sue opere di letteratura di viaggio.</desc>
             </place>
 
             <place xml:id="Cipro" type="island">
                 <placeName>Cipro</placeName>
+                <location><geo>35.1264 33.4299</geo></location>
                 <desc>Isola del Mediterraneo orientale; visitata da G. Hepworth Dixon; passata sotto protettorato britannico nel 1878, l'anno prima della pubblicazione della notizia nel corpus.</desc>
             </place>
 
@@ -770,6 +761,7 @@
 
             <place xml:id="Afghanistan" type="country">
                 <placeName>Afghanistan</placeName>
+                <location><geo>33.9391 67.7100</geo></location>
                 <desc>Paese dell'Asia centrale; tappa del percorso della spedizione geografica del Gran Duca Costantinovich; teatro del Grande Gioco tra Russia e Gran Bretagna nel periodo del corpus.</desc>
             </place>
 
@@ -785,11 +777,13 @@
 
             <place xml:id="Caspio" type="lake">
                 <placeName>Mar Caspio</placeName>
+                <location><geo>42.0000 51.0000</geo></location>
                 <desc>Il più grande lago salato del mondo, tra Europa e Asia; destinazione finale del progetto di collegamento idroviario con l'Oxus studiato dalla spedizione del Gran Duca Costantinovich.</desc>
             </place>
 
             <place xml:id="Kara_Kum" type="desert">
                 <placeName>Kara Kum</placeName>
+                <location><geo>39.5000 59.0000</geo></location>
                 <desc>Vasto deserto di sabbia nell'attuale Turkmenistan; uno dei deserti più estesi dell'Asia centrale; attraversato dalla spedizione nel tratto finale verso Krasnovodsk.</desc>
             </place>
 
@@ -996,6 +990,18 @@
                 <desc>Casa editrice milanese fondata da Edoardo Sonzogno; pubblicò nel 1881 il libretto di Tamassia «Le intemperanze del lavoro mentale nelle scuole» nella collana «Igiene popolare» della Società Italiana d'igiene.</desc>
             </org>
 
+            <org xml:id="Camera">
+    <orgName>Camera dei Deputati</orgName>
+    <desc>Ramo elettivo del Parlamento del Regno d'Italia; nell'articolo è citata come sede degli attacchi al Consiglio Superiore di Pubblica Istruzione da parte dei deputati ostili al suo ruolo consultivo.</desc>
+</org>
+<org xml:id="Seminari">
+    <orgName>Seminari vescovili</orgName>
+    <desc>Istituti ecclesiastici per la formazione del clero; nel corpus citati perché, pur essendo privi di professori diplomati, i loro alunni venivano ammessi agli esami di licenza liceale in violazione dell'art. 106 della legge Casati, grazie alla tolleranza del Ministero della Pubblica Istruzione.</desc>
+</org>
+<org xml:id="Universita">
+    <orgName>Università italiane</orgName>
+    <desc>Gli atenei del Regno d'Italia; nel corpus citati perché i loro regolamenti erano stati modificati tante volte da risultare contraddittori, tanto che ogni università li interpretava a modo proprio per giustificare le proprie prassi.</desc>
+</org>
             <!-- ── La rivista ── -->
             <org xml:id="Rassegna">
                 <orgName>La Rassegna Settimanale</orgName>
@@ -1089,7 +1095,45 @@
 
     <label><term type="normativa" xml:id="Statuto_Alb">Statuto Albertino (1848)</term></label>
     <item><gloss>Legge fondamentale del Regno di Sardegna e poi del Regno d'Italia; garantiva la libertà di insegnamento e di stampa, cardini del dibattito sull'istruzione nel corpus.</gloss></item>
+    <!-- ── Nuovi termini patologici ── -->
+<label><term type="patologia" xml:id="rinorragia">Rinorragia</term></label>
+<item><gloss>Epistassi o sangue dal naso; sintomo ricorrente nelle scuole sovraffollate, causato dall'iperafflusso sanguigno all'encefalo provocato dall'eccessiva tensione mentale. Documentata da Becker (11,3% degli alunni a Darmstadt) e Guillaume (22% a Neuchâtel).</gloss></item>
 
+<label><term type="patologia" xml:id="cefalalgia">Cefalalgia</term></label>
+<item><gloss>Mal di testa cronico o acuto; tra i sintomi più diffusi del sovraccarico scolastico. Becker ne rilevò il 27% su 3564 alunni a Darmstadt; Guillaume il 40% a Neuchâtel; alla Scuola politecnica di Parigi 156 scolari su 586 furono curati per questa patologia.</gloss></item>
+
+<label><term type="patologia" xml:id="miopia">Miopia</term></label>
+<item><gloss>Difetto visivo progressivo causato dall'eccesso di lettura e scrittura in condizioni di scarsa illuminazione. Cohn rilevò in Germania che nelle scuole rurali colpiva l'1,4% degli alunni, nelle scuole urbane l'11%, raggiungendo il 63% nelle classi più elevate. Finkelnburg documentò ad Amburgo una progressione fino al 61% nelle scuole reali e nei ginnasi.</gloss></item>
+
+<label><term type="patologia" xml:id="paralisi_progressiva">Paralisi progressiva</term></label>
+<item><gloss>Malattia neuropsichiatrica degenerativa collegata all'abuso psichico; riduce progressivamente le facoltà mentali e le funzioni corporee. Definita «la malattia del secolo», colpisce con preferenza le classi colte e l'età del massimo fervore intellettuale. In Italia aumentò del 37% negli anni precedenti alla pubblicazione del libretto di Tamassia.</gloss></item>
+
+<label><term type="patologia" xml:id="alienazione_mentale">Alienazione mentale</term></label>
+<item><gloss>Termine ottocentesco per indicare i disturbi psichiatrici gravi, inclusa la pazzia. Nel corpus citata in relazione all'aumento incessante dei ricoveri nei manicomi italiani (crescita del 14,41% nell'ultimo triennio contro il 2,26% della popolazione generale) e al dibattito nei congressi degli alienisti sull'influenza del sistema scolastico.</gloss></item>
+
+<label><term type="patologia" xml:id="astenopia_intellettuale">Astenopia intellettuale</term></label>
+<item><gloss>Termine medico coniato da Tamassia per descrivere lo stato in cui ogni pensiero è accompagnato da dolore; metafora clinica dello stato di esaurimento cognitivo prodotto dall'eccesso di lavoro mentale nella scuola e nella società moderna.</gloss></item>
+<!-- ── Nuovi termini disciplinari ── -->
+<label><term type="disciplina" xml:id="medicina_legale">Medicina legale</term></label>
+<item><gloss>Disciplina che applica le scienze mediche all'amministrazione della giustizia e alle questioni sociali; nel corpus rappresentata da Arrigo Tamassia, professore all'Università di Pavia, che ne estende i metodi statistici allo studio dei danni del sovraccarico scolastico.</gloss></item>
+
+<label><term type="disciplina" xml:id="igiene_scolastica">Igiene scolastica</term></label>
+<item><gloss>Branca dell'igiene pubblica che studia le condizioni sanitarie degli ambienti scolastici e gli effetti del sistema di istruzione sulla salute fisica e mentale degli alunni. Nel corpus costituisce il quadro scientifico di riferimento degli articoli sui locali delle scuole normali e sul lavoro mentale.</gloss></item>
+
+<label><term type="disciplina" xml:id="profilassi">Profilassi</term></label>
+<item><gloss>Insieme di misure preventive volte a evitare l'insorgenza o la diffusione di malattie. Nel corpus usato in senso tecnico: al Congresso degli alienisti tedeschi di Eisenach (1880) fu deciso di raccogliere materiali statistici per fondare la profilassi dei danni del sovraccarico scolastico.</gloss></item>
+
+<label><term type="disciplina" xml:id="insegnamento_classico">Insegnamento classico</term></label>
+<item><gloss>Sistema didattico basato sullo studio delle lingue e letterature greca e latina, della retorica e della filosofia; percorso formativo d'élite del sistema scolastico post-unitario italiano, organizzato nei ginnasi e nei licei classici. Nel corpus ne viene difesa l'efficacia formativa rispetto agli istituti tecnici.</gloss></item>
+
+<label><term type="disciplina" xml:id="esame_licenza_liceale">Esame di licenza liceale</term></label>
+<item><gloss>Esame conclusivo del liceo classico, che dava accesso all'università; le cui norme venivano modificate ogni anno dal Ministero della Pubblica Istruzione senza consultare il Consiglio Superiore, secondo la denuncia dell'articolo sulla legge sull'istruzione pubblica.</gloss></item>
+<!-- ── Nuovi termini normativi ── -->
+<label><term type="normativa" xml:id="Legge_Coppino">Legge Coppino (1877)</term></label>
+<item><gloss>Legge scolastica promossa dal ministro Michele Coppino che estese l'obbligo scolastico e rafforzò il carattere laico dell'istruzione elementare; iniziò a codificare l'obbligo di ambienti scolastici salubri, ma la sua applicazione restava largamente disattesa, specialmente nelle province del Mezzogiorno.</gloss></item>
+
+<label><term type="normativa" xml:id="liberta_insegnamento">Libertà d'insegnamento</term></label>
+<item><gloss>Principio per cui i docenti hanno il diritto di insegnare liberamente senza vincoli imposti dall'autorità religiosa o politica. Nel corpus discussa in relazione all'art. 106 della legge Casati, che permetteva al Ministro di destituire i professori che avessero «impugnato le verità sulle quali riposa l'ordine religioso e morale».</gloss></item>
 </list>
 
         <!-- ══════════════════════════════════════════
@@ -1104,6 +1148,15 @@
             <item><gloss corresp="#Destra">Coalizione politica erede di Cavour che governò il Regno d'Italia dal 1861 al 1876; caratterizzata da un orientamento conservatore-liberale, favorevole a un'istruzione statale laica ma controllata e al rigore finanziario. Cfr. <ref target="#DestraS">voce nella listOrg</ref>.</gloss></item>
             <label><term type="concept" xml:id="Sinistra">Sinistra Storica</term></label>
             <item><gloss corresp="#Sinistra">Schieramento politico di stampo liberal-progressista salito al potere nel 1876 con la «Rivoluzione parlamentare»; promosse l'estensione dell'istruzione obbligatoria e la laicizzazione della scuola. Cfr. <ref target="#SinistraS">voce nella listOrg</ref>.</gloss></item>
+            <!-- ── Nuovi termini tematici ── -->
+<label><term type="concept" xml:id="corpo_insegnante">Corpo insegnante</term></label>
+<item><gloss corresp="#corpo_insegnante">L'insieme dei docenti delle scuole pubbliche italiane; nel corpus citato come attore collettivo unanime nel denunciare il pericolo rappresentato dalle riforme improvvisate del ministro Perez per l'istruzione secondaria.</gloss></item>
+
+<label><term type="concept" xml:id="sistema_scolastico">Sistema scolastico</term></label>
+<item><gloss corresp="#sistema_scolastico">L'insieme delle istituzioni, leggi, regolamenti e pratiche che organizzano l'istruzione pubblica in Italia; nel corpus denunciato come instabile per l'eccesso di modifiche ministeriali e la mancanza di tradizioni consolidate.</gloss></item>
+
+<label><term type="periodical" xml:id="GazzettaPiemontese">Gazzetta Piemontese</term></label>
+<item><gloss corresp="#GazzettaPiemontese">Quotidiano torinese fondato nel 1867, poi divenuto La Stampa nel 1895; su di esso Carlo Alfieri pubblicò le lettere poi raccolte nel volume recensito dalla Rassegna.</gloss></item>
         </list>
 
         <list type="glossary" xml:id="glossario_rassegna_notizie">
@@ -1326,15 +1379,15 @@
             <lb xml:id="Cod_scuole_femminili313_riga16" n="16" facs="#scuole_femminili313_riga16"/>
             presentano. In moltissime città esse sono le uniche scuole, in
             <lb xml:id="Cod_scuole_femminili313_riga17" n="17" facs="#scuole_femminili313_riga17"/>
-            cui la donna possa ricevere una <term ana="#istr_sup">istruzione superiore</term> alla 
+            cui la donna possa ricevere una <term type="disciplina" ana="#istr_sup">istruzione superiore</term> alla 
             <lb xml:id="Cod_scuole_femminili313_riga18" n="18" facs="#scuole_femminili313_riga18"/>
-            <term ana="#istr_ele">elementare</term>. È da ciò che seguono inconvenienti molti, e più 
+            <term type="disciplina" ana="#istr_ele">elementare</term>. È da ciò che seguono inconvenienti molti, e più 
             <lb xml:id="Cod_scuole_femminili313_riga19" n="19" facs="#scuole_femminili313_riga19"/>
             gravi assai di quello che si suppone. Se la <orgName ref="#SNF">scuola normale</orgName>
             <lb xml:id="Cod_scuole_femminili313_riga20" n="20" facs="#scuole_femminili313_riga20"/>
             è buona, tutte quelle che vanno in essa per avere una 
             <lb xml:id="Cod_scuole_femminili313_riga21" n="21" facs="#scuole_femminili313_riga21"/>
-            <term ana="#cult_gen">cultura generale</term> restano, in parte almeno, tradite. La <orgName ref="#SNF">scuola 
+            <term type="disciplina" ana="#cult_gen">cultura generale</term> restano, in parte almeno, tradite. La <orgName ref="#SNF">scuola 
             <lb xml:id="Cod_scuole_femminili313_riga22" n="22" facs="#scuole_femminili313_riga22" break="no"/>
             normale</orgName> deve formare <roleName ref="#Maestre">maestre elementari</roleName>, che sappiano
             <lb xml:id="Cod_scuole_femminili313_riga23" n="23" facs="#scuole_femminili313_riga23"/>
@@ -1394,7 +1447,7 @@
             <lb xml:id="Cod_scuole_femminili313_riga49" n="49" facs="#scuole_femminili313_riga49"/>
             s’affollano in esse, tanto che quasi non sono soltanto 
             <lb xml:id="Cod_scuole_femminili313_riga50" n="50" facs="#scuole_femminili313_riga50"/>
-            piene ma addirittura <term ana="#stipate">stipate</term>. La legge, a cui accenna il caso
+            piene ma addirittura <term type="patologia" ana="#stipate">stipate</term>. La legge, a cui accenna il caso
             <lb xml:id="Cod_scuole_femminili313_riga51" n="51" facs="#scuole_femminili313_riga51"/>
             citato nella lettera che pubblicammo, non ha messo un limite
             <lb xml:id="Cod_scuole_femminili313_riga52" n="52" facs="#scuole_femminili313_riga52"/>
@@ -1404,7 +1457,7 @@
             <lb xml:id="Cod_scuole_femminili313_riga54" n="54" facs="#scuole_femminili313_riga54"/>
             non s'era preveduto il grande sviluppo <choice><sic>ched</sic><corr>che</corr></choice> dovevano pren-
             <lb xml:id="Cod_scuole_femminili313_riga55" n="55" facs="#scuole_femminili313_riga55" break="no"/>
-            dere le scuole; spesso sono <term ana="#malsani">malsani</term>. Quando il <roleName ref="#Provv">Provveditore</roleName>
+            dere le scuole; spesso sono <term type="patologia" ana="#malsani">malsani</term>. Quando il <roleName ref="#Provv">Provveditore</roleName>
             <lb xml:id="Cod_scuole_femminili313_riga56" n="56" facs="#scuole_femminili313_riga56"/>
             ed il <orgName ref="#CPS">Consiglio scolastico</orgName> sono interrogati intorno al numero 
             <lb xml:id="Cod_scuole_femminili313_riga57" n="57" facs="#scuole_femminili313_riga57"/>
@@ -1425,25 +1478,25 @@
             <lb xml:id="Cod_scuole_femminili313_riga63" n="63" facs="#scuole_femminili313_riga63" break="no"/>
             ne non ne profittano punto. I <term ref="#QUAD">quaderni</term> non sono corretti; 
             <lb xml:id="Cod_scuole_femminili313_riga64" n="64" facs="#scuole_femminili313_riga64"/>
-            le <term ana="#ripetizioni">ripetizioni</term> si fanno male assai; la <term ana="#valore">disciplina</term> non si 
+            le <term type="disciplina" ana="#ripetizioni">ripetizioni</term> si fanno male assai; la <term type="disciplina" ana="#valore">disciplina</term> non si 
             <lb xml:id="Cod_scuole_femminili313_riga65" n="65" facs="#scuole_femminili313_riga65"/>
-            può mantenere; il <term ana="#valore">profitto</term> è scarso. Ma ciò non è il peg-
+            può mantenere; il <term type="disciplina" ana="#valore">profitto</term> è scarso. Ma ciò non è il peg-
             <lb xml:id="Cod_scuole_femminili313_riga66" n="66" facs="#scuole_femminili313_riga66" break="no"/>
-            gio. Spesso la sala è ristretta, e c’è <term ana="#aria_luce">poca aria, poca luce</term>.
+            gio. Spesso la sala è ristretta, e c’è <term type="patologia" ana="#aria_luce">poca aria, poca luce</term>.
             <lb xml:id="Cod_scuole_femminili313_riga67" n="67" facs="#scuole_femminili313_riga67"/>
-            È allora le alunne soffrono nella <term ana="#patologia">salute</term>. Possiamo citare un
+            È allora le alunne soffrono nella <term type="patologia" ana="#patologia">salute</term>. Possiamo citare un
             <lb xml:id="Cod_scuole_femminili313_riga68" n="68" facs="#scuole_femminili313_riga68"/>
             fatto a nostra conoscenza, seguito in una città del <placeName ref="#SUD">Mezzogiorno</placeName>. —
             <lb xml:id="Cod_scuole_femminili313_riga69" n="69" facs="#scuole_femminili313_riga69"/>
             <measure quantity="50">Cinquanta</measure> alunne erano messe in una stanza 
             <lb xml:id="Cod_scuole_femminili313_riga70" n="70" facs="#scuole_femminili313_riga70"/>
-            strettissima, nella quale si <term ana="#soffocare">soffocava dal caldo</term>. Tutte le 
+            strettissima, nella quale si <term type="patologia" ana="#soffocare">soffocava dal caldo</term>. Tutte le 
             <lb xml:id="Cod_scuole_femminili313_riga71" n="71" facs="#scuole_femminili313_riga71"/>
             premure fatte, perchè la scuola mutasse locale, furono vane.
             <lb xml:id="Cod_scuole_femminili313_riga72" n="72" facs="#scuole_femminili313_riga72"/>
             Il locale non v’era o non si voleva trovare. Di giorno in 
             <lb xml:id="Cod_scuole_femminili313_riga73" n="73" facs="#scuole_femminili313_riga73"/>
-            giorno le alunne <term ana="#impallidire">impallidivano</term>. Alcune <term ana="#ammalarsi">s’ammalarono</term> in 
+            giorno le alunne <term type="patologia" ana="#impallidire">impallidivano</term>. Alcune <term type="patologia" ana="#ammalarsi">s'ammalarono</term> in 
             <lb xml:id="Cod_scuole_femminili313_riga74" n="74" facs="#scuole_femminili313_riga74"/>
             modo da dovere per sempre abbandonare la scuola e gli 
             <lb xml:id="Cod_scuole_femminili313_riga75" n="75" facs="#scuole_femminili313_riga75"/>
@@ -1455,9 +1508,9 @@
             <lb xml:id="Cod_scuole_femminili313_riga78" n="78" facs="#scuole_femminili313_riga78" break="no"/>
             reva un fiore. Dopo due anni si durava fatica a ricono-
             <lb xml:id="Cod_scuole_femminili313_riga79" n="79" facs="#scuole_femminili313_riga79" break="no"/>
-            scerla. <term ana="#deperimento">Pallida, magra, ricurva</term>, soffriva degli <term ana="#occhi">occhi</term>; aveva
+            scerla. <term type="patologia" ana="#deperimento">Pallida, magra, ricurva</term>, soffriva degli <term ana="#occhi">occhi</term>; aveva
             <lb xml:id="Cod_scuole_femminili313_riga80" n="80" facs="#scuole_femminili313_riga80"/>
-            continui <term ana="#mal_capo">mal di capo</term>; pareva una vecchia. Aveva preso la
+            continui <term type="patologia" ana="#mal_capo">mal di capo</term>; pareva una vecchia. Aveva preso la
             <lb xml:id="Cod_scuole_femminili313_riga81" n="81" facs="#scuole_femminili313_riga81"/>
             <term ref="#PAT_SUP">patente di grado superiore</term>; ma aveva perduto ogni inte-
             <lb xml:id="Cod_scuole_femminili313_riga82" n="82" facs="#scuole_femminili313_riga82" break="no"/>
@@ -1494,13 +1547,13 @@
             <lb xml:id="Cod_scuole_femminili313_riga94" n="94" facs="#scuole_femminili313_riga94"/>
             vi sono ordini in contrario, noi crediamo che si possa biasi-
             <lb xml:id="Cod_scuole_femminili313_riga95" n="95" facs="#scuole_femminili313_riga95" break="no"/>
-            mare l’<term ana="#istituzione">autorità scolastica</term> che provvede in nome della pub-
+            mare l’<term type="normativa" ana="#istituzione">autorità scolastica</term> che provvede in nome della pub-
             <lb xml:id="Cod_scuole_femminili313_riga96" n="96" facs="#scuole_femminili313_riga96" break="no"/>
             blica salute e del pubblico bene. Si può disputare intorno 
             <lb xml:id="Cod_scuole_femminili313_riga97" n="97" facs="#scuole_femminili313_riga97"/>
-            al modo. Non crediamo si possa disputare quanto al <term ana="#diritto">diritto</term>, 
+            al modo. Non crediamo si possa disputare quanto al <term type="normativa" ana="#diritto">diritto</term>, 
             <lb xml:id="Cod_scuole_femminili313_riga98" n="98" facs="#scuole_femminili313_riga98"/>
-            e diremmo anche al <term ana="#dovere">dovere</term>, di provvedere.
+            e diremmo anche al <term type="normativa" ana="#dovere">dovere</term>, di provvedere.
             <note type="storica" resp="#FlorisValenti">L'appello al «diritto e dovere» dell'autorità
                 scolastica di intervenire si inscrive nel quadro normativo post-unitario.
                 La <title>legge Casati</title> del 1859, ancora in vigore nel 1879, non prevedeva
@@ -1729,7 +1782,7 @@
 
         <p xml:id="IstruzionePubblica21_paragrafo1" n="1">
             <lb xml:id="Cod_IstruzionePubblica21_riga1" n="1" facs="#IstruzionePubblica21_riga1"/>
-            È appena passato qualche mese, che tutto il <term type="collettivo">corpo in
+            È appena passato qualche mese, che tutto il <term type="collettivo" ana="#corpo_insegnante">corpo in
             <lb xml:id="Cod_IstruzionePubblica21_riga2" n="2" facs="#IstruzionePubblica21_riga2" break="no"/>
             segnante</term> e, quello che è più, anche la <term type="media">stampa</term> erano una
             <lb xml:id="Cod_IstruzionePubblica21_riga3" n="3" facs="#IstruzionePubblica21_riga3" break="no"/>
@@ -1741,15 +1794,15 @@
             <lb xml:id="Cod_IstruzionePubblica21_riga6" n="6" facs="#IstruzionePubblica21_riga6"/>
             a mantenere ancora qualche <term type="valore">ordine</term>, a dare qualche debole  
             <lb xml:id="Cod_IstruzionePubblica21_riga7" n="7" facs="#IstruzionePubblica21_riga7"/>
-            efficacia all’<term type="didattica">insegnamento classico</term>, — che in dieci anni di 
+            efficacia all’<term type="didattica" ana="#insegnamento_classico">insegnamento classico</term>, — che in dieci anni di 
             <lb xml:id="Cod_IstruzionePubblica21_riga8" n="8" facs="#IstruzionePubblica21_riga8"/>
             sforzi continui erano state finalmente, non solo adottate dal 
             <lb xml:id="Cod_IstruzionePubblica21_riga9" n="9" facs="#IstruzionePubblica21_riga9"/>
-            <orgName ref="#Min_Istruzione">Ministero</orgName>, ma accettate dal <seg type="generico">paese</seg> e riconosciute da tutti 
+            <orgName ref="#Min_Istruzione">Ministero</orgName>, ma accettate dal paese e riconosciute da tutti 
             <lb xml:id="Cod_IstruzionePubblica21_riga10" n="10" facs="#IstruzionePubblica21_riga10"/>
             necessarie, indispensabili, stavano per essere abolite dal 
             <lb xml:id="Cod_IstruzionePubblica21_riga11" n="11" facs="#IstruzionePubblica21_riga11"/>
-            <roleName>ministro</roleName> <persName ref="#FP_Perez">Perez</persName>, nonostante l’opposizione del <term type="collettivo">corpo inse            <lb xml:id="Cod_IstruzionePubblica21_riga12" n="12" facs="#IstruzionePubblica21_riga12" break="no"/>
+            <roleName>ministro</roleName> <persName ref="#FP_Perez">Perez</persName>, nonostante l’opposizione del <term type="collettivo" ana="#corpo_insegnante">corpo inse            <lb xml:id="Cod_IstruzionePubblica21_riga12" n="12" facs="#IstruzionePubblica21_riga12" break="no"/>
             gnante</term>, dell’<term type="istituzione">amministrazione</term> e del <orgName ref="#Consiglio_Istr">Consiglio di Pubblica 
             <lb xml:id="Cod_IstruzionePubblica21_riga13" n="13" facs="#IstruzionePubblica21_riga13"/>
             Istruzione</orgName>, che egli non aveva neppure consultato. A far 
@@ -1771,7 +1824,7 @@
             <lb xml:id="Cod_IstruzionePubblica21_riga20" n="20" facs="#IstruzionePubblica21_riga20"/>
             Come dunque è così facile fare e disfare? Hanno dav
             <lb xml:id="Cod_IstruzionePubblica21_riga21" n="21" facs="#IstruzionePubblica21_riga21" break="no"/>
-            vero le nostre <orgName type="scuola">scuole</orgName>, tutto il nostro <term type="sistema">sistema scolastico</term> un
+            vero le nostre <orgName type="scuola">scuole</orgName>, tutto il nostro <term type="sistema" ana="#sistema_scolastico">sistema scolastico</term> un
             <lb xml:id="Cod_IstruzionePubblica21_riga22" n="22" facs="#IstruzionePubblica21_riga22"/>
             fondamento così debole, che si possano con un <term type="atto_legale">decreto</term> o 
             <lb xml:id="Cod_IstruzionePubblica21_riga23" n="23" facs="#IstruzionePubblica21_riga23"/>
@@ -1813,7 +1866,7 @@
             <lb xml:id="Cod_IstruzionePubblica21_riga41" n="41" facs="#IstruzionePubblica21_riga41"/>
             Ma questo <orgName ref="#Consiglio_Istr">Consiglio</orgName> è ora ogni giorno attaccato 
             <lb xml:id="Cod_IstruzionePubblica21_riga42" n="42" facs="#IstruzionePubblica21_riga42"/>
-            nella <orgName>Camera</orgName> e fuori, ed il <roleName>Ministro</roleName> lo interroga o no, se
+            nella <orgName ref="#Camera">Camera</orgName> e fuori, ed il <roleName>Ministro</roleName> lo interroga o no, se
             <lb xml:id="Cod_IstruzionePubblica21_riga43" n="43" facs="#IstruzionePubblica21_riga43" break="no"/>
             condo che gli piace. Sebbene costituito per <term type="normativa">legge</term> e nomi
             <lb xml:id="Cod_IstruzionePubblica21_riga44" n="44" facs="#IstruzionePubblica21_riga44" break="no"/>
@@ -1835,7 +1888,7 @@
             <lb xml:id="Cod_IstruzionePubblica21_riga52" n="52" facs="#IstruzionePubblica21_riga52" break="no"/>
             bilità? Non vediamo ogni anno essere mutate le norme, secon
             <lb xml:id="Cod_IstruzionePubblica21_riga53" n="53" facs="#IstruzionePubblica21_riga53" break="no"/>
-            do cui si danno gli <term type="didattica">esami della licenza liceale</term>, senza che se ne 
+            do cui si danno gli <term type="didattica" ana="#esame_licenza_liceale">esami della licenza liceale</term>, senza che se ne 
             <lb xml:id="Cod_IstruzionePubblica21_riga54" n="54" facs="#IstruzionePubblica21_riga54"/>
             sappia il perchè? O piuttosto è un perchè che non si osa confes
             <lb xml:id="Cod_IstruzionePubblica21_riga55" n="55" facs="#IstruzionePubblica21_riga55" break="no"/>
@@ -1843,14 +1896,14 @@
             <lb xml:id="Cod_IstruzionePubblica21_riga56" n="56" facs="#IstruzionePubblica21_riga56"/>
             che studiano poco e gridano assai, e verso coloro che fanno 
             <lb xml:id="Cod_IstruzionePubblica21_riga57" n="57" facs="#IstruzionePubblica21_riga57"/>
-            la <term type="economico">speculazione</term> d’ <orgName type="scuola_privata">istituti privati</orgName> a buon prezzo. I <term type="normativa">regola
+            la <term type="economico">speculazione</term> d’ <orgName type="scuola_privata" ref="#SPRIV">istituti privati</orgName> a buon prezzo. I <term type="normativa">regola
             <lb xml:id="Cod_IstruzionePubblica21_riga58" n="58" facs="#IstruzionePubblica21_riga58" break="no"/>
             menti universitari</term> furono tante volte mutati, e sono così
 
             <cb n="2"/>
 
             <lb xml:id="Cod_IstruzionePubblica21_riga59" n="59" facs="#IstruzionePubblica21_riga59"/>
-            intricati, che ogni <orgName type="università">università</orgName> li interpreta a suo modo, e si  
+            intricati, che ogni <orgName type="università" ref="#Universita">università</orgName> li interpreta a suo modo, e si  
             <lb xml:id="Cod_IstruzionePubblica21_riga60" n="60" facs="#IstruzionePubblica21_riga60"/>
             crede di trovar sempre un <term type="atto_legale">articolo</term> con cui giustificarsi.
         </p>
@@ -1863,7 +1916,7 @@
             <lb xml:id="Cod_IstruzionePubblica21_riga63" n="63" facs="#IstruzionePubblica21_riga63"/>
             modificata, che non sappiamo se può dirsi più una <term type="normativa">legge  
             <lb xml:id="Cod_IstruzionePubblica21_riga64" n="64" facs="#IstruzionePubblica21_riga64" break="no"/>
-            dello Stato</term>. Del <term type="sistema">sistema universitario</term> che fondava, appena  
+            dello Stato</term>. Del <term type="sistema" ana="#sistema_scolastico">sistema universitario</term> che fondava, appena  
             <lb xml:id="Cod_IstruzionePubblica21_riga65" n="65" facs="#IstruzionePubblica21_riga65"/>
             si può dire che resti qualche cosa di sostanziale. Tutto è 
             <lb xml:id="Cod_IstruzionePubblica21_riga66" n="66" facs="#IstruzionePubblica21_riga66"/>
@@ -1880,16 +1933,16 @@
             <lb xml:id="Cod_IstruzionePubblica21_riga70" n="70" facs="#IstruzionePubblica21_riga70"/>
             Noi abbiamo molte volte ricordato, che questa <term type="normativa">legge</term> 
             <lb xml:id="Cod_IstruzionePubblica21_riga71" n="71" facs="#IstruzionePubblica21_riga71"/>
-            vieta agli alunni dei <orgName type="seminario">seminari</orgName>, che non hanno <roleName>professori</roleName> con                    
+            vieta agli alunni dei <orgName type="seminario" ref="#Seminari">seminari</orgName>, che non hanno <roleName>professori</roleName> con                    
             <lb xml:id="Cod_IstruzionePubblica21_riga72" n="72" facs="#IstruzionePubblica21_riga72"/>
             <term type="titolo">diploma</term>, di presentarsi agli <term type="didattica">esami di licenza liceale</term>. Se ciò
             <lb xml:id="Cod_IstruzionePubblica21_riga73" n="73" facs="#IstruzionePubblica21_riga73"/>
-            fosse eseguito, la più parte dei <orgName type="seminario">seminari</orgName> dovrebbero chiu            
+            fosse eseguito, la più parte dei <orgName type="seminario" ref="#Seminari">seminari</orgName> dovrebbero chiu            
           
             <lb xml:id="Cod_IstruzionePubblica21_riga74" n="74" facs="#IstruzionePubblica21_riga74" break="no"/>
             dersi o restringersi ai <term type="didattica">corsi teologici</term>. Invece fioriscono, 
             <lb xml:id="Cod_IstruzionePubblica21_riga75" n="75" facs="#IstruzionePubblica21_riga75"/>
-            si moltiplicano, fanno concorrenza al <orgName type="governo">governo</orgName>, che accoglie 
+            si moltiplicano, fanno concorrenza al <orgName type="governo" ref="#Stato">governo</orgName>, che accoglie 
             <lb xml:id="Cod_IstruzionePubblica21_riga76" n="76" facs="#IstruzionePubblica21_riga76"/>
             i loro alunni agli esami in onta alla <term type="normativa">legge</term>. Ma v'è di peg
             <lb xml:id="Cod_IstruzionePubblica21_riga77" n="77" facs="#IstruzionePubblica21_riga77" break="no"/>
@@ -1938,7 +1991,7 @@
             <lb xml:id="Cod_IstruzionePubblica21_riga97" n="97" facs="#IstruzionePubblica21_riga97"/>
             Ma quanto alla <term type="normativa">legge</term> non si può dire che essa esplicita
             <lb xml:id="Cod_IstruzionePubblica21_riga98" n="98" facs="#IstruzionePubblica21_riga98" break="no"/>
-            mente riconosca la <term type="valore">libertà della scienza e della coscienza</term> nelle
+            mente riconosca la <term type="valore" ana="#liberta_insegnamento">libertà della scienza e della coscienza</term> nelle
             <lb xml:id="Cod_IstruzionePubblica21_riga99" n="99" facs="#IstruzionePubblica21_riga99"/>
             <orgName type="scuola">scuole</orgName>. Essa anzi adopera un tale linguaggio, che se un 
             <lb xml:id="Cod_IstruzionePubblica21_riga100" n="100" facs="#IstruzionePubblica21_riga100"/>
@@ -1997,9 +2050,9 @@
             <lb xml:id="Cod_IstruzionePubblica22_riga2" n="2" facs="#IstruzionePubblica22_riga2" break="no"/>
             sibili. E se a ciò si aggiunge l'incertezza stessa della <term type="normativa">legge</term>  
             <lb xml:id="Cod_IstruzionePubblica22_riga3" n="3" facs="#IstruzionePubblica22_riga3"/>
-            in cose di così capitale importanza come è la <term type="valore">libertà della 
+            in cose di così capitale importanza come è la <term type="valore" ana="#liberta_insegnamento">libertà della 
             <lb xml:id="Cod_IstruzionePubblica22_riga4" n="4" facs="#IstruzionePubblica22_riga4"/>
-            scienza</term> e l' <term type="valore">indipendenza dell'insegnamento</term>, non parrà troppo
+            scienza</term> e l' <term type="valore" ana="#liberta_insegnamento">indipendenza dell'insegnamento</term>, non parrà troppo
             <lb xml:id="Cod_IstruzionePubblica22_riga5" n="5" facs="#IstruzionePubblica22_riga5"/>
             il chiedere che s'esca una volta per sempre da tanta con
             <lb xml:id="Cod_IstruzionePubblica22_riga6" n="6" facs="#IstruzionePubblica22_riga6" break="no"/>
@@ -2007,7 +2060,7 @@
             <lb xml:id="Cod_IstruzionePubblica22_riga7" n="7" facs="#IstruzionePubblica22_riga7" break="no"/>
             pre biasimevoli e pericolose, ma sopra tutto poi, quando ne 
             <lb xml:id="Cod_IstruzionePubblica22_riga8" n="8" facs="#IstruzionePubblica22_riga8"/>
-            dà esempio al <seg type="generico">paese</seg> il <orgName ref="#Min_Istruzione">Ministero della pubblica istruzione 
+            dà esempio al paese il <orgName ref="#Min_Istruzione">Ministero della pubblica istruzione 
             <lb xml:id="Cod_IstruzionePubblica22_riga9" n="9" facs="#IstruzionePubblica22_riga9"/>
             ed educazione</orgName>.
         </p>
@@ -2295,9 +2348,9 @@
                     <lb xml:id="Cod_LavoroMentale92_riga2" n="2" facs="#LavoroMentale92_riga2"/>
                     Noi siamo figli di un'età storica in cui la <term type="tema">ragione umana</term>
                     <lb xml:id="Cod_LavoroMentale92_riga3" n="3" facs="#LavoroMentale92_riga3"/>
-                    ha deificato se stessa e in cui il sapere, la <term type="tema">potenza della mente</term>
+                    ha deificato se stessa e in cui il sapere, la <term type="tema">potenza della
                     <lb xml:id="Cod_LavoroMentale92_riga4" n="4" facs="#LavoroMentale92_riga4"/>
-                    furono oggetto di un <term type="tema">culto entusiastico</term>; e questa
+                    mente</term>furono oggetto di un <term type="tema">culto entusiastico</term>; e questa
                     <lb xml:id="Cod_LavoroMentale92_riga5" n="5" facs="#LavoroMentale92_riga5"/>
                     tendenza ferve ancora nella nostra società: la forza ma-
                     <lb xml:id="Cod_LavoroMentale92_riga6" n="6" facs="#LavoroMentale92_riga6"/>
@@ -2329,9 +2382,9 @@
                     <lb xml:id="Cod_LavoroMentale93_riga8" n="8" facs="#LavoroMentale93_riga8"/>
                     ma anche in <placeName ref="#ITA">Italia</placeName>. Ne togliamo oggi molte ad un recente
                     <lb xml:id="Cod_LavoroMentale93_riga9" n="9" facs="#LavoroMentale93_riga9"/>
-                    libriccino piccolo ma interessante del professore di <term type="disciplina">medicina legale</term>
+                    libriccino piccolo ma interessante del professore di <term type="disciplina" ana="#medicina_legale">medicina
                     <lb xml:id="Cod_LavoroMentale93_riga10" n="10" facs="#LavoroMentale93_riga10"/>
-                    dell'<orgName ref="#UniversitàPavia">Università di <placeName ref="#Pavia">Pavia</placeName></orgName>, dott. <persName ref="#Tamassia">Arrigo Tamassia</persName>.*
+                    legale</term>dell'<orgName ref="#UniversitàPavia">Università di <placeName ref="#Pavia">Pavia</placeName></orgName>, dott. <persName ref="#Tamassia">Arrigo Tamassia</persName>.*
                 </p>
 
                 <p xml:id="LavoroMentale93_paragrafo2" n="2">
@@ -2383,10 +2436,9 @@
                     <lb xml:id="Cod_LavoroMentale93_riga29" n="29" facs="#LavoroMentale93_riga29"/>
                     cessivo <term type="tema">lavoro mentale</term> imposto dagli attuali programmi di
                     <lb xml:id="Cod_LavoroMentale93_riga30" n="30" facs="#LavoroMentale93_riga30"/>
-                    insegnamento: adducono casi di <term type="patologia">pazzie</term>, di <term type="tema">suicidii</term>, di
-                    <term type="tema">indebolimento mentale</term>
-                    <lb xml:id="Cod_LavoroMentale93_riga31" n="31" facs="#LavoroMentale93_riga31"/>
-                    da quelli derivati, tutti presagendo che
+                    insegnamento: adducono casi di <term type="patologia">pazzie</term>, di <term type="tema">suicidii</term>, di <term type="tema">in
+                     <lb xml:id="Cod_LavoroMentale93_riga31" n="31" facs="#LavoroMentale93_riga31"/>
+                    debolimento mentale</term>da quelli derivati, tutti presagendo che
                     <lb xml:id="Cod_LavoroMentale93_riga32" n="32" facs="#LavoroMentale93_riga32"/>
                     se non si porta una riforma radicale, il <term type="tema">vigore psichico</term> della
                     <lb xml:id="Cod_LavoroMentale93_riga33" n="33" facs="#LavoroMentale93_riga33"/>
@@ -2404,9 +2456,9 @@
                     <lb xml:id="Cod_LavoroMentale93_riga39" n="39" facs="#LavoroMentale93_riga39"/>
                     e parecchi altri, si votarono all'unanimità conclusioni che
                     <lb xml:id="Cod_LavoroMentale93_riga40" n="40" facs="#LavoroMentale93_riga40"/>
-                    condannano recisamente l'attuale <term type="tema">sistema d'istruzione scolastica</term>
+                    condannano recisamente l'attuale <term type="tema">sistema d'istruzione sco-
                     <lb xml:id="Cod_LavoroMentale93_riga41" n="41" facs="#LavoroMentale93_riga41"/>
-                    come nocivo allo sviluppo generale del corpo e alla
+                    lastica</term>come nocivo allo sviluppo generale del corpo e alla
                     <lb xml:id="Cod_LavoroMentale93_riga42" n="42" facs="#LavoroMentale93_riga42"/>
                     facoltà visiva per diverse vie, ma specialmente per la ten-
                     <lb xml:id="Cod_LavoroMentale93_riga43" n="43" facs="#LavoroMentale93_riga43"/>
@@ -2418,13 +2470,13 @@
                     <lb xml:id="Cod_LavoroMentale93_riga46" n="46" facs="#LavoroMentale93_riga46"/>
                     riconosciuto pericoloso il piano attuale di studi, e fu deciso
                     <lb xml:id="Cod_LavoroMentale93_riga47" n="47" facs="#LavoroMentale93_riga47"/>
-                    di raccogliere materiali statistici per fondare la <term type="disciplina">profilassi</term> di
+                    di raccogliere materiali statistici per fondare la <term type="disciplina" ana="#profilassi">profilassi</term> di
                     <lb xml:id="Cod_LavoroMentale93_riga48" n="48" facs="#LavoroMentale93_riga48"/>
                     questo guaio. Nel penultimo <orgName ref="#CongressoAlienistiItaliani">Congresso degli alienisti italiani</orgName>
                     <lb xml:id="Cod_LavoroMentale93_riga49" n="49" facs="#LavoroMentale93_riga49"/>
                     (<placeName ref="#Imola">Imola</placeName> <date when="1877">1877</date>) il dottore <persName ref="#Sacchi">Achille Sacchi</persName> proponeva di studiare
                     <lb xml:id="Cod_LavoroMentale93_riga50" n="50" facs="#LavoroMentale93_riga50"/>
-                    l'influenza dell'educazione sulle <term type="patologia">alienazioni mentali</term>; tema
+                    l'influenza dell'educazione sulle <term type="patologia" ana="#alienazione_mentale">alienazioni mentali</term>; tema
                     <lb xml:id="Cod_LavoroMentale93_riga51" n="51" facs="#LavoroMentale93_riga51"/>
                     che nell'ultimo <orgName ref="#CongressoReggioEmilia">Congresso di <placeName ref="#ReggioEmilia">Reggio d'Emilia</placeName></orgName> fu rimesso al-
                     <lb xml:id="Cod_LavoroMentale93_riga52" n="52" facs="#LavoroMentale93_riga52"/>
@@ -2442,7 +2494,7 @@
                     <lb xml:id="Cod_LavoroMentale93_riga58" n="58" facs="#LavoroMentale93_riga58"/>
                     a una universale saccenteria superficiale, fiacca, sterile: la
                     <lb xml:id="Cod_LavoroMentale93_riga59" n="59" facs="#LavoroMentale93_riga59"/>
-                    società nostra, dice egli con un frase medica, soffre di <term type="patologia">aste-<lb xml:id="Cod_LavoroMentale93_riga60" n="60" facs="#LavoroMentale93_riga60" break="no"/>nopia intellettuale</term>, vale a dire che ogni pensiero è accom-
+                    società nostra, dice egli con un frase medica, soffre di <term type="patologia" ana="#astenopia_intellettuale">aste-<lb xml:id="Cod_LavoroMentale93_riga60" n="60" facs="#LavoroMentale93_riga60" break="no"/>nopia intellettuale</term>, vale a dire che ogni pensiero è accom-
                     <lb xml:id="Cod_LavoroMentale93_riga61" n="61" facs="#LavoroMentale93_riga61"/>
                     pagnato da dolore.
                 </p>
@@ -2532,11 +2584,11 @@
                     <lb xml:id="Cod_LavoroMentale93_riga99" n="99" facs="#LavoroMentale93_riga99"/>
                     le primissime cause predisponenti. Ciò si dimostra ancora
                     <lb xml:id="Cod_LavoroMentale93_riga100" n="100" facs="#LavoroMentale93_riga100"/>
-                    da due altri fatti, che sono l'incremento della <term type="patologia">paralisi progressiva</term>
+                    da due altri fatti, che sono l'incremento della <term type="patologia" ana="#paralisi_progressiva">paralisi progres-
                     <lb xml:id="Cod_LavoroMentale93_riga101" n="101" facs="#LavoroMentale93_riga101"/>
-                    e la frequenza di <term type="patologia">malattie mentali</term> nella <term type="tema">razza ebrea</term>. La
+                    siva</term>e la frequenza di <term type="patologia">malattie mentali</term> nella <term type="tema">razza ebrea</term>. La
                     <lb xml:id="Cod_LavoroMentale93_riga102" n="102" facs="#LavoroMentale93_riga102"/>
-                    <term type="patologia">paralisi progressiva</term> è direttamente collegata con l'abuso
+                    <term type="patologia" ana="#paralisi_progressiva">paralisi progressiva</term> è direttamente collegata con l'abuso
                     <lb xml:id="Cod_LavoroMentale93_riga103" n="103" facs="#LavoroMentale93_riga103"/>
                     psichico, e riduce la mente alla tenebra più completa, il
                     <lb xml:id="Cod_LavoroMentale93_riga104" n="104" facs="#LavoroMentale93_riga104"/>
@@ -2556,9 +2608,9 @@
                     <lb xml:id="Cod_LavoroMentale93_riga111" n="111" facs="#LavoroMentale93_riga111"/>
                     lici o su <num value="1725">1725</num> protestanti, se ne ha uno su <num value="384">384</num> ebrei. Ciò si
                     <lb xml:id="Cod_LavoroMentale93_riga112" n="112" facs="#LavoroMentale93_riga112"/>
-                    spiega di solito con la frequenza dei <term type="tema">matrimoni fra consanguinei</term>.
+                    spiega di solito con la frequenza dei <term type="tema">matrimoni fra consan-
                     <lb xml:id="Cod_LavoroMentale93_riga113" n="113" facs="#LavoroMentale93_riga113"/>
-                    Ma l'autore, per gli studi fatti sull'argomento, contesta
+                    guinei</term>.Ma l'autore, per gli studi fatti sull'argomento, contesta
                     <lb xml:id="Cod_LavoroMentale93_riga114" n="114" facs="#LavoroMentale93_riga114"/>
                     tale asserzione attribuendo di preferenza quella sproporzione
                     <lb xml:id="Cod_LavoroMentale93_riga115" n="115" facs="#LavoroMentale93_riga115"/>
@@ -2584,7 +2636,7 @@
                     specialmente sono notevoli le ricerche del <persName ref="#Cohn">Cohn</persName> in
                     <placeName ref="#Germania">Germania</placeName>:
                     <lb xml:id="Cod_LavoroMentale93_riga124" n="124" facs="#LavoroMentale93_riga124"/>
-                    il quale trovò che nelle scuole rurali la <term type="patologia">miopia</term> era
+                    il quale trovò che nelle scuole rurali la <term type="patologia" ana="#miopia">miopia</term> era
                     <lb xml:id="Cod_LavoroMentale93_riga125" n="125" facs="#LavoroMentale93_riga125"/>
                     rappresentata dall'<num value="1.4">1,4</num> per cento mentre nelle scuole della
                     <lb xml:id="Cod_LavoroMentale93_riga126" n="126" facs="#LavoroMentale93_riga126"/>
@@ -2592,7 +2644,7 @@
                     <lb xml:id="Cod_LavoroMentale93_riga127" n="127" facs="#LavoroMentale93_riga127"/>
                     in due anni dal primo semestre di scuola, si aveva la
                     <lb xml:id="Cod_LavoroMentale93_riga128" n="128" facs="#LavoroMentale93_riga128"/>
-                    <term type="patologia">miopia</term> rappresentata da <num>0,4; 4,8; 8,6; 7,9; 11,3; 24,1; 49; 63</num> per
+                    <term type="patologia" ana="#miopia">miopia</term> rappresentata da <num>0,4; 4,8; 8,6; 7,9; 11,3; 24,1; 49; 63</num> per
                     <lb xml:id="Cod_LavoroMentale93_riga129" n="129" facs="#LavoroMentale93_riga129"/>
                     cento. <persName ref="#Finkelnburg">Finkelnburg</persName> nelle scuole d'<placeName ref="#Amburgo">Amburgo</placeName> notò che dalle
                     <lb xml:id="Cod_LavoroMentale93_riga130" n="130" facs="#LavoroMentale93_riga130"/>
@@ -2624,7 +2676,7 @@
                     <lb xml:id="Cod_LavoroMentale94_riga3" n="3" facs="#LavoroMentale94_riga3"/>
                     dalla esagerata <term type="tema">attività mentale</term>, induce assai di frequente
                     <lb xml:id="Cod_LavoroMentale94_riga4" n="4" facs="#LavoroMentale94_riga4"/>
-                    nei fanciulli sangue al naso (<term type="patologia">rinorragia</term>) e dolori di capo (<term type="patologia">cefalalgia</term>).
+                    nei fanciulli sangue al naso (<term type="patologia" ana="#rinorragia">rinorragia</term>) e dolori di capo (<term type="patologia" ana="#cefalalgia" >cefalalgia</term>).
                     <lb xml:id="Cod_LavoroMentale94_riga5" n="5" facs="#LavoroMentale94_riga5"/>
                     Su <num value="3564">3564</num> alunni delle scuole di <placeName ref="#Darmstadt">Darmstadt</placeName> <persName ref="#Becker">Becker</persName>
                     <lb xml:id="Cod_LavoroMentale94_riga6" n="6" facs="#LavoroMentale94_riga6"/>
@@ -2637,7 +2689,7 @@
                     <lb xml:id="Cod_LavoroMentale94_riga9" n="9" facs="#LavoroMentale94_riga9"/>
                     di <placeName ref="#Parigi">Parigi</placeName></orgName> su <num value="586">586</num> scolari <num value="156">156</num> furono curati dal medico per
                     <lb xml:id="Cod_LavoroMentale94_riga10" n="10" facs="#LavoroMentale94_riga10"/>
-                    <term type="patologia">cefalalgia</term>. <persName ref="#Guillaume">Guillaume</persName> nel collegio municipale di <placeName ref="#Neuchatel">Neuchâtel</placeName>
+                    <term type="patologia" ana="#cefalalgia">cefalalgia</term>. <persName ref="#Guillaume">Guillaume</persName> nel collegio municipale di <placeName ref="#Neuchatel">Neuchâtel</placeName>
                     <lb xml:id="Cod_LavoroMentale94_riga11" n="11" facs="#LavoroMentale94_riga11"/>
                     notava che il <num value="40">40</num> per cento degli alunni soffriva di dolori di
                     <lb xml:id="Cod_LavoroMentale94_riga12" n="12" facs="#LavoroMentale94_riga12"/>
@@ -2647,9 +2699,9 @@
                     <lb xml:id="Cod_LavoroMentale94_riga14" n="14" facs="#LavoroMentale94_riga14"/>
                     dovute a scarsità d'aria inspirata e a forzata immobilità du-
                     <lb xml:id="Cod_LavoroMentale94_riga15" n="15" facs="#LavoroMentale94_riga15"/>
-                    rante le ore della scuola, le <term type="patologia">congestioni agli organi addominali</term>
+                    rante le ore della scuola, le <term type="patologia">congestioni agli organi addo-
                     <lb xml:id="Cod_LavoroMentale94_riga16" n="16" facs="#LavoroMentale94_riga16"/>
-                    e altre malattie. In <placeName ref="#ITA">Italia</placeName> nessuno fece ancora queste
+                    minali</term>e altre malattie. In <placeName ref="#ITA">Italia</placeName> nessuno fece ancora queste
                     <lb xml:id="Cod_LavoroMentale94_riga17" n="17" facs="#LavoroMentale94_riga17"/>
                     ricerche, ma, dice il dott. <persName ref="#Tamassia">Tamassia</persName>, data la maggiore eccita-
                     <lb xml:id="Cod_LavoroMentale94_riga18" n="18" facs="#LavoroMentale94_riga18"/>
@@ -2689,11 +2741,11 @@
 
                 <p xml:id="LavoroMentale94_paragrafo3" n="3">
                     <lb xml:id="Cod_LavoroMentale94_riga33" n="33" facs="#LavoroMentale94_riga33"/>
-                    Ma a confermare l'influenza delle <term type="tema">condizioni psicologiche</term>
+                    Ma a confermare l'influenza delle <term type="disciplina" ana="#igiene_scolastica">psicologiche</term>
                     <lb xml:id="Cod_LavoroMentale94_riga34" n="34" facs="#LavoroMentale94_riga34"/>
-                    sulla durata della vita viene l'osservazione della <term type="tema">mortalità media</term>
+                    sulla durata della vita viene l'osservazione della <term type="tema">mortalità
                     <lb xml:id="Cod_LavoroMentale94_riga35" n="35" facs="#LavoroMentale94_riga35"/>
-                    delle varie età. Tra i <num value="20">20</num> e i <num value="25">25</num> anni la mortalità rag-
+                    media</term>delle varie età. Tra i <num value="20">20</num> e i <num value="25">25</num> anni la mortalità rag-
                     <lb xml:id="Cod_LavoroMentale94_riga36" n="36" facs="#LavoroMentale94_riga36"/>
                     giunge d'un tratto cifre enormi. Questa osservazione fu
                     <lb xml:id="Cod_LavoroMentale94_riga37" n="37" facs="#LavoroMentale94_riga37"/>
@@ -2716,9 +2768,9 @@
                     <lb xml:id="Cod_LavoroMentale94_riga44" n="44" facs="#LavoroMentale94_riga44"/>
                     Sul punto di raccogliere le sue conclusioni l'autore si guar-
                     <lb xml:id="Cod_LavoroMentale94_riga45" n="45" facs="#LavoroMentale94_riga45"/>
-                    da bene dal combattere l'istruzione; ma reclama la <term type="tema">riforma dei metodi</term>,
+                    da bene dal combattere l'istruzione; ma reclama la <term type="tema">riforma
                     <lb xml:id="Cod_LavoroMentale94_riga46" n="46" facs="#LavoroMentale94_riga46"/>
-                    delle materie, degli orari, di tutto: egli vorrebbe
+                    dei metodi</term>,delle materie, degli orari, di tutto: egli vorrebbe
                     <lb xml:id="Cod_LavoroMentale94_riga47" n="47" facs="#LavoroMentale94_riga47"/>
                     per le <term type="tema">scuole elementari</term> non più di <num value="3">tre</num> ore d'insegnamento
                     <lb xml:id="Cod_LavoroMentale94_riga48" n="48" facs="#LavoroMentale94_riga48"/>
@@ -2734,9 +2786,9 @@
                     <lb xml:id="Cod_LavoroMentale94_riga53" n="53" facs="#LavoroMentale94_riga53"/>
                     pressione come di una doccia fresca versata sulla foga ro-
                     <lb xml:id="Cod_LavoroMentale94_riga54" n="54" facs="#LavoroMentale94_riga54"/>
-                    vinosamente impetuosa con cui si agogna oggi al <term type="tema">progresso intellettuale</term>:
+                    vinosamente impetuosa con cui si agogna oggi al <term type="tema">progresso 
                     <lb xml:id="Cod_LavoroMentale94_riga55" n="55" facs="#LavoroMentale94_riga55"/>
-                    e l'impressione è salutare. Un progresso senza
+                    intellettuale</term>:e l'impressione è salutare. Un progresso senza
                     <lb xml:id="Cod_LavoroMentale94_riga56" n="56" facs="#LavoroMentale94_riga56"/>
                     equilibrio è inseparabile da condizioni morbose: bisogna
                     <lb xml:id="Cod_LavoroMentale94_riga57" n="57" facs="#LavoroMentale94_riga57"/>
@@ -3204,7 +3256,7 @@
                     Dio scenderà su di voi invocato (pag. 28).»</quote>
                     — Così per
                     <lb xml:id="Cod_VirtuEducatrice39_riga29" n="29" facs="#VirtuEducatrice39_riga29"/>
-                    divina ispirazione la madre conoscerà le leggi <term type="disciplina">psicologiche</term>
+                    divina ispirazione la madre conoscerà le leggi <term type="disciplina" ana="#igiene_scolastica">psicologiche</term>
                     <lb xml:id="Cod_VirtuEducatrice39_riga30" n="30" facs="#VirtuEducatrice39_riga30"/>
                     che presiedono al sistema di educazione! E questo metodo
                     <lb xml:id="Cod_VirtuEducatrice39_riga31" n="31" facs="#VirtuEducatrice39_riga31"/>
@@ -3277,7 +3329,7 @@
                     <lb xml:id="Cod_VirtuEducatrice39_riga59" n="59" facs="#VirtuEducatrice39_riga59"/>
                     sore o dal parroco. Vi ha la negazione assoluta del <term type="tema">mondo moderno</term>
                     <lb xml:id="Cod_VirtuEducatrice39_riga60" n="60" facs="#VirtuEducatrice39_riga60"/>
-                    insieme ad una ignoranza totale di cognizioni <term type="disciplina">psicologiche</term>,
+                    insieme ad una ignoranza totale di cognizioni <term type="disciplina" ana="#igiene_scolastica">psicologiche</term>,
                     <lb xml:id="Cod_VirtuEducatrice39_riga61" n="61" facs="#VirtuEducatrice39_riga61"/>
                     non diciamo di leggi, che sono il cardine del
                     <lb xml:id="Cod_VirtuEducatrice39_riga62" n="62" facs="#VirtuEducatrice39_riga62"/>
@@ -3470,7 +3522,7 @@
             <lb xml:id="Cod_NotizieVol3_riga30" n="30" facs="#NotizieVol3_riga30"/>
             <roleName>pittore</roleName>, un <roleName>topografo</roleName> ed un <roleName>corrispondente</roleName>. Scopo della spedizione è di 
             <lb xml:id="Cod_NotizieVol3_riga31" n="31" facs="#NotizieVol3_riga31"/>
-            scegliere la strada che dovrà percorrere la <term>ferrovia dell’Asia centrale</term>, 
+            scegliere la strada che dovrà percorrere la <term type="tema">ferrovia dell'Asia centrale</term>, 
             <lb xml:id="Cod_NotizieVol3_riga32" n="32" facs="#NotizieVol3_riga32"/>
             esaminare la navigabilità dell’<placeName ref="#Oxus">Oxus</placeName> e decidere se è possibile di farlo 
             <lb xml:id="Cod_NotizieVol3_riga33" n="33" facs="#NotizieVol3_riga33"/>
@@ -3480,9 +3532,9 @@
             <lb xml:id="Cod_NotizieVol3_riga35" n="35" facs="#NotizieVol3_riga35"/>
             (<placeName ref="#Afghanistan">Afghanistan</placeName>); quindi lungo il fiume a <placeName ref="#Khiva">Khiva</placeName> e traverso il <placeName ref="#Kara_Kum">Kara Kum</placeName> 
             <lb xml:id="Cod_NotizieVol3_riga36" n="36" facs="#NotizieVol3_riga36"/>
-            a <placeName ref="#Krasnovodsk">Krasnovodsk</placeName>. Lo scopo della spedizione sarà: 1. Raccogliere infor<lb xml:id="Cod_NotizieVol3_riga37" n="37" facs="#NotizieVol3_riga37" break="no"/>mazioni rispetto alla spesa per la <term>linea ferrata</term>, la possibilità di avere 
+            a <placeName ref="#Krasnovodsk">Krasnovodsk</placeName>. Lo scopo della spedizione sarà: 1. Raccogliere infor<lb xml:id="Cod_NotizieVol3_riga37" n="37" facs="#NotizieVol3_riga37" break="no"/>mazioni rispetto alla spesa per la <term type="tema">linea ferrata</term>, la possibilità di avere 
             <lb xml:id="Cod_NotizieVol3_riga38" n="38" facs="#NotizieVol3_riga38"/>
-            il materiale da costruzione, sapere se il <term>combustibile</term> esiste lungo la 
+            il materiale da costruzione, sapere se il <term type="tema">combustibile</term> esiste lungo la 
             <lb xml:id="Cod_NotizieVol3_riga39" n="39" facs="#NotizieVol3_riga39"/>
             via o anche la quantità di lavoro che si può ottenere; 2. Studiare la 
             <lb xml:id="Cod_NotizieVol3_riga40" n="40" facs="#NotizieVol3_riga40"/>
@@ -3505,11 +3557,11 @@
 
         <p xml:id="Notizie_P5" n="5">
             <lb xml:id="Cod_NotizieVol3_riga50" n="50" facs="#NotizieVol3_riga50"/>
-            — Il <persName ref="#Rocher">signor Rocher</persName>, di <placeName ref="#TLS">Tolosa</placeName>, ha chiamato <term>Amianthine</term> un nuovo 
+            — Il <persName ref="#Rocher">signor Rocher</persName>, di <placeName ref="#TLS">Tolosa</placeName>, ha chiamato <term type="tema">Amianthine</term> un nuovo 
             <lb xml:id="Cod_NotizieVol3_riga51" n="51" facs="#NotizieVol3_riga51"/>
-            combustibile da lui inventato, del quale si parla molto in <placeName ref="#America">America</placeName>.
+            <term type="tema">combustibile</term> da lui inventato, del quale si parla molto in <placeName ref="#America">America</placeName>.
             <lb xml:id="Cod_NotizieVol3_riga52" n="52" facs="#NotizieVol3_riga52"/>
-            È un composto di <term>amianto</term> ridotto in polvere finissima, <term>carbone di le<lb xml:id="Cod_NotizieVol3_riga53" n="53" facs="#NotizieVol3_riga53" break="no"/>gna</term> e <term>nitrato di piombo</term>. 
+            È un composto di <term type="tema">amianto</term> ridotto in polvere finissima, <term type="tema">carbone di le<lb xml:id="Cod_NotizieVol3_riga53" n="53" facs="#NotizieVol3_riga53" break="no"/>gna</term> e <term type="tema">nitrato di piombo</term>. 
             <lb xml:id="Cod_NotizieVol3_riga54" n="54" facs="#NotizieVol3_riga54"/>
             (<title level="j">Athenæum</title>)
         </p>
@@ -3679,7 +3731,7 @@
                     <placeName ref="#Russia">Russia</placeName>, in <placeName ref="#Palestina">Palestina</placeName> e in <placeName ref="#Cipro">Cipro</placeName>,
                     e per le sue importantissime indagini
                     <lb xml:id="Cod_Notizie5_riga15" n="15" facs="#Notizie5_riga15"/>
-                    <term type="disciplina">etnologiche</term> in <placeName ref="#America">America</placeName>.
+                   <term type="disciplina" ana="#igiene_scolastica">etnologiche</term> in <placeName ref="#America">America</placeName>.
                 </p>
 
                 <p xml:id="Notizie5_4" n="4">

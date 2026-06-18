@@ -434,9 +434,11 @@ svg rect.selected {
 /* ── ENTITÀ EVIDENZIATE ─────────────────────────────────────── */
 .entity {
     border-radius: 2px;
-    padding: 0 1px;
+    padding: 2px 1px;
     cursor: default;
     transition: filter 0.15s;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
 }
 .entity:hover { filter: brightness(0.9); }
 .entity a, .entity-link {
@@ -566,9 +568,11 @@ svg rect.selected {
     justify-content: space-between;
     align-items: center;
 }
-.entity-card-header.persName  { background: #854d0e; color: #fef9c3; }
-.entity-card-header.placeName { background: #9d174d; color: #fce7f3; }
-.entity-card-header.term      { background: #4338ca; color: #ede9fe; }
+.entity-card-header.persName  { background: #a16207; color: #fff; }
+.entity-card-header.placeName { background: #9d174d; color: #fff; }
+.entity-card-header[style] {
+    color: #2d1a00;
+}
 .entity-card-header h3 { margin: 0; font-size: 1rem; color: inherit; }
 .entity-card-close {
     background: none; border: none;
