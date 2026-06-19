@@ -487,6 +487,9 @@
             <xsl:if test="@break='no'">
                 <xsl:attribute name="data-break">no</xsl:attribute>
             </xsl:if>
+            <xsl:if test="ancestor::tei:persName or ancestor::tei:placeName or ancestor::tei:orgName or ancestor::tei:term">
+                <xsl:attribute name="style">background:inherit; padding:2px 0;</xsl:attribute>&#8203;
+            </xsl:if>
         </span>
     </xsl:template>
 

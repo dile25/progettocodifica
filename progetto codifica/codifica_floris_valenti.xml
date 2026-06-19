@@ -52,25 +52,6 @@
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
-            <classDecl>
-            <!-- ══════════════════════════════════════════
-             TAXONOMY — Interpretazione dei termini tecnici con @ref
-             ══════════════════════════════════════════ -->
-        <taxonomy xml:id="termini_corpus">
-            <category xml:id="QUAD">
-                <catDesc>Quaderni scolastici — materiale didattico di base utilizzato dagli studenti; la loro qualità e il loro peso erano oggetto di discussione igienica.</catDesc>
-            </category>
-            <category xml:id="PAT_SUP">
-                <catDesc>Patente di grado superiore — certificazione rilasciata alle maestre che superavano l'esame di abilitazione all'insegnamento nelle scuole normali di grado superiore.</catDesc>
-            </category>
-            <category xml:id="DIP">
-                <catDesc>Diplomi scolastici — titoli di studio rilasciati al termine dei corsi delle scuole normali, tecniche o liceali.</catDesc>
-            </category>
-            <category xml:id="Statuto_Alb">
-                <catDesc>Statuto Albertino (1848) — legge fondamentale del Regno di Sardegna e poi del Regno d'Italia; garantiva la libertà di insegnamento e di stampa, cardini del dibattito sull'istruzione nel corpus.</catDesc>
-            </category>
-        </taxonomy>
-        </classDecl>
             <projectDesc>
                 <p>Codifica realizzata nell'ambito del corso di Informatica Umanistica,
                    Università di Pisa, a.a. 2025–2026. Obiettivo: produrre un'edizione
@@ -1534,7 +1515,7 @@
             <lb xml:id="Cod_scuole_femminili313_riga91" n="91" facs="#scuole_femminili313_riga91"/>
             <orgName ref="#CPS">Consiglio Provinciale</orgName> ed al <roleName ref="#Dir">Direttore</roleName> facoltà di limitare
             <lb xml:id="Cod_scuole_femminili313_riga92" n="92" facs="#scuole_femminili313_riga92"/>
-            ancora questo numero, se non si vuole che le <orgName ref="#SNF">scuole fem-
+            ancora questo numero, se non si vuole che le <orgName ref="#SNF">scuole fem
             <lb xml:id="Cod_scuole_femminili313_riga93" n="93" facs="#scuole_femminili313_riga93" break="no"/>
             minili</orgName> divengano <term ana="#ammazzatoi">ammazzatoi</term>.
             <note type="filologica" resp="#FlorisValenti">Il termine «ammazzatoi», di forte carica retorica
@@ -2384,7 +2365,7 @@
                     <lb xml:id="Cod_LavoroMentale93_riga9" n="9" facs="#LavoroMentale93_riga9"/>
                     libriccino piccolo ma interessante del professore di <term type="disciplina" ana="#medicina_legale">medicina
                     <lb xml:id="Cod_LavoroMentale93_riga10" n="10" facs="#LavoroMentale93_riga10"/>
-                    legale</term>dell'<orgName ref="#UniversitàPavia">Università di <placeName ref="#Pavia">Pavia</placeName></orgName>, dott. <persName ref="#Tamassia">Arrigo Tamassia</persName>.*
+                    legale </term>dell'<orgName ref="#UniversitàPavia">Università di <placeName ref="#Pavia">Pavia</placeName></orgName>, dott. <persName ref="#Tamassia">Arrigo Tamassia</persName>.*
                 </p>
 
                 <p xml:id="LavoroMentale93_paragrafo2" n="2">
@@ -2438,7 +2419,7 @@
                     <lb xml:id="Cod_LavoroMentale93_riga30" n="30" facs="#LavoroMentale93_riga30"/>
                     insegnamento: adducono casi di <term type="patologia">pazzie</term>, di <term type="tema">suicidii</term>, di <term type="tema">in
                      <lb xml:id="Cod_LavoroMentale93_riga31" n="31" facs="#LavoroMentale93_riga31"/>
-                    debolimento mentale</term>da quelli derivati, tutti presagendo che
+                    debolimento mentale</term> da quelli derivati, tutti presagendo che
                     <lb xml:id="Cod_LavoroMentale93_riga32" n="32" facs="#LavoroMentale93_riga32"/>
                     se non si porta una riforma radicale, il <term type="tema">vigore psichico</term> della
                     <lb xml:id="Cod_LavoroMentale93_riga33" n="33" facs="#LavoroMentale93_riga33"/>
@@ -2458,7 +2439,7 @@
                     <lb xml:id="Cod_LavoroMentale93_riga40" n="40" facs="#LavoroMentale93_riga40"/>
                     condannano recisamente l'attuale <term type="tema">sistema d'istruzione sco-
                     <lb xml:id="Cod_LavoroMentale93_riga41" n="41" facs="#LavoroMentale93_riga41"/>
-                    lastica</term>come nocivo allo sviluppo generale del corpo e alla
+                    lastica</term> come nocivo allo sviluppo generale del corpo e alla
                     <lb xml:id="Cod_LavoroMentale93_riga42" n="42" facs="#LavoroMentale93_riga42"/>
                     facoltà visiva per diverse vie, ma specialmente per la ten-
                     <lb xml:id="Cod_LavoroMentale93_riga43" n="43" facs="#LavoroMentale93_riga43"/>
