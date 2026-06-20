@@ -14,7 +14,6 @@
            7. Notizie Vol. 5, fasc. 106
            8. Notizie Vol. 8, fasc. 188
          ============================================================ -->
-
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -983,21 +982,81 @@
     <orgName>Università italiane</orgName>
     <desc>Gli atenei del Regno d'Italia; nel corpus citati perché i loro regolamenti erano stati modificati tante volte da risultare contraddittori, tanto che ogni università li interpretava a modo proprio per giustificare le proprie prassi.</desc>
 </org>
-            <!-- ── La rivista ── -->
-            <org xml:id="Rassegna">
-                <orgName>La Rassegna Settimanale</orgName>
-                <desc>Rivista di politica, scienze, lettere ed arti fondata a Roma nel 1878 da Leopoldo Franchetti e Sidney Sonnino; pubblicata fino al 1882; punto di riferimento del liberalismo moderato post-unitario e del dibattito sull'istruzione e la questione meridionale.</desc>
-            </org>
-
-        </listOrg>
+</listOrg>
         <!-- ══════════════════════════════════════════
      GLOSSARIO: Termini tecnici del corpus
      (igienico-pedagogici, giuridici, disciplinari)
      ══════════════════════════════════════════ -->
-<list type="glossary" xml:id="glossario_termini_tecnici">
-    <head>Glossario: Termini igienico-pedagogici e giuridici</head>
+<list type="glossary" xml:id="glossario_licenze"><head>Glossario: titoli e licenze citate nel corpus</head>
+    <label><term type="normativa" xml:id="PAT_SUP">Patente di grado superiore</term></label>
+    <item><gloss>Certificazione rilasciata alle maestre che superavano l'esame di abilitazione all'insegnamento nelle scuole normali di grado superiore; titolo ambito ma ottenuto spesso a prezzo della salute.</gloss></item>
 
-    <!-- ── Termini patologici ── -->
+    <label><term type="normativa" xml:id="DIP">Diplomi scolastici</term></label>
+    <item><gloss>Titoli di studio rilasciati al termine dei corsi delle scuole normali, tecniche o liceali; il corpus li cita come unico sbocco formativo concreto per le donne nell'Italia post-unitaria.</gloss></item>
+
+<label><term type="disciplina" xml:id="esame_licenza_liceale">Esame di licenza liceale</term></label>
+<item><gloss>Esame conclusivo del liceo classico, che dava accesso all'università; le cui norme venivano modificate ogni anno dal Ministero della Pubblica Istruzione senza consultare il Consiglio Superiore, secondo la denuncia dell'articolo sulla legge sull'istruzione pubblica.</gloss></item>
+
+</list>
+
+<list type="glossary" xml:id="glossario_periodici"><head>Glossario: Riviste e Periodici citati nel corpus</head>
+            <label><term type="periodical" xml:id="Rassegna">La Rassegna Settimanale</term></label>
+            <item><gloss corresp="#Rassegna">Rivista di politica, scienze, lettere ed arti fondata a Roma nel 1878 da Leopoldo Franchetti e Sidney Sonnino; pubblicata fino al 1882; punto di riferimento del liberalismo moderato post-unitario e del dibattito sull'istruzione e la questione meridionale.</gloss></item>
+            <label><term type="periodical" xml:id="FanfullaDomenica">Fanfulla della Domenica</term></label>
+            <item><gloss corresp="#FanfullaDomenica">Supplemento domenicale del quotidiano Fanfulla; importante rivista letteraria italiana del tardo Ottocento; su di essa Posocco annunciò la scoperta del manoscritto leopardiano.</gloss></item>
+            <label><term type="periodical" xml:id="ContemporaryReview">Contemporary Review</term></label>
+            <item><gloss corresp="#ContemporaryReview">Rivista letteraria e culturale britannica fondata nel 1866; su di essa era attesa la pubblicazione del poema Giustiniano di Robert Buchanan.</gloss></item>
+            <label><term type="periodical" xml:id="LaCultura">La Cultura, Rivista di scienze morali, di lettere ed arti</term></label>
+            <item><gloss corresp="#LaCultura">Periodico critico-bibliografico fondato da Ruggero Bonghi nel 1881; a uscita bimestrale, comprendeva recensioni ragionate, annunci di libri e notizie culturali; annunciato nella rubrica Notizie del fascicolo 188.</gloss></item>
+<label><term type="periodical" xml:id="GazzettaPiemontese">Gazzetta Piemontese</term></label>
+<item><gloss corresp="#GazzettaPiemontese">Quotidiano torinese fondato nel 1867, poi divenuto La Stampa nel 1895; su di esso Carlo Alfieri pubblicò le lettere poi raccolte nel volume recensito dalla Rassegna.</gloss></item>
+</list>
+
+<list type="glossary" xml:id="glossario_norme"><head>Glossario: Norme e Leggi citati nel corpus</head>
+<label><term type="law" xml:id="Legge_Casati">Legge Casati (1859)</term></label>
+<item><gloss corresp="#Legge_Casati">Riforma fondamentale del sistema scolastico italiano emanata da Gabrio Casati; stabilì l'obbligatorietà del primo biennio elementare, istituì le scuole normali per la formazione degli insegnanti e regolò l'istruzione classica e tecnica secondaria.</gloss></item>
+<label><term type="law" xml:id="Legge_Coppino">Legge Coppino (1877)</term></label>
+<item><gloss>Legge scolastica promossa dal ministro Michele Coppino che estese l'obbligo scolastico e rafforzò il carattere laico dell'istruzione elementare; iniziò a codificare l'obbligo di ambienti scolastici salubri, ma la sua applicazione restava largamente disattesa, specialmente nelle province del Mezzogiorno.</gloss></item>
+    <label><term type="normativa" xml:id="Statuto_Alb">Statuto Albertino (1848)</term></label>
+    <item><gloss>Legge fondamentale del Regno di Sardegna e poi del Regno d'Italia; garantiva la libertà di insegnamento e di stampa, cardini del dibattito sull'istruzione nel corpus.</gloss></item>
+    <label><term type="law" xml:id="diritto">Diritto di intervento</term></label>
+    <item><gloss>Facoltà giuridica delle autorità scolastiche di limitare le ammissioni nelle scuole normali sovraffollate; il corpus sostiene che tale diritto esista e debba essere esercitato.</gloss></item>
+   <label><term type="law" xml:id="dovere">Dovere di provvedere</term></label>
+    <item><gloss>Obbligo morale e istituzionale delle autorità scolastiche di intervenire per migliorare le condizioni igieniche delle scuole normali femminili; concetto cardine dell'argomentazione dell'articolo.</gloss></item>
+<label><term type="law" xml:id="liberta_insegnamento">Libertà d'insegnamento</term></label>
+<item><gloss>Principio per cui i docenti hanno il diritto di insegnare liberamente senza vincoli imposti dall'autorità religiosa o politica. Nel corpus discussa in relazione all'art. 106 della legge Casati, che permetteva al Ministro di destituire i professori che avessero «impugnato le verità sulle quali riposa l'ordine religioso e morale».</gloss></item>
+</list>
+
+
+
+<list type="glossary" xml:id="glossario_pedagogia"><head>Glossario: termini riguardanti la scuola e l'insegnamento citati nel corpus</head>
+    <label><term type="pedagogia" xml:id="istituzione">Autorità scolastica</term></label>
+    <item><gloss>Insieme degli organi preposti alla gestione e alla vigilanza delle scuole (Ministero della Pubblica Istruzione, Provveditore agli Studi, Consiglio Provinciale Scolastico); il corpus ne critica l'inerzia di fronte alle denunce sulle condizioni igieniche delle scuole normali.</gloss></item>
+<label><term type="pedagogia" xml:id="insegnamento_classico">Insegnamento classico</term></label>
+<item><gloss>Sistema didattico basato sullo studio delle lingue e letterature greca e latina, della retorica e della filosofia; percorso formativo d'élite del sistema scolastico post-unitario italiano, organizzato nei ginnasi e nei licei classici. Nel corpus ne viene difesa l'efficacia formativa rispetto agli istituti tecnici.</gloss></item>
+
+<label><term type="pedagogia" xml:id="corpo_insegnante">Corpo insegnante</term></label>
+<item><gloss corresp="#corpo_insegnante">L'insieme dei docenti delle scuole pubbliche italiane; nel corpus citato come attore collettivo unanime nel denunciare il pericolo rappresentato dalle riforme improvvisate del ministro Perez per l'istruzione secondaria.</gloss></item>
+
+<label><term type="pedagogia" xml:id="sistema_scolastico">Sistema scolastico</term></label>
+<item><gloss corresp="#sistema_scolastico">L'insieme delle istituzioni, leggi, regolamenti e pratiche che organizzano l'istruzione pubblica in Italia; nel corpus denunciato come instabile per l'eccesso di modifiche ministeriali e la mancanza di tradizioni consolidate.</gloss></item>
+    <label><term type="pedagogia" xml:id="istr_sup">Istruzione superiore</term></label>
+    <item><gloss>Livello di istruzione post-elementare, accessibile alle donne nel periodo post-unitario quasi esclusivamente tramite le scuole normali; il corpus denuncia la mancanza di alternative per le donne che volessero proseguire gli studi.</gloss></item>
+
+    <label><term type="pedagogia" xml:id="istr_ele">Istruzione elementare</term></label>
+    <item><gloss>Primo grado del sistema scolastico italiano post-unitario, reso obbligatorio dalla legge Casati (1859); base della formazione delle maestre uscite dalle scuole normali.</gloss></item>
+
+</list>
+
+
+<list type="glossary" xml:id="glossario_politica"><head>Glossario: Concetti politici citati nel corpus</head>
+            <label><term type="concept" xml:id="Destra">Destra Storica</term></label>
+            <item><gloss corresp="#Destra">Coalizione politica erede di Cavour che governò il Regno d'Italia dal 1861 al 1876; caratterizzata da un orientamento conservatore-liberale, favorevole a un'istruzione statale laica ma controllata e al rigore finanziario. Cfr. <ref target="#DestraS">voce nella listOrg</ref>.</gloss></item>
+            <label><term type="concept" xml:id="Sinistra">Sinistra Storica</term></label>
+            <item><gloss corresp="#Sinistra">Schieramento politico di stampo liberal-progressista salito al potere nel 1876 con la «Rivoluzione parlamentare»; promosse l'estensione dell'istruzione obbligatoria e la laicizzazione della scuola. Cfr. <ref target="#SinistraS">voce nella listOrg</ref>.</gloss></item>
+</list>          
+
+<list type="glossary" xml:id="glossario_salute"><head>Glossario: Termini riguardanti la salute e le malattie citati nel corpus</head>
     <label><term type="patologia" xml:id="patologia">Salute (deterioramento della)</term></label>
     <item><gloss>Condizione fisica delle alunne delle scuole normali femminili, sistematicamente compromessa dal sovraffollamento, dalla mancanza di aria e luce, e dal sovraccarico di studio; tema centrale del dibattito igienico documentato nel corpus.</gloss></item>
 
@@ -1010,73 +1069,17 @@
     <label><term type="patologia" xml:id="ammalarsi">Ammalarsi</term></label>
     <item><gloss>Esito ricorrente del sovraffollamento scolastico nelle scuole normali femminili; il corpus documenta casi di malattia grave tra le allieve come conseguenza diretta delle condizioni igieniche.</gloss></item>
 
-    <label><term type="patologia" xml:id="morire">Morte per eccesso di studio</term></label>
-    <item><gloss>Esito estremo documentato nel corpus: alcune allieve delle scuole normali morirono per le conseguenze fisiche del sovraffollamento e del sovraccarico scolastico; evento citato per sollecitare l'intervento delle autorità.</gloss></item>
+   <label><term type="patologia" xml:id="morte_conseguenza">Morte come conseguenza</term></label>
+<item><gloss corresp="#morte_conseguenza">Decesso di studentesse come conseguenza diretta delle condizioni igieniche letali delle scuole normali sovraffollate; documentato nell'articolo come fatto accertato, non come iperbole retorica.</gloss></item>
+
+<label><term type="patologia" xml:id="disturbi_visivi">Disturbi visivi</term></label>
+<item><gloss corresp="#disturbi_visivi">Problemi agli occhi e calo della vista documentati tra le alunne delle scuole normali; collegati all'insufficiente illuminazione delle aule sovraffollate e al prolungato lavoro su testi scritti in caratteri piccoli. Cfr. anche la voce Miopia.</gloss></item>
 
     <label><term type="patologia" xml:id="deperimento">Deperimento fisico</term></label>
     <item><gloss>Stato di deterioramento progressivo della salute fisica — pallore, magrezza, postura curva — descritto nel corpus come conseguenza tipica della frequenza prolungata nelle scuole normali femminili.</gloss></item>
 
-    <label><term type="patologia" xml:id="occhi">Disturbi visivi</term></label>
-    <item><gloss>Patologia oculare frequente tra le allieve delle scuole normali, causata dalla scarsa illuminazione delle aule e dal sovraccarico di lettura e scrittura.</gloss></item>
-
     <label><term type="patologia" xml:id="mal_capo">Cefalea</term></label>
     <item><gloss>Mal di testa cronico, sintomo ricorrente del deterioramento della salute nelle scuole normali femminili; associato ad aria viziata, sovraffollamento e sovraccarico cognitivo.</gloss></item>
-
-    <label><term type="patologia" xml:id="ammazzatoi">Ammazzatoi (metafora)</term></label>
-    <item><gloss>Termine polemico usato nell'articolo per denunciare le condizioni delle scuole normali femminili sovraffollate: ambienti paragonati a luoghi di morte per l'effetto devastante sulla salute delle allieve.</gloss></item>
-
-    <!-- ── Termini igienico-ambientali ── -->
-    <label><term type="patologia" xml:id="aria_luce">Aria e luce (carenza di)</term></label>
-    <item><gloss>Condizione igienica delle aule scolastiche sovraffollate: la mancanza di ventilazione e di illuminazione naturale era riconosciuta dalla medicina igienista dell'epoca come causa diretta di malattie tra gli scolari.</gloss></item>
-
-    <label><term type="patologia" xml:id="malsani">Locali malsani</term></label>
-    <item><gloss>Edifici scolastici privi dei requisiti igienici minimi: sovraffollati, mal ventilati, privi di luce sufficiente; la loro denuncia pubblica era uno degli obiettivi principali degli articoli sulle scuole normali femminili.</gloss></item>
-
-    <label><term type="patologia" xml:id="stipate">Classi stipate</term></label>
-    <item><gloss>Classi con un numero di allieve di gran lunga superiore al massimo consentito dalla legge; il corpus documenta casi di ottanta o novanta alunne in una sola classe.</gloss></item>
-
-    <!-- ── Termini didattico-pedagogici ── -->
-    <label><term type="disciplina" xml:id="istr_sup">Istruzione superiore</term></label>
-    <item><gloss>Livello di istruzione post-elementare, accessibile alle donne nel periodo post-unitario quasi esclusivamente tramite le scuole normali; il corpus denuncia la mancanza di alternative per le donne che volessero proseguire gli studi.</gloss></item>
-
-    <label><term type="disciplina" xml:id="istr_ele">Istruzione elementare</term></label>
-    <item><gloss>Primo grado del sistema scolastico italiano post-unitario, reso obbligatorio dalla legge Casati (1859); base della formazione delle maestre uscite dalle scuole normali.</gloss></item>
-
-    <label><term type="disciplina" xml:id="cult_gen">Cultura generale</term></label>
-    <item><gloss>Insieme di conoscenze trasversali (letteratura, storia, scienze) che le scuole normali avrebbero dovuto trasmettere alle future maestre; il corpus denuncia come il sovraffollamento e la cattiva organizzazione didattica tradiscano questo obiettivo.</gloss></item>
-
-    <label><term type="disciplina" xml:id="ripetizioni">Ripetizioni scolastiche</term></label>
-    <item><gloss>Sessioni di studio individuale o di piccolo gruppo fuori dall'orario scolastico; il corpus le cita come segnale di un sistema didattico inefficace, in cui le lezioni in aula non bastano a garantire l'apprendimento.</gloss></item>
-
-    <label><term type="disciplina" xml:id="num_max">Numero massimo di alunne</term></label>
-    <item><gloss>Limite legale al numero di allieve per classe, previsto dalla normativa scolastica ma sistematicamente ignorato nelle scuole normali femminili; il corpus ne denuncia il mancato rispetto come causa principale del sovraffollamento.</gloss></item>
-
-    <label><term type="disciplina" xml:id="valore">Profitto e disciplina scolastica</term></label>
-    <item><gloss>Indicatori della qualità dell'insegnamento: il corpus denuncia come nelle scuole normali sovraffollate il profitto fosse scarso e la disciplina impossibile da mantenere, con quaderni non corretti e ripetizioni mal fatte.</gloss></item>
-
-    <!-- ── Termini giuridico-istituzionali ── -->
-    <label><term type="normativa" xml:id="istituzione">Autorità scolastica</term></label>
-    <item><gloss>Insieme degli organi preposti alla gestione e alla vigilanza delle scuole (Ministero della Pubblica Istruzione, Provveditore agli Studi, Consiglio Provinciale Scolastico); il corpus ne critica l'inerzia di fronte alle denunce sulle condizioni igieniche delle scuole normali.</gloss></item>
-
-    <label><term type="normativa" xml:id="diritto">Diritto di intervento</term></label>
-    <item><gloss>Facoltà giuridica delle autorità scolastiche di limitare le ammissioni nelle scuole normali sovraffollate; il corpus sostiene che tale diritto esista e debba essere esercitato.</gloss></item>
-
-    <label><term type="normativa" xml:id="dovere">Dovere di provvedere</term></label>
-    <item><gloss>Obbligo morale e istituzionale delle autorità scolastiche di intervenire per migliorare le condizioni igieniche delle scuole normali femminili; concetto cardine dell'argomentazione dell'articolo.</gloss></item>
-
-    <!-- ── Termini dalla taxonomy (migrazione) ── -->
-    <label><term type="normativa" xml:id="QUAD">Quaderni scolastici</term></label>
-    <item><gloss>Materiale didattico di base utilizzato dagli studenti; la loro qualità e il loro peso erano oggetto di discussione igienica nel dibattito sul sovraccarico scolastico.</gloss></item>
-
-    <label><term type="normativa" xml:id="PAT_SUP">Patente di grado superiore</term></label>
-    <item><gloss>Certificazione rilasciata alle maestre che superavano l'esame di abilitazione all'insegnamento nelle scuole normali di grado superiore; titolo ambito ma ottenuto spesso a prezzo della salute.</gloss></item>
-
-    <label><term type="normativa" xml:id="DIP">Diplomi scolastici</term></label>
-    <item><gloss>Titoli di studio rilasciati al termine dei corsi delle scuole normali, tecniche o liceali; il corpus li cita come unico sbocco formativo concreto per le donne nell'Italia post-unitaria.</gloss></item>
-
-    <label><term type="normativa" xml:id="Statuto_Alb">Statuto Albertino (1848)</term></label>
-    <item><gloss>Legge fondamentale del Regno di Sardegna e poi del Regno d'Italia; garantiva la libertà di insegnamento e di stampa, cardini del dibattito sull'istruzione nel corpus.</gloss></item>
-    <!-- ── Nuovi termini patologici ── -->
 <label><term type="patologia" xml:id="rinorragia">Rinorragia</term></label>
 <item><gloss>Epistassi o sangue dal naso; sintomo ricorrente nelle scuole sovraffollate, causato dall'iperafflusso sanguigno all'encefalo provocato dall'eccessiva tensione mentale. Documentata da Becker (11,3% degli alunni a Darmstadt) e Guillaume (22% a Neuchâtel).</gloss></item>
 
@@ -1094,61 +1097,24 @@
 
 <label><term type="patologia" xml:id="astenopia_intellettuale">Astenopia intellettuale</term></label>
 <item><gloss>Termine medico coniato da Tamassia per descrivere lo stato in cui ogni pensiero è accompagnato da dolore; metafora clinica dello stato di esaurimento cognitivo prodotto dall'eccesso di lavoro mentale nella scuola e nella società moderna.</gloss></item>
-<!-- ── Nuovi termini disciplinari ── -->
-<label><term type="disciplina" xml:id="medicina_legale">Medicina legale</term></label>
-<item><gloss>Disciplina che applica le scienze mediche all'amministrazione della giustizia e alle questioni sociali; nel corpus rappresentata da Arrigo Tamassia, professore all'Università di Pavia, che ne estende i metodi statistici allo studio dei danni del sovraccarico scolastico.</gloss></item>
-
-<label><term type="disciplina" xml:id="igiene_scolastica">Igiene scolastica</term></label>
-<item><gloss>Branca dell'igiene pubblica che studia le condizioni sanitarie degli ambienti scolastici e gli effetti del sistema di istruzione sulla salute fisica e mentale degli alunni. Nel corpus costituisce il quadro scientifico di riferimento degli articoli sui locali delle scuole normali e sul lavoro mentale.</gloss></item>
-
-<label><term type="disciplina" xml:id="profilassi">Profilassi</term></label>
+<label><term type="patologia" xml:id="profilassi">Profilassi</term></label>
 <item><gloss>Insieme di misure preventive volte a evitare l'insorgenza o la diffusione di malattie. Nel corpus usato in senso tecnico: al Congresso degli alienisti tedeschi di Eisenach (1880) fu deciso di raccogliere materiali statistici per fondare la profilassi dei danni del sovraccarico scolastico.</gloss></item>
 
-<label><term type="disciplina" xml:id="insegnamento_classico">Insegnamento classico</term></label>
-<item><gloss>Sistema didattico basato sullo studio delle lingue e letterature greca e latina, della retorica e della filosofia; percorso formativo d'élite del sistema scolastico post-unitario italiano, organizzato nei ginnasi e nei licei classici. Nel corpus ne viene difesa l'efficacia formativa rispetto agli istituti tecnici.</gloss></item>
+    <label><term type="retorico" xml:id="ammazzatoi">Ammazzatoi (metafora)</term></label>
+    <item><gloss>Termine polemico usato nell'articolo per denunciare le condizioni delle scuole normali femminili sovraffollate: ambienti paragonati a luoghi di morte per l'effetto devastante sulla salute delle allieve.</gloss></item>
+<label><term type="patologia" xml:id="igiene_scolastica">Igiene scolastica</term></label>
+<item><gloss>Branca dell'igiene pubblica che studia le condizioni sanitarie degli ambienti scolastici e gli effetti del sistema di istruzione sulla salute fisica e mentale degli alunni. Nel corpus costituisce il quadro scientifico di riferimento degli articoli sui locali delle scuole normali e sul lavoro mentale.</gloss></item>
 
-<label><term type="disciplina" xml:id="esame_licenza_liceale">Esame di licenza liceale</term></label>
-<item><gloss>Esame conclusivo del liceo classico, che dava accesso all'università; le cui norme venivano modificate ogni anno dal Ministero della Pubblica Istruzione senza consultare il Consiglio Superiore, secondo la denuncia dell'articolo sulla legge sull'istruzione pubblica.</gloss></item>
-<!-- ── Nuovi termini normativi ── -->
-<label><term type="normativa" xml:id="Legge_Coppino">Legge Coppino (1877)</term></label>
-<item><gloss>Legge scolastica promossa dal ministro Michele Coppino che estese l'obbligo scolastico e rafforzò il carattere laico dell'istruzione elementare; iniziò a codificare l'obbligo di ambienti scolastici salubri, ma la sua applicazione restava largamente disattesa, specialmente nelle province del Mezzogiorno.</gloss></item>
 
-<label><term type="normativa" xml:id="liberta_insegnamento">Libertà d'insegnamento</term></label>
-<item><gloss>Principio per cui i docenti hanno il diritto di insegnare liberamente senza vincoli imposti dall'autorità religiosa o politica. Nel corpus discussa in relazione all'art. 106 della legge Casati, che permetteva al Ministro di destituire i professori che avessero «impugnato le verità sulle quali riposa l'ordine religioso e morale».</gloss></item>
 </list>
 
-        <!-- ══════════════════════════════════════════
-             GLOSSARI
-             ══════════════════════════════════════════ -->
+<list type="glossary" xml:id="glossario_discipline"><head>Glossario: lista di discipline citate nel corpus</head>
 
-        <list type="glossary" xml:id="glossario_critico">
-            <head>Glossario: Leggi, Concetti e Movimenti politici</head>
-            <label><term type="law" xml:id="Legge_Casati">Legge Casati (1859)</term></label>
-            <item><gloss corresp="#Legge_Casati">Riforma fondamentale del sistema scolastico italiano emanata da Gabrio Casati; stabilì l'obbligatorietà del primo biennio elementare, istituì le scuole normali per la formazione degli insegnanti e regolò l'istruzione classica e tecnica secondaria.</gloss></item>
-            <label><term type="concept" xml:id="Destra">Destra Storica</term></label>
-            <item><gloss corresp="#Destra">Coalizione politica erede di Cavour che governò il Regno d'Italia dal 1861 al 1876; caratterizzata da un orientamento conservatore-liberale, favorevole a un'istruzione statale laica ma controllata e al rigore finanziario. Cfr. <ref target="#DestraS">voce nella listOrg</ref>.</gloss></item>
-            <label><term type="concept" xml:id="Sinistra">Sinistra Storica</term></label>
-            <item><gloss corresp="#Sinistra">Schieramento politico di stampo liberal-progressista salito al potere nel 1876 con la «Rivoluzione parlamentare»; promosse l'estensione dell'istruzione obbligatoria e la laicizzazione della scuola. Cfr. <ref target="#SinistraS">voce nella listOrg</ref>.</gloss></item>
-            <!-- ── Nuovi termini tematici ── -->
-<label><term type="concept" xml:id="corpo_insegnante">Corpo insegnante</term></label>
-<item><gloss corresp="#corpo_insegnante">L'insieme dei docenti delle scuole pubbliche italiane; nel corpus citato come attore collettivo unanime nel denunciare il pericolo rappresentato dalle riforme improvvisate del ministro Perez per l'istruzione secondaria.</gloss></item>
-
-<label><term type="concept" xml:id="sistema_scolastico">Sistema scolastico</term></label>
-<item><gloss corresp="#sistema_scolastico">L'insieme delle istituzioni, leggi, regolamenti e pratiche che organizzano l'istruzione pubblica in Italia; nel corpus denunciato come instabile per l'eccesso di modifiche ministeriali e la mancanza di tradizioni consolidate.</gloss></item>
-
-<label><term type="periodical" xml:id="GazzettaPiemontese">Gazzetta Piemontese</term></label>
-<item><gloss corresp="#GazzettaPiemontese">Quotidiano torinese fondato nel 1867, poi divenuto La Stampa nel 1895; su di esso Carlo Alfieri pubblicò le lettere poi raccolte nel volume recensito dalla Rassegna.</gloss></item>
-        </list>
-
-        <list type="glossary" xml:id="glossario_rassegna_notizie">
-            <head>Glossario: Riviste e Periodici citati nel corpus</head>
-            <label><term type="periodical" xml:id="FanfullaDomenica">Fanfulla della Domenica</term></label>
-            <item><gloss corresp="#FanfullaDomenica">Supplemento domenicale del quotidiano Fanfulla; importante rivista letteraria italiana del tardo Ottocento; su di essa Posocco annunciò la scoperta del manoscritto leopardiano.</gloss></item>
-            <label><term type="periodical" xml:id="ContemporaryReview">Contemporary Review</term></label>
-            <item><gloss corresp="#ContemporaryReview">Rivista letteraria e culturale britannica fondata nel 1866; su di essa era attesa la pubblicazione del poema Giustiniano di Robert Buchanan.</gloss></item>
-            <label><term type="periodical" xml:id="LaCultura">La Cultura, Rivista di scienze morali, di lettere ed arti</term></label>
-            <item><gloss corresp="#LaCultura">Periodico critico-bibliografico fondato da Ruggero Bonghi nel 1881; a uscita bimestrale, comprendeva recensioni ragionate, annunci di libri e notizie culturali; annunciato nella rubrica Notizie del fascicolo 188.</gloss></item>
-        </list>
+    <label><term type="disciplina" xml:id="cult_gen">Cultura generale</term></label>
+    <item><gloss>Insieme di conoscenze trasversali (letteratura, storia, scienze) che le scuole normali avrebbero dovuto trasmettere alle future maestre; il corpus denuncia come il sovraffollamento e la cattiva organizzazione didattica tradiscano questo obiettivo.</gloss></item>
+<label><term type="disciplina" xml:id="medicina_legale">Medicina legale</term></label>
+<item><gloss>Disciplina che applica le scienze mediche all'amministrazione della giustizia e alle questioni sociali; nel corpus rappresentata da Arrigo Tamassia, professore all'Università di Pavia, che ne estende i metodi statistici allo studio dei danni del sovraccarico scolastico.</gloss></item>
+</list>
 
     </standOff>
 
@@ -1190,7 +1156,6 @@
                 <change when="2026-02" who="#FlorisValenti">Prima codifica del testo.</change>
             </revisionDesc>
         </teiHeader>
-
 <facsimile>
 <surface xml:id="locali_scuole_normali_femminili_Pag313">
 
@@ -1328,23 +1293,23 @@
 
             <p xml:id="Scuole_Normali313_paragrafo1" n="1">     
             <lb xml:id="Cod_scuole_femminili313_riga1" n="1" facs="#scuole_femminili313_riga1"/>
-            Nella <orgName ref="#Rassegna">Rassegna</orgName> del <date when="1879-04-13">13 aprile</date> pubblicammo una lettera,
+            Nella <term type="periodical" ref="#Rassegna">Rassegna</term> del <date when="1879-04-13">13 aprile</date> pubblicammo una lettera,
             <lb xml:id="Cod_scuole_femminili313_riga2" n="2" facs="#scuole_femminili313_riga2"/>
             nella quale sono molte e giuste osservazioni, ed è citato un
             <lb xml:id="Cod_scuole_femminili313_riga3" n="3" facs="#scuole_femminili313_riga3"/>
-            fatto che merita considerazione. Essa parla d’una <orgName ref="#SNF">scuola 
+            fatto che merita considerazione. Essa parla d’una <orgName ref="#SNF">scuola</orgName>
             <lb xml:id="Cod_scuole_femminili313_riga4" n="4" facs="#scuole_femminili313_riga4" break="no"/>
-            normale</orgName> che si trova in un <emph>attico locale</emph>, insufficiente al 
+            <orgName ref="#SNF">normale</orgName> che si trova in un <term type="tema">attico locale</term>, insufficiente al 
             <lb xml:id="Cod_scuole_femminili313_riga5" n="5" facs="#scuole_femminili313_riga5"/>
-            avere delle alunne che si presentano per l’ammissione. Bia-
+            avere delle <term type="pedagogia">alunne</term> che si presentano per l’<term type="pedagogia">ammissione</term>. Bia
             <lb xml:id="Cod_scuole_femminili313_riga6" n="6" facs="#scuole_femminili313_riga6" break="no"/>
             sima il <roleName ref="#Provv">provveditore</roleName> che ha messo, illegalmente egli dice,
             <lb xml:id="Cod_scuole_femminili313_riga7" n="7" facs="#scuole_femminili313_riga7"/>
-            un limite al numero delle alunne. Noi non intendiamo giu-
+            un limite al numero delle <term type="pedagogia">alunne</term>. Noi non intendiamo giu
             <lb xml:id="Cod_scuole_femminili313_riga8" n="8" facs="#scuole_femminili313_riga8" break="no"/>
             dicare il caso particolare. Bisognerebbe conoscere la città,
             <lb xml:id="Cod_scuole_femminili313_riga9" n="9" facs="#scuole_femminili313_riga9"/>
-            la scuola, il locale a cui allude la lettera; bisognerebbe sapere 
+            la <orgName ref="#SNF">scuola</orgName>, il <term type="tema">locale</term> a cui allude la lettera; bisognerebbe sapere 
             <lb xml:id="Cod_scuole_femminili313_riga10" n="10" facs="#scuole_femminili313_riga10"/>
             se è stato consultato il <orgName ref="#CPS">Consiglio Provinciale scolastico</orgName>, e
             <lb xml:id="Cod_scuole_femminili313_riga11" n="11" facs="#scuole_femminili313_riga11"/>
@@ -1352,31 +1317,31 @@
             <lb xml:id="Cod_scuole_femminili313_riga12" n="12" facs="#scuole_femminili313_riga12"/>
             del fatto non sta nel caso particolare; sta nell'essere esso un 
             <lb xml:id="Cod_scuole_femminili313_riga13" n="13" facs="#scuole_femminili313_riga13"/>
-            fatto che si ripete in molte città italiane.
+            fatto che si ripete in molte <placeName ref="#ITA">città italiane</placeName>.
             <lb xml:id="Cod_scuole_femminili313_riga14" n="14" facs="#scuole_femminili313_riga14"/>
             Le <orgName ref="#SNF">scuole femminili</orgName> sono fra noi assai meno del bisogno, 
             <lb xml:id="Cod_scuole_femminili313_riga15" n="15" facs="#scuole_femminili313_riga15"/>
-            e le <orgName ref="#SNF">normali</orgName> non bastano di certo alle scolare che si 
+            e le <orgName ref="#SNF">normali</orgName> non bastano di certo alle <term type="pedagogia">scolare</term> che si 
             <lb xml:id="Cod_scuole_femminili313_riga16" n="16" facs="#scuole_femminili313_riga16"/>
-            presentano. In moltissime città esse sono le uniche scuole, in
+            presentano. In moltissime città esse sono le uniche <orgName ref="#SNF">scuole</orgName>, in
             <lb xml:id="Cod_scuole_femminili313_riga17" n="17" facs="#scuole_femminili313_riga17"/>
-            cui la donna possa ricevere una <term type="disciplina" ana="#istr_sup">istruzione superiore</term> alla 
+            cui la <term type="tema">donna</term> possa ricevere una <term type="pedagogia" ana="#istr_sup">istruzione superiore</term> alla 
             <lb xml:id="Cod_scuole_femminili313_riga18" n="18" facs="#scuole_femminili313_riga18"/>
-            <term type="disciplina" ana="#istr_ele">elementare</term>. È da ciò che seguono inconvenienti molti, e più 
+            <term type="pedagogia" ana="#istr_ele">elementare</term>. È da ciò che seguono inconvenienti molti, e più 
             <lb xml:id="Cod_scuole_femminili313_riga19" n="19" facs="#scuole_femminili313_riga19"/>
             gravi assai di quello che si suppone. Se la <orgName ref="#SNF">scuola normale</orgName>
             <lb xml:id="Cod_scuole_femminili313_riga20" n="20" facs="#scuole_femminili313_riga20"/>
             è buona, tutte quelle che vanno in essa per avere una 
             <lb xml:id="Cod_scuole_femminili313_riga21" n="21" facs="#scuole_femminili313_riga21"/>
-            <term type="disciplina" ana="#cult_gen">cultura generale</term> restano, in parte almeno, tradite. La <orgName ref="#SNF">scuola 
+            <term type="disciplina" ana="#cult_gen">cultura generale</term> restano, in parte almeno, tradite. La <orgName ref="#SNF">scuola</orgName>
             <lb xml:id="Cod_scuole_femminili313_riga22" n="22" facs="#scuole_femminili313_riga22" break="no"/>
-            normale</orgName> deve formare <roleName ref="#Maestre">maestre elementari</roleName>, che sappiano
+            <orgName ref="#SNF">normale</orgName> deve formare <roleName ref="#Maestre">maestre elementari</roleName>, che sappiano
             <lb xml:id="Cod_scuole_femminili313_riga23" n="23" facs="#scuole_femminili313_riga23"/>
-            tenere una classe numerosa, ed insegnare praticamente a 
+            tenere una <term type="pedagogia">classe</term> numerosa, ed <term type="pedagogia">insegnare</term> praticamente a 
             <lb xml:id="Cod_scuole_femminili313_riga24" n="24" facs="#scuole_femminili313_riga24"/>
-            leggere, scrivere e far di conti correttamente. Per farlo 
+            <term type="disciplina">leggere</term>, <term type="disciplina">scrivere</term> e <term type="disciplina">far di conti</term> correttamente. Per farlo 
             <lb xml:id="Cod_scuole_femminili313_riga25" n="25" facs="#scuole_femminili313_riga25"/>
-            bene ci vogliono varie cognizioni e non poco studio: ma 
+            bene ci vogliono varie cognizioni e non poco <term type="pedagogia">studio</term>: ma 
             <lb xml:id="Cod_scuole_femminili313_riga26" n="26" facs="#scuole_femminili313_riga26"/>
             <choice>
                 <sic>noi ci una donna abbastanza istruita per insegnare a maestre</sic>
@@ -1385,36 +1350,37 @@
             <lb xml:id="Cod_scuole_femminili313_riga27" n="27" facs="#scuole_femminili313_riga27"/>
             anzi per lo più, incapacissimi a fare i <roleName ref="#Maestri">maestri elementari</roleName>. 
             <lb xml:id="Cod_scuole_femminili313_riga28" n="28" facs="#scuole_femminili313_riga28"/>
-            Se noi mandassimo alle <orgName ref="#SNM">scuole normali maschili</orgName> tutti gli 
+            Che cosa si direbbe se, per risparmio di tempo e denaro,
             <lb xml:id="Cod_scuole_femminili313_riga29" n="29" facs="#scuole_femminili313_riga29"/>
+            noi mandassimo alle <orgName ref="#SNM">scuole normali maschili</orgName> tutti gli             
             <lb xml:id="Cod_scuole_femminili313_riga30" n="30" facs="#scuole_femminili313_riga30"/>
             alunni che vanno alle <orgName ref="#ST">scuole tecniche</orgName>, ai <orgName ref="#GIN">ginnasi</orgName>, ai <orgName ref="#LIC">licei</orgName>,
             <lb xml:id="Cod_scuole_femminili313_riga31" n="31" facs="#scuole_femminili313_riga31"/>
-            agli <orgName ref="#IT">istituti tecnici</orgName> per avere in essi la cultura generale? 
+            agli <orgName ref="#IT">istituti tecnici</orgName> per avere in essi la <term type="disciplina" ana="#cult_gen">cultura generale</term>? 
             <lb xml:id="Cod_scuole_femminili313_riga32" n="32" facs="#scuole_femminili313_riga32"/>
             Ebbene, questo è quello che sono ora costrette a fare le 
             <lb xml:id="Cod_scuole_femminili313_riga33" n="33" facs="#scuole_femminili313_riga33"/>
-            donne. E cioè che è peggio, anche gli <orgName ref="#EDUC">educandati</orgName>, anche
+            <term type="tema">donne</term>. E cioè che è peggio, anche gli <orgName ref="#EDUC">educandati</orgName>, anche
             <lb xml:id="Cod_scuole_femminili313_riga34" n="34" facs="#scuole_femminili313_riga34"/>
             alcune <orgName ref="#SPRIV">scuole private</orgName>, senza alcuna necessità, si uniformano
             <lb xml:id="Cod_scuole_femminili313_riga35" n="35" facs="#scuole_femminili313_riga35"/>
             alle <orgName ref="#SNF">scuole normali</orgName>, e non hanno altro scopo che ad apparecchiare agli
             <lb xml:id="Cod_scuole_femminili313_riga36" n="36" facs="#scuole_femminili313_riga36"/>
-            esami di <term ana="#istr_sup">patente</term>. È il solo diploma che, non diremo per legge,
+            esami di <term type="titolo_legale" ref="#PAT_SUP">patente</term>. È il solo <term type="titolo_legale" ref="#DIP">diploma</term> che, non diremo per legge,
             <lb xml:id="Cod_scuole_femminili313_riga37" n="37" facs="#scuole_femminili313_riga37"/>
-            ma per costume, apra una via alla donna, e tutti lo vogliono.
+            ma per costume, apra una via alla <term type="tema">donna</term>, e tutti lo vogliono.
             <lb xml:id="Cod_scuole_femminili313_riga38" n="38" facs="#scuole_femminili313_riga38"/>
-            Per quanto si faccia, l'istruzione della <roleName ref="#Maestre">maestra elementare</roleName> 
+            Per quanto si faccia, l'<term type="pedagogia">istruzione</term> della <roleName ref="#Maestre">maestra elementare</roleName> 
             <lb xml:id="Cod_scuole_femminili313_riga39" n="39" facs="#scuole_femminili313_riga39"/>
-            deve essere pratica, professionale, se almeno deve corrispon-
-            <lb xml:id="Cod_scuole_femminili313_riga40" n="40" facs="#scuole_femminili313_riga40" break="no"/>
-            dere allo scopo. La <term ana="#cult_gen">cultura generale</term> è quindi nelle <orgName ref="#SNF">scuole
+            deve essere pratica, professionale, se almeno deve corrispon
+            <lb xml:id="Cod_scuole_femminili313_riga40" n="40" facs="#scuole_femminili313_riga40"/>
+            dere allo scopo. La <term type="disciplina" ana="#cult_gen">cultura generale</term> è quindi nelle <orgName ref="#SNF">scuole</orgName>
             <lb xml:id="Cod_scuole_femminili313_riga41" n="41" facs="#scuole_femminili313_riga41" break="no"/>
-            normali</orgName> ristretta in angusti confini, e non può estendersi, al-
+            <orgName ref="#SNF">normali</orgName> ristretta in angusti confini, e non può estendersi, al
             <lb xml:id="Cod_scuole_femminili313_riga42" n="42" facs="#scuole_femminili313_riga42" break="no"/>
-            largarsi largamente, come sarebbe necessario a quelle alunne
+            largarsi largamente, come sarebbe necessario a quelle <term type="pedagogia">alunne</term>
             <lb xml:id="Cod_scuole_femminili313_riga43" n="43" facs="#scuole_femminili313_riga43"/>
-            che vogliono essere solamente donne colte per proprio uso 
+            che vogliono essere solamente <term type="tema">donne colte</term> per proprio uso 
             <lb xml:id="Cod_scuole_femminili313_riga44" n="44" facs="#scuole_femminili313_riga44"/>
             e piacere, e come non è certo necessario a chi vuole essere solo 
             <lb xml:id="Cod_scuole_femminili313_riga45" n="45" facs="#scuole_femminili313_riga45"/>
@@ -1422,128 +1388,112 @@
             <lb xml:id="Cod_scuole_femminili313_riga46" n="46" facs="#scuole_femminili313_riga46"/>
             Tutto questo però non toglie, che le nostre <orgName ref="#SNF">scuole normali</orgName> 
             <lb xml:id="Cod_scuole_femminili313_riga47" n="47" facs="#scuole_femminili313_riga47"/>
-            servano di fatto nello stesso tempo come <orgName ana="#istr_sup">scuole speciali</orgName>, cioè
+            servano di fatto nello stesso tempo come <orgName ref="#SNF">scuole speciali</orgName>, cioè
             <lb xml:id="Cod_scuole_femminili313_riga48" n="48" facs="#scuole_femminili313_riga48"/>
-            normali, e come <orgName ana="#cult_gen">scuole di cultura generale</orgName>. Quindi le alunne
+            normali, e come <orgName>scuole di cultura generale</orgName>. Quindi le <term type="pedagogia">alunne</term>
             <lb xml:id="Cod_scuole_femminili313_riga49" n="49" facs="#scuole_femminili313_riga49"/>
             s’affollano in esse, tanto che quasi non sono soltanto 
             <lb xml:id="Cod_scuole_femminili313_riga50" n="50" facs="#scuole_femminili313_riga50"/>
-            piene ma addirittura <term type="patologia" ana="#stipate">stipate</term>. La legge, a cui accenna il caso
+            piene ma addirittura <term type="tema">stipate</term>. La <term type="law">legge</term>, a cui accenna il caso
             <lb xml:id="Cod_scuole_femminili313_riga51" n="51" facs="#scuole_femminili313_riga51"/>
             citato nella lettera che pubblicammo, non ha messo un limite
             <lb xml:id="Cod_scuole_femminili313_riga52" n="52" facs="#scuole_femminili313_riga52"/>
-            al numero delle alunne che debbano essere contenute in una
+            al numero delle <term type="pedagogia">alunne</term> che debbano essere contenute in una
             <lb xml:id="Cod_scuole_femminili313_riga53" n="53" facs="#scuole_femminili313_riga53"/>
-            classe di <orgName ref="#SNF">scuola normale</orgName>. I locali stessi sono ristretti, perchè
+            classe di <orgName ref="#SNF">scuola normale</orgName>. I <term type="tema">locali</term> stessi sono ristretti, perchè
             <lb xml:id="Cod_scuole_femminili313_riga54" n="54" facs="#scuole_femminili313_riga54"/>
-            non s'era preveduto il grande sviluppo <choice><sic>ched</sic><corr>che</corr></choice> dovevano pren-
+            non s'era preveduto il grande sviluppo <choice><sic>ched</sic><corr>che</corr></choice> dovevano pren
             <lb xml:id="Cod_scuole_femminili313_riga55" n="55" facs="#scuole_femminili313_riga55" break="no"/>
-            dere le scuole; spesso sono <term type="patologia" ana="#malsani">malsani</term>. Quando il <roleName ref="#Provv">Provveditore</roleName>
+            dere le <orgName ref="#SNF">scuole</orgName>; spesso sono <term type="patologia" ana="#malsani">malsani</term>. Quando il <roleName ref="#Provv">Provveditore</roleName>
             <lb xml:id="Cod_scuole_femminili313_riga56" n="56" facs="#scuole_femminili313_riga56"/>
             ed il <orgName ref="#CPS">Consiglio scolastico</orgName> sono interrogati intorno al numero 
             <lb xml:id="Cod_scuole_femminili313_riga57" n="57" facs="#scuole_femminili313_riga57"/>
-            delle alunne da ammettersi, rispondono spesso: la legge tace,
+            delle <term type="pedagogia">alunne</term> da ammettersi, rispondono spesso: la <term type="law">legge</term> tace,
             <lb xml:id="Cod_scuole_femminili313_riga58" n="58" facs="#scuole_femminili313_riga58"/>
             — come tace di fatti. E allora le mura delle sale diventano
            
             <cb n="2"/>
 
             <lb xml:id="Cod_scuole_femminili313_riga59" n="59" facs="#scuole_femminili313_riga59"/>
-            i confini naturali e materiali al numero delle alunne. Se ne
+            i confini naturali e materiali al <term type="tema">numero delle alunne</term>. Se ne
             <lb xml:id="Cod_scuole_femminili313_riga60" n="60" facs="#scuole_femminili313_riga60"/>
             ammettono finche ce n'entrano, qualche volta fino ad <measure quantity="80">ottanta</measure> 
             <lb xml:id="Cod_scuole_femminili313_riga61" n="61" facs="#scuole_femminili313_riga61"/>
-            o <measure quantity="90">novanta</measure> in una classe.
+            o <measure quantity="90">novanta</measure> in una <term type="pedagogia">classe</term>.
             <lb xml:id="Cod_scuole_femminili313_riga62" n="62" facs="#scuole_femminili313_riga62"/>
-            È facile immaginare quello che segue. Metà delle alun-
+            È facile immaginare quello che segue. Metà delle <term type="pedagogia">alun</term>
             <lb xml:id="Cod_scuole_femminili313_riga63" n="63" facs="#scuole_femminili313_riga63" break="no"/>
-            ne non ne profittano punto. I <term ref="#QUAD">quaderni</term> non sono corretti; 
+            <term type="pedagogia">ne</term> non ne profittano punto. I <term type="pedagogia">quaderni</term> non sono corretti; 
             <lb xml:id="Cod_scuole_femminili313_riga64" n="64" facs="#scuole_femminili313_riga64"/>
-            le <term type="disciplina" ana="#ripetizioni">ripetizioni</term> si fanno male assai; la <term type="disciplina" ana="#valore">disciplina</term> non si 
+            le <term type="pedagogiia" >ripetizioni</term> si fanno male assai; la disciplina non si 
             <lb xml:id="Cod_scuole_femminili313_riga65" n="65" facs="#scuole_femminili313_riga65"/>
-            può mantenere; il <term type="disciplina" ana="#valore">profitto</term> è scarso. Ma ciò non è il peg-
+            può mantenere; il <term type="pedagogia">profitto</term> è scarso. Ma ciò non è il peg
             <lb xml:id="Cod_scuole_femminili313_riga66" n="66" facs="#scuole_femminili313_riga66" break="no"/>
-            gio. Spesso la sala è ristretta, e c’è <term type="patologia" ana="#aria_luce">poca aria, poca luce</term>.
+            gio. Spesso la sala è <term type="tema">ristretta</term>, e c’è <term type="patologia" ana="#aria_luce">poca aria, poca luce</term>.
             <lb xml:id="Cod_scuole_femminili313_riga67" n="67" facs="#scuole_femminili313_riga67"/>
-            È allora le alunne soffrono nella <term type="patologia" ana="#patologia">salute</term>. Possiamo citare un
+            È allora le <term type="pedagogia">alunne</term> soffrono nella <term type="patologia" ana="#patologia">salute</term>. Possiamo citare un
             <lb xml:id="Cod_scuole_femminili313_riga68" n="68" facs="#scuole_femminili313_riga68"/>
-            fatto a nostra conoscenza, seguito in una città del <placeName ref="#SUD">Mezzogiorno</placeName>. —
-            <lb xml:id="Cod_scuole_femminili313_riga69" n="69" facs="#scuole_femminili313_riga69"/>
-            <measure quantity="50">Cinquanta</measure> alunne erano messe in una stanza 
+            fatto a nostra conoscenza, seguito in una città del <placeName ref="#SUD">Mezzo</placeName>
+            <lb xml:id="Cod_scuole_femminili313_riga69" n="69" facs="#scuole_femminili313_riga69" break="no"/>
+            <placeName ref="#SUD">giorno</placeName>.<measure quantity="50">Cinquanta</measure> <term type="pedagogia">alunne</term> erano messe in una <term type="tema">stanza</term>
             <lb xml:id="Cod_scuole_femminili313_riga70" n="70" facs="#scuole_femminili313_riga70"/>
-            strettissima, nella quale si <term type="patologia" ana="#soffocare">soffocava dal caldo</term>. Tutte le 
+            <term type="tema">strettissima</term>, nella quale si <term type="patologia" ana="#soffocare">soffocava dal caldo</term>. Tutte le 
             <lb xml:id="Cod_scuole_femminili313_riga71" n="71" facs="#scuole_femminili313_riga71"/>
-            premure fatte, perchè la scuola mutasse locale, furono vane.
+            premure fatte, perchè la <orgName ref="#SNF">scuola</orgName> mutasse <term type="tema">locale</term>, furono vane.
             <lb xml:id="Cod_scuole_femminili313_riga72" n="72" facs="#scuole_femminili313_riga72"/>
-            Il locale non v’era o non si voleva trovare. Di giorno in 
+            Il <term type="tema">locale</term> non v’era o non si voleva trovare. Di giorno in 
             <lb xml:id="Cod_scuole_femminili313_riga73" n="73" facs="#scuole_femminili313_riga73"/>
-            giorno le alunne <term type="patologia" ana="#impallidire">impallidivano</term>. Alcune <term type="patologia" ana="#ammalarsi">s'ammalarono</term> in 
+            giorno le <term type="pedagogia">alunne</term> <term type="patologia" ana="#impallidire">impallidivano</term>. Alcune <term type="patologia" ana="#ammalarsi">s'ammalarono</term> in 
             <lb xml:id="Cod_scuole_femminili313_riga74" n="74" facs="#scuole_femminili313_riga74"/>
-            modo da dovere per sempre abbandonare la scuola e gli 
+            modo da dovere per sempre abbandonare la <orgName ref="#SNF">scuola</orgName> e gli 
             <lb xml:id="Cod_scuole_femminili313_riga75" n="75" facs="#scuole_femminili313_riga75"/>
-            studi; un paio <term ana="#morire">morirono</term>. Questi racconti sembrano favole a chi 
+            <term type="pedagogia">studi</term>; un paio <term type="patologia" ana="#morte_conseguenza">morirono</term>. Questi racconti sembrano favole a chi 
             <lb xml:id="Cod_scuole_femminili313_riga76" n="76" facs="#scuole_femminili313_riga76"/>
             non ha visto coi propri occhi. Sappiamo di una giovanetta, 
             <lb xml:id="Cod_scuole_femminili313_riga77" n="77" facs="#scuole_femminili313_riga77"/>
-            che entrò nella scuola piena di vita e di freschezza; pa-
+            che entrò nella <orgName ref="#SNF">scuola</orgName> piena di vita e di freschezza; pa-
             <lb xml:id="Cod_scuole_femminili313_riga78" n="78" facs="#scuole_femminili313_riga78" break="no"/>
             reva un fiore. Dopo due anni si durava fatica a ricono-
             <lb xml:id="Cod_scuole_femminili313_riga79" n="79" facs="#scuole_femminili313_riga79" break="no"/>
-            scerla. <term type="patologia" ana="#deperimento">Pallida, magra, ricurva</term>, soffriva degli <term ana="#occhi">occhi</term>; aveva
+            scerla. <term type="patologia" ana="#deperimento">Pallida, magra, ricurva</term>, soffriva degli <term type="patologia" ana="#disturbi_visivi">occhi</term>; aveva
             <lb xml:id="Cod_scuole_femminili313_riga80" n="80" facs="#scuole_femminili313_riga80"/>
             continui <term type="patologia" ana="#mal_capo">mal di capo</term>; pareva una vecchia. Aveva preso la
             <lb xml:id="Cod_scuole_femminili313_riga81" n="81" facs="#scuole_femminili313_riga81"/>
-            <term ref="#PAT_SUP">patente di grado superiore</term>; ma aveva perduto ogni inte-
+            <term type="titolo_legale" ref="#PAT_SUP">patente di grado superiore</term>; ma aveva perduto ogni inte-
             <lb xml:id="Cod_scuole_femminili313_riga82" n="82" facs="#scuole_femminili313_riga82" break="no"/>
-            resse alla vita. Non pensava che a quaderni, a domande 
+            resse alla vita. Non pensava che a <term type="pedagogia">quaderni</term>, a domande 
             <lb xml:id="Cod_scuole_femminili313_riga83" n="83" facs="#scuole_femminili313_riga83"/>
-            e risposte, ad esami. Domandava se c’era per le donne 
+            e risposte, ad <term type="pedagogia">esami</term>. Domandava se c’era per le donne 
             <lb xml:id="Cod_scuole_femminili313_riga84" n="84" facs="#scuole_femminili313_riga84"/>
-            altri <term ref="#DIP">diplomi</term> da prendere. Non aveva più passione nella let-
+            altri <term type="titolo_legale" ref="#DIP">diplomi</term> da prendere. Non aveva più passione nella let-
             <lb xml:id="Cod_scuole_femminili313_riga85" n="85" facs="#scuole_femminili313_riga85" break="no"/>
-            tura, nello scrivere; confessava che, senza andare a lezione, 
+            tura, nello <term type="disciplina">scrivere</term>; confessava che, senza andare a <term type="pedagogia">lezione</term>, 
             <lb xml:id="Cod_scuole_femminili313_riga86" n="86" facs="#scuole_femminili313_riga86"/>
-            non poteva studiare.
+            non poteva <term type="pedagogia">studiare</term>.
             <lb xml:id="Cod_scuole_femminili313_riga87" n="87" facs="#scuole_femminili313_riga87"/>
             Tutto questo ci par che dia da pensare, e per parte
             <lb xml:id="Cod_scuole_femminili313_riga88" n="88" facs="#scuole_femminili313_riga88"/>
             nostra ci par che sia assolutamente necessario determinare 
             <lb xml:id="Cod_scuole_femminili313_riga89" n="89" facs="#scuole_femminili313_riga89"/>
-            il <term ana="#num_max">numero massimo</term> delle alunne che si possano ammettere 
+            il <term type="tema">numero massimo delle alunne</term> che si possano ammettere 
             <lb xml:id="Cod_scuole_femminili313_riga90" n="90" facs="#scuole_femminili313_riga90"/>
-            in una classe, e quando le sale sono troppo piccole, dare al 
+            in una <term type="pedagogia">classe</term>, e quando le <term type="tema">sale sono troppo piccole</term>, dare al 
             <lb xml:id="Cod_scuole_femminili313_riga91" n="91" facs="#scuole_femminili313_riga91"/>
             <orgName ref="#CPS">Consiglio Provinciale</orgName> ed al <roleName ref="#Dir">Direttore</roleName> facoltà di limitare
             <lb xml:id="Cod_scuole_femminili313_riga92" n="92" facs="#scuole_femminili313_riga92"/>
-            ancora questo numero, se non si vuole che le <orgName ref="#SNF">scuole fem
+            ancora questo numero, se non si vuole che le <orgName ref="#SNF">scuole fem</orgName>
             <lb xml:id="Cod_scuole_femminili313_riga93" n="93" facs="#scuole_femminili313_riga93" break="no"/>
-            minili</orgName> divengano <term ana="#ammazzatoi">ammazzatoi</term>.
-            <note type="filologica" resp="#FlorisValenti">Il termine «ammazzatoi», di forte carica retorica
-                e inusuale nella prosa giornalistica dell'epoca, è da interpretarsi come iperbole
-                polemica per denunciare le condizioni igieniche letali degli ambienti scolastici.
-                L'uso di un lessico così crudo è coerente con il tono d'inchiesta militante della
-                <title level="j">Rassegna Settimanale</title>, che si proponeva di sollecitare
-                l'intervento delle autorità attraverso l'indignazione del lettore colto.</note>
-            Quando la legge tace, e non 
+            <orgName ref="#SNF">minili</orgName> divengano <term type="retorico" ref="#ammazzatoi">ammazzatoi</term>. Quando la <term type="law">legge</term> tace, e non 
             <lb xml:id="Cod_scuole_femminili313_riga94" n="94" facs="#scuole_femminili313_riga94"/>
-            vi sono ordini in contrario, noi crediamo che si possa biasi-
+            vi sono ordini in contrario, noi crediamo che si possa biasi
             <lb xml:id="Cod_scuole_femminili313_riga95" n="95" facs="#scuole_femminili313_riga95" break="no"/>
-            mare l’<term type="normativa" ana="#istituzione">autorità scolastica</term> che provvede in nome della pub-
+            mare l’<orgName ref="#Min_Istruzione">autorità scolastica</orgName> che provvede in nome della <term type="tema">pub</term>
             <lb xml:id="Cod_scuole_femminili313_riga96" n="96" facs="#scuole_femminili313_riga96" break="no"/>
-            blica salute e del pubblico bene. Si può disputare intorno 
+            <term type="tema">blica salute</term> e del <term type="tema">pubblico bene</term>. Si può disputare intorno 
             <lb xml:id="Cod_scuole_femminili313_riga97" n="97" facs="#scuole_femminili313_riga97"/>
-            al modo. Non crediamo si possa disputare quanto al <term type="normativa" ana="#diritto">diritto</term>, 
+            al modo. Non crediamo si possa disputare quanto al <term type="law" ref="#diritto">diritto</term>, 
             <lb xml:id="Cod_scuole_femminili313_riga98" n="98" facs="#scuole_femminili313_riga98"/>
-            e diremmo anche al <term type="normativa" ana="#dovere">dovere</term>, di provvedere.
-            <note type="storica" resp="#FlorisValenti">L'appello al «diritto e dovere» dell'autorità
-                scolastica di intervenire si inscrive nel quadro normativo post-unitario.
-                La <title>legge Casati</title> del 1859, ancora in vigore nel 1879, non prevedeva
-                norme specifiche sull'igiene degli edifici scolastici. Solo con la
-                <title>legge Coppino</title> del 1877 e i successivi regolamenti si iniziò a
-                codificare l'obbligo di ambienti salubri, ma l'applicazione restava largamente
-                disattesa, soprattutto nelle province del Mezzogiorno e in quelle montane del Nord.</note>
-            <lb xml:id="Cod_scuole_femminili313_riga99" n="99" facs="#scuole_femminili313_riga99"/>
-           <lb xml:id="Cod_scuole_femminili313_riga100" n="100" facs="#scuole_femminili313_riga100"/>
+            e diremmo anche al <term type="law" ref="#dovere">dovere</term>, di provvedere.
         </p>
             </div>
     </body>

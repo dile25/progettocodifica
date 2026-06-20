@@ -97,14 +97,19 @@ function initializeNavigation() {
 
 // Navigazione centralizzata
 function navigateTo(href) {
-    var infoAnchors = ['#document-info', '#people-section', '#places-section', '#glossary-section', '#info-section'];
+    var infoAnchors = ['#document-info', '#people-section', '#places-section', '#organisations-section', '#glossary-section', '#glossario_norme', '#glossario_licenze', '#glossario_pedagogia', '#glossario_discipline', '#glossario_politica', '#glossario_salute', '#glossario_periodici', '#info-section'];
     if (infoAnchors.indexOf(href) !== -1) {
         showSection('#info-section');
         if (href !== '#info-section') {
+            // Aspetta che il browser ridisegni la sezione prima di scrollare
             setTimeout(function () {
-                var t = $(href);
-                if (t.length) $('html, body').scrollTop(t.offset().top - 60);
-            }, 100);
+                setTimeout(function () {
+                    var t = $(href);
+                    if (t.length) {
+                        $('html, body').animate({ scrollTop: t.offset().top - 70 }, 300);
+                    }
+                }, 50);
+            }, 250);
         }
     } else {
         var id = href.replace(/^#/, '');
@@ -600,14 +605,19 @@ function initializeNavigation() {
 
 // Navigazione centralizzata
 function navigateTo(href) {
-    var infoAnchors = ['#document-info', '#people-section', '#places-section', '#glossary-section', '#info-section'];
+    var infoAnchors = ['#document-info', '#people-section', '#places-section', '#organisations-section', '#glossary-section', '#glossario_norme', '#glossario_licenze', '#glossario_pedagogia', '#glossario_discipline', '#glossario_politica', '#glossario_salute', '#glossario_periodici', '#info-section'];
     if (infoAnchors.indexOf(href) !== -1) {
         showSection('#info-section');
         if (href !== '#info-section') {
+            // Aspetta che il browser ridisegni la sezione prima di scrollare
             setTimeout(function () {
-                var t = $(href);
-                if (t.length) $('html, body').scrollTop(t.offset().top - 60);
-            }, 100);
+                setTimeout(function () {
+                    var t = $(href);
+                    if (t.length) {
+                        $('html, body').animate({ scrollTop: t.offset().top - 70 }, 300);
+                    }
+                }, 50);
+            }, 250);
         }
     } else {
         var id = href.replace(/^#/, '');

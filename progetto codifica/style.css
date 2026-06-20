@@ -822,3 +822,62 @@ svg rect.selected {
     background: inherit;
     padding: 2px 0;
 }
+/* ── GLOSSARIO COME PAGINA A SÉ ─────────────────────────────── */
+.sidebar { display: none !important; }
+
+.site {
+    grid-template-areas:
+        "main"
+        "footer" !important;
+    grid-template-columns: 1fr !important;
+}
+
+.glossary-page-section {
+    margin: 2rem 0;
+}
+.glossary-page-section h2 {
+    font-size: 1.3rem;
+    color: var(--accent-dark, #5c4509);
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--border, #c8b98a);
+}
+.glossary-group {
+    margin-bottom: 2.5rem;
+}
+.glossary-group-title {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: var(--text-secondary, #4a4a4a);
+    margin: 0 0 1rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid var(--border-light, #ddd5c0);
+}
+.glossary-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 0.8rem;
+}
+.glossary-card {
+    background: var(--bg-card, #faf7f2);
+    border: 1px solid var(--border-light, #ddd5c0);
+    border-radius: 6px;
+    padding: 0.7rem 1rem;
+}
+.glossary-card h4 {
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+}
+.definition-info {
+    font-size: 0.82rem;
+    line-height: 1.55;
+}
+
+/* Misure nel testo */
+.measure {
+    color: #475569;
+    font-variant-numeric: oldstyle-nums;
+    border-bottom: 1px dotted #94a3b8;
+    cursor: default;
+}

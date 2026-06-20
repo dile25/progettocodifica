@@ -33,10 +33,24 @@
         <ul class="nav-menu">
             
             <li class="nav-item dropdown">
-                <a href="#" class="dropdown-toggle" onclick="return false;">Informazioni generali ▾</a>
+                <a href="#" class="dropdown-toggle" onclick="return false;">Persone, luoghi e organizzazioni ▾</a>
                 <ul class="dropdown-menu">
-                    <li><a href="#info-section">Presentazione del progetto</a></li>
-                    <li><a href="#glossary-section">Glossario dei Termini</a></li>
+                    <li><a href="#people-section">Persone</a></li>
+                    <li><a href="#places-section">Luoghi</a></li>
+                    <li><a href="#organisations-section">Organizzazioni</a></li>
+                </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a href="#" class="dropdown-toggle" onclick="return false;">Glossari ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#glossario_norme">Norme e leggi</a></li>
+                    <li><a href="#glossario_licenze">Titoli e licenze</a></li>
+                    <li><a href="#glossario_pedagogia">Pedagogia</a></li>
+                    <li><a href="#glossario_discipline">Discipline</a></li>
+                    <li><a href="#glossario_politica">Politica</a></li>
+                    <li><a href="#glossario_salute">Salute e igiene</a></li>
+                    <li><a href="#glossario_periodici">Periodici</a></li>
                 </ul>
             </li>
 
@@ -104,10 +118,40 @@
                                 <xsl:apply-templates select="/tei:teiCorpus/tei:standOff/tei:listPlace/tei:place"/>
                             </div>
                         </div>
-                        <div id="organisations-section" class="places-section">
-                            <h2>Organizzazioni menzionate</h2>
+                        <div id="organisations-section" class="organisations-section">
+                            <h2>Organizzazioni e istituzioni</h2>
                             <div class="people-grid">
                                 <xsl:apply-templates select="/tei:teiCorpus/tei:standOff/tei:listOrg/tei:org"/>
+                            </div>
+                        </div>
+
+                        <!-- GLOSSARI nella pagina info -->
+                        <div id="glossary-section" class="glossary-page-section">
+                            <h2>Glossari</h2>
+                            <div class="glossary-container">
+                                <xsl:for-each select="//tei:list[@type='glossary']">
+                                    <div class="glossary-group" id="{@xml:id}">
+                                        <xsl:if test="tei:head">
+                                            <h3 class="glossary-group-title"><xsl:value-of select="tei:head"/></h3>
+                                        </xsl:if>
+                                        <div class="glossary-grid">
+                                        <xsl:for-each select="tei:label">
+                                            <div class="glossary-card" id="{tei:term/@xml:id}">
+                                                <h4><xsl:value-of select="tei:term"/></h4>
+                                                <div class="glossary-details">
+                                                    <p class="definition-info">
+                                                        <xsl:apply-templates select="following-sibling::tei:item[1]/tei:gloss/node()[not(self::tei:ref)]"/>
+                                                        <xsl:for-each select="following-sibling::tei:item[1]/tei:gloss/tei:ref">
+                                                            <a href="{@target}" class="entity-link"><xsl:value-of select="."/></a>
+                                                            <xsl:if test="position() != last()"><xsl:text>, </xsl:text></xsl:if>
+                                                        </xsl:for-each>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </xsl:for-each>
+                                        </div>
+                                    </div>
+                                </xsl:for-each>
                             </div>
                         </div>
                     </section>
@@ -190,20 +234,25 @@
                                         <h3>Legenda</h3>
                                         <div class="legend-grid">
                                             <div class="legend-item"><span class="legend-color" style="background-color:#fde68a;"></span><span>Persona reale</span></div>
-                                            <div class="legend-item"><span class="legend-color" style="background-color:#e5e7eb;"></span><span>Ruolo / persona immaginaria</span></div>
+                                            <div class="legend-item"><span class="legend-color" style="background-color:#e5e7eb;"></span><span>Ruolo</span></div>
                                             <div class="legend-item"><span class="legend-color" style="background-color:#f9a8d4;"></span><span>Luogo</span></div>
                                             <div class="legend-item"><span class="legend-color" style="background-color:#86efac;"></span><span>Data</span></div>
                                             <div class="legend-item"><span class="legend-color" style="background-color:#93c5fd;"></span><span>Organizzazione</span></div>
-                                            <div class="legend-item"><span class="legend-color" style="background-color:#c4b5fd;"></span><span>Termine disciplinare</span></div>
+                                            <div class="legend-item"><span class="legend-color" style="background-color:#c084fc;"></span><span>Termine disciplinare</span></div>
                                             <div class="legend-item"><span class="legend-color" style="background-color:#fca5a5;"></span><span>Termine tematico</span></div>
                                             <div class="legend-item"><span class="legend-color" style="background-color:#fdba74;"></span><span>Termine patologico</span></div>
-                                            <div class="legend-item"><span class="legend-color" style="background-color:#a5f3fc;"></span><span>Altri termini</span></div>
+                                            <div class="legend-item"><span class="legend-color" style="background-color:#a3e635;"></span><span>Termine pedagogico</span></div>
                                             <div class="legend-item"><span class="legend-color legend-text" style="color:#b91c1c;font-weight:700;">orig</span><span>Forma originale</span></div>
                                             <div class="legend-item"><span class="legend-color legend-text" style="color:#15803d;font-weight:700;">reg</span><span>Forma regolarizzata</span></div>
                                             <div class="legend-item"><span class="legend-color legend-text" style="color:#c2410c;font-weight:700;">sic</span><span>Errore originale</span></div>
                                             <div class="legend-item"><span class="legend-color legend-text" style="color:#166534;font-weight:700;">corr</span><span>Correzione editoriale</span></div>
                                             <div class="legend-item"><span class="legend-color legend-text" style="color:#7e22ce;font-weight:700;">abbr</span><span>Abbreviazione</span></div>
                                             <div class="legend-item"><span class="legend-color legend-text" style="color:#0369a1;font-weight:700;">expan</span><span>Espansione</span></div>
+                                            <div class="legend-item"><span class="legend-color" style="background-color:#ca8a04;"></span><span>Termine normativo / legge</span></div>
+                                            <div class="legend-item"><span class="legend-color" style="background-color:#fbbf24;"></span><span>Titolo / licenza / diploma</span></div>
+                                            <div class="legend-item"><span class="legend-color" style="background-color:#fb7185;"></span><span>Termine retorico</span></div>
+                                            <div class="legend-item"><span class="legend-color" style="background-color:#818cf8;"></span><span>Pubblicazione / rivista</span></div>
+                                            <div class="legend-item"><span class="legend-color legend-text" style="color:#475569;font-weight:700;">123</span><span>Numero / misura</span></div>
                                         </div>
                                         <p class="legend-note">Clicca su una riga nel testo per evidenziarla nel facsimile, e viceversa.</p>
                                     </div>
@@ -223,49 +272,7 @@
                     </xsl:for-each>
 
                     <!-- SIDEBAR: GLOSSARIO -->
-                    <aside class="sidebar">
-                        <div id="glossary-section" class="glossary-section">
-                            <h2>Glossario</h2>
-                            <div class="glossary-container">
-                                <xsl:for-each select="//tei:list[@type='glossary']">
-                                    <div class="glossary-group" id="{@xml:id}">
-                                        <xsl:if test="tei:head">
-                                            <h3 class="glossary-group-title"><xsl:value-of select="tei:head"/></h3>
-                                        </xsl:if>
-                                        <xsl:for-each select="tei:label">
-                                            <div class="glossary-card" id="{tei:term/@xml:id}">
-                                                <h4>
-                                                    <xsl:value-of select="tei:term"/>
-                                                </h4>
-                                                <div class="glossary-details">
-                                                    <p class="definition-info">
-                                                        <xsl:apply-templates select="following-sibling::tei:item[1]/tei:gloss/node()[not(self::tei:ref)]"/>
-                                                        <xsl:for-each select="following-sibling::tei:item[1]/tei:gloss/tei:ref">
-                                                            <a href="{@target}" class="entity-link"><xsl:value-of select="."/></a>
-                                                            <xsl:if test="position() != last()"><xsl:text>, </xsl:text></xsl:if>
-                                                        </xsl:for-each>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </xsl:for-each>
-                                    </div>
-                                </xsl:for-each>
-                                <xsl:if test="//tei:taxonomy">
-                                    <div class="glossary-group" id="taxonomy-section">
-                                        <h3 class="glossary-group-title">Categorie tematiche</h3>
-                                        <xsl:for-each select="//tei:taxonomy/tei:category">
-                                            <div class="glossary-card" id="{@xml:id}">
-                                                <h4><xsl:value-of select="@xml:id"/></h4>
-                                                <div class="glossary-details">
-                                                    <p class="definition-info"><xsl:value-of select="tei:catDesc"/></p>
-                                                </div>
-                                            </div>
-                                        </xsl:for-each>
-                                    </div>
-                                </xsl:if>
-                            </div>
-                        </div>
-                    </aside>
+
 
                     <!-- FOOTER -->
                     <footer class="footer">
@@ -574,19 +581,19 @@
         <span class="term entity-term">
             <xsl:attribute name="style">
                 <xsl:choose>
-                   <xsl:when test="$t='disciplina'">background-color:#c4b5fd;</xsl:when>
-<xsl:when test="$t='tema'">background-color:#fca5a5;</xsl:when>
-<xsl:when test="$t='patologia'">background-color:#fdba74;</xsl:when>
-<xsl:when test="$t='normativa'">background-color:#c4b5fd;</xsl:when>
-<xsl:when test="$t='didattica'">background-color:#c4b5fd;</xsl:when>
-<xsl:when test="$t='valore'">background-color:#fca5a5;</xsl:when>
-<xsl:when test="$t='concetto'">background-color:#fca5a5;</xsl:when>
-<xsl:when test="$t='atto_legale'">background-color:#a5f3fc;</xsl:when>
-<xsl:when test="$t='sistema'">background-color:#fca5a5;</xsl:when>
-<xsl:when test="$t='corrente'">background-color:#fca5a5;</xsl:when>
-<xsl:when test="$t='periodical'">background-color:#a5f3fc;</xsl:when>
-<xsl:when test="$t='collettivo'">background-color:#fca5a5;</xsl:when>
-<xsl:otherwise>background-color:#a5f3fc;</xsl:otherwise>
+                    <xsl:when test="$t='disciplina'">background-color:#c084fc;</xsl:when>
+                    <xsl:when test="$t='tema'">background-color:#fca5a5;</xsl:when>
+                    <xsl:when test="$t='patologia'">background-color:#f97316;</xsl:when>
+                    <xsl:when test="$t='pedagogia'">background-color:#a3e635;</xsl:when>
+                    <xsl:when test="$t='istituzione'">background-color:#d97706;</xsl:when>
+                    <xsl:when test="$t='law'">background-color:#ca8a04;</xsl:when>
+                    <xsl:when test="$t='titolo_legale'">background-color:#fbbf24;</xsl:when>
+                    <xsl:when test="$t='retorico'">background-color:#fb7185;</xsl:when>
+                    <xsl:when test="$t='periodical'">background-color:#818cf8;</xsl:when>
+                    <xsl:when test="$t='concept'">background-color:#6366f1;</xsl:when>
+                    <xsl:when test="$t='political_party'">background-color:#ec4899;</xsl:when>
+                    <xsl:when test="$t='periodical'">background-color:#10b981;</xsl:when>
+                    <xsl:otherwise></xsl:otherwise>
                 </xsl:choose>
             </xsl:attribute>
             <xsl:choose>
