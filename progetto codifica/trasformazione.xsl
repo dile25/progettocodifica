@@ -119,7 +119,7 @@
                             </div>
                         </div>
                         <div id="organisations-section" class="organisations-section">
-                            <h2>Organizzazioni e istituzioni</h2>
+                            <h2>Organizzazioni</h2>
                             <div class="people-grid">
                                 <xsl:apply-templates select="/tei:teiCorpus/tei:standOff/tei:listOrg/tei:org"/>
                             </div>
