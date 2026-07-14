@@ -1,4 +1,4 @@
-//dilettavalenti
+//trasformazione dilettavalenti
 
 cd ~/Desktop/progettocodifica/"progetto codifica"
 java -cp "saxon-he-13.0.jar:xmlresolver-6.0.23.jar:xmlresolver-6.0.23-data.jar:coffeegrinder-3.3.8.jar:coffeefilter-3.3.8.jar:jline-2.14.6.jar" net.sf.saxon.Transform -s:codifica_floris_valenti.xml -xsl:trasformazione.xsl -o:output.html
@@ -8,3 +8,8 @@ java -cp "saxon-he-13.0.jar:xmlresolver-6.0.23.jar:xmlresolver-6.0.23-data.jar:c
 
 cd "progetto codifica"
 java -cp ".;saxon-he-13.0.jar;xmlresolver-6.0.23.jar;xmlresolver-6.0.23-data.jar" net.sf.saxon.Transform -s:codifica_floris_valenti.xml -xsl:trasformazione.xsl -o:output.html
+
+//validazione
+
+dilettavalenti@Air-di-Diletta progetto codifica % java -cp "Xerces/xerces-2_12_2-xml-schema-1.1/*" sax.Counter codifica_floris_valenti.xml
+codifica_floris_valenti.xml: 12 ms (4064 elems, 8238 attrs, 0 spaces, 153670 chars)
