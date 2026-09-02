@@ -79,13 +79,12 @@
             </editorialDecl>
             <tagsDecl>
                 <namespace name="http://www.tei-c.org/ns/1.0">
-                    <tagUsage gi="persName" occurs="65">Nomi di persona, collegati allo standOff con @ref.</tagUsage>
-                    <tagUsage gi="placeName" occurs="74">Nomi di luogo, collegati allo standOff con @ref.</tagUsage>
-                    <tagUsage gi="orgName" occurs="12">Nomi di organizzazioni e istituzioni.</tagUsage>
-                    <tagUsage gi="term" occurs="48">Termini tecnici o tematicamente rilevanti, con @type (disciplina, tema, patologia).</tagUsage>
-                    <tagUsage gi="foreign" occurs="2">Parole in lingua straniera, con @xml:lang.</tagUsage>
-                    <tagUsage gi="choice" occurs="12">Coppie abbr/expan o orig/reg per edizione critica.</tagUsage>
-                    <tagUsage gi="note" occurs="18">Note del codificatore, con @type (storica, filologica, biografica).</tagUsage>
+                    <tagUsage gi="persName">Nomi di persona, collegati allo standOff con @ref.</tagUsage>
+                    <tagUsage gi="placeName">Nomi di luogo, collegati allo standOff con @ref.</tagUsage>
+                    <tagUsage gi="orgName">Nomi di organizzazioni e istituzioni.</tagUsage>
+                    <tagUsage gi="term">Termini tecnici o tematicamente rilevanti, con @type (disciplina, tema, patologia).</tagUsage>
+                    <tagUsage gi="foreign">Parole in lingua straniera, con @xml:lang.</tagUsage>
+                    <tagUsage gi="choice">Coppie abbr/expan o orig/reg per edizione critica.</tagUsage>
                 </namespace>
             </tagsDecl>
         </encodingDesc>
@@ -115,9 +114,6 @@
 
 <!-- ============================================================
          STANDOFF UNIFICATO — versione finale
-         Tutte le entità del corpus con dati completati.
-         Sostituire integralmente la sezione <standOff>...</standOff>
-         nel file codifica_floris_valenti.xml
          ============================================================ -->
 
 <standOff>
@@ -135,8 +131,6 @@
                 <death><date when="1892">1892</date></death>
                 <occupation>Ministro della Pubblica Istruzione del Regno d'Italia (1878–1879)</occupation>
                 <note>Giurista e letterato siciliano; durante il suo mandato ministeriale fu al centro del dibattito sull'istruzione femminile e sulle condizioni delle scuole normali.</note>
-                <idno type="VIAF">71502858</idno>
-                <idno type="Wikidata">Q3755588</idno>
             </person>
 
             <person xml:id="L_Franchetti">
@@ -145,8 +139,6 @@
                 <death><date when="1917">1917</date></death>
                 <occupation>Politico, studioso e pubblicista; senatore del Regno d'Italia</occupation>
                 <note>Co-fondatore e proprietario de «La Rassegna Settimanale» insieme a Sidney Sonnino; noto per l'inchiesta sulle condizioni della Sicilia (1876).</note>
-                <idno type="VIAF">64021351</idno>
-                <idno type="Wikidata">Q3825986</idno>
             </person>
 
             <person xml:id="S_Sonnino">
@@ -155,8 +147,6 @@
                 <death><date when="1922">1922</date></death>
                 <occupation>Uomo di stato; due volte Presidente del Consiglio (1906 e 1909–1910); Ministro degli Esteri durante la Prima Guerra Mondiale</occupation>
                 <note>Co-fondatore de «La Rassegna Settimanale»; dopo la cessazione della rivista intraprese la carriera politica divenendo uno dei principali statisti dell'Italia liberale.</note>
-                <idno type="VIAF">64021350</idno>
-                <idno type="Wikidata">Q313933</idno>
             </person>
 
             <person xml:id="P_Pampaloni">
@@ -171,8 +161,6 @@
                 <death><date when="1895">1895</date></death>
                 <occupation>Politico, filologo e scrittore; Ministro della Pubblica Istruzione (1874–1876)</occupation>
                 <note>Promotore della riforma scolastica post-unitaria; nel 1881 annunciò la fondazione de «La Cultura, Rivista di scienze morali, di lettere ed arti», periodico critico-bibliografico a uscita bimestrale.</note>
-                <idno type="VIAF">56618816</idno>
-                <idno type="Wikidata">Q464765</idno>
             </person>
 
             <person xml:id="Q_Sella">
@@ -213,8 +201,6 @@
                 <death><date when="1870">1870</date></death>
                 <occupation>Politico, storico e pubblicista francese; esponente del cattolicesimo liberale</occupation>
                 <note>Deputato e poi senatore francese; principale difensore della libertà di insegnamento della Chiesa cattolica; nel corpus citato nel dibattito sull'istruzione laica e religiosa nel periodo post-unitario.</note>
-                <idno type="VIAF">2476802</idno>
-                <idno type="Wikidata">Q273487</idno>
             </person>
 
             <!-- ── Scienziati e pensatori del corpus ── -->
@@ -225,8 +211,6 @@
                 <death><date when="1882">1882</date></death>
                 <occupation>Naturalista e geologo britannico; autore della teoria dell'evoluzione per selezione naturale</occupation>
                 <note>Il suo pensiero è richiamato nel corpus come fondamento teorico delle discussioni sull'igiene scolastica e sull'educazione in prospettiva evoluzionistica.</note>
-                <idno type="VIAF">27063124</idno>
-                <idno type="Wikidata">Q1035</idno>
             </person>
 
             <person xml:id="H_Spencer">
@@ -235,8 +219,6 @@
                 <death><date when="1903">1903</date></death>
                 <occupation>Filosofo e sociologo britannico; principale esponente del positivismo evoluzionistico</occupation>
                 <note>Autore di «Education: Intellectual, Moral and Physical» (1861), opera ampiamente discussa nel corpus in relazione alla pedagogia scientifica.</note>
-                <idno type="VIAF">39377694</idno>
-                <idno type="Wikidata">Q48193</idno>
             </person>
 
             <person xml:id="JS_Mill">
@@ -245,8 +227,6 @@
                 <death><date when="1873">1873</date></death>
                 <occupation>Filosofo, economista e politico liberale britannico; esponente dell'utilitarismo</occupation>
                 <note>Riferimento teorico del liberalismo laico dei redattori della Rassegna in materia di istruzione e libertà individuale.</note>
-                <idno type="VIAF">31975535</idno>
-                <idno type="Wikidata">Q151803</idno>
             </person>
 
             <person xml:id="Virchow">
@@ -255,8 +235,6 @@
                 <death><date when="1902">1902</date></death>
                 <occupation>Patologo e antropologo tedesco; fondatore della patologia cellulare; deputato al Reichstag</occupation>
                 <note>Segnalò la frequenza di malattie respiratorie e congestioni nelle scuole; i suoi dati statistici sono citati da Tamassia nel libretto sul lavoro mentale.</note>
-                <idno type="VIAF">61550437</idno>
-                <idno type="Wikidata">Q58095</idno>
             </person>
 
             <person xml:id="Tamassia">
@@ -265,8 +243,6 @@
                 <death><date when="1917">1917</date></death>
                 <occupation>Professore di medicina legale e psichiatria forense all'Università di Pavia</occupation>
                 <note>Autore del libretto «Le intemperanze del lavoro mentale nelle scuole» (Sonzogno, Milano 1881), discusso nella rubrica Notizie del corpus; pioniere della psichiatria forense italiana.</note>
-                <idno type="VIAF">44387809</idno>
-                <idno type="Wikidata">Q3975024</idno>
             </person>
 
             <person xml:id="Finkelnburg">
@@ -283,7 +259,6 @@
                 <death><date when="1906">1906</date></death>
                 <occupation>Oculista tedesco; professore all'Università di Breslavia</occupation>
                 <note>Condusse sistematici studi statistici sulla diffusione della miopia nelle scuole rurali e urbane della Germania; i suoi risultati influenzarono le riforme scolastiche igieniche in tutta Europa.</note>
-                <idno type="VIAF">47556837</idno>
             </person>
 
             <person xml:id="Becker">
@@ -329,8 +304,6 @@
                 <death><date when="1879-04-06">6 aprile 1879</date><placeName ref="#BL">Berlino</placeName></death>
                 <occupation>Fisico e meteorologo tedesco; professore ordinario all'Università di Berlino</occupation>
                 <note>Fondatore della meteorologia scientifica moderna; sviluppò la legge del vento che porta il suo nome; morì a 76 anni come riportato nella rubrica Notizie del fascicolo 69.</note>
-                <idno type="VIAF">57409803</idno>
-                <idno type="Wikidata">Q76547</idno>
             </person>
 
             <!-- ── Figure legate alle Notizie culturali ── -->
@@ -341,8 +314,6 @@
                 <death><date when="1894">1894</date></death>
                 <occupation>Archeologo cristiano; fondatore dell'archeologia delle catacombe romane</occupation>
                 <note>Curatore delle Inscriptiones Christianae Urbis Romae; si avvalse della pianta di Roma del Bufalini (1551), ritrovata a Cuneo, per lo studio della topografia delle catacombe.</note>
-                <idno type="VIAF">100173065</idno>
-                <idno type="Wikidata">Q315880</idno>
             </person>
 
             <person xml:id="L_Bufalini">
@@ -402,8 +373,6 @@
                 <death><date when="1837">1837</date></death>
                 <occupation>Poeta, filosofo e filologo; massimo esponente del Romanticismo italiano</occupation>
                 <note>Originario di Recanati (detto anche «il Recanatese»); la notizia riguarda la scoperta del manoscritto della cantica giovanile L'appressamento della morte (1816) tra le carte del canonico Cancellieri a Massa.</note>
-                <idno type="VIAF">32012148</idno>
-                <idno type="Wikidata">Q1396</idno>
             </person>
 
             <person xml:id="Tommaseo">
@@ -412,8 +381,6 @@
                 <death><date when="1874">1874</date></death>
                 <occupation>Letterato, linguista e lessicografo; autore del Dizionario della lingua italiana</occupation>
                 <note>Bersaglio di un epigramma satirico inedito di Leopardi, rinvenuto nel manoscritto scoperto da Viani; l'epigramma è riportato nella notizia del fascicolo 106.</note>
-                <idno type="VIAF">56609589</idno>
-                <idno type="Wikidata">Q280930</idno>
             </person>
 
             <person xml:id="Posocco">
@@ -436,8 +403,6 @@
                 <death><date when="1901">1901</date></death>
                 <occupation>Poeta, romanziere e drammaturgo scozzese</occupation>
                 <note>Annunciò la prossima pubblicazione del poema Giustiniano sulla Contemporary Review; noto per la polemica letteraria contro la scuola preraffaellita (The Fleshly School of Poetry, 1871).</note>
-                <idno type="VIAF">56613866</idno>
-                <idno type="Wikidata">Q523929</idno>
             </person>
 
             <person xml:id="Dixon">
@@ -446,8 +411,6 @@
                 <death><date when="1879-12-27">27 dicembre 1879</date></death>
                 <occupation>Scrittore, giornalista e viaggiatore inglese; direttore dell'Athenaeum (1853–1869)</occupation>
                 <note>Noto per i resoconti di viaggio in Russia, Palestina, Cipro e America del Nord; la sua morte fu annunciata nella rubrica Notizie del fascicolo 106.</note>
-                <idno type="VIAF">29529766</idno>
-                <idno type="Wikidata">Q5554736</idno>
             </person>
 
             <person xml:id="AlessandroII">
@@ -982,7 +945,6 @@
             <org xml:id="Chiesa">
                 <orgName>Chiesa Cattolica</orgName>
                 <desc>Istituzione religiosa; attore centrale nel dibattito sull'istruzione femminile e sulla libertà d'insegnamento nel periodo post-unitario; in conflitto con lo Stato italiano dopo il 1870 per la questione romana.</desc>
-                <idno type="Wikidata">Q9592</idno>
             </org>
 
             <org xml:id="Stato">
@@ -2185,7 +2147,7 @@
             <lb xml:id="Cod_IstruzionePubblica21_riga80" n="80" facs="#IstruzionePubblica21_riga80" break="no"/>
             <term type="disciplina">gnamento</term> o cogli <term type="disciplina">scritti</term> hanno impugnato le verità sulle 
             <lb xml:id="Cod_IstruzionePubblica21_riga81" n="81" facs="#IstruzionePubblica21_riga81"/>
-            quali riposa l' <term type="Ordine religioso e morale" ref="#ordine_religioso_morale">ordine religioso e morale</term> »</quote>. Il che vuol dire 
+            quali riposa l' <term type="concept" ref="#ordine_religioso_morale">ordine religioso e morale</term> »</quote>. Il che vuol dire 
             <lb xml:id="Cod_IstruzionePubblica21_riga82" n="82" facs="#IstruzionePubblica21_riga82"/>
             che se fra noi insegnassero il <persName ref="#C_Darwin">Darwin</persName>, lo <persName ref="#H_Spencer">Spencer</persName>, il <persName ref="#JS_Mill">Mill</persName> 
             <lb xml:id="Cod_IstruzionePubblica21_riga83" n="83" facs="#IstruzionePubblica21_riga83"/>
@@ -2304,8 +2266,8 @@
         <teiHeader>
             <fileDesc>
                 <titleStmt>
-                    <respStmt xml:id="FlorisValenti_T3"><resp>Codifica TEI-XML</resp><persName>Rebecca Floris</persName><persName>Diletta Valenti</persName></respStmt>
                     <title level="a">Il lavoro mentale nelle scuole (da La Rassegna Settimanale, Volume 8, Fascicolo 188, del 7 Agosto 1881)</title>
+                    <respStmt xml:id="FlorisValenti_T3"><resp>Codifica TEI-XML</resp><persName>Rebecca Floris</persName><persName>Diletta Valenti</persName></respStmt>
                 </titleStmt>
                 <publicationStmt>
                     <publisher>Università di Pisa — Corso di Informatica Umanistica</publisher>
@@ -3682,7 +3644,7 @@
             <lb xml:id="Cod_NotizieVol3_riga1" n="1" facs="#NotizieVol3_riga1"/>
             — La festa per il 50° anniversario della fondazione dell'<orgName ref="#Inst_Archeo_Ger">Istituto ar</orgName>
             <lb xml:id="Cod_NotizieVol3_riga2" n="2" facs="#NotizieVol3_riga2" break="no"/>
-            <orgName ref="#Inst_Archeo_Ger">cheologico germanico</orgName> fu celebrata con grande solennità il <date when="04-21">21 di aprile</date>. 
+            <orgName ref="#Inst_Archeo_Ger">cheologico germanico</orgName> fu celebrata con grande solennità il <date when="--04-21">21 di aprile</date>. 
             <lb xml:id="Cod_NotizieVol3_riga3" n="3" facs="#NotizieVol3_riga3"/>
             Furono editi vari <term type="tema">libri</term> in tale solenne circostanza, tra i quali è im
             <lb xml:id="Cod_NotizieVol3_riga4" n="4" facs="#NotizieVol3_riga4" break="no"/>

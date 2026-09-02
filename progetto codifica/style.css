@@ -1,8 +1,3 @@
-/* ============================================================
-   style_FlorisValenti.css — La Rassegna Settimanale · Corpus digitale
-   Basato sul CSS originale, con refactoring e miglioramenti
-   ============================================================ */
-
 /* ── RESET E VARIABILI ──────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; }
 
@@ -51,11 +46,11 @@ h1, h2, h3, h4 {
 /* ── LAYOUT PRINCIPALE (grid) ────────────────────────────────── */
 .site {
     display: grid;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr auto;
     grid-template-areas:
-        "main  aside"
-        "footer footer";
+        "main"
+        "footer";
     min-height: calc(100vh - 50px);
 }
 
@@ -64,79 +59,7 @@ h1, h2, h3, h4 {
 .visible-section { display: block; }
 .hidden-section  { display: none; }
 
-/* ── NAVIGAZIONE SUPERIORE FISSA ────────────────────────────── */
-.top-navigation {
-    position: fixed;
-    top: 16px;
-    right: 16px;
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-.button-33 {
-    background-color: var(--accent);
-    color: #fffbf0;
-    border: none;
-    border-radius: var(--radius);
-    padding: 10px 18px;
-    font-family: var(--font-serif);
-    font-size: 0.9rem;
-    font-weight: 600;
-    cursor: pointer;
-    box-shadow: var(--shadow);
-    transition: background-color 0.2s, box-shadow 0.2s;
-}
-.button-33:hover {
-    background-color: var(--accent-hover);
-    box-shadow: var(--shadow-lg);
-}
-
-.nav-dropdown { position: relative; }
-
-.navigation-dropdown {
-    position: absolute;
-    top: calc(100% + 8px);
-    right: 0;
-    width: 300px;
-    max-height: 55vh;
-    overflow-y: auto;
-    background: var(--bg-card);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 1rem;
-    box-shadow: var(--shadow-lg);
-    transform-origin: top right;
-    transform: scale(0.95);
-    opacity: 0;
-    visibility: hidden;
-    transition: transform 0.15s ease, opacity 0.15s ease, visibility 0s 0.15s;
-}
-.navigation-dropdown.active {
-    transform: scale(1);
-    opacity: 1;
-    visibility: visible;
-    transition: transform 0.15s ease, opacity 0.15s ease;
-}
-
-.dropdown-section { margin-bottom: 1rem; }
-.dropdown-section h3 {
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: var(--text-secondary);
-    margin: 0 0 0.4rem;
-    border-bottom: 1px solid var(--border-light);
-    padding-bottom: 0.3rem;
-}
-.section-link, .external-link {
-    display: inline-block;
-    font-size: 0.85rem;
-    color: var(--accent);
-    margin: 2px 0;
-}
-.section-link:hover, .external-link:hover { color: var(--accent-hover); }
+/* ── VECCHIA NAVIGAZIONE — rimossa, sostituita dalla navbar ── */
 
 /* ── SEZIONE HOME / INFO ─────────────────────────────────────── */
 .general-info {
@@ -474,7 +397,7 @@ svg rect.selected {
 
 /* Termini e misure */
 .term, .entity-term { cursor: pointer; }
-.measure { border-bottom: 1px dotted var(--text-secondary); cursor: default; }
+
 .work-title { font-style: italic; }
 .keyword {
     display: inline-block;
@@ -487,19 +410,7 @@ svg rect.selected {
 }
 
 /* ── SIDEBAR GLOSSARIO ──────────────────────────────────────── */
-.sidebar {
-    grid-area: aside;
-    width: 280px;
-    min-width: 240px;
-    background: var(--bg-sidebar);
-    border-left: 2px solid var(--border);
-    padding: 1.5rem 1rem;
-    overflow-y: auto;
-    max-height: 100vh;
-    position: sticky;
-    top: 0;
-    align-self: start;
-}
+
 
 .glossary-section h2 {
     font-size: 1.1rem;
@@ -508,33 +419,14 @@ svg rect.selected {
     border-bottom: 2px solid var(--border);
     padding-bottom: 0.5rem;
 }
-.glossary-group-title {
-    font-size: 0.82rem;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    color: var(--text-secondary);
-    margin: 1rem 0 0.5rem;
-    border-bottom: 1px solid var(--border-light);
-    padding-bottom: 0.3rem;
-}
-.glossary-card {
-    background: var(--bg-card);
-    border: 1px solid var(--border-light);
-    border-radius: 6px;
-    padding: 0.6rem 0.8rem;
-    margin-bottom: 0.5rem;
-}
+
+
 .glossary-card h4 {
     font-size: 0.9rem;
     color: var(--accent);
     margin: 0 0 0.3rem;
 }
-.definition-info {
-    font-size: 0.8rem;
-    color: var(--text-secondary);
-    margin: 0;
-    line-height: 1.5;
-}
+
 .term-type {
     font-size: 0.75rem;
     font-weight: 400;
@@ -612,7 +504,6 @@ svg rect.selected {
         grid-template-columns: 1fr;
         grid-template-areas: "main" "footer";
     }
-    .sidebar { display: none; } /* su mobile il glossario va nel menu a tendina */
     .document-content { flex-direction: column; height: auto; }
     .facsimile-column, .text-column { max-width: 100%; flex: none; height: auto; }
     .text-column { overflow-y: visible; }
@@ -793,16 +684,8 @@ svg rect.selected {
     font-family: var(--font-serif);
 }
 
-/* ENTITÀ CLICCABILI */
-.entity { cursor: pointer; }
 
-/* Fix evidenziazione interrotta a capo da line-break */
-.entity .line-break[data-break="no"] {
-    display: inline;
-    background: inherit;
-    padding: 2px 0;
-    margin: 0 -1px;
-}
+
 
 /* RESPONSIVE NAVBAR */
 @media screen and (max-width: 700px) {
@@ -811,7 +694,8 @@ svg rect.selected {
     .dropdown-menu { min-width: 200px; }
 }
 /* Fix evidenziazione interrotta a capo */
-.entity .line-break {
+.entity .line-break,
+.entity .line-break[data-break="no"] {
     display: inline;
     font-size: inherit;
     line-height: inherit;
@@ -825,12 +709,7 @@ svg rect.selected {
 /* ── GLOSSARIO COME PAGINA A SÉ ─────────────────────────────── */
 .sidebar { display: none !important; }
 
-.site {
-    grid-template-areas:
-        "main"
-        "footer" !important;
-    grid-template-columns: 1fr !important;
-}
+
 
 .glossary-page-section {
     margin: 2rem 0;

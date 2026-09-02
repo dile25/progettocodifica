@@ -84,7 +84,7 @@
                 <a href="#" class="dropdown-toggle" onclick="return false;">Link utili ▾</a>
                 <ul class="dropdown-menu">
                     <li><a href="https://www.tei-c.org/" target="_blank">Sito Ufficiale TEI Consortium</a></li>
-                    <li><a href="https://github.com/" target="_blank">Repository del Progetto</a></li>
+                    <li><a href="https://github.com/dile25/progetto_CdT_floris_valenti.git" target="_blank">Repository del Progetto</a></li>
                 </ul>
             </li>
         </ul>
@@ -534,7 +534,8 @@
                 </span>
             </xsl:when>
             <xsl:otherwise>
-                <span class="entity persName" id="{@xml:id}" style="background-color:#fde68a;">
+                <span class="entity persName" style="background-color:#fde68a;">
+                    <xsl:if test="@xml:id"><xsl:attribute name="id"><xsl:value-of select="@xml:id"/></xsl:attribute></xsl:if>
                     <xsl:call-template name="entity-with-ref"/>
                 </span>
             </xsl:otherwise>

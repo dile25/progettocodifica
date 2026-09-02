@@ -4,12 +4,15 @@ cd ~/Desktop/progettocodifica/"progetto codifica"
 java -cp "saxon-he-13.0.jar:xmlresolver-6.0.23.jar:xmlresolver-6.0.23-data.jar:coffeegrinder-3.3.8.jar:coffeefilter-3.3.8.jar:jline-2.14.6.jar" net.sf.saxon.Transform -s:codifica_floris_valenti.xml -xsl:trasformazione.xsl -o:output.html
 
 
-//rebeccafloris
+//trasformazione rebeccafloris
 
 cd "progetto codifica"
 java -cp ".;saxon-he-13.0.jar;xmlresolver-6.0.23.jar;xmlresolver-6.0.23-data.jar" net.sf.saxon.Transform -s:codifica_floris_valenti.xml -xsl:trasformazione.xsl -o:output.html
 
-//validazione
+//validazione xerces e xmllint
 
 dilettavalenti@Air-di-Diletta progetto codifica % java -cp "Xerces/xerces-2_12_2-xml-schema-1.1/*" sax.Counter codifica_floris_valenti.xml
 codifica_floris_valenti.xml: 12 ms (4064 elems, 8238 attrs, 0 spaces, 153670 chars)
+
+dilettavalenti@Air-di-Diletta ~ % cd ~/Desktop/progettocodifica/"progetto codifica"
+dilettavalenti@Air-di-Diletta progetto codifica % xmllint --noout --relaxng schema.rng codifica_floris_valenti.xml
